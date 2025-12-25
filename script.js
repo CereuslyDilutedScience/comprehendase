@@ -48,7 +48,7 @@ processBtn.addEventListener("click", async () => {
     const formData = new FormData();
     formData.append("file", pdfFile);
 
-    const response = await fetch("/extract", {
+    const response = await fetch("https://article-assist-backend.onrender.com/extract", {
       method: "POST",
       body: formData,
     });
@@ -144,8 +144,6 @@ function renderText(pages = []) {
     const body = document.createElement("div");
     body.className = "page-text-body";
 
-    // For now we assume backend returns plain text.
-    // Later you can swap this to innerHTML after wrapping terms for dictionary.
     const para = document.createElement("p");
     para.textContent = page.text || "";
     body.appendChild(para);
