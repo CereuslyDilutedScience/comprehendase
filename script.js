@@ -1,4 +1,4 @@
-console.log("script.js loaded");
+console.log("script.js updated");
 // Enable the button when a file is selected
 document.getElementById("pdf-input").addEventListener("change", () => {
     const fileInput = document.getElementById("pdf-input");
