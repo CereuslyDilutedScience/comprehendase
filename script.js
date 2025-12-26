@@ -1,7 +1,7 @@
 console.log("script.js updated");
 
 // Set your backend URL here once Cloud Run is deployed
-const BACKEND_URL = "YOUR_BACKEND_URL_HERE";
+const BACKEND_URL = "https://comprehendase-252233072700.us-east4.run.app";
 
 // Enable the button when a file is selected
 document.getElementById("pdf-input").addEventListener("change", () => {
