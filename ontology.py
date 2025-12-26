@@ -39,12 +39,13 @@ def lookup_term_ols4(term):
 
 
 # -----------------------------
-# TERM FILTERING
+# TERM FILTERING (OPTIMIZED)
 # -----------------------------
 
 COMMON_WORDS = {
     "the","and","for","with","from","that","this","were","have","been",
-    "in","on","of","to","as","by","is","are","be","or","an","at","it"
+    "in","on","of","to","as","by","is","are","be","or","an","at","it",
+    "we","was","using","used","use","our","their","these","those"
 }
 
 SCI_PREFIXES = (
@@ -61,26 +62,33 @@ SCI_SUFFIXES = (
 def is_candidate_term(word):
     """
     Decide if a single word is worth checking in OLS.
+    Much stricter than before to avoid thousands of junk lookups.
     """
-    if len(word) < 4:
+    word_clean = re.sub(r"[^A-Za-z0-9\-]", "", word)
+
+    if len(word_clean) < 4:
         return False
 
-    if word.lower() in COMMON_WORDS:
+    if word_clean.lower() in COMMON_WORDS:
         return False
 
-    if word.isdigit():
+    if word_clean.isdigit():
         return False
+
+    # Gene/protein names (e.g., BRCA1, rpoB)
+    if re.match(r"^[A-Za-z]{2,5}\d+$", word_clean):
+        return True
 
     # Capitalized scientific words (e.g., Staphylococcus)
-    if re.match(r"^[A-Z][a-z]+$", word):
+    if re.match(r"^[A-Z][a-z]+$", word_clean):
         return True
 
     # Prefix-based scientific words
-    if word.lower().startswith(SCI_PREFIXES):
+    if word_clean.lower().startswith(SCI_PREFIXES):
         return True
 
     # Suffix-based scientific words
-    if word.lower().endswith(SCI_SUFFIXES):
+    if word_clean.lower().endswith(SCI_SUFFIXES):
         return True
 
     return False
@@ -89,21 +97,24 @@ def is_candidate_term(word):
 def is_candidate_phrase(phrase):
     """
     Decide if a multi-word phrase is worth checking in OLS.
-    Handles species names and multi-word scientific concepts.
+    Now requires at least ONE scientific-looking word.
     """
     words = phrase.split()
 
-    # Ignore phrases containing stopwords
+    # Reject if any word is a common stopword
     if any(w.lower() in COMMON_WORDS for w in words):
         return False
 
-    # Species names: Capitalized genus + lowercase species
+    # Species names: Genus species
     if len(words) == 2 and words[0][0].isupper() and words[1].islower():
-        return True  # e.g., Hermetia illucens
-
-    # Multi-word scientific concepts (e.g., black soldier fly larvae)
-    if len(words) > 1:
         return True
+
+    # Multi-word scientific concepts:
+    # Keep only if at least ONE word looks scientific
+    if len(words) > 1:
+        if any(is_candidate_term(w) for w in words):
+            return True
+        return False
 
     # Fallback to single-word logic
     return is_candidate_term(phrase)
