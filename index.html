@@ -1,57 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8" />
-  <title>Hybrid PDF Layout Reconstruction</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <title>Comprehendase</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-  <div class="page-wrapper">
-    <header class="app-header">
-      <h1>Hybrid PDF Layout Reconstruction</h1>
-      <p class="subtitle">
-        Visual pages + reconstructed, dictionary-ready paragraphs
-      </p>
-    </header>
 
-    <!-- Controls -->
-    <section class="controls">
-      <div class="control-group">
-        <label for="pdf-input"><strong>Upload PDF:</strong></label>
-        <input type="file" id="pdf-input" accept="application/pdf" />
-      </div>
+<h1>Comprehendase</h1>
 
-      <button id="process-btn" disabled>Reconstruct layout</button>
-    </section>
+<form id="uploadForm">
+    <input type="file" id="pdfFile" accept="application/pdf">
+    <button type="submit">Reconstruct layout</button>
+</form>
 
-    <!-- Status / log -->
-    <section class="status-section">
-      <h2>Status / log</h2>
-      <pre id="log" class="log">Waiting for PDF upload…</pre>
-    </section>
+<div id="output"></div>
 
-    <!-- Main content: visual + text -->
-    <main class="main-layout">
-      <!-- Visual page viewer -->
-      <section class="viewer-section">
-        <h2>Page preview (visual layout)</h2>
-        <div id="page-viewer" class="page-viewer">
-          <p class="placeholder">Pages will appear here after processing.</p>
-        </div>
-      </section>
-
-      <!-- Reconstructed text -->
-      <section class="output-section">
-        <h2>Reconstructed article (dictionary-ready text)</h2>
-        <div id="meta" class="meta-info"></div>
-        <div id="output" class="output-text">
-          <p class="placeholder">Upload your PDF and click “Reconstruct layout”.</p>
-        </div>
-      </section>
-    </main>
-  </div>
-
-  <script src="script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
