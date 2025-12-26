@@ -10,6 +10,7 @@
 
 <h1>Comprehendase</h1>
 
+<!-- Upload form -->
 <form id="uploadForm">
     <input type="file" id="pdfFile" accept="application/pdf">
     <button type="submit">Reconstruct layout</button>
@@ -23,6 +24,10 @@
     <pre id="logBox">Waiting for PDF upload…</pre>
 </form>
 
+<!-- PAGE VIEWER (this is what your JS expects) -->
+<div id="page-viewer"></div>
+
+<!-- OUTPUT AREA (for any additional text if needed) -->
 <div id="output"></div>
 
 <script src="script.js"></script>
