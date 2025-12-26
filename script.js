@@ -1,16 +1,15 @@
 console.log("script.js updated");
+
+// Set your backend URL here once Cloud Run is deployed
+const BACKEND_URL = "YOUR_BACKEND_URL_HERE";
+
 // Enable the button when a file is selected
 document.getElementById("pdf-input").addEventListener("change", () => {
     const fileInput = document.getElementById("pdf-input");
     const button = document.getElementById("process-btn");
 
-    if (fileInput.files.length > 0) {
-        button.disabled = false;
-    } else {
-        button.disabled = true;
-    }
+    button.disabled = fileInput.files.length === 0;
 });
-
 
 // Handle the "Reconstruct layout" button click
 document.getElementById("process-btn").addEventListener("click", async () => {
@@ -30,7 +29,7 @@ document.getElementById("process-btn").addEventListener("click", async () => {
     formData.append("file", fileInput.files[0]);
 
     try {
-        const response = await fetch("https://article-assist-backend.onrender.com/extract", {
+        const response = await fetch(`${BACKEND_URL}/extract`, {
             method: "POST",
             body: formData
         });
@@ -57,7 +56,6 @@ document.getElementById("process-btn").addEventListener("click", async () => {
         console.error(err);
     }
 });
-
 
 // Render pages + overlay text
 function renderPages(pages, viewer) {
