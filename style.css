@@ -125,7 +125,7 @@ button.upload:hover {
 }
 
 button.reconstruct {
-  background-color: var(--accent-yellow);
+  background-color: var(--accent-teal);
   color: var(--text-dark);
   border: none;
   padding: 0.5rem 1rem;
