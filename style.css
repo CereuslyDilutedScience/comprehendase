@@ -1,26 +1,78 @@
-* ------------------------------ GLOBAL PAGE STYLING --------------------------------*/
-body { font-family: "Inter", Arial, sans-serif; background: #f5f5f7; margin: 0; padding: 0; color: #222; line-height: 1.5; }
-h1, h2, h3 { font-weight: 600; color: #222; text-align: center; margin-top: 20px; }
-/* ------------------------------ UPLOAD FORM --------------------------------*/
-#uploadForm { width: 100%; max-width: 500px; margin: 30px auto; padding: 20px; background: white; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
-#uploadForm input[type="file"] { width: 100%; margin-bottom: 15px; }
-#uploadForm button { width: 100%; padding: 12px; background: #4a6cf7; color: white; border: none; border-radius: 8px; font-size: 16px; cursor: pointer; transition: background 0.2s ease; }
-#uploadForm button:hover { background: #3d5be0; }
-/* ------------------------------ PAGE DISPLAY AREA --------------------------------*/
-#output { width: 100%; max-width: 900px; margin: 40px auto; }
-/* Wrapper for each PDF page */ .page-wrapper { position: relative; margin-bottom: 50px; background: white; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 14px rgba(0,0,0,0.1); }
-/* The rendered PDF page image */ .page-image { width: 100%; display: block; }
-/* Overlay container for positioned text / .text-overlay { position: absolute; top: 0; left: 0; pointer-events: none; / allows clicking through unless needed */ width: 100%; height: 100%; }
-/* ------------------------------ WORD OVERLAY STYLING --------------------------------*/
-.word { position: absolute; white-space: nowrap; background: rgba(255, 255, 255, 0.0); pointer-events: auto; /* allow hover */ padding: 1px 2px; border-radius: 3px; transition: background 0.15s ease; }
-/* Words with definitions */ .has-definition { background: rgba(255, 255, 0, 0.25); border-bottom: 1px dashed #c7a600; cursor: help; }
-.has-definition:hover { background: rgba(255, 255, 0, 0.45); }
-/* ------------------------------ TOOLTIP (native browser) --------------------------------*/
-.word[title] { /* Browsers handle tooltips automatically */ }
-/* ------------------------------ RESPONSIVE BEHAVIOR --------------------------------*/
-@media (max-width: 600px) { #uploadForm { margin: 20px; }
-                           #output {
-    margin: 20px;
+/* ------------------------------ GLOBAL PAGE STYLING --------------------------------*/
+body {
+    font-family: "Inter", Arial, sans-serif;
+    background: #f5f5f7;
+    margin: 0;
+    padding: 0;
+    color: #222;
+    line-height: 1.5;
 }
 
-                          }
+h1, h2, h3 {
+    font-weight: 600;
+    color: #222;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* ------------------------------ PAGE DISPLAY AREA --------------------------------*/
+#output {
+    width: 100%;
+    max-width: 900px;
+    margin: 40px auto;
+}
+
+/* Wrapper for each PDF page */
+.page-wrapper {
+    position: relative;
+    margin-bottom: 50px;
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.1);
+}
+
+/* The rendered PDF page image */
+.page-image {
+    width: 100%;
+    display: block;
+}
+
+/* ------------------------------ OVERLAY CONTAINER --------------------------------*/
+.text-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none; /* allows hover on words */
+    width: 100%;
+    height: 100%;
+}
+
+/* ------------------------------ WORD OVERLAY STYLING --------------------------------*/
+.word {
+    position: absolute;
+    white-space: nowrap;
+    background: rgba(255, 255, 255, 0.0);
+    pointer-events: auto; /* allow hover */
+    padding: 1px 2px;
+    border-radius: 3px;
+    transition: background 0.15s ease;
+}
+
+/* Words with definitions */
+.has-definition {
+    background: rgba(255, 255, 0, 0.25);
+    border-bottom: 1px dashed #c7a600;
+    cursor: help;
+}
+
+.has-definition:hover {
+    background: rgba(255, 255, 0, 0.45);
+}
+
+/* ------------------------------ RESPONSIVE BEHAVIOR --------------------------------*/
+@media (max-width: 600px) {
+    #output {
+        margin: 20px;
+    }
+}
