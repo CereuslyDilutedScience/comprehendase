@@ -35,7 +35,7 @@ h1, h2, h3 {
 .page-wrapper {
   position: relative;
   margin-bottom: 50px;
-  background: white;
+  background-color: var(--bg-cream);
   border-radius: 8px;
   overflow: hidden;
   box-shadow: 0 4px 14px var(--shadow-gray);
@@ -106,7 +106,7 @@ header {
 /* Upload box */
 .upload-box {
   border: none;
-  background-color: transparent;
+  background-color: var(--bg-cream);
   padding: 0;
   margin: 1rem auto;
 }
