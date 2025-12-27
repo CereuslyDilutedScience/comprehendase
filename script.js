@@ -91,6 +91,10 @@ function renderPages(pages, viewer) {
             span.title = word.definition;
         }
 
+        if (word.bold) {
+        span.style.fontWeight = "bold";
+    }
+
         span.style.left = (word.x * scaleX) + "px";
         span.style.top = (word.y * scaleY) + "px";
         span.style.fontSize = (word.height * scaleY) + "px";
