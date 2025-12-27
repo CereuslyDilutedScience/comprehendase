@@ -76,3 +76,58 @@ h1, h2, h3 {
         margin: 20px;
     }
 }
+
+/* === Comprehendase Catalytic Clarity Theme === */
+body {
+  background-color: #FDF6E3;
+  color: #2D3142;
+  font-family: 'Inter', sans-serif;
+}
+
+header {
+  background-color: #FDF6E3;
+  border-bottom: 2px solid #3EC6C1;
+  padding: 1rem;
+}
+
+h1 {
+  color: #2D3142;
+}
+
+.tagline {
+  color: #3EC6C1;
+}
+
+.upload-box {
+  border: 2px dashed #3EC6C1;
+  background-color: #ffffff;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+button.upload {
+  background-color: #3EC6C1;
+  color: #ffffff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+}
+
+button.upload:hover {
+  background-color: #3AAFA3;
+}
+
+button.reconstruct {
+  background-color: #FFC857;
+  color: #2D3142;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+}
+
+.word.has-definition {
+  background-color: #F76C5E;
+  color: #ffffff;
+  border-radius: 4px;
+  padding: 0 2px;
+}
