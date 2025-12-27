@@ -94,7 +94,7 @@ function renderPages(pages, viewer) {
    if (word.bold) span.style.fontWeight = "bold";
 if (word.italic) span.style.fontStyle = "italic";
 if (word.font_size) span.style.fontSize = (word.font_size * scaleY) + "px";
-    }
+    
         span.style.left = (word.x * scaleX) + "px";
         span.style.top = (word.y * scaleY) + "px";
         span.style.fontSize = (word.height * scaleY) + "px";
