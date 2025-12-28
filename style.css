@@ -101,6 +101,8 @@ header {
   height: 400px;
   display: block;
   margin: 0 auto;
+    align-items: left;
+  justify-content: left;
 }
 
 /* Upload box */
