@@ -13,8 +13,8 @@ def extract_pdf_layout(pdf_path):
         raw_words = page.get_text("words")  # (text, x0, y0, x1, y1, block_no, line_no, word_no)
         words = []
 
-        for w in raw_words:
-            text, x0, y0, x1, y1, block_no, line_no, word_no = w
+        for w in words_raw:
+            x0, y0, x1, y1, text, block, line, word_no = w
 
             words.append({
                 "text": text,
@@ -22,8 +22,9 @@ def extract_pdf_layout(pdf_path):
                 "y": float(y0),
                 "width": float(x1 - x0),
                 "height": float(y1 - y0),
-                "block": block_no,
-                "line": line_no
+                "block": int(block),
+                "line": int(line),
+                "word_no": int(word_no)
             })
 
         pages_output.append({
