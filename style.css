@@ -153,6 +153,7 @@ button.reconstruct {
   border: none;
   padding: 0.5rem 1rem;
   border-radius: 6px;
+  cursor: pointer;
 }
 
 /* Word highlights */
