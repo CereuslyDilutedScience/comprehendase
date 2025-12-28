@@ -161,10 +161,4 @@ button.reconstruct {
   cursor: pointer;
 }
 
-/* Word highlights */
-.word.has-definition {
-  background-color: var(--highlight-orange);
-  color: #ffffff;
-  border-radius: 4px;
-  padding: 0 2px;
-}
+
