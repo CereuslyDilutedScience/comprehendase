@@ -73,7 +73,7 @@ h2, h3 {
 
 /* Words with definitions */
 /* Word highlights */
-.word.has-definition {
+.has-definition {
   background-color: var(--highlight-orange);
   color: #ffffff;
   border-radius: 4px;
