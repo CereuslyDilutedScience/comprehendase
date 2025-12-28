@@ -152,7 +152,7 @@ button.reconstruct {
   font-weight: 600;
   color: var(--text-dark);
   border: none;
-  padding: 0.5rem 1rem;
+  padding: 1rem 1rem;
   border-radius: 6px;
   cursor: pointer;
 }
