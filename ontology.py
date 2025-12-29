@@ -4,7 +4,17 @@ import re
 # -----------------------------
 # CACHE
 # -----------------------------
-TERM_CACHE = {}
+import json
+import os
+
+CACHE_FILE = "term_cache.json"
+
+# Load persistent cache if it exists
+if os.path.exists(CACHE_FILE):
+    with open(CACHE_FILE, "r") as f:
+        TERM_CACHE = json.load(f)
+else:
+    TERM_CACHE = {}
 
 # -----------------------------
 # AUTHOR / CITATION DETECTION
@@ -84,10 +94,14 @@ def lookup_term_ols4(term):
             "definition": (doc.get("description") or [""])[0],
             "iri": doc.get("iri")
         }
-
+        
         TERM_CACHE[key] = result
-        return result
 
+        with open(CACHE_FILE, "w") as f:
+            json.dump(TERM_CACHE, f, indent=2)
+
+        return result
+    
     except Exception:
         TERM_CACHE[key] = None
         return None
