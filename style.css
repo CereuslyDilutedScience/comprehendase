@@ -74,7 +74,7 @@ h2, h3 {
 /* Words with definitions */
 /* Word highlights */
 .has-definition {
-  background-color: var(--highlight-orange: #F76C5E) !important;
+  background-color: var(--highlight-orange: #F76C5E);
   color: #ffffff;
   border-radius: 4px;
   padding: 0 2px;
