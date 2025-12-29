@@ -75,10 +75,10 @@ h2, h3 {
 /* Words with definitions */
 /* Word highlights */
 .has-definition {
-  background-color: rgba(247, 108, 94, 0.35);
+  background-color: rgba(247, 108, 94, 0.1);
   color: #ffffff;
   border-radius: 4px;
-  padding: 0 2px;
+  padding: 0 0;
 }
 
 
