@@ -86,8 +86,7 @@ function renderPages(pages, viewer) {
         const span = document.createElement("span");
         span.className = "word";
         span.textContent = word.term || word.text;
-span.style.color = "rgba(255, 255, 0, 0)";        // hides the letters
-span.style.backgroundColor = "rgba(255, 255, 0, 0)";  // keeps highlight visible
+
 
 
         if (word.definition) {
