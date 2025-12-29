@@ -1,7 +1,9 @@
 import requests
 import re
 
-# Simple in-memory cache for ontology lookups
+# -----------------------------
+# CACHE
+# -----------------------------
 TERM_CACHE = {}
 
 # -----------------------------
@@ -12,14 +14,10 @@ def looks_like_author_name(word):
     """
     Detect capitalized author last names commonly found in citations.
     """
-    # Smith, Johnson, Fisher, etc.
     if re.match(r"^[A-Z][a-z]+$", word):
         return True
-
-    # Smith,
     if re.match(r"^[A-Z][a-z]+,$", word):
         return True
-
     return False
 
 
@@ -35,7 +33,7 @@ def phrase_is_citation(phrase):
     if "et al" in lower:
         return True
 
-    # Capitalized Lastname Lastname (common in citations)
+    # Capitalized Lastname Lastname
     if re.match(r"^[A-Z][a-z]+ [A-Z][a-z]+$", phrase):
         return True
 
@@ -49,6 +47,7 @@ def phrase_is_citation(phrase):
 # -----------------------------
 # OLS4 LOOKUP
 # -----------------------------
+
 def lookup_term_ols4(term):
     """
     Query the OLS4 API for a scientific term.
@@ -56,10 +55,8 @@ def lookup_term_ols4(term):
     Returns a dict with label, definition, iri OR None if not found.
     """
 
-    # Normalize term for caching
     key = term.strip().lower()
 
-    # Return cached result if available
     if key in TERM_CACHE:
         return TERM_CACHE[key]
 
@@ -97,7 +94,7 @@ def lookup_term_ols4(term):
 
 
 # -----------------------------
-# TERM FILTERING (OPTIMIZED)
+# TERM FILTERING
 # -----------------------------
 
 COMMON_WORDS = {
@@ -113,18 +110,25 @@ SCI_PREFIXES = (
 
 SCI_SUFFIXES = (
     "ase", "itis", "osis", "emia", "phage", "phyte", "coccus",
-    "viridae", "aceae"
+    "viridae", "aceae", "ales"
 )
 
 
 def is_candidate_term(word):
     """
     Decide if a single word is worth checking in OLS.
-    Much stricter than before to avoid thousands of junk lookups.
+    Expanded to include:
+    - strain names (XBY01, H37Rv)
+    - gene names (uvrC, recA)
+    - families (-aceae)
+    - orders (-ales)
+    - classes (Mollicutes)
+    - proteins (lipoproteins)
     """
+
     word_clean = re.sub(r"[^A-Za-z0-9\-]", "", word)
 
-    if len(word_clean) < 4:
+    if len(word_clean) < 3:
         return False
 
     if word_clean.lower() in COMMON_WORDS:
@@ -133,23 +137,37 @@ def is_candidate_term(word):
     if word_clean.isdigit():
         return False
 
-    # Reject author names
+    # Reject author names ONLY for single-word terms
     if looks_like_author_name(word_clean):
         return False
 
-    # Gene/protein names (e.g., BRCA1, rpoB)
-    if re.match(r"^[A-Za-z]{2,5}\d+$", word_clean):
+    # Gene names (uvrC, recA, BRCA1)
+    if re.match(r"^[A-Za-z]{2,6}\d*[A-Za-z]*$", word_clean):
         return True
 
-    # Capitalized scientific words (e.g., Staphylococcus)
+    # Strain names (XBY01, H37Rv, K12, etc.)
+    if re.match(r"^[A-Z]{1,4}\d{1,4}[A-Za-z0-9]*$", word_clean):
+        return True
+
+    # Family names (-aceae)
+    if word_clean.lower().endswith("aceae"):
+        return True
+
+    # Order names (-ales)
+    if word_clean.lower().endswith("ales"):
+        return True
+
+    # Class names (Mollicutes-style)
     if re.match(r"^[A-Z][a-z]+$", word_clean):
         return True
 
-    # Prefix-based scientific words
-    if word_clean.lower().startswith(SCI_PREFIXES):
+    # Protein names
+    if word_clean.lower().endswith("protein") or word_clean.lower().endswith("proteins"):
         return True
 
-    # Suffix-based scientific words
+    # Scientific prefixes/suffixes
+    if word_clean.lower().startswith(SCI_PREFIXES):
+        return True
     if word_clean.lower().endswith(SCI_SUFFIXES):
         return True
 
@@ -159,24 +177,37 @@ def is_candidate_term(word):
 def is_candidate_phrase(phrase):
     """
     Decide if a multi-word phrase is worth checking in OLS.
-    Now requires at least ONE scientific-looking word.
+    Expanded to include:
+    - species (Genus species)
+    - subspecies
+    - serotypes
+    - strain phrases
     """
+
     words = phrase.split()
 
     # Reject citation patterns
     if phrase_is_citation(phrase):
         return False
 
-    # Reject if any word is a common stopword
-    if any(w.lower() in COMMON_WORDS for w in words):
+    # Reject if ALL words look like author names
+    if all(looks_like_author_name(w) for w in words):
         return False
 
-    # Reject if any word is an author name
-    if any(looks_like_author_name(w) for w in words):
-        return False
-
-    # Species names: Genus species
+    # Allow species names (Genus species)
     if len(words) == 2 and words[0][0].isupper() and words[1].islower():
+        return True
+
+    # Allow subspecies phrases
+    if "subspecies" in phrase.lower():
+        return True
+
+    # Allow serotype phrases
+    if "serotype" in phrase.lower():
+        return True
+
+    # Allow strain phrases
+    if "strain" in phrase.lower():
         return True
 
     # Multi-word scientific concepts:
