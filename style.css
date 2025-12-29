@@ -5,7 +5,7 @@
   --accent-teal: #3EC6C1;
   --accent-teal-hover: #3AAFA3;
   --highlight-orange: #F76C5E;
-  --shadow-gray: rgba(0, 0, 0, 0.1);
+  --shadow-gray: rgba(0, 0, 0, 0.2);
 }
 
 /* ------------------------------ GLOBAL PAGE STYLING --------------------------------*/
@@ -73,7 +73,7 @@ h2, h3 {
 
 /* Words with definitions */
 /* Word highlights */
-.has-definition {
+.word.has-definition {
   background-color: var(--highlight-orange: #F76C5E);
   color: #ffffff;
   border-radius: 4px;
