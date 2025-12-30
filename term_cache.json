@@ -518,5 +518,10 @@
     "label": "assembly",
     "definition": "The process of individual components of a sample associating to form a new pattern or structure.",
     "iri": "http://purl.obolibrary.org/obo/CHMO_0001302"
+  },
+  "multiple": {
+    "label": "multiple",
+    "definition": "A quality inhering in a bearer by virtue of the bearer's being present in more than two copies.",
+    "iri": "http://purl.obolibrary.org/obo/PATO_0002118"
   }
 }
