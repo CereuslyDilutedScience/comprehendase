@@ -1883,5 +1883,10 @@
     "label": "Occur",
     "definition": "Come to pass.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C54069"
+  },
+  "antimicrobial peptide production": {
+    "label": "antimicrobial peptide production",
+    "definition": "The synthesis or release of an antimicrobial peptide during an immune response, resulting in an increase in intracellular or extracellular levels. Such peptides may have protective properties against bacteria, fungi, viruses, or protozoa.",
+    "iri": "http://purl.obolibrary.org/obo/GO_0002775"
   }
 }
