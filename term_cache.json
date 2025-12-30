@@ -938,5 +938,10 @@
     "label": "Often",
     "definition": "A subjective answer that something occurs frequently.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C120595"
+  },
+  "most": {
+    "label": "Most",
+    "definition": "Greatest in amount, extent, or degree; constituting a majority.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C25258"
   }
 }
