@@ -1151,5 +1151,15 @@
     "label": "default parameters",
     "definition": "It is possible that this really should be a class instead of an individual, namely the class of all default parameter specifications (which would then have instances specific to programs).",
     "iri": "http://purl.obolibrary.org/obo/MIAPA_0000012"
+  },
+  "used for all": null,
+  "for all software": null,
+  "for all": null,
+  "all software unless": null,
+  "all software": null,
+  "all": {
+    "label": "All",
+    "definition": "",
+    "iri": "http://purl.obolibrary.org/obo/HP_0000001"
   }
 }
