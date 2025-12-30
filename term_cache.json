@@ -1183,5 +1183,10 @@
     "label": "Between",
     "definition": "The space or interval separating two things.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C94545"
+  },
+  "in vitro": {
+    "label": "In Vitro",
+    "definition": "In the laboratory; literally, \"in glass\".",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C15263"
   }
 }
