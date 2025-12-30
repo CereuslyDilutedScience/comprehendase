@@ -16598,5 +16598,10 @@
     "label": "Toll-Like Receptor 3",
     "definition": "Toll-like receptor 3 (904 aa, ~104 kDa) is encoded by the human TLR3 gene. This protein plays a role in binding to viral double-stranded RNA and modulation of antiviral responses.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C30104"
+  },
+  "tlr3 in the": {
+    "label": "TLR3",
+    "definition": "toll-like receptor 3",
+    "iri": "http://purl.obolibrary.org/obo/OGG_3000007098"
   }
 }
