@@ -2718,5 +2718,10 @@
     "label": "number of substrates",
     "definition": "Number of molecules which are acted upon by an enzyme.",
     "iri": "http://biomodels.net/SBO/SBO_0000149"
+  },
+  "inhabited by bsfl": {
+    "label": "by",
+    "definition": "The protein-coding gene by (blistery) located on the chromosome 3R mapped at 85D19-85D22|3-48.7 cM.",
+    "iri": "http://identifiers.org/ncbigene/41144"
   }
 }
