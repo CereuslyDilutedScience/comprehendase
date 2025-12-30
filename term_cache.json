@@ -918,5 +918,10 @@
     "label": "reduced",
     "definition": "Qualifier that describes a phenotype that has reduced penetrance or expressivity when compared to wild-type.",
     "iri": "http://purl.obolibrary.org/obo/FBcv_0000343"
+  },
+  "reduction": {
+    "label": "reduction",
+    "definition": "Mutation caused by a recombination event between tandem repeats of rRNA genes that causes unequal chromatid exchange at crossing over and a reduction in the number of functional copies. It leads to an aggravation of phenotype, in the case of a mutation causing a change from a wildtype to mutant phenotype or a change from a mutant to a more severe mutant phenotype.",
+    "iri": "http://purl.obolibrary.org/obo/FBcv_0000477"
   }
 }
