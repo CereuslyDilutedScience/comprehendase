@@ -2393,5 +2393,10 @@
     "label": "drying",
     "definition": "The process of removing a solvent from a substance. [CHMO]",
     "iri": "http://purl.allotrope.org/ontologies/process#AFP_0001876"
+  },
+  "period": {
+    "label": "Period",
+    "definition": "An interval of time.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C25616"
   }
 }
