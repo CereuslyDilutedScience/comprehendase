@@ -2323,5 +2323,10 @@
     "label": "taking",
     "definition": "Taking material is the exporting of material from a location or site. [Allotrope]",
     "iri": "http://purl.allotrope.org/ontologies/process#AFP_0003576"
+  },
+  "consideration the increases": {
+    "label": "Consideration",
+    "definition": "Careful thought or deliberation.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C113416"
   }
 }
