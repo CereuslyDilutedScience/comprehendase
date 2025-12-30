@@ -8218,5 +8218,10 @@
     "label": "complication during the experiment",
     "definition": "Unexpected event arrived during the experiment.",
     "iri": "http://purl.obolibrary.org/obo/AGRO_00000344"
+  },
+  "to collect samples,": {
+    "label": "to collect",
+    "definition": "Function to add a member to an aggregate or to bring a flow together. [Allotrope]",
+    "iri": "http://purl.allotrope.org/ontologies/function#AFFN_0000007"
   }
 }
