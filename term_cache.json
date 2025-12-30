@@ -4118,5 +4118,10 @@
     "label": "Added",
     "definition": "Combined or joined to increase in size or quantity or scope.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C45330"
+  },
+  "were signi\ufb01cant on": {
+    "label": "Were Genomics Performed on Obtained Tissue Question",
+    "definition": "A question whether genomics were performed on obtained tissue.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C182171"
   }
 }
