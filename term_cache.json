@@ -2578,5 +2578,10 @@
     "label": "COWS - Sweating",
     "definition": "Clinical Opiate Withdrawal Scale (COWS) Sweating.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C102057"
+  },
+  "furthermore, one of": {
+    "label": "one of condition",
+    "definition": "A one of condition is a collection of conditions that is valid if exactly one of its condition items is valid. [Allotrope]",
+    "iri": "http://purl.allotrope.org/ontologies/common#AFC_0000093"
   }
 }
