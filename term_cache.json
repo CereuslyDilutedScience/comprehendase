@@ -2183,5 +2183,10 @@
     "label": "Processing",
     "definition": "The act of preparing or putting through a prescribed procedure.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C48177"
+  },
+  "novel": {
+    "label": "novel",
+    "definition": "An attribute of a genomic feature that represents a feature not previously found in a given genome, e.g. an extrachromosomal replicon or aneusomic third copy of a chromosome.",
+    "iri": "http://purl.obolibrary.org/obo/GENO_0000685"
   }
 }
