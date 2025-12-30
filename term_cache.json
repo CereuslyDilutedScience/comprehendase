@@ -7358,5 +7358,10 @@
     "label": "Since",
     "definition": "Subsequent to; after.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C45325"
+  },
+  "staphylococci were not": {
+    "label": "Routine Cytogenetics Were not Completed",
+    "definition": "A response that routine cytogenetic testing was not completed.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C160755"
   }
 }
