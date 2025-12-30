@@ -761,5 +761,24 @@
     "label": "Incubated",
     "definition": "",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C15685"
+  },
+  "in 5% co2": null,
+  "5% co2 for": null,
+  "5% co2": null,
+  "co2 for 3": null,
+  "co2 for": null,
+  "co2": null,
+  "for 3 days": null,
+  "3 days until": null,
+  "3 days": null,
+  "days until visible": null,
+  "days until": null,
+  "days": null,
+  "until visible colonies": null,
+  "until visible": null,
+  "until": {
+    "label": "Until",
+    "definition": "Up to the point of some specific time or event.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C65136"
   }
 }
