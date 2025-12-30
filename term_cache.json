@@ -451,5 +451,12 @@
     "label": "Into",
     "definition": "Expressing entrance, or a passing from the outside of a thing to its interior parts.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C25544"
+  },
+  "host cells, as": null,
+  "host cells,": null,
+  "host": {
+    "label": "host",
+    "definition": "An organism bearing a host role.",
+    "iri": "http://purl.obolibrary.org/obo/IDO_0000531"
   }
 }
