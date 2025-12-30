@@ -1220,5 +1220,20 @@
     "label": "analysis software",
     "definition": "Analysis software.",
     "iri": "http://purl.obolibrary.org/obo/MS_1001456"
+  },
+  "were as follows:": null,
+  "as follows: the": null,
+  "as follows:": null,
+  "follows: the read": null,
+  "follows: the": null,
+  "follows:": null,
+  "the read number": null,
+  "the read": null,
+  "read number was": null,
+  "read number": null,
+  "read": {
+    "label": "read",
+    "definition": "A read is a process boundary within a measuring where a data about the measured object is captured. [Allotrope]",
+    "iri": "http://purl.allotrope.org/ontologies/process#AFP_0003805"
   }
 }
