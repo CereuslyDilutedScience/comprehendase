@@ -16948,5 +16948,10 @@
     "label": "high-throughput sequencing",
     "definition": "A method that uses high-throughput sequencing for this assay.",
     "iri": "http://purl.obolibrary.org/obo/FBcv_0003211"
+  },
+  "embnet j": {
+    "label": "J wave",
+    "definition": "The J wave is a positive convex deflection that occurs at the junction of the QRS complex and ST segment, the J-point.",
+    "iri": "http://purl.obolibrary.org/obo/HP_0012272"
   }
 }
