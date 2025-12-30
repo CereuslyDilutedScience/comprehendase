@@ -1138,5 +1138,10 @@
     "label": "raised",
     "definition": "A shape quality inhering in a colony by virtue of the bearer's appearing above the medium surface with terraced edges.",
     "iri": "http://purl.obolibrary.org/obo/PATO_0001369"
+  },
+  "safety": {
+    "label": "Safety",
+    "definition": "The state of being certain that adverse effects will not be caused by some agent under defined conditions.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C60828"
   }
 }
