@@ -163,5 +163,10 @@
     "label": "hosts",
     "definition": "Relation between a Platform and a Sensor, Actuator, Sampler, or Platform, hosted or mounted on it.",
     "iri": "http://www.w3.org/ns/sosa/hosts"
+  },
+  "respiratory": {
+    "label": "Respiratory",
+    "definition": "Pertaining to respiration.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C25656"
   }
 }
