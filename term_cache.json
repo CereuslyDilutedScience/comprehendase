@@ -4983,5 +4983,10 @@
     "label": "Against",
     "definition": "In opposition to or in competition with someone or something.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C64937"
+  },
+  "gram-positive bacteria (28).": {
+    "label": "Gram Positive Bacteria",
+    "definition": "Any bacteria with a thick peptidoglycan layer and no outer lipid membrane that stains dark purple with the Gram staining technique.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C173515"
   }
 }
