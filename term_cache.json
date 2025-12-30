@@ -1953,5 +1953,10 @@
     "label": "Direct",
     "definition": "As an immediate result; having nothing intervening; without deviation or interruption.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C62254"
+  },
+  "previous": {
+    "label": "Previous",
+    "definition": "Occurring prior to something else.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C25627"
   }
 }
