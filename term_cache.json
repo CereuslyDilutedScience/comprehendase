@@ -1433,5 +1433,10 @@
     "label": "counts",
     "definition": "Counts are like ratio scale that they have a zero point but there are no meaningful fractional units. [Allotrope]",
     "iri": "http://purl.allotrope.org/ontologies/result#AFR_0000915"
+  },
+  "difference": {
+    "label": "Difference",
+    "definition": "The quality of being unlike or dissimilar.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C46003"
   }
 }
