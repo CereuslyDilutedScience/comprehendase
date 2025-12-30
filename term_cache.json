@@ -2133,5 +2133,10 @@
     "label": "Consensus",
     "definition": "Agreement as the result of multiple results or opinions.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C64197"
+  },
+  "regardless": {
+    "label": "Regardless",
+    "definition": "Lacking consideration or without thoughtful attention.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C103851"
   }
 }
