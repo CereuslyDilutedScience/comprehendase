@@ -358,5 +358,10 @@
     "label": "TruSeq",
     "definition": "TruSeq is a library preparation protocol developed by Illumina for RNA sequencing. It includes different types of kits for different purposes, such as the TruSeq Small RNA Library Prep Kit and the TruSeq RNA Exome. These kits are designed to convert total RNA or genomic DNA into template molecules of known strand origin for sequencing.",
     "iri": "http://www.ebi.ac.uk/efo/EFO_0022396"
+  },
+  "sequencing": {
+    "label": "sequencing",
+    "definition": "Refers to the level of sequencing performed on the nucleic acid. Possible values include 'Not sequenced' (no sequencing has been performed), 'Partly sequenced' (only a portion of the nucleic acid sequence has been determined), and 'Fully sequenced' (the entire nucleic acid sequence has been determined).",
+    "iri": "https://w3id.org/evorao/sequencing"
   }
 }
