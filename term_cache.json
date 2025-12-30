@@ -1663,5 +1663,10 @@
     "label": "Were Itchy Question",
     "definition": "A question about whether an individual feels or felt itchy.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C136347"
+  },
+  "glass jars. substrate": {
+    "label": "glass substrate",
+    "definition": "A subtrate made of glass.",
+    "iri": "http://www.ebi.ac.uk/efo/EFO_0005062"
   }
 }
