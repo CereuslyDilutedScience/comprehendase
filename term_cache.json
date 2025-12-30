@@ -7133,5 +7133,10 @@
     "label": "Are",
     "definition": "A unit of area equal to 100 square meters. Are is a non-SI unit accepted for use with SI.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C68869"
+  },
+  "few gram-negative bacteria": {
+    "label": "Gram Negative Bacteria",
+    "definition": "Any bacteria with a thin peptidoglycan layer and an outer lipid membrane that stains pink with the Gram staining technique.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C173514"
   }
 }
