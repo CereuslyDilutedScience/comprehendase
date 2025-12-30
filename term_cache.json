@@ -1643,5 +1643,10 @@
     "label": "soldier",
     "definition": "A person who fights as part of an army. A soldier can be a conscripted or volunteer enlisted person, a non-commissioned officer, or an officer.",
     "iri": "http://purl.obolibrary.org/obo/GSSO_005823"
+  },
+  "inoculated with mrsa": {
+    "label": "mrsA",
+    "definition": "Probable phospho-sugar mutase / MrsA protein homolog",
+    "iri": "http://purl.obolibrary.org/obo/OGG_3000887589"
   }
 }
