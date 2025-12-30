@@ -4193,5 +4193,10 @@
     "label": "Three or Four Days",
     "definition": "A response indicating that something happens or happened on three or four days.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C126450"
+  },
+  "those genera were,": {
+    "label": "Genera (Croatia)",
+    "definition": "Company in Croatia established in 1901",
+    "iri": "https://ror.org/0518jvn15"
   }
 }
