@@ -2048,5 +2048,10 @@
     "label": "commensal",
     "definition": "An organism bearing a commensal role.",
     "iri": "http://purl.obolibrary.org/obo/IDO_0000525"
+  },
+  "decreased": {
+    "label": "decreased",
+    "definition": "The observed feature is decreased compared to that in the wild type (slower, weaker, lower, smaller, etc.).",
+    "iri": "http://purl.obolibrary.org/obo/APO_0000003"
   }
 }
