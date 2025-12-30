@@ -613,5 +613,10 @@
     "label": "Two",
     "definition": "A natural number greater than 1 and less than 3 and the quantity that it denotes: the sum of one and one.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C66833"
+  },
+  "length": {
+    "label": "length",
+    "definition": "Length is a quality quantification facet that quantifies the distance between two points in space. [Allotrope]",
+    "iri": "http://purl.allotrope.org/ontologies/result#AFR_0001817"
   }
 }
