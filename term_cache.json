@@ -7043,5 +7043,10 @@
     "label": "counts",
     "definition": "Counts are like ratio scale that they have a zero point but there are no meaningful fractional units. [Allotrope]",
     "iri": "http://purl.allotrope.org/ontologies/result#AFR_0000915"
+  },
+  "aureus (13). consistent": {
+    "label": "Consistent",
+    "definition": "Marked by a reasonable or logical relation of parts and holding together as a harmonious or credible whole.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C85901"
   }
 }
