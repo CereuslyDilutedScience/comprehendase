@@ -2663,5 +2663,10 @@
     "label": "emerging pathogen",
     "definition": "An infectious agent whose infection incidence is increasing following its first introduction into a new host Species.",
     "iri": "http://purl.obolibrary.org/obo/IDO_0000583"
+  },
+  "topic (10, 13).": {
+    "label": "Topic",
+    "definition": "A category denoting a rather broad domain or field of interest, study, application, work, data, or technology. Topics have no clearly defined borders between each other.",
+    "iri": "http://purl.obolibrary.org/obo/topic_0003"
   }
 }
