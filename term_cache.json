@@ -7023,5 +7023,10 @@
     "label": "microbiome",
     "definition": "A collection or collectivity of microorganisms.",
     "iri": "http://www.ebi.ac.uk/efo/EFO_0004982"
+  },
+  "bsf larvae (33,": {
+    "label": "bsf",
+    "definition": "The protein-coding gene bsf (bicoid stability factor) located on the chromosome 2L mapped at 36F5-36F5.",
+    "iri": "http://identifiers.org/ncbigene/35100"
   }
 }
