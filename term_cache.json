@@ -1913,5 +1913,10 @@
     "label": "Variant Pathogenic/Likely Pathogenic",
     "definition": "An ad hoc category that describes genetic variants with 90% or greater certainty of contributing to the development of a disease.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C168803"
+  },
+  "inhabiting decaying substrates": {
+    "label": "number of substrates",
+    "definition": "Number of molecules which are acted upon by an enzyme.",
+    "iri": "http://biomodels.net/SBO/SBO_0000149"
   }
 }
