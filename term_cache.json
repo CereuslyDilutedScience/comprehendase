@@ -2528,5 +2528,10 @@
     "label": "has characteristic",
     "definition": "Inverse of characteristic_of",
     "iri": "http://purl.obolibrary.org/obo/RO_0000053"
+  },
+  "16), in animal": {
+    "label": "edema in animal",
+    "definition": "An abnormal accumulation of fluid in the whole organism.",
+    "iri": "http://purl.obolibrary.org/obo/PLANP_0000801"
   }
 }
