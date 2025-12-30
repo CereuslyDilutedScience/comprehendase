@@ -1768,5 +1768,10 @@
     "label": "activity",
     "definition": "An activity is a process that is cumulative but not homomeric. [Allotrope, DOLCE]",
     "iri": "http://purl.allotrope.org/ontologies/process#AFP_0003620"
+  },
+  "supports": {
+    "label": "supports",
+    "definition": "Example: We support Galileo's statement [X], that Earth moves.",
+    "iri": "http://purl.org/spar/cito/supports"
   }
 }
