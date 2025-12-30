@@ -6718,5 +6718,10 @@
     "label": "order",
     "definition": "An order facet adds information of the ordering of some information in an aggregation of information. [Allotrope]",
     "iri": "http://purl.allotrope.org/ontologies/result#AFR_0000932"
+  },
+  "cfu/g (a difference": {
+    "label": "Difference",
+    "definition": "The quality of being unlike or dissimilar.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C46003"
   }
 }
