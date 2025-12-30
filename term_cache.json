@@ -2193,5 +2193,10 @@
     "label": "Extraordinary Opportunity: Genes and the Environment",
     "definition": "Goal: identify and characterize every major human gene that predisposes people to cancer; begin to apply these discoveries through clinical practice to help patients at risk; address the psychosocial, ethical, and legal issues associated with inherited cancer susceptibility (NCI Web)",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C16132"
+  },
+  "especially taking into": {
+    "label": "taking",
+    "definition": "Taking material is the exporting of material from a location or site. [Allotrope]",
+    "iri": "http://purl.allotrope.org/ontologies/process#AFP_0003576"
   }
 }
