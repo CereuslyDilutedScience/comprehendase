@@ -2173,5 +2173,10 @@
     "label": "purification",
     "definition": "A purification is a removing process that is used to physically separate an analyte from byproducts, reagents or contaminating substances. [Allotrope, CHMO]",
     "iri": "http://purl.allotrope.org/ontologies/process#AFP_0000812"
+  },
+  "top": {
+    "label": "top",
+    "definition": "Someone, typically a man, who is penetrating someone else during sexual intercourse or someone who has a preference for penetrating during such intercourse.",
+    "iri": "http://purl.obolibrary.org/obo/GSSO_000346"
   }
 }
