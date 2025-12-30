@@ -2273,5 +2273,10 @@
     "label": "Integrated",
     "definition": "Combining things, people, or ideas of different types in one effective unit, group, or system.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C165682"
+  },
+  "during experimental trials": {
+    "label": "NCI Early-Phase and Experimental Clinical Trials Biospecimen Bank",
+    "definition": "A biorepository responsible for collecting, processing and storing a variety of human specimens from patients with cancer who are participating in NCI-funded Experimental Therapeutics Clinical Trials Network (ETCTN) and other NCI-supported early and experimental clinical trials.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C186296"
   }
 }
