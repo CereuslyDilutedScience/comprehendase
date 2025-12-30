@@ -3053,5 +3053,10 @@
     "label": "The Health Council of the Netherlands",
     "definition": "Government in Netherlands established in 1902",
     "iri": "https://ror.org/007xad319"
+  },
+  "goal of": {
+    "label": "goal",
+    "definition": "A <cognitive representation> of an end state towards which one is striving.",
+    "iri": "http://humanbehaviourchange.org/ontology/BCIO_006049"
   }
 }
