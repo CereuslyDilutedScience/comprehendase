@@ -5893,5 +5893,10 @@
     "label": "Variant Pathogenic/Likely Pathogenic",
     "definition": "An ad hoc category that describes genetic variants with 90% or greater certainty of contributing to the development of a disease.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C168803"
+  },
+  "bacteria include direct": {
+    "label": "Include",
+    "definition": "Add as part of something else; put in as part of a set, group, or category.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C74521"
   }
 }
