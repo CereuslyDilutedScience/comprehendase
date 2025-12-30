@@ -1583,5 +1583,10 @@
     "label": "Illumina MiSeq",
     "definition": "A DNA sequencer which is manufactured by the Illumina corporation. Built upon sequencing by synthesis technology, the machine provides an end-to-end solution (cluster generation, amplification, sequencing, and data analysis) in a single machine.",
     "iri": "http://purl.obolibrary.org/obo/OBI_0002003"
+  },
+  "technology": {
+    "label": "Technology",
+    "definition": "Technology is the discipline dealing with the art or science of applying scientific knowledge to practical problems.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C17187"
   }
 }
