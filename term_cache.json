@@ -2358,5 +2358,10 @@
     "label": "before",
     "definition": "t1 before t2 iff:= t1 before_or_simulataneous_with t2 and not (t1 simultaneous_with t2) [RO]",
     "iri": "http://purl.obolibrary.org/obo/RO_0002083"
+  },
+  "being": {
+    "label": "being",
+    "definition": "The material or immaterial existence of a thing. Anything that exists is being. Anything that partakes in being is also called a \"being\".",
+    "iri": "http://purl.obolibrary.org/obo/GSSO_009996"
   }
 }
