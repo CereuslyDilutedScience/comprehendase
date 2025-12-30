@@ -2498,5 +2498,10 @@
     "label": "mrsA",
     "definition": "Probable phospho-sugar mutase / MrsA protein homolog",
     "iri": "http://purl.obolibrary.org/obo/OGG_3000887589"
+  },
+  "particular concern as": {
+    "label": "Concern",
+    "definition": "A matter of interest or importance.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C79892"
   }
 }
