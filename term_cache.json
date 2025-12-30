@@ -1948,5 +1948,10 @@
     "label": "Include",
     "definition": "Add as part of something else; put in as part of a set, group, or category.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C74521"
+  },
+  "direct": {
+    "label": "Direct",
+    "definition": "As an immediate result; having nothing intervening; without deviation or interruption.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C62254"
   }
 }
