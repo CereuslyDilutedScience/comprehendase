@@ -2268,5 +2268,10 @@
     "label": "Have",
     "definition": "Used to describe the possession, relationships, or the state of something or someone.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C101282"
+  },
+  "been successfully integrated": {
+    "label": "Integrated",
+    "definition": "Combining things, people, or ideas of different types in one effective unit, group, or system.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C165682"
   }
 }
