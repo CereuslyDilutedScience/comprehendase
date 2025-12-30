@@ -6423,5 +6423,10 @@
     "label": "Data",
     "definition": "Subclass of File representing structured or unstructured datasets, often used for analysis, storage, or transfer of information.",
     "iri": "https://w3id.org/evorao/Data"
+  },
+  "not shown). there": {
+    "label": "NPI - Talk to People Who Are Not There",
+    "definition": "Neuropsychiatric Inventory (NPI) Does the patient talk to people who are not there?",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C100634"
   }
 }
