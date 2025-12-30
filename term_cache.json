@@ -2383,5 +2383,10 @@
     "label": "GOSE - Work: How Restricted Are They",
     "definition": "Extended Glasgow Outcome Scale (GOSE) How restricted are they?",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C115837"
+  },
+  "capable of dramatic": {
+    "label": "capable of",
+    "definition": "A relation between a material entity (such as a cell) and a process, in which the material entity has the ability to carry out the process.",
+    "iri": "http://purl.obolibrary.org/obo/RO_0002215"
   }
 }
