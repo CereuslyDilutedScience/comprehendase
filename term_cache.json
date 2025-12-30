@@ -1958,5 +1958,10 @@
     "label": "Previous",
     "definition": "Occurring prior to something else.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C25627"
+  },
+  "spp": {
+    "label": "SPP",
+    "definition": "The protein-coding gene SPP located on the chromosome 2.",
+    "iri": "http://identifiers.org/ncbigene/814841"
   }
 }
