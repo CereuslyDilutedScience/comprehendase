@@ -15958,5 +15958,10 @@
     "label": "The Environment Ontology",
     "definition": "ENVO is an ontology which represents knowledge about environments,environmental processes, ecosystems, habitats, and related entities",
     "iri": "http://purl.obolibrary.org/obo/envo.owl"
+  },
+  "biological sciences nrt": {
+    "label": "Biological Sciences",
+    "definition": "The division of the natural sciences that is concerned with the phenomenon of life and vital processes.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C16344"
   }
 }
