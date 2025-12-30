@@ -2153,5 +2153,10 @@
     "label": "vermicompost",
     "definition": "A compost that is the product of the decomposition process using various species of worms, usually red wigglers, white worms, and other earthworms, to create a mixture of decomposing vegetable or food waste, bedding materials, and vermicast.",
     "iri": "http://purl.obolibrary.org/obo/AGRO_00002042"
+  },
+  "abundance": {
+    "label": "Abundance",
+    "definition": "Relative degree of plentifulness.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C70589"
   }
 }
