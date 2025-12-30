@@ -1938,5 +1938,10 @@
     "label": "recent",
     "definition": "A quality of a process which occurs near to or not long before the present.",
     "iri": "http://purl.obolibrary.org/obo/PATO_0001484"
+  },
+  "overall": {
+    "label": "Overall",
+    "definition": "Including everything.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C25605"
   }
 }
