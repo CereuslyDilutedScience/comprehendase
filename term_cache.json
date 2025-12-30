@@ -2243,5 +2243,10 @@
     "label": "acts on population of",
     "definition": "p acts on population of c iff c' is a collection, has members of type c, and p has participant c",
     "iri": "http://purl.obolibrary.org/obo/RO_0012003"
+  },
+  "an increasingly common": {
+    "label": "an",
+    "definition": "A paste which is made from beans, grains, or other vegetables which are boiled, mashed, and diluted into a slurry which strained and then filtered, squeezed dry, and then usually sweetened.",
+    "iri": "http://purl.obolibrary.org/obo/FOODON_00002387"
   }
 }
