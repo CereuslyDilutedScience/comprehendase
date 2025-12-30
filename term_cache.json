@@ -6378,5 +6378,10 @@
     "label": "logarithm of the total number of bacterial colony forming units recovered",
     "definition": "The logarithm of the enumeration, i.e. measurement of the total number, of bacterial colony forming units (CFUs) in a specified sample of fluid removed from and/or solution used to wash the interior of a cavity in a body or an organ. A logarithm is the power to which a base, such as 10, must be raised to produce a given number. A bacterial CFU is an individual bacterium which is able to clonally propagate itself into an entire colony of identical cells.",
     "iri": "http://purl.obolibrary.org/obo/CMO_0002658"
+  },
+  "community were enterococcus,": {
+    "label": "Were Itchy Question",
+    "definition": "A question about whether an individual feels or felt itchy.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C136347"
   }
 }
