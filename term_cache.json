@@ -2138,5 +2138,10 @@
     "label": "Regardless",
     "definition": "Lacking consideration or without thoughtful attention.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C103851"
+  },
+  "external": {
+    "label": "External",
+    "definition": "Happening or arising or located outside or beyond some limits, or especially, some surface.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C44280"
   }
 }
