@@ -16983,5 +16983,10 @@
     "label": "Improved",
     "definition": "A subjective response indicating that something improved.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C125459"
+  },
+  "greengenes taxonomy with": {
+    "label": "Taxonomy",
+    "definition": "A structured representation of data about the classification and naming of biological organisms into groups according to shared characteristics.",
+    "iri": "https://w3id.org/evorao/Taxonomy"
   }
 }
