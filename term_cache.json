@@ -2228,5 +2228,10 @@
     "label": "Materials",
     "definition": "Material entity supplies, consumables, or chemicals used in the performance of scientific research",
     "iri": "http://champ-project.org/images/ontology/cao.owl#CAO_000150"
+  },
+  "metal": {
+    "label": "Metal",
+    "definition": "Electropositive chemical elements characterised by ductility, malleability, luster, and conductance of heat and electricity. They can replace the hydrogen of an acid and form bases with hydroxyl radicals.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C637"
   }
 }
