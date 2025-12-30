@@ -6783,5 +6783,10 @@
     "label": "similar spectrum",
     "definition": "A cross reference to another spectrum that has high spectral similarity with this one, usually assumed to originate from the same analyte ion.",
     "iri": "http://purl.obolibrary.org/obo/MS_1003262"
+  },
+  "of the same": {
+    "label": "Stayed the Same",
+    "definition": "A subjective response indicating that something is unchanged.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C125460"
   }
 }
