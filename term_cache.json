@@ -16883,5 +16883,10 @@
     "label": "Elimination Diets",
     "definition": "Temporary dietary restrictions designed to help identify specific foods or FOOD ADDITIVES that trigger ALLERGIC REACTIONS, symptoms of DIGESTIVE SYSTEM DISORDERS, or other adverse food reactions.",
     "iri": "http://id.nlm.nih.gov/mesh/D000092724"
+  },
+  "production of house": {
+    "label": "AWIK House Production (Czechia)",
+    "definition": "Company in Czechia",
+    "iri": "https://ror.org/0264aj944"
   }
 }
