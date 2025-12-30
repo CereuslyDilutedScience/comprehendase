@@ -1133,5 +1133,10 @@
     "label": "during",
     "definition": "During is the contextual role of an information object that is about something within a temporal range of a process. [Allotrope]",
     "iri": "http://purl.allotrope.org/ontologies/role#AFRL_0000094"
+  },
+  "raised": {
+    "label": "raised",
+    "definition": "A shape quality inhering in a colony by virtue of the bearer's appearing above the medium surface with terraced edges.",
+    "iri": "http://purl.obolibrary.org/obo/PATO_0001369"
   }
 }
