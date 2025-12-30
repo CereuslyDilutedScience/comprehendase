@@ -7063,5 +7063,10 @@
     "label": "Routine Cytogenetics Were not Completed",
     "definition": "A response that routine cytogenetic testing was not completed.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C160755"
+  },
+  "easily observed (table": {
+    "label": "Observed",
+    "definition": "Ascertained or determined through monitoring or observation.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C25599"
   }
 }
