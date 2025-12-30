@@ -1863,5 +1863,10 @@
     "label": "Lower",
     "definition": "To become lower, grow less, or diminish, as in amount, intensity, degree, or value.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C86568"
+  },
+  "inhibition": {
+    "label": "inhibition",
+    "definition": "The interaction between the proteins or the formation of a complex is disrupted by a biological molecule or by a modification of the interactors.",
+    "iri": "http://purl.obolibrary.org/obo/MI_0623"
   }
 }
