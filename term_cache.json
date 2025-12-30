@@ -4663,5 +4663,10 @@
     "label": "Genera (Croatia)",
     "definition": "Company in Croatia established in 1901",
     "iri": "https://ror.org/0518jvn15"
+  },
+  "varied between": {
+    "label": "Between",
+    "definition": "The space or interval separating two things.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C94545"
   }
 }
