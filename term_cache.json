@@ -15943,5 +15943,10 @@
     "label": "is supported by",
     "definition": "is supported by is a relation between a proposition and something that supports the truth of the assertion.",
     "iri": "http://semanticscience.org/resource/SIO_000206"
+  },
+  "usda national institute": {
+    "label": "National Eye Institute",
+    "definition": "An institute within the National Institutes of Health with the mission to conduct and support research, training, health information dissemination, and other programs with respect to blinding eye diseases, visual disorders, mechanisms of visual function, preservation of sight, and the special health problems and requirements of the blind.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C82611"
   }
 }
