@@ -539,5 +539,12 @@
     "label": "Respiratory",
     "definition": "Pertaining to respiration.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C25656"
+  },
+  "diseases in cattle": null,
+  "diseases in": null,
+  "diseases": {
+    "label": "Diseases",
+    "definition": "",
+    "iri": "http://purl.obolibrary.org/obo/mesh#C"
   }
 }
