@@ -2248,5 +2248,10 @@
     "label": "an",
     "definition": "A paste which is made from beans, grains, or other vegetables which are boiled, mashed, and diluted into a slurry which strained and then filtered, squeezed dry, and then usually sweetened.",
     "iri": "http://purl.obolibrary.org/obo/FOODON_00002387"
+  },
+  "industry for recycling": {
+    "label": "Institute for Information Industry",
+    "definition": "Nonprofit in Taiwan established in 1979",
+    "iri": "https://ror.org/01d8kr740"
   }
 }
