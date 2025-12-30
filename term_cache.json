@@ -1913,5 +1913,10 @@
     "label": "Phenomenon",
     "definition": "A fact or situation that is observed to exist.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C61380"
+  },
+  "minimal": {
+    "label": "minimal",
+    "definition": "Being smallest in amount, extent or degree.",
+    "iri": "http://purl.obolibrary.org/obo/PATO_0002123"
   }
 }
