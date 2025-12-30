@@ -2798,5 +2798,10 @@
     "label": "mrsA",
     "definition": "Probable phospho-sugar mutase / MrsA protein homolog",
     "iri": "http://purl.obolibrary.org/obo/OGG_3000887589"
+  },
+  "colonization. disposal of": {
+    "label": "Disposal",
+    "definition": "The act or means of getting rid of something.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C48166"
   }
 }
