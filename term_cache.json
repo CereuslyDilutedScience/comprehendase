@@ -1988,5 +1988,10 @@
     "label": "concentration",
     "definition": "A concentration (datum) is a quantification facet that quantifies a quality inhering in a substance by virtue of the amount of the bearer's there is mixed with another substance. [Allotrope]",
     "iri": "http://purl.allotrope.org/ontologies/result#AFR_0002036"
+  },
+  "degradation": {
+    "label": "degradation",
+    "definition": "Degradation is the state of changing in the qualities of a material under the influence of one or more environmental factors such as heat, light or chemicals such as acids, alkalies and some salts to a lower level of quality. [Allotrope]",
+    "iri": "http://purl.allotrope.org/ontologies/process#AFP_0003641"
   }
 }
