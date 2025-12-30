@@ -4993,5 +4993,10 @@
     "label": "pH-responsive transcription factors",
     "definition": "The pH-dependant transcription factors regulate the expression of antifungal resistance-conferring genes based on the pH of the environment.",
     "iri": "http://purl.obolibrary.org/obo/ARO_3007564"
+  },
+  "and the enzymatic": {
+    "label": "enzymatic",
+    "definition": "An attribute describing the sequence of a transcript that has catalytic activity with or without an associated ribonucleoprotein.",
+    "iri": "http://purl.obolibrary.org/obo/SO_0001185"
   }
 }
