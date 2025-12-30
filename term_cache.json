@@ -5558,5 +5558,10 @@
     "label": "Have Moderate Pain that Requires Medication",
     "definition": "A response indicating that an individual has moderate pain that requires medication to control.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C115231"
+  },
+  "effect on mrsa.": {
+    "label": "has effect on",
+    "definition": "'has effect on' is a special case of the 'is about' relationship to be used for mixed effect models",
+    "iri": "http://purl.obolibrary.org/obo/STATO_0000344"
   }
 }
