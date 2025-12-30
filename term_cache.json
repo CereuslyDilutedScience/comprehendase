@@ -1178,5 +1178,10 @@
     "label": "Spread",
     "definition": "The act of extending over a wider scope or expanse of space or time.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C61404"
+  },
+  "between": {
+    "label": "Between",
+    "definition": "The space or interval separating two things.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C94545"
   }
 }
