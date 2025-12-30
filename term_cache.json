@@ -97,5 +97,11 @@
     "label": "Leviviridae sp. isolate Levi-AGM03",
     "definition": "",
     "iri": "http://ictv.global/id/VMR1027322"
+  },
+  "sequence of mycoplasma": null,
+  "sequence": {
+    "label": "Sequence",
+    "definition": "A nucleic acid or protein sequence information.",
+    "iri": "https://w3id.org/evorao/Sequence"
   }
 }
