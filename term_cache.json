@@ -5553,5 +5553,10 @@
     "label": "Voltage Criteria Suggesting Left Ventricular Hypertrophy, Without Secondary ECG Findings",
     "definition": "An electrocardiographic finding of large QRS amplitudes that may indicate left ventricular hypertrophy, but is without any of the secondary findings that are typically seen with this diagnosis: left atrial enlargement, left axis deviation, or typical pattern of ST depression and T wave inversion.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C130067"
+  },
+  "that bsfl have": {
+    "label": "Have Moderate Pain that Requires Medication",
+    "definition": "A response indicating that an individual has moderate pain that requires medication to control.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C115231"
   }
 }
