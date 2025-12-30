@@ -15913,5 +15913,10 @@
     "label": "xlsx",
     "definition": "MS Excel spreadsheet format consisting of a set of XML documents stored in a ZIP-compressed file.",
     "iri": "http://edamontology.org/format_3620"
+  },
+  "mb. acknowledgments we": {
+    "label": "we",
+    "definition": "A second- or third-person pronoun for a person in the speaker's care.",
+    "iri": "http://purl.obolibrary.org/obo/GSSO_002476"
   }
 }
