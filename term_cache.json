@@ -8473,5 +8473,10 @@
     "label": "Prior to Study",
     "definition": "The time period before the study.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C175039"
+  },
+  "it was almost": {
+    "label": "Was It Worth It Questionnaire",
+    "definition": "A questionnaire designed to measure a patient's opinion of their participation in a phase II or III treatment trial and their decision making regarding treatment.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C125451"
   }
 }
