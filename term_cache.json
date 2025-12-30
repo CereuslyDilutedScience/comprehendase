@@ -2208,5 +2208,10 @@
     "label": "And/Or",
     "definition": "Used to indicate that either or both of two items or options may be valid.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C48928"
+  },
+  "characterization": {
+    "label": "Characterization",
+    "definition": "The act of describing distinctive characteristics or essential features.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C62606"
   }
 }
