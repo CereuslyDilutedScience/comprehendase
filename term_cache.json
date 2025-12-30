@@ -2173,5 +2173,10 @@
     "label": "SOAPP-R - Felt That Things Are Overwhelming",
     "definition": "Screener and Opioid Assessment for Patients with Pain - Revised (SOAPP-R) How often have you felt that things are just too overwhelming that you can't handle them?",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C100873"
+  },
+  "in these wastes": {
+    "label": "voiding of nitrogenous wastes",
+    "definition": "During the first day after feeding, deamination of amino acids produces excess nitrogen which is voided in the form of low molecular weight nitrogenous metabolites.",
+    "iri": "http://purl.obolibrary.org/obo/IDOMAL_0002046"
   }
 }
