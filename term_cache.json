@@ -16013,5 +16013,10 @@
     "label": "microbial community",
     "definition": "An ecological community which is composed of co-existing populations of microbial organisms that interact, directly or indirectly, such that they impact one another's ecological fitness.",
     "iri": "http://purl.obolibrary.org/obo/PCO_1000004"
+  },
+  "dynamics during rearing": {
+    "label": "rearing measurement",
+    "definition": "Any measurement of a movement in which a quadrupedal subject rises up on its back legs.",
+    "iri": "http://purl.obolibrary.org/obo/CMO_0001515"
   }
 }
