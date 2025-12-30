@@ -2313,5 +2313,10 @@
     "label": "Maintained",
     "definition": "Software has developers actively maintaining it (fixing bugs)",
     "iri": "http://www.ebi.ac.uk/swo/maturity/SWO_9000073"
+  },
+  "cornmeal": {
+    "label": "cornmeal",
+    "definition": "A meal (coarse flour) ground from dried corn (maize)",
+    "iri": "http://purl.obolibrary.org/obo/FOODON_03310257"
   }
 }
