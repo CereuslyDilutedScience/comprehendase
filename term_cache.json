@@ -2983,5 +2983,10 @@
     "label": "The Japan-Multinational Trial Organization",
     "definition": "Nonprofit in Japan established in 1999",
     "iri": "https://ror.org/0528hwm66"
+  },
+  "= 0.0023), both": {
+    "label": "Both",
+    "definition": "One and the other; relating to or being two in conjunction.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C49636"
   }
 }
