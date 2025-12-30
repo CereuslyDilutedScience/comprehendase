@@ -5363,5 +5363,10 @@
     "label": "to bind to",
     "definition": "to bind to is the capability to physically interact with another object through a set of non-covalent interactions.",
     "iri": "http://semanticscience.org/resource/SIO_000780"
+  },
+  "have contributed to": {
+    "label": "caused or contributed to by",
+    "definition": "A relationship between a condition (a phenotype or disease) and an entity (a genotype or genetic variation) where the entity has a causal role for the condition.",
+    "iri": "http://purl.obolibrary.org/obo/SCDO_0000660"
   }
 }
