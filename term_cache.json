@@ -1603,5 +1603,10 @@
     "label": "Proportion",
     "definition": "A part, fraction, share, or number considered in relation to the whole amount or number.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C49159"
+  },
+  "largest": {
+    "label": "Largest",
+    "definition": "Greatest in size of those under consideration.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C25550"
   }
 }
