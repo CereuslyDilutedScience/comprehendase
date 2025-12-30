@@ -3868,5 +3868,10 @@
     "label": "Genera (Croatia)",
     "definition": "Company in Croatia established in 1901",
     "iri": "https://ror.org/0518jvn15"
+  },
+  "were different by": {
+    "label": "different type",
+    "definition": "An evidence type concordance for evidence lines that are from different types.",
+    "iri": "http://purl.obolibrary.org/obo/CIO_0000038"
   }
 }
