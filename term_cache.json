@@ -1943,5 +1943,10 @@
     "label": "Overall",
     "definition": "Including everything.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C25605"
+  },
+  "include": {
+    "label": "Include",
+    "definition": "Add as part of something else; put in as part of a set, group, or category.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C74521"
   }
 }
