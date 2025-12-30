@@ -2193,5 +2193,10 @@
     "label": "uses",
     "definition": "A relation that is an inverse of \"used_in\" relation.",
     "iri": "http://purl.obolibrary.org/obo/ECO_9000001"
+  },
+  "process": {
+    "label": "process",
+    "definition": "An occurrent that has temporal proper parts and for some time t, p s-depends_on some material entity at t.",
+    "iri": "http://purl.obolibrary.org/obo/BFO_0000015"
   }
 }
