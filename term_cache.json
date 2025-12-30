@@ -2118,5 +2118,10 @@
     "label": "microbiome",
     "definition": "A collection or collectivity of microorganisms.",
     "iri": "http://www.ebi.ac.uk/efo/EFO_0004982"
+  },
+  "makeup": {
+    "label": "makeup",
+    "definition": "Any of various cosmetics that are applied to the face to enhance one's appearance.",
+    "iri": "http://purl.obolibrary.org/obo/GSSO_007553"
   }
 }
