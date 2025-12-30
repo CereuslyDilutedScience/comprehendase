@@ -573,5 +573,10 @@
     "label": "Sequencing Data",
     "definition": "A collection of digital nucleic acid sequences, protein sequences, or other polymer sequences stored on a computer.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C153329"
+  },
+  "remaining": {
+    "label": "Remaining",
+    "definition": "Enduring or persisting; residual, left over or behind.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C25649"
   }
 }
