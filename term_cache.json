@@ -2183,5 +2183,10 @@
     "label": "is equivalent to",
     "definition": "Property is a note about a proposed logical expression in order to describe the term as defined class. [Allotrope]",
     "iri": "http://purl.allotrope.org/ontologies/property#AFX_0002794"
+  },
+  "the food cycle": {
+    "label": "food cycle",
+    "definition": "A food web in which the outputs of a trophic interaction are consumed by organisms acting in a lower trophic level relative to the initial interaction.",
+    "iri": "http://purl.obolibrary.org/obo/ECOCORE_00000002"
   }
 }
