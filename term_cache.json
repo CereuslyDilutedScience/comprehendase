@@ -7328,5 +7328,10 @@
     "label": "increased apoptosis in larval aorta",
     "definition": "An increased occurrence of apoptotic process in larval aorta.",
     "iri": "http://purl.obolibrary.org/obo/XPO_0133802"
+  },
+  "materials and methods": {
+    "label": "materials and methods section",
+    "definition": "The materials and methods section is a document section containing a description of the materials and methods used in the study.",
+    "iri": "http://semanticscience.org/resource/SIO_000197"
   }
 }
