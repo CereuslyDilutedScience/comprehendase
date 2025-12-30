@@ -941,5 +941,21 @@
     "label": "Culture",
     "definition": "A pattern of learned beliefs, values, and behavior that are shared within a group. It includes language, styles of communication, practices, customs, and views on roles and relationships.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C16478"
+  },
+  "xby01 was centrifuged": null,
+  "was centrifuged at": null,
+  "was centrifuged": null,
+  "centrifuged at 12,000": null,
+  "centrifuged at": null,
+  "centrifuged": null,
+  "at 12,000 rpm": null,
+  "12,000 rpm for": null,
+  "12,000 rpm": null,
+  "rpm for 10": null,
+  "rpm for": null,
+  "rpm": {
+    "label": "Revolutions per minute (qualifier value)",
+    "definition": "",
+    "iri": "http://snomed.info/id/304618008"
   }
 }
