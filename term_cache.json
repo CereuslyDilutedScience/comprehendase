@@ -528,5 +528,10 @@
     "label": "Accepted",
     "definition": "Generally approved or used.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C62559"
+  },
+  "longest": {
+    "label": "Longest",
+    "definition": "Having the greater length of two or the greatest length of several.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C25558"
   }
 }
