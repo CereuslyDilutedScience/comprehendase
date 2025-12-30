@@ -6688,5 +6688,10 @@
     "label": "to bind to",
     "definition": "to bind to is the capability to physically interact with another object through a set of non-covalent interactions.",
     "iri": "http://semanticscience.org/resource/SIO_000780"
+  },
+  "for substrate with": {
+    "label": "Michaelis constant for substrate",
+    "definition": "Synonym: Kms",
+    "iri": "http://biomodels.net/SBO/SBO_0000322"
   }
 }
