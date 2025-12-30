@@ -2038,5 +2038,10 @@
     "label": "hyperactivity elicited by feed restriction",
     "definition": "increased activity after restriction of food",
     "iri": "http://purl.obolibrary.org/obo/MP_0012297"
+  },
+  "several species of": {
+    "label": "Several",
+    "definition": "An indefinite small quantity that is more than two but less than many.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C107221"
   }
 }
