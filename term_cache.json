@@ -3243,5 +3243,10 @@
     "label": "total number of bacterial colony forming units recovered",
     "definition": "The enumeration, i.e. measurement of the total number, of bacterial colony forming units (CFUs) in a specified sample of fluid removed from and/or solution used to wash the interior of a cavity in a body or an organ. A bacterial CFU is an individual bacterium which is able to clonally propagate itself into an entire colony of identical cells.",
     "iri": "http://purl.obolibrary.org/obo/CMO_0002657"
+  },
+  "counts. treatments had": {
+    "label": "counts",
+    "definition": "Counts are like ratio scale that they have a zero point but there are no meaningful fractional units. [Allotrope]",
+    "iri": "http://purl.allotrope.org/ontologies/result#AFR_0000915"
   }
 }
