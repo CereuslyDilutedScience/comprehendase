@@ -3113,5 +3113,10 @@
     "label": "number of a substrate",
     "definition": "The amount, expressed as a number, of a specific substrate comprising an entity pool. This may be expressed, for example, as the number of molecules, or the number of moles. The participant role 'substrate' is defined in SBO:0000015.",
     "iri": "http://biomodels.net/SBO/SBO_0000514"
+  },
+  "reference to mrsa": {
+    "label": "mrsA",
+    "definition": "Probable phospho-sugar mutase / MrsA protein homolog",
+    "iri": "http://purl.obolibrary.org/obo/OGG_3000887589"
   }
 }
