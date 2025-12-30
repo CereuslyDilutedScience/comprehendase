@@ -773,5 +773,10 @@
     "label": "Nome",
     "definition": "A person having origins in the original Nome people.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C44693"
+  },
+  "repeat": {
+    "label": "Repeat",
+    "definition": "Make or do or perform again.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C47886"
   }
 }
