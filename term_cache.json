@@ -2073,5 +2073,10 @@
     "label": "competitive relationship",
     "definition": "A relationship between two or more persons or groups which is competitive in nature.",
     "iri": "http://purl.obolibrary.org/obo/GSSO_012469"
+  },
+  "explanation": {
+    "label": "Explanation",
+    "definition": "A set of statements describing a group of facts that clarifies the cause, context and/or consequence of those facts.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C86073"
   }
 }
