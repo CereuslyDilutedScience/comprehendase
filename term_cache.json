@@ -853,5 +853,10 @@
     "label": "adoption",
     "definition": "A process whereby a person assumes the parenting of another, usually a child, from that person's biological or legal parent or parents.",
     "iri": "http://purl.obolibrary.org/obo/GSSO_003906"
+  },
+  "some": {
+    "label": "Some",
+    "definition": "At least a small amount or number of, but not a large amount of, or often.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C65099"
   }
 }
