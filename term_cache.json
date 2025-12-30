@@ -3568,5 +3568,10 @@
     "label": "counts",
     "definition": "Counts are like ratio scale that they have a zero point but there are no meaningful fractional units. [Allotrope]",
     "iri": "http://purl.allotrope.org/ontologies/result#AFR_0000915"
+  },
+  "substrates compared to": {
+    "label": "to be compared",
+    "definition": "to be compared is the capability of an object to be examined in order to note the similarities or differences among a set of objects.",
+    "iri": "http://semanticscience.org/resource/SIO_000722"
   }
 }
