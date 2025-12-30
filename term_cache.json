@@ -55,5 +55,15 @@
     "label": "Names",
     "definition": "",
     "iri": "http://purl.obolibrary.org/obo/OMIT_0010309"
+  },
+  "of the authors": null,
+  "the authors was": null,
+  "the authors": null,
+  "authors was determined": null,
+  "authors was": null,
+  "authors": {
+    "label": "authors",
+    "definition": "The list of authors.",
+    "iri": "https://w3id.org/evorao/authors"
   }
 }
