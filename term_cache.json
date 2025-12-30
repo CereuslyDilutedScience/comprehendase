@@ -1443,5 +1443,10 @@
     "label": "First",
     "definition": "Preceding all others in time or space or degree.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C25509"
+  },
+  "trial": {
+    "label": "Trial",
+    "definition": "A run or execution of an activity.\nFor example, one execution of a script.",
+    "iri": "https://w3id.org/reproduceme#Trial"
   }
 }
