@@ -16128,5 +16128,10 @@
     "label": "Hong Kong Organic Waste Recycling Centre",
     "definition": "Nonprofit in China established in 2011",
     "iri": "https://ror.org/02rqvg733"
+  },
+  "dev 35:261\u2013271. https://doi": {
+    "label": "DOI",
+    "definition": "A unique string identifier assigned to a digital object, providing a permanent link for reliable citation and access.  The Digital Object Identifier (DOI) is a persistent identifier that is an ISO standard.",
+    "iri": "https://w3id.org/evorao/Doi"
   }
 }
