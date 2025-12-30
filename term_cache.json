@@ -2828,5 +2828,10 @@
     "label": "Prevalent",
     "definition": "Widespread, especially in a particular area or at a particular time.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C159688"
+  },
+  "poisoning in both": {
+    "label": "Both",
+    "definition": "One and the other; relating to or being two in conjunction.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C49636"
   }
 }
