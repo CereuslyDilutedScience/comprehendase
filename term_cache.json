@@ -16183,5 +16183,10 @@
     "label": "antimicrobial",
     "definition": "A material entity with an antimicrobial disposition.",
     "iri": "http://purl.obolibrary.org/obo/IDO_0000558"
+  },
+  "effects and nutritional": {
+    "label": "Accidents and Adverse Effects",
+    "definition": "Causes of death attributable to accidents or their adverse events.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C105736"
   }
 }
