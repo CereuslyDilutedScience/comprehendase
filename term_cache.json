@@ -4383,5 +4383,10 @@
     "label": "Genera (Croatia)",
     "definition": "Company in Croatia established in 1901",
     "iri": "https://ror.org/0518jvn15"
+  },
+  "comprised by more": {
+    "label": "More",
+    "definition": "Greater in size, amount, extent, or degree.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C128667"
   }
 }
