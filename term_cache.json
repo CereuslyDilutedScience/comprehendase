@@ -7218,5 +7218,10 @@
     "label": "How Often had Stools That Were Loose or Liquid Question",
     "definition": "A question about how often an individual had stools that were loose or liquid.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C125025"
+  },
+  "inoculated with mrsa.": {
+    "label": "mrsA",
+    "definition": "Probable phospho-sugar mutase / MrsA protein homolog",
+    "iri": "http://purl.obolibrary.org/obo/OGG_3000887589"
   }
 }
