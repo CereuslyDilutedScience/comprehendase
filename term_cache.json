@@ -2318,5 +2318,10 @@
     "label": "it/it pronouns",
     "definition": "A pronoun set composed of it, its, and itself.",
     "iri": "http://purl.obolibrary.org/obo/GSSO_011533"
+  },
+  "is imperative to": {
+    "label": "is equivalent to",
+    "definition": "Property is a note about a proposed logical expression in order to describe the term as defined class. [Allotrope]",
+    "iri": "http://purl.allotrope.org/ontologies/property#AFX_0002794"
   }
 }
