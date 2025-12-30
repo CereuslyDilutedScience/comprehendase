@@ -16448,5 +16448,10 @@
     "label": "dairy",
     "definition": "A dairy is a building in which animal milk is harvested and, optionally, processed for human consumption.",
     "iri": "http://purl.obolibrary.org/obo/ENVO_00003862"
+  },
+  "manure.": {
+    "label": "manure",
+    "definition": "An environmental material consisting of organic matter from plants and/or animals that is used in agriculture as fertilizer.",
+    "iri": "http://purl.obolibrary.org/obo/ENVO_03501300"
   }
 }
