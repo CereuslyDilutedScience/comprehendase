@@ -1678,5 +1678,10 @@
     "label": "After Breakfast and Supper",
     "definition": "After breakfast and supper.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C64599"
+  },
+  "days": {
+    "label": "Some Days",
+    "definition": "A response indicating that an individual experiences or experienced something on some days.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C131735"
   }
 }
