@@ -3693,5 +3693,10 @@
     "label": "growth defective on low phosphate media",
     "definition": "Animals are unable to grow on media depleted of phosphate.",
     "iri": "http://purl.obolibrary.org/obo/WBPhenotype_0002235"
+  },
+  "in both inoculated": {
+    "label": "Both",
+    "definition": "One and the other; relating to or being two in conjunction.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C49636"
   }
 }
