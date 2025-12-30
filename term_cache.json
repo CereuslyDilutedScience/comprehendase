@@ -931,5 +931,15 @@
     "label": "fresh",
     "definition": "A raw characteristic of organism(s) or organism pieces(s) which show little or no sign of decay, and which have not been subjected to rehydration or thawing.",
     "iri": "http://purl.obolibrary.org/obo/FOODON_00004722"
+  },
+  "pplo broth culture": null,
+  "broth culture of": null,
+  "broth culture": null,
+  "culture of m.": null,
+  "culture of": null,
+  "culture": {
+    "label": "Culture",
+    "definition": "A pattern of learned beliefs, values, and behavior that are shared within a group. It includes language, styles of communication, practices, customs, and views on roles and relationships.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C16478"
   }
 }
