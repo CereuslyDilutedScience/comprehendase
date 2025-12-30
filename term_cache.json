@@ -15933,5 +15933,10 @@
     "label": "Society for Technical Communication",
     "definition": "Other in United States established in 1953",
     "iri": "https://ror.org/00rm8v059"
+  },
+  "assistance. this project": {
+    "label": "Histological Subtype Different, Pathology Review for this Project",
+    "definition": "The pathologic prescreen review for this project determined that the histologic subtype is different from the pathology report.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C125616"
   }
 }
