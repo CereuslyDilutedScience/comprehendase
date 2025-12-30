@@ -2143,5 +2143,10 @@
     "label": "External",
     "definition": "Happening or arising or located outside or beyond some limits, or especially, some surface.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C44280"
+  },
+  "bsf": {
+    "label": "bsf",
+    "definition": "The protein-coding gene bsf (bicoid stability factor) located on the chromosome 2L mapped at 36F5-36F5.",
+    "iri": "http://identifiers.org/ncbigene/35100"
   }
 }
