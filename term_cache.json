@@ -6748,5 +6748,10 @@
     "label": "mapped-identity",
     "definition": "Sequence has been computationally remapped following removal or update of the original sequence in the underlying sequence database.",
     "iri": "http://purl.obolibrary.org/obo/MI_1102"
+  },
+  "from 16s rrna": {
+    "label": "16S rRNA sequencing",
+    "definition": "16S ribosomal RNA sequencing is a sequencing method used to identify and compare bacteria present within a given sample. 16S rRNA gene sequencing is a well-established method for studying phylogeny and taxonomy of samples from complex microbiomes or environments that are difficult or impossible to study.",
+    "iri": "http://purl.obolibrary.org/obo/GENEPIO_0000053"
   }
 }
