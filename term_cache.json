@@ -278,5 +278,10 @@
     "label": "gene",
     "definition": "A gene is a material entity that represents the entire DNA sequence required for synthesis of a functional protein or RNA molecule.",
     "iri": "http://purl.obolibrary.org/obo/OGG_0000000002"
+  },
+  "after": {
+    "label": "after",
+    "definition": "T1 after t2 iff:= t2 before_or_simulataneous_with t1 and not (t1 simultaeous_with t2)",
+    "iri": "http://purl.obolibrary.org/obo/GENEPIO_0001739"
   }
 }
