@@ -2063,5 +2063,10 @@
     "label": "Low",
     "definition": "A minimum level or position or degree; less than normal in degree, intensity or amount.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C54722"
+  },
+  "documented": {
+    "label": "Documented",
+    "definition": "Furnished with or supported by documents and documentation.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C25356"
   }
 }
