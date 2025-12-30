@@ -2515,5 +2515,17 @@
     "label": "Comparative genomics",
     "definition": "The study (typically comparison) of the sequence, structure or function of multiple genomes.",
     "iri": "http://edamontology.org/topic_0797"
+  },
+  "of myco- plasma": null,
+  "of myco-": null,
+  "myco- plasma bovis": null,
+  "myco- plasma": null,
+  "myco-": null,
+  "plasma bovis strains": null,
+  "plasma bovis": null,
+  "plasma": {
+    "label": "plasma",
+    "definition": "Plasma is a state of matter in which an ionized gaseous substance becomes highly electrically conductive to the point that long-range electric and magnetic fields dominate the behavior of the matter. [Wikipedia]",
+    "iri": "http://purl.allotrope.org/ontologies/material#AFM_0000404"
   }
 }
