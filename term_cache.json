@@ -4363,5 +4363,10 @@
     "label": "suppression",
     "definition": "An effect in which two genetic perturbations, when combined, result in a phenotype that is less severe/penetrant than the most severe phenotype of the original perturbations, in effect making the organism more \"wild type\" in character with regards to the phenotype in question. With respect to any single quantifiable phenotype, this may be expressed as an inequality as:\na* < ab <= wt [E = a*]\nOR\nwt <= ab < a* [E = a*]\nwhere 'a*' is the most severe observed phenotype value of the individual perturbations, 'ab' is the observed phenotype value of the double perturbation, 'E' is the expected phenotype value of the double perturbation, and 'wt' is the wild type phenotype value.",
     "iri": "http://purl.obolibrary.org/obo/MI_0796"
+  },
+  "of mrsa by": {
+    "label": "mrsA",
+    "definition": "Probable phospho-sugar mutase / MrsA protein homolog",
+    "iri": "http://purl.obolibrary.org/obo/OGG_3000887589"
   }
 }
