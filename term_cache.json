@@ -2153,5 +2153,10 @@
     "label": "interest",
     "definition": "Interest is a positive emotion which motivates learning, exploration and curiosity. Feelings of interest are associated with the novelty and complexity of stimuli. [Source: OCEAS]",
     "iri": "http://purl.obolibrary.org/obo/MFOEM_000033"
+  },
+  "october 2022 september/october": {
+    "label": "October",
+    "definition": "The tenth month of the year in the Gregorian calendar.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C106189"
   }
 }
