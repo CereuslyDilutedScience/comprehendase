@@ -7598,5 +7598,10 @@
     "label": "dilution",
     "definition": "Dilution is the process of adding a solvent to a solution to lower its concentration. [Allotrope]",
     "iri": "http://purl.allotrope.org/ontologies/process#AFP_0000785"
+  },
+  "added to": {
+    "label": "material to be added",
+    "definition": "a material that is added to another one in a material combination process",
+    "iri": "http://purl.obolibrary.org/obo/OBI_1110108"
   }
 }
