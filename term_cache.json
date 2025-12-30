@@ -7053,5 +7053,10 @@
     "label": "dominant",
     "definition": "A phenotypic attribute is described as dominant when it is manifest in individuals heterozygous for the allele that causes that phenotype.",
     "iri": "http://purl.obolibrary.org/obo/FBcv_0000299"
+  },
+  "among bsfl-containing samples": {
+    "label": "Stand Among Friends",
+    "definition": "Nonprofit in United States established in 1997",
+    "iri": "https://ror.org/00r80b982"
   }
 }
