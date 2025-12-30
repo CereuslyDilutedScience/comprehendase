@@ -4228,5 +4228,10 @@
     "label": "Had No Pain",
     "definition": "A response indicating that an individual has or had no pain.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C119987"
+  },
+  "detectable staphylococci (below": {
+    "label": "Detectable",
+    "definition": "The capability of being noticed, identified or discovered.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C111567"
   }
 }
