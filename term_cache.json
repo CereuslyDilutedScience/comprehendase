@@ -5428,5 +5428,10 @@
     "label": "midgut",
     "definition": "Middle subdivision of a digestive tract[CJM]. In vertebrates: The middle part of the alimentary canal from the stomach, or entrance of the bile duct, to, or including, the large intestine[GO].",
     "iri": "http://purl.obolibrary.org/obo/UBERON_0001045"
+  },
+  "and hindgut": {
+    "label": "hindgut",
+    "definition": "The caudalmost subdivision of a digestive tract.",
+    "iri": "http://purl.obolibrary.org/obo/UBERON_0001046"
   }
 }
