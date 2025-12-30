@@ -6043,5 +6043,10 @@
     "label": "Not in Person",
     "definition": "Not involving or requiring an individual's personal presence.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C175575"
+  },
+  "the bsfl-treated substrates": {
+    "label": "number of substrates",
+    "definition": "Number of molecules which are acted upon by an enzyme.",
+    "iri": "http://biomodels.net/SBO/SBO_0000149"
   }
 }
