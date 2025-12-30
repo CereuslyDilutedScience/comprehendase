@@ -1,1 +1,10 @@
-{}
+{
+  "sequence of": null,
+  "of mycoplasma bovis": null,
+  "mycoplasma bovis strain": null,
+  "mycoplasma bovis": {
+    "label": "Mycoplasma bovis",
+    "definition": "",
+    "iri": "http://purl.obolibrary.org/obo/OMIT_0023647"
+  }
+}
