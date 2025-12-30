@@ -1813,5 +1813,10 @@
     "label": "Intestinal",
     "definition": "Of, or related to, or referring to the intestines.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C25266"
+  },
+  "tract": {
+    "label": "tract",
+    "definition": "A neuron projection bundle linking two or more synaptic neuropil domains or subdomains within the CNS.",
+    "iri": "http://purl.obolibrary.org/obo/FBbt_00005100"
   }
 }
