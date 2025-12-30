@@ -16558,5 +16558,10 @@
     "label": "assessing",
     "definition": "Assessing is evaluating or estimating a quality or behavior. [Allotrope]",
     "iri": "http://purl.allotrope.org/ontologies/process#AFP_0003538"
+  },
+  "reared on organic": {
+    "label": "Organic",
+    "definition": "A substance relating to or containing elemental carbon or carbon compounds.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C63848"
   }
 }
