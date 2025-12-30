@@ -16698,5 +16698,10 @@
     "label": "X ray",
     "definition": "Mutation induced by exposure to X rays.",
     "iri": "http://purl.obolibrary.org/obo/FBcv_0000518"
+  },
+  "irradiation. hortscience": {
+    "label": "irradiation",
+    "definition": "An energy transfer process during which a material entity receives energy through radiation.",
+    "iri": "http://purl.obolibrary.org/obo/ENVO_01003014"
   }
 }
