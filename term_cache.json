@@ -3523,5 +3523,10 @@
     "label": "sampling",
     "definition": "Sampling is the process of taking parts or partitions of an object aggregate or data set for the interest for studying it. [Allotrope]",
     "iri": "http://purl.allotrope.org/ontologies/process#AFP_0003634"
+  },
+  "the interactions of": {
+    "label": "decoupling in the presence of scalar interactions",
+    "definition": "A sequence of composite pulses designed to remove signal splitting due to heteronuclear J-couplings in multinuclear liquid NMR experiments. Also used to allow transfer of magnetisation between nuclei (by making the spins precess with at the same chemical shift and thus enjoy strong coupling\u2013-isotropic mixing). For the pulse sequence see J. Magn. Reson., (1988), 77, pg 274.",
+    "iri": "http://purl.obolibrary.org/obo/CHMO_0001846"
   }
 }
