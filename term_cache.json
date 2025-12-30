@@ -5623,5 +5623,10 @@
     "label": "containing",
     "definition": "Containing is the state of keeping an object in the inside of a cavity. [Allotrope]",
     "iri": "http://purl.allotrope.org/ontologies/process#AFP_0003623"
+  },
+  "bacterial counts dropped": {
+    "label": "counts",
+    "definition": "Counts are like ratio scale that they have a zero point but there are no meaningful fractional units. [Allotrope]",
+    "iri": "http://purl.allotrope.org/ontologies/result#AFR_0000915"
   }
 }
