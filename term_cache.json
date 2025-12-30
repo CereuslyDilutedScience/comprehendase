@@ -1548,5 +1548,10 @@
     "label": "Added",
     "definition": "Combined or joined to increase in size or quantity or scope.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C45330"
+  },
+  "room temperature": {
+    "label": "room temperature",
+    "definition": "The temperature of the air surrounding an organism which is considered the most common level for the facility. For humans the temperature considered most comfortable for a room is between 18 and 27 degrees celsius.",
+    "iri": "http://purl.obolibrary.org/obo/XCO_0000058"
   }
 }
