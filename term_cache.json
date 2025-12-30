@@ -274,5 +274,15 @@
     "label": "Important",
     "definition": "Of great significance, value, or consequence.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C115916"
+  },
+  "patho- gen that": null,
+  "patho- gen": null,
+  "patho-": null,
+  "gen that causes": null,
+  "gen that": null,
+  "gen": {
+    "label": "GEN",
+    "definition": "The GEN file format contains genetic data and describes SNPs.",
+    "iri": "http://edamontology.org/format_3812"
   }
 }
