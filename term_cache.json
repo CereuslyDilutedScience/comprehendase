@@ -2053,5 +2053,10 @@
     "label": "decreased",
     "definition": "The observed feature is decreased compared to that in the wild type (slower, weaker, lower, smaller, etc.).",
     "iri": "http://purl.obolibrary.org/obo/APO_0000003"
+  },
+  "prevalence": {
+    "label": "prevalence",
+    "definition": "prevalence is a ratio formed by the number of subjects diagnosed with a disease divided by the total population size.",
+    "iri": "http://purl.obolibrary.org/obo/STATO_0000412"
   }
 }
