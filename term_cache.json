@@ -4063,5 +4063,10 @@
     "label": "counts",
     "definition": "Counts are like ratio scale that they have a zero point but there are no meaningful fractional units. [Allotrope]",
     "iri": "http://purl.allotrope.org/ontologies/result#AFR_0000915"
+  },
+  "in samples from": {
+    "label": "in relation from",
+    "definition": "a in relation from b is a comparative relation in a is the object of reference in a relation with b.",
+    "iri": "http://semanticscience.org/resource/SIO_000892"
   }
 }
