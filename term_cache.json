@@ -663,5 +663,10 @@
     "label": "involved in",
     "definition": "C involved_in p if and only if c enables some process p', and p' is part of p [RO]",
     "iri": "http://purl.obolibrary.org/obo/RO_0002331"
+  },
+  "made": {
+    "label": "made",
+    "definition": "Something that was made by this agent.",
+    "iri": "http://xmlns.com/foaf/0.1/made"
   }
 }
