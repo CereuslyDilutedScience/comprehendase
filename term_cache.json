@@ -1338,5 +1338,14 @@
     "label": "Libraries",
     "definition": "",
     "iri": "http://purl.obolibrary.org/obo/OMIT_0009075"
+  },
+  "with an insert": null,
+  "an insert size": null,
+  "an insert": null,
+  "insert size of": null,
+  "insert size": {
+    "label": "Insert Size",
+    "definition": "The number of nucleotides inserted into a sequencing vector.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C180312"
   }
 }
