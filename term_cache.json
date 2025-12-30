@@ -3783,5 +3783,10 @@
     "label": "Observed",
     "definition": "Ascertained or determined through monitoring or observation.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C25599"
+  },
+  "difference was larger": {
+    "label": "Difference",
+    "definition": "The quality of being unlike or dissimilar.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C46003"
   }
 }
