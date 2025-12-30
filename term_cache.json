@@ -6358,5 +6358,10 @@
     "label": "Phenomenon",
     "definition": "A fact or situation that is observed to exist.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C61380"
+  },
+  "is minimal (36,": {
+    "label": "is minimal medium for",
+    "definition": "a relation between a culture medium and an organism, in wich the culture medium contains the minimal necessities for growth of the wild-type of that organism and contains only inorganic salts, a carbon source for that organism, and water.",
+    "iri": "http://purl.obolibrary.org/obo/omit.owl/MCO_0000866"
   }
 }
