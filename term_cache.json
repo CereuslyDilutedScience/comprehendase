@@ -1703,5 +1703,10 @@
     "label": "through",
     "definition": "A relation that holds between an interventions mechanism of action and an entity x, in which the entity x  participates in or is part of the mechanism of action process and is influenced by a BCI or its context such that there is some change in entity x.",
     "iri": "http://humanbehaviourchange.org/ontology/BCIOR_000008"
+  },
+  "rrna gene": {
+    "label": "rRNA gene",
+    "definition": "a RNA gene that encodes for a rRNA",
+    "iri": "http://purl.obolibrary.org/obo/OGG_0000000034"
   }
 }
