@@ -53,5 +53,10 @@
     "label": "Single",
     "definition": "Never married.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C150721"
+  },
+  "circular": {
+    "label": "circular",
+    "definition": "A shape quality inhering in a bearer by virtue of the bearer's being such that every part of the surface or the circumference is equidistant from the center.",
+    "iri": "http://purl.obolibrary.org/obo/PATO_0000411"
   }
 }
