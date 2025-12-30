@@ -7068,5 +7068,10 @@
     "label": "RESULTS and RESULTS Educational Fund",
     "definition": "Nonprofit in United States established in 1980",
     "iri": "https://ror.org/01kfs3w30"
+  },
+  "table 1 include": {
+    "label": "Include",
+    "definition": "Add as part of something else; put in as part of a set, group, or category.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C74521"
   }
 }
