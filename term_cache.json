@@ -1593,5 +1593,10 @@
     "label": "Unique",
     "definition": "The single one of its kind.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C45282"
+  },
+  "make": {
+    "label": "Make",
+    "definition": "Form from constituents.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C64661"
   }
 }
