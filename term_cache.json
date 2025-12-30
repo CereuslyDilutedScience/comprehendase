@@ -558,5 +558,10 @@
     "label": "to assemble",
     "definition": "to assemble is the capability to combine entities together into a larger object that persists in time.",
     "iri": "http://semanticscience.org/resource/SIO_000388"
+  },
+  "corrected": {
+    "label": "Corrected",
+    "definition": "Having had errors or mistakes removed.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C37934"
   }
 }
