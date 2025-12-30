@@ -1783,5 +1783,10 @@
     "label": "project",
     "definition": "A project is a planned process that is undertaken or attempted to meet some requirement. [Allotrope]",
     "iri": "http://purl.allotrope.org/ontologies/process#AFP_0003730"
+  },
+  "list": {
+    "label": "list",
+    "definition": "A list is an ordered collection of items. [Allotrope]",
+    "iri": "http://purl.allotrope.org/ontologies/common#AFC_0000160"
   }
 }
