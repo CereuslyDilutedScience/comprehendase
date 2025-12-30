@@ -3613,5 +3613,10 @@
     "label": "t-test p-value",
     "definition": "P-value of t-Test of two groups.",
     "iri": "http://purl.obolibrary.org/obo/MS_1001855"
+  },
+  "= 0.0027), while": {
+    "label": "Hyperkalemia while symptomatic",
+    "definition": "Increased concentration of potassium in the blood circulation specifically measured during a disease flareup, attack, or exacerbation.",
+    "iri": "http://purl.obolibrary.org/obo/HP_6000833"
   }
 }
