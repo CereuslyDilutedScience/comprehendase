@@ -3328,5 +3328,10 @@
     "label": "day 7 of adulthood",
     "definition": "7th day after eclosion.",
     "iri": "http://purl.obolibrary.org/obo/FBdv_00007082"
+  },
+  "however, the observed": {
+    "label": "Observed",
+    "definition": "Ascertained or determined through monitoring or observation.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C25599"
   }
 }
