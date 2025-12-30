@@ -2773,5 +2773,10 @@
     "label": "to investigate",
     "definition": "to investigate is the capability to uncover facts.",
     "iri": "http://semanticscience.org/resource/SIO_000408"
+  },
+  "bacterial community in": {
+    "label": "Community In Action",
+    "definition": "Nonprofit in United States established in 2009",
+    "iri": "https://ror.org/00q1wqg27"
   }
 }
