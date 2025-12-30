@@ -2783,5 +2783,10 @@
     "label": "response to the skin odours",
     "definition": "Aliphatic acids and other unidentified products of the skin surface serve as kairomones. Certain constituents or hydrolytic products of urine possibly also serve as kairomone.",
     "iri": "http://purl.obolibrary.org/obo/IDOMAL_0002108"
+  },
+  "of bsfl within": {
+    "label": "acts upstream of or within",
+    "definition": "C acts upstream of or within p if c is enables 'p' and p' causally upstream of or within p [RO]",
+    "iri": "http://purl.obolibrary.org/obo/RO_0002264"
   }
 }
