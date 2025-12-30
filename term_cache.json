@@ -1275,5 +1275,16 @@
     "label": "Coverage",
     "definition": "",
     "iri": "http://purl.org/dc/elements/1.1/coverage"
+  },
+  "sequencing was performed": null,
+  "sequencing was": null,
+  "was performed on": null,
+  "was performed": null,
+  "performed on the": null,
+  "performed on": null,
+  "performed": {
+    "label": "Performed",
+    "definition": "Executed and carried through to completion.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C38000"
   }
 }
