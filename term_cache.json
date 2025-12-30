@@ -7118,5 +7118,10 @@
     "label": "top",
     "definition": "Someone, typically a man, who is penetrating someone else during sexual intercourse or someone who has a preference for penetrating during such intercourse.",
     "iri": "http://purl.obolibrary.org/obo/GSSO_000346"
+  },
+  "bacterial genera found": {
+    "label": "Genera (Croatia)",
+    "definition": "Company in Croatia established in 1901",
+    "iri": "https://ror.org/0518jvn15"
   }
 }
