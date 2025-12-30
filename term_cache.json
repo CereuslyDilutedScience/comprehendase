@@ -1523,5 +1523,10 @@
     "label": "Excluded",
     "definition": "Present in 0% of the cases.",
     "iri": "http://purl.obolibrary.org/obo/HP_0040285"
+  },
+  "difference between": {
+    "label": "difference between",
+    "definition": "A relation that holds between an effect estimate and two outcome estimates",
+    "iri": "http://humanbehaviourchange.org/ontology/BCIOR_000007"
   }
 }
