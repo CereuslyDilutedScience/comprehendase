@@ -8393,5 +8393,10 @@
     "label": "counts",
     "definition": "Counts are like ratio scale that they have a zero point but there are no meaningful fractional units. [Allotrope]",
     "iri": "http://purl.allotrope.org/ontologies/result#AFR_0000915"
+  },
+  "recorded as the": {
+    "label": "recorded",
+    "definition": "A categorical choice indicating that a datum is available for retrieval.",
+    "iri": "http://purl.obolibrary.org/obo/GENEPIO_0001851"
   }
 }
