@@ -5133,5 +5133,10 @@
     "label": "Somatostatin [Presence] in Plasma",
     "definition": "A procedure that that detects somatostatin in a plasma specimen.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C193593"
+  },
+  "this is consistent": {
+    "label": "Consistent",
+    "definition": "Marked by a reasonable or logical relation of parts and holding together as a harmonious or credible whole.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C85901"
   }
 }
