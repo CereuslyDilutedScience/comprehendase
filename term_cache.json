@@ -1843,5 +1843,10 @@
     "label": "present",
     "definition": "A quality inhering in a bearer by virtue of the bearer's existence.",
     "iri": "http://purl.obolibrary.org/obo/PATO_0000467"
+  },
+  "\ufb01ndings con\ufb01rm antimicrobial": {
+    "label": "antimicrobial",
+    "definition": "A material entity with an antimicrobial disposition.",
+    "iri": "http://purl.obolibrary.org/obo/IDO_0000558"
   }
 }
