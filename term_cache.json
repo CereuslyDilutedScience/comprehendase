@@ -1795,5 +1795,20 @@
     "label": "multiple",
     "definition": "A quality inhering in a bearer by virtue of the bearer's being present in more than two copies.",
     "iri": "http://purl.obolibrary.org/obo/PATO_0002118"
+  },
+  "k-mer parameters, and": null,
+  "k-mer parameters,": null,
+  "parameters, and we": null,
+  "parameters, and": null,
+  "parameters,": null,
+  "and we accepted": null,
+  "we accepted the": null,
+  "we accepted": null,
+  "accepted the assembly": null,
+  "accepted the": null,
+  "accepted": {
+    "label": "Accepted",
+    "definition": "Generally approved or used.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C62559"
   }
 }
