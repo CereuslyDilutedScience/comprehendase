@@ -3208,5 +3208,10 @@
     "label": "Skin Between the Eyebrows",
     "definition": "The integumentary covering located medial to the orbital ridges and superior to the nose.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C142317"
+  },
+  "these two variables": {
+    "label": "SeroNet Variables",
+    "definition": "Terms that have been designated as being a variable within the SeroNet terminology.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C179026"
   }
 }
