@@ -205,5 +205,24 @@
     "label": "Content",
     "definition": "Everything that is included in a collection, container, or communication.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C44476"
+  },
+  "29.30%. m ycoplasma": null,
+  "m ycoplasma bovis": null,
+  "m ycoplasma": null,
+  "ycoplasma bovis is": null,
+  "ycoplasma bovis": null,
+  "ycoplasma": null,
+  "bovis is a": null,
+  "bovis is": null,
+  "bovis": null,
+  "a wall-less bacterium": null,
+  "wall-less bacterium with": null,
+  "wall-less bacterium": null,
+  "bacterium with zoonotic": null,
+  "bacterium with": null,
+  "bacterium": {
+    "label": "Bacterium",
+    "definition": "The bacterium as a biological material.",
+    "iri": "https://w3id.org/evorao/Bacterium"
   }
 }
