@@ -8403,5 +8403,10 @@
     "label": "CFU reduction assay",
     "definition": "CFU reduction assay is an assay that measures the reduction of the colony forming units of infected pathogens in vaccine-vaccinated animals compared to nonvaccinated animals.",
     "iri": "http://purl.obolibrary.org/obo/VO_0000242"
+  },
+  "per gram of": {
+    "label": "Gram per Gram",
+    "definition": "A unit of a mass fraction expressed as a number of grams of substance per gram of mixture. The unit is also used as a dose calculation unit.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C70453"
   }
 }
