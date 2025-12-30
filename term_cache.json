@@ -2283,5 +2283,10 @@
     "label": "Agriculture and Food",
     "definition": "Facility in Australia",
     "iri": "https://ror.org/03n17ds51"
+  },
+  "industries (2). capturing": {
+    "label": "capturing behaviour",
+    "definition": "Suite of behaviors involved in securing a prey item once it has been located.",
+    "iri": "http://purl.obolibrary.org/obo/NBO_0020292"
   }
 }
