@@ -2938,5 +2938,10 @@
     "label": "Difference",
     "definition": "The quality of being unlike or dissimilar.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C46003"
+  },
+  "among the trials": {
+    "label": "C.I. Trials",
+    "definition": "Facility in United States",
+    "iri": "https://ror.org/05hc6gd57"
   }
 }
