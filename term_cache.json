@@ -363,5 +363,10 @@
     "label": "sequencing",
     "definition": "Refers to the level of sequencing performed on the nucleic acid. Possible values include 'Not sequenced' (no sequencing has been performed), 'Partly sequenced' (only a portion of the nucleic acid sequence has been determined), and 'Fully sequenced' (the entire nucleic acid sequence has been determined).",
     "iri": "https://w3id.org/evorao/sequencing"
+  },
+  "data analysis": {
+    "label": "data analysis",
+    "definition": "A process of inspecting, cleaning, transforming, and modeling data with the goal of highlighting useful information, suggesting conclusions, and supporting decision making.",
+    "iri": "http://semanticscience.org/resource/SIO_001051"
   }
 }
