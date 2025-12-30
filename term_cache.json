@@ -7078,5 +7078,10 @@
     "label": "High",
     "definition": "An elevated level or position or degree; greater than normal in degree or intensity or amount.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C25227"
+  },
+  "prevalence of weissella": {
+    "label": "prevalence of malaria",
+    "definition": "The number of malaria cases existing in a given population at any given time.",
+    "iri": "http://purl.obolibrary.org/obo/IDOMAL_0000019"
   }
 }
