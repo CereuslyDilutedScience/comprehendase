@@ -4613,5 +4613,10 @@
     "label": "Shannon diversity index",
     "definition": "A community species diversity metric that accounts for both the abundance and evenness of the species present quantified via the following formula: the negative sum of, the product of the proportion of species i relative to the total number of species (pi) multiplied by the natural logarithm of this proportion (ln pi).",
     "iri": "http://purl.obolibrary.org/obo/PCO_0000062"
+  },
+  "0.99 for all": {
+    "label": "Science for All",
+    "definition": "Nonprofit in Australia established in 2018",
+    "iri": "https://ror.org/0282y0p95"
   }
 }
