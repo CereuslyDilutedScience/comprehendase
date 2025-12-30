@@ -1888,5 +1888,10 @@
     "label": "biological measurement method",
     "definition": "The determination of the relative strength of a substance (e.g., a drug or hormone or toxicant) by comparing its effect on a test organism with that of a standard preparation. [Wikipedia]",
     "iri": "http://purl.allotrope.org/ontologies/process#AFP_0001116"
+  },
+  "conversion of animal": {
+    "label": "Conversion",
+    "definition": "PEFF keyword for the description of the conversion from original format to this current one.",
+    "iri": "http://purl.obolibrary.org/obo/PEFF_0000016"
   }
 }
