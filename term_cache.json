@@ -16943,5 +16943,10 @@
     "label": "Phylogenetic inference (from molecular sequences)",
     "definition": "Phylogenetic tree construction from molecular sequences.",
     "iri": "http://edamontology.org/operation_0540"
+  },
+  "high-throughput sequencing reads.": {
+    "label": "high-throughput sequencing",
+    "definition": "A method that uses high-throughput sequencing for this assay.",
+    "iri": "http://purl.obolibrary.org/obo/FBcv_0003211"
   }
 }
