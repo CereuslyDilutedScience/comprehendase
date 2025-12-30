@@ -6308,5 +6308,10 @@
     "label": "change in cell membrane potential",
     "definition": "Measurement of any change in the difference in electrical polarization or charge between two sides of a cell membrane or cell wall over time or after a change in conditions.",
     "iri": "http://purl.obolibrary.org/obo/CMO_0001018"
+  },
+  "disruption and subsequent": {
+    "label": "Disruption of Subsequent Medical Procedure due to Device",
+    "definition": "Situation in which the use of the device impedes or affects a subsequent medical procedure or use of a medicine or device.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C171966"
   }
 }
