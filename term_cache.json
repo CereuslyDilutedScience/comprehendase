@@ -78,5 +78,10 @@
     "label": "zoonotic",
     "definition": "A disease that can be transmitted from animals to people.",
     "iri": "http://purl.obolibrary.org/obo/IDOMAL_0000023"
+  },
+  "family": {
+    "label": "family",
+    "definition": "A domestic group, or a number of domestic groups linked through descent (demonstrated or stipulated) from a common ancestor, marriage, or adoption.",
+    "iri": "http://purl.obolibrary.org/obo/PCO_0000020"
   }
 }
