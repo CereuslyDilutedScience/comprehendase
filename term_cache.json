@@ -16093,5 +16093,10 @@
     "label": "Prior to Study",
     "definition": "The time period before the study.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C175039"
+  },
+  "reduce pathogen content.": {
+    "label": "reduce activity",
+    "definition": "Halting or diminution of activity to minimize detection by predator.",
+    "iri": "http://purl.obolibrary.org/obo/NBO_0020175"
   }
 }
