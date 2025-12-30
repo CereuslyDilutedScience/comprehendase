@@ -6773,5 +6773,10 @@
     "label": "BEBQ Concurrent Version - Baby Would Always Be Feeding",
     "definition": "Baby Eating Behaviour Questionnaire Concurrent Version (BEBQ Concurrent Version) If given the chance, my baby would always be feeding.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C135790"
+  },
+  "fewer if mrsa": {
+    "label": "mrsA",
+    "definition": "Probable phospho-sugar mutase / MrsA protein homolog",
+    "iri": "http://purl.obolibrary.org/obo/OGG_3000887589"
   }
 }
