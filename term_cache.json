@@ -16328,5 +16328,10 @@
     "label": "bleomycin resistance protein (Staphylococcus aureus)",
     "definition": "A bleomycin resistance protein that is encoded in the genome of Staphylococcus aureus.",
     "iri": "http://purl.obolibrary.org/obo/PR_Q7DJ53"
+  },
+  "from raw milk": {
+    "label": "Monterey Jack cheese made from raw milk",
+    "definition": "SIREN DB annotation:\n* solid FOODON:03430151\n* not heat-treated FOODON:03440003\n* curd FOODON:03420245\n* lactic acid-other agent fermentation process FOODON:03460107\n* curing or aging process FOODON:03460253",
+    "iri": "http://purl.obolibrary.org/obo/FOODON_03311068"
   }
 }
