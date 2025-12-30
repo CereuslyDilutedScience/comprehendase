@@ -16738,5 +16738,10 @@
     "label": "Survey",
     "definition": "A document used in a method of data collection that involves interviewing (or giving questionnaires to) a representative and often large group of people.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C17176"
+  },
+  "of the mycobiota": {
+    "label": "Fragmentation of the epiphyses of the phalanges of the hand",
+    "definition": "Fragmented appearance of the epiphyses of the phalanges of the fingers.",
+    "iri": "http://purl.obolibrary.org/obo/HP_0010232"
   }
 }
