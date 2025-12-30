@@ -2026,5 +2026,26 @@
     "label": "Final",
     "definition": "Conclusive in a process or progression.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C25508"
+  },
+  "assembly results. the": null,
+  "assembly results.": null,
+  "results. the complete": null,
+  "results. the": null,
+  "results.": null,
+  "xby01 was obtained,": null,
+  "was obtained, with": null,
+  "was obtained,": null,
+  "obtained, with a": null,
+  "obtained, with": null,
+  "obtained,": null,
+  "with a mean": null,
+  "a mean gc": null,
+  "a mean": null,
+  "mean gc content": null,
+  "mean gc": null,
+  "mean": {
+    "label": "mean",
+    "definition": "The arithmetic mean.",
+    "iri": "http://purl.obolibrary.org/obo/MS_1002962"
   }
 }
