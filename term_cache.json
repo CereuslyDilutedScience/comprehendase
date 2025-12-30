@@ -16848,5 +16848,10 @@
     "label": "soldier",
     "definition": "A person who fights as part of an army. A soldier can be a conscripted or volunteer enlisted person, a non-commissioned officer, or an officer.",
     "iri": "http://purl.obolibrary.org/obo/GSSO_005823"
+  },
+  "envisaging practical applications.": {
+    "label": "Practical Domain",
+    "definition": "A domain of the General Adaptive Composite Score that is made up of scores from self-care, home/school living, community use, and health and safety skills assessments.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C121208"
   }
 }
