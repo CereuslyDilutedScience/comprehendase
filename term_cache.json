@@ -2693,5 +2693,10 @@
     "label": "Previous Research Experience Indicator",
     "definition": "An indication as to whether the study subject has been in a previous study.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C158348"
+  },
+  "a reduction in": {
+    "label": "Reduction in Life Expectancy",
+    "definition": "Decrease in lifetime/ lifespan of an individual. Decline in the normal duration or in average life.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C172027"
   }
 }
