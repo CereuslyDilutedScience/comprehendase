@@ -1613,5 +1613,10 @@
     "label": "note",
     "definition": "An aditional information as a textual comment.",
     "iri": "http://www.w3.org/2004/02/skos/core#note"
+  },
+  "scale": {
+    "label": "scale",
+    "definition": "A modified seta comprised of a slender basal stalk, pedicel, and an expanded and/or flattened distal part, squame; all scales have longitudinal ridges and arise from alveoli which are usually minute. Two main types of scales are recognized in mosquitoes by cross section of the squame. If the squame is round or elliptical, the scale is pilliform; if it is thin and flat, the scale is lamellar.",
+    "iri": "http://purl.obolibrary.org/obo/CLAO_0001102"
   }
 }
