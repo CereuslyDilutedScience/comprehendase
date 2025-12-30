@@ -6988,5 +6988,10 @@
     "label": "Data Not Evaluable",
     "definition": "An indication that the existing data cannot be evaluated.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C186292"
+  },
+  "shown). there is": {
+    "label": "Is there a Cancer History Question",
+    "definition": "A question about whether a history of cancer exists.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C158728"
   }
 }
