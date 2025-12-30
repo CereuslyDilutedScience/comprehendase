@@ -8003,5 +8003,10 @@
     "label": "Not Done",
     "definition": "Indicates a task, process or examination that has either not been initiated or not been completed.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C49484"
+  },
+  "to avoid damaging": {
+    "label": "damaging",
+    "definition": "Damaging is a subtype of changing structure: A process that injuries the structure as the direct or indirect result of an external force.",
+    "iri": "http://purl.obolibrary.org/obo/TXPO_0000222"
   }
 }
