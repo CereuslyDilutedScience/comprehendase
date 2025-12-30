@@ -16063,5 +16063,10 @@
     "label": "C-C-aminocarbonohydrazonoylation",
     "definition": "Formation of a covalent bond between a carbon atom in a substrate and a C-aminocarbonohydrazonoyl group.",
     "iri": "http://purl.obolibrary.org/obo/MOP_0005096"
+  },
+  "of edible insects": {
+    "label": "Edible Insects",
+    "definition": "Organisms of the INSECTA class that are used as food or are suitable as a nutritional source, especially by humans.",
+    "iri": "http://id.nlm.nih.gov/mesh/D000080702"
   }
 }
