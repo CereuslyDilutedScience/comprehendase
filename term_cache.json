@@ -498,5 +498,12 @@
     "label": "Within",
     "definition": "On the inside; contained in.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C25282"
+  },
+  "hosts (3). in": null,
+  "hosts (3).": null,
+  "hosts": {
+    "label": "hosts",
+    "definition": "Relation between a Platform and a Sensor, Actuator, Sampler, or Platform, hosted or mounted on it.",
+    "iri": "http://www.w3.org/ns/sosa/hosts"
   }
 }
