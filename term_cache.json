@@ -1923,5 +1923,10 @@
     "label": "complex-properties",
     "definition": "Information on the complex being annotated. Attribute generally associated to an interaction.",
     "iri": "http://purl.obolibrary.org/obo/MI_0629"
+  },
+  "suppression of several": {
+    "label": "Several",
+    "definition": "An indefinite small quantity that is more than two but less than many.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C107221"
   }
 }
