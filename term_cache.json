@@ -2548,5 +2548,10 @@
     "label": "Animals and Society Institute",
     "definition": "Nonprofit in United States established in 1983",
     "iri": "https://ror.org/03p26k524"
+  },
+  "matter (18). it": {
+    "label": "it/it pronouns",
+    "definition": "A pronoun set composed of it, its, and itself.",
+    "iri": "http://purl.obolibrary.org/obo/GSSO_011533"
   }
 }
