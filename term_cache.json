@@ -2348,5 +2348,10 @@
     "label": "Centre for Industrial Technological Development",
     "definition": "Nonprofit in Spain established in 1977",
     "iri": "https://ror.org/0124x7055"
+  },
+  "rearing includes bioconversion": {
+    "label": "rearing measurement",
+    "definition": "Any measurement of a movement in which a quadrupedal subject rises up on its back legs.",
+    "iri": "http://purl.obolibrary.org/obo/CMO_0001515"
   }
 }
