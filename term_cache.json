@@ -2148,5 +2148,10 @@
     "label": "other animals exposure",
     "definition": "Treatment involving the exposure of plant to the pests that do not falll under the well known classes of birds, mammals, insects, nematode and molluscs.",
     "iri": "http://purl.obolibrary.org/obo/PECO_0007084"
+  },
+  "and a variety": {
+    "label": "Variety",
+    "definition": "In botanical nomenclature, a rank below subspecies but above forma.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C62709"
   }
 }
