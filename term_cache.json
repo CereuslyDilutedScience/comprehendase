@@ -6248,5 +6248,10 @@
     "label": "Self-Esteem Not What it Could be Question",
     "definition": "A question about whether an individual's self-esteem is or was not what it could be.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C175919"
+  },
+  "expected that bacterial": {
+    "label": "Expected",
+    "definition": "Considered likely or probable; anticipated.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C25501"
   }
 }
