@@ -7733,5 +7733,10 @@
     "label": "Preparation",
     "definition": "The act or process of making something ready.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C25625"
+  },
+  "of the larvae": {
+    "label": "collection of larvae",
+    "definition": "Any method designed to collect (and later examine) live larvae from a field population.",
+    "iri": "http://purl.obolibrary.org/obo/MIRO_30000022"
   }
 }
