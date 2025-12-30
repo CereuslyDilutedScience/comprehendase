@@ -4378,5 +4378,10 @@
     "label": "Age in Days When Lost to Follow-up",
     "definition": "Age of subject (in days) when the subject was lost to follow-up.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C172679"
+  },
+  "compared the genera": {
+    "label": "Genera (Croatia)",
+    "definition": "Company in Croatia established in 1901",
+    "iri": "https://ror.org/0518jvn15"
   }
 }
