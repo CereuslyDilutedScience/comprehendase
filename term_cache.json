@@ -5593,5 +5593,10 @@
     "label": "Ulceration is Present",
     "definition": "A result that ulceration is present",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C160707"
+  },
+  "(13). similar results": {
+    "label": "RESULTS and RESULTS Educational Fund",
+    "definition": "Nonprofit in United States established in 1980",
+    "iri": "https://ror.org/01kfs3w30"
   }
 }
