@@ -1353,5 +1353,10 @@
     "label": "Public Health",
     "definition": "The science and practice of protecting and improving the health of a community, as by preventive medicine, health education, control of communicable diseases, application of sanitary measures, and monitoring of environmental hazards.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C17039"
+  },
+  "goal": {
+    "label": "goal",
+    "definition": "A <cognitive representation> of an end state towards which one is striving.",
+    "iri": "http://humanbehaviourchange.org/ontology/BCIO_006049"
   }
 }
