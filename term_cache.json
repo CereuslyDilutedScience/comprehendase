@@ -2418,5 +2418,10 @@
     "label": "damaging",
     "definition": "Damaging is a subtype of changing structure: A process that injuries the structure as the direct or indirect result of an external force.",
     "iri": "http://purl.obolibrary.org/obo/TXPO_0000222"
+  },
+  "creating": {
+    "label": "creating",
+    "definition": "creating is the process in which an entity comes into existence.",
+    "iri": "http://semanticscience.org/resource/SIO_000588"
   }
 }
