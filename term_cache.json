@@ -6013,5 +6013,10 @@
     "label": "None of These Describe Me",
     "definition": "A response indicating that an individual feels that no option listed is a good description for them.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C177109"
+  },
+  "starch chains over": {
+    "label": "starch",
+    "definition": "The most important reserve polysaccharide found in plants. It is a glucan consisting of amylose and amylopectin.",
+    "iri": "http://purl.obolibrary.org/obo/CHEBI_28017"
   }
 }
