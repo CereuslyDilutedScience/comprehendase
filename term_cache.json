@@ -7268,5 +7268,10 @@
     "label": "bacteriostatic",
     "definition": "Static agent bearing a bacteriostatic disposition.",
     "iri": "http://purl.obolibrary.org/obo/IDO_0001040"
+  },
+  "capabilities due": {
+    "label": "abnormal motor capabilities/coordination/movement",
+    "definition": "altered ability to coordinate voluntary movement or repetitive, compulsive movements",
+    "iri": "http://purl.obolibrary.org/obo/MP_0002066"
   }
 }
