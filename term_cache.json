@@ -6333,5 +6333,10 @@
     "label": "Label as Such",
     "definition": "An instruction for product to be labeled as explicitly directed.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C64662"
+  },
+  "defensins are capable": {
+    "label": "Defensins",
+    "definition": "Highly conserved cysteine-rich peptides that play a role in host defense, and may be produced in response to microbial products or proinflammatory cytokines. Defensins bind to microbial cell membranes and can become aggregate either to form pore-like structures or to encapsulate the microbe. These peptide aggregates lead to destabilization of the cell membrane and, subsequently, to lysis of the microbe.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C1063"
   }
 }
