@@ -4648,5 +4648,10 @@
     "label": "Appropriate Health Impact Term/Code Not Available",
     "definition": "There is no appropriate Health Impact term or code.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C171944"
+  },
+  "diversity indices following": {
+    "label": "Diversity",
+    "definition": "Variety; quality, state, fact, or instance of being different.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C62263"
   }
 }
