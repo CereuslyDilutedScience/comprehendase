@@ -2623,5 +2623,10 @@
     "label": "Not Limited at All",
     "definition": "A response indicating that an individual does not feel limited at all.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C110985"
+  },
+  "dairy,": {
+    "label": "dairy",
+    "definition": "A dairy is a building in which animal milk is harvested and, optionally, processed for human consumption.",
+    "iri": "http://purl.obolibrary.org/obo/ENVO_00003862"
   }
 }
