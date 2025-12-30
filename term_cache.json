@@ -403,5 +403,10 @@
     "label": "Mode",
     "definition": "The value which occurs most often in a set of values. If no value is repeated, there is no mode. If more than one value occurs with the same greatest frequency, each value is a mode.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C53320"
+  },
+  "paired-end sequencing": {
+    "label": "Paired-End Sequencing",
+    "definition": "A DNA sequencing strategy where a single read is initiated from each end of a DNA fragment.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C150423"
   }
 }
