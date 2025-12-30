@@ -16703,5 +16703,10 @@
     "label": "irradiation",
     "definition": "An energy transfer process during which a material entity receives energy through radiation.",
     "iri": "http://purl.obolibrary.org/obo/ENVO_01003014"
+  },
+  "acid produced by": {
+    "label": "produced by",
+    "definition": "a produced_by b iff some process that occurs_in b has_output a.",
+    "iri": "http://purl.obolibrary.org/obo/RO_0003001"
   }
 }
