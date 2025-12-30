@@ -1568,5 +1568,10 @@
     "label": "harvested crop",
     "definition": "A crop that has been harvested after an harvesting process.",
     "iri": "http://purl.obolibrary.org/obo/AGRO_00002049"
+  },
+  "be a serious": {
+    "label": "Worry that Skin Condition May Be Serious",
+    "definition": "A response indicating that an individual worries that their skin condition may be serious.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C172759"
   }
 }
