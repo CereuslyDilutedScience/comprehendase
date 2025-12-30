@@ -4633,5 +4633,10 @@
     "label": "Few",
     "definition": "An indefinite but relatively small number.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C64942"
+  },
+  "sampling depth did": {
+    "label": "sampling depth setting",
+    "definition": "A sampling depth setting is a control setting that specifies the focal depth of a probing signal. [Allotrope]",
+    "iri": "http://purl.allotrope.org/ontologies/result#AFR_0002933"
   }
 }
