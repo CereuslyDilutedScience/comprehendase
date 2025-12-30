@@ -348,5 +348,10 @@
     "label": "software",
     "definition": "Software is a plan specification composed of a series of instructions that can be \ninterpreted by or directly executed by a processing unit.",
     "iri": "http://purl.obolibrary.org/obo/IAO_0000010"
+  },
+  "default parameters": {
+    "label": "default parameters",
+    "definition": "It is possible that this really should be a class instead of an individual, namely the class of all default parameter specifications (which would then have instances specific to programs).",
+    "iri": "http://purl.obolibrary.org/obo/MIAPA_0000012"
   }
 }
