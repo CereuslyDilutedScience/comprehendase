@@ -5168,5 +5168,10 @@
     "label": "by",
     "definition": "The protein-coding gene by (blistery) located on the chromosome 3R mapped at 85D19-85D22|3-48.7 cM.",
     "iri": "http://identifiers.org/ncbigene/41144"
+  },
+  "in the present": {
+    "label": "Chief Complaint Present in the Afternoon",
+    "definition": "The chief complaint is noted to primarily occur after noon but before sunset.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C168167"
   }
 }
