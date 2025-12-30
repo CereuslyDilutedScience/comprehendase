@@ -338,5 +338,10 @@
     "label": "Construct",
     "definition": "An abstract or general idea inferred or derived from specific instances.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C84378"
+  },
+  "fragment": {
+    "label": "Fragment",
+    "definition": "A part of a larger entity.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C48295"
   }
 }
