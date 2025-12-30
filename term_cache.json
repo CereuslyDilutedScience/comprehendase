@@ -8193,5 +8193,10 @@
     "label": "Three",
     "definition": "A natural number greater than 2 and less than 4 and the quantity that it denotes: the sum of two and one.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C66834"
+  },
+  "were taken from": {
+    "label": "location where GPS coordinates were taken",
+    "definition": "a site in which a global positioning system receiver produces a data item specifying the location of the site",
+    "iri": "http://purl.obolibrary.org/obo/EUPATH_0000530"
   }
 }
