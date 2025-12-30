@@ -5963,5 +5963,10 @@
     "label": "reduction",
     "definition": "Mutation caused by a recombination event between tandem repeats of rRNA genes that causes unequal chromatid exchange at crossing over and a reduction in the number of functional copies. It leads to an aggravation of phenotype, in the case of a mutation causing a change from a wildtype to mutant phenotype or a change from a mutant to a more severe mutant phenotype.",
     "iri": "http://purl.obolibrary.org/obo/FBcv_0000477"
+  },
+  "spp (13). potato": {
+    "label": "potato Pythium spp. leak oomycete disease",
+    "definition": "A potato disease caused by a Pythium affecting a plant structure.",
+    "iri": "http://purl.obolibrary.org/obo/PSO_0000636"
   }
 }
