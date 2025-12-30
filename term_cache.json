@@ -2463,5 +2463,10 @@
     "label": "chemical",
     "definition": "A chemical entity is a physical entity of interest in chemistry including molecular entities, parts thereof, and chemical substances (from CHEBI).",
     "iri": "http://purl.obolibrary.org/obo/FBcv_0000525"
+  },
+  "fume hood": {
+    "label": "fume hood",
+    "definition": "A hood in which to conduct experiments that give off poisonous fumes that vents them to a non-enclosed environment.",
+    "iri": "http://purl.obolibrary.org/obo/CHMO_0010020"
   }
 }
