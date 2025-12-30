@@ -1213,5 +1213,10 @@
     "label": "indicating",
     "definition": "Indicating is signaling to make something known to the user about a flow. [NIST]",
     "iri": "http://purl.allotrope.org/ontologies/process#AFP_0003488"
+  },
+  "in vivo": {
+    "label": "In Vivo",
+    "definition": "Located or occurring in the body.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C15744"
   }
 }
