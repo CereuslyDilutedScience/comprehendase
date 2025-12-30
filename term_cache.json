@@ -5988,5 +5988,10 @@
     "label": "contained in",
     "definition": "Inverse of contains. [Allotrope]",
     "iri": "http://purl.allotrope.org/ontologies/property#AFX_0001049"
+  },
+  "aerobic environment, a": {
+    "label": "aerobic environment exposure",
+    "definition": "An exposure to conditions in which oxygen is present.",
+    "iri": "http://purl.obolibrary.org/obo/PECO_0007024"
   }
 }
