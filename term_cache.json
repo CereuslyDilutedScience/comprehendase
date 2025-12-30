@@ -16688,5 +16688,10 @@
     "label": "Quarantine",
     "definition": "Place into enforced isolation.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C71902"
+  },
+  "treatment using low": {
+    "label": "Low-Dose Treatment",
+    "definition": "A reduced quantity of a therapeutic agent prescribed to be taken at one time or at stated intervals.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C49341"
   }
 }
