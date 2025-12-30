@@ -15873,5 +15873,10 @@
     "label": "Treatment Cycle Day Number",
     "definition": "A number that indicates the position of a day within a treatment cycle.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C166221"
+  },
+  "were signi\ufb01cant, treatment": {
+    "label": "Were Itchy Question",
+    "definition": "A question about whether an individual feels or felt itchy.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C136347"
   }
 }
