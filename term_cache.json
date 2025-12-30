@@ -16263,5 +16263,10 @@
     "label": "aroA from Staphylococcus aureus",
     "definition": "An aroA mutant is attenuated in mice and induced significant protection from challenge with wild type S. aureus",
     "iri": "http://purl.obolibrary.org/obo/VO_0002547"
+  },
+  "swine": {
+    "label": "swine",
+    "definition": "Suidae is a family of artiodactyl mammals which are commonly called pigs, hogs or boars.",
+    "iri": "http://purl.obolibrary.org/obo/FOODON_03411136"
   }
 }
