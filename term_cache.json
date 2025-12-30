@@ -2233,5 +2233,10 @@
     "label": "larval-larval ecdysis",
     "definition": "The ecdysis between any of the four larval instars.",
     "iri": "http://purl.obolibrary.org/obo/IDOMAL_0002202"
+  },
+  "the rearing": {
+    "label": "rearing measurement",
+    "definition": "Any measurement of a movement in which a quadrupedal subject rises up on its back legs.",
+    "iri": "http://purl.obolibrary.org/obo/CMO_0001515"
   }
 }
