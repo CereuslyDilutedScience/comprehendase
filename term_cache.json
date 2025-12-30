@@ -6828,5 +6828,10 @@
     "label": "Cannot Be Determined",
     "definition": "An indication that a reason or result cannot be established.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C179711"
+  },
+  "would be useful": {
+    "label": "Useful",
+    "definition": "Helpful for doing or achieving something.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C107498"
   }
 }
