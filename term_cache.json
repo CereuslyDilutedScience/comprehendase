@@ -1533,5 +1533,10 @@
     "label": "Directorate for Biological Sciences",
     "definition": "Government in United States",
     "iri": "https://ror.org/001xhss06"
+  },
+  "of animal and": {
+    "label": "Animal and Functionality of Animal Products",
+    "definition": "Facility in France",
+    "iri": "https://ror.org/02ynmc580"
   }
 }
