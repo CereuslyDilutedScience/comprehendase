@@ -2333,5 +2333,10 @@
     "label": "Are",
     "definition": "A unit of area equal to 100 square meters. Are is a non-SI unit accepted for use with SI.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C68869"
+  },
+  "proliferation and spread": {
+    "label": "sardine and tomato spread",
+    "definition": "SIREN DB annotation:\n* semisolid FOODON:03430144\n* fully heat-treated FOODON:03440014\n* whole animal or most parts used FOODON:03420173\n* ingredient: flavoring, spice or herb added FOODON:03460227",
+    "iri": "http://purl.obolibrary.org/obo/FOODON_03305729"
   }
 }
