@@ -16098,5 +16098,10 @@
     "label": "reduce activity",
     "definition": "Halting or diminution of activity to minimize detection by predator.",
     "iri": "http://purl.obolibrary.org/obo/NBO_0020175"
+  },
+  "of \ufb01n\ufb01sh substrate": {
+    "label": "concentration of substrate",
+    "definition": "The amount of a specific entity pool substrate present per unit of volume. The participant role 'substrate' is defined in SBO:0000015.",
+    "iri": "http://biomodels.net/SBO/SBO_0000515"
   }
 }
