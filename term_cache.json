@@ -4468,5 +4468,10 @@
     "label": "Please Touch Museum",
     "definition": "Archive in United States established in 1976",
     "iri": "https://ror.org/01asxey89"
+  },
+  "difference in scales": {
+    "label": "difference in differences",
+    "definition": "A statistic that is a subtraction of one difference from another.",
+    "iri": "http://purl.obolibrary.org/obo/STATO_0000665"
   }
 }
