@@ -1933,5 +1933,10 @@
     "label": "Exposure",
     "definition": "The act of subjecting someone or something to an influencing experience.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C17941"
+  },
+  "recent": {
+    "label": "recent",
+    "definition": "A quality of a process which occurs near to or not long before the present.",
+    "iri": "http://purl.obolibrary.org/obo/PATO_0001484"
   }
 }
