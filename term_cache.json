@@ -16023,5 +16023,10 @@
     "label": "Impact on Education",
     "definition": "Nonprofit in United States established in 1983",
     "iri": "https://ror.org/03t1kp138"
+  },
+  "exploitation potential. appl": {
+    "label": "Appl (fruit fly)",
+    "definition": "A protein coding gene Appl in fruit fly.",
+    "iri": "http://flybase.org/reports/FBgn0000108"
   }
 }
