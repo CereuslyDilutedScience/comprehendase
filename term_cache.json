@@ -2103,5 +2103,10 @@
     "label": "animal feed ingredient",
     "definition": "An ingredient that is used in the preparation of animal feed.",
     "iri": "http://purl.obolibrary.org/obo/FOODON_00004322"
+  },
+  "for several": {
+    "label": "Several",
+    "definition": "An indefinite small quantity that is more than two but less than many.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C107221"
   }
 }
