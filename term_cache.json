@@ -4433,5 +4433,10 @@
     "label": "fig",
     "definition": "A fruit multiple of a fig plant (Ficus carica).",
     "iri": "http://purl.obolibrary.org/obo/FOODON_00003266"
+  },
+  "2 box plots": {
+    "label": "number of plots",
+    "definition": "Number of plot used during an experiment.",
+    "iri": "http://purl.obolibrary.org/obo/AGRO_00000306"
   }
 }
