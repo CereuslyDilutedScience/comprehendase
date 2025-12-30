@@ -1713,5 +1713,10 @@
     "label": "inhibited",
     "definition": "Conceptual or material entity that is the object of an inhibition process, and is acted upon by an inhibitor.",
     "iri": "http://biomodels.net/SBO/SBO_0000642"
+  },
+  "human": {
+    "label": "human",
+    "definition": "A member of the the species Homo sapiens. [Allotrope]",
+    "iri": "http://purl.obolibrary.org/obo/NCBITaxon_9606"
   }
 }
