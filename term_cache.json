@@ -1618,5 +1618,675 @@
     "label": "scale",
     "definition": "A modified seta comprised of a slender basal stalk, pedicel, and an expanded and/or flattened distal part, squame; all scales have longitudinal ridges and arise from alveoli which are usually minute. Two main types of scales are recognized in mosquitoes by cross section of the squame. If the squame is round or elliptical, the scale is pilliform; if it is thin and flat, the scale is lamellar.",
     "iri": "http://purl.obolibrary.org/obo/CLAO_0001102"
+  },
+  "absent": {
+    "label": "absent",
+    "definition": "Anatomical structure that would be present in wild-type is not present.",
+    "iri": "http://purl.obolibrary.org/obo/FBcv_0007049"
+  },
+  "lowest": {
+    "label": "Lowest",
+    "definition": "In the lowest position, nearest the ground, at the bottom; minimal in magnitude, lowest in rank or importance; an extreme state of adversity.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C43517"
+  },
+  "index": {
+    "label": "index",
+    "definition": "A facet that represents some strictly ordered key in an associative array or the position of a member in a list. [Allotrope]",
+    "iri": "http://purl.allotrope.org/ontologies/result#AFR_0000928"
+  },
+  "heavy": {
+    "label": "Heavy",
+    "definition": "Of comparatively great physical weight or density.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C68807"
+  },
+  "dominance": {
+    "label": "dominance",
+    "definition": "Undertaking or practicing the dominant role in BDSM activities.",
+    "iri": "http://purl.obolibrary.org/obo/GSSO_001305"
+  },
+  "few": {
+    "label": "Few",
+    "definition": "An indefinite but relatively small number.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C64942"
+  },
+  "depth": {
+    "label": "depth",
+    "definition": "A 1-D extent quality inhering in a bearer by virtue of the bearer's downward or backward or inward dimension.",
+    "iri": "http://purl.obolibrary.org/obo/PATO_0001595"
+  },
+  "impact": {
+    "label": "impact",
+    "definition": "Bruker Daltonics' impact: ESI Q-TOF, Nanospray, APCI, APPI, GC-APCI, CaptiveSpray.",
+    "iri": "http://purl.obolibrary.org/obo/MS_1002077"
+  },
+  "rarefaction": {
+    "label": "Rarefaction",
+    "definition": "The calculation of species richness for a number of individual samples, based on plots of the number of species as a function of the number of samples (rarefaction curves).",
+    "iri": "http://edamontology.org/operation_3797"
+  },
+  "discussion": {
+    "label": "Discussion",
+    "definition": "An extended communication (often interactive) dealing with some particular topic.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C71323"
+  },
+  "antibacterial": {
+    "label": "antibacterial",
+    "definition": "A material entity bearing an antibacterial disposition.",
+    "iri": "http://purl.obolibrary.org/obo/IDO_0000562"
+  },
+  "consistent": {
+    "label": "Consistent",
+    "definition": "Marked by a reasonable or logical relation of parts and holding together as a harmonious or credible whole.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C85901"
+  },
+  "published": {
+    "label": "published",
+    "definition": "Publication published in a journal.",
+    "iri": "http://www.ebi.ac.uk/efo/EFO_0001796"
+  },
+  "past": {
+    "label": "Past",
+    "definition": "Before the present time.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C25609"
+  },
+  "against": {
+    "label": "Against",
+    "definition": "In opposition to or in competition with someone or something.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C64937"
+  },
+  "table": {
+    "label": "table",
+    "definition": "A table is a placement device with a flat top and one or more legs, providing a level surface for placement. [Allotrope]",
+    "iri": "http://purl.allotrope.org/ontologies/equipment#AFE_0002210"
+  },
+  "through": {
+    "label": "through",
+    "definition": "A relation that holds between an interventions mechanism of action and an entity x, in which the entity x  participates in or is part of the mechanism of action process and is influenced by a BCI or its context such that there is some change in entity x.",
+    "iri": "http://humanbehaviourchange.org/ontology/BCIOR_000008"
+  },
+  "rrna gene": {
+    "label": "rRNA gene",
+    "definition": "a RNA gene that encodes for a rRNA",
+    "iri": "http://purl.obolibrary.org/obo/OGG_0000000034"
+  },
+  "inhibited": {
+    "label": "inhibited",
+    "definition": "Conceptual or material entity that is the object of an inhibition process, and is acted upon by an inhibitor.",
+    "iri": "http://biomodels.net/SBO/SBO_0000642"
+  },
+  "human": {
+    "label": "human",
+    "definition": "A member of the the species Homo sapiens. [Allotrope]",
+    "iri": "http://purl.obolibrary.org/obo/NCBITaxon_9606"
+  },
+  "feces": {
+    "label": "feces",
+    "definition": "Portion of semisolid bodily waste discharged through the anus[MW,modified].",
+    "iri": "http://purl.obolibrary.org/obo/UBERON_0001988"
+  },
+  "chicken manure": {
+    "label": "chicken manure",
+    "definition": "Poultry manure made of chicken feces.",
+    "iri": "http://purl.obolibrary.org/obo/ENVO_03501252"
+  },
+  "lauric acid": {
+    "label": "Lauric Acid",
+    "definition": "A saturated medium-chain fatty acid with a 12-carbon backbone. Lauric acid is found naturally in various plant and animal fats and oils, and is a major component of coconut oil and palm kernel oil.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C68384"
+  },
+  "medium-chain fatty acid": {
+    "label": "medium-chain fatty acid",
+    "definition": "Any fatty acid with a chain length of between C6 and C12.",
+    "iri": "http://purl.obolibrary.org/obo/CHEBI_59554"
+  },
+  "like": {
+    "label": "Like",
+    "definition": "A feeling of fondness for a person or thing.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C77969"
+  },
+  "enzymatic": {
+    "label": "enzymatic",
+    "definition": "An attribute describing the sequence of a transcript that has catalytic activity with or without an associated ribonucleoprotein.",
+    "iri": "http://purl.obolibrary.org/obo/SO_0001185"
+  },
+  "gut": {
+    "label": "gut",
+    "definition": "Structure consisting of a simple epithelium surrounded by visceral muscles, nerves and tracheae. The gut is divided into foregut, midgut and hindgut regions, based on developmental origin.",
+    "iri": "http://purl.obolibrary.org/obo/FBbt_00047143"
+  },
+  "to reduce": {
+    "label": "to reduce",
+    "definition": "to reduce is the capability to add an electron or an decrease in oxidation state of a chemical entity.",
+    "iri": "http://semanticscience.org/resource/SIO_010359"
+  },
+  "peptide": {
+    "label": "peptide",
+    "definition": "Amide derived from two or more amino carboxylic acid molecules (the same or different) by formation of a covalent bond from the carbonyl carbon of one to the nitrogen atom of another with formal loss of water. The term is usually applied to structures formed from alpha-amino acids, but it includes those derived from any amino carboxylic acid. X = OH, OR, NH2, NHR, etc.",
+    "iri": "http://purl.obolibrary.org/obo/CHEBI_16670"
+  },
+  "activity": {
+    "label": "activity",
+    "definition": "An activity is a process that is cumulative but not homomeric. [Allotrope, DOLCE]",
+    "iri": "http://purl.allotrope.org/ontologies/process#AFP_0003620"
+  },
+  "supports": {
+    "label": "supports",
+    "definition": "Example: We support Galileo's statement [X], that Earth moves.",
+    "iri": "http://purl.org/spar/cito/supports"
+  },
+  "chicken feed": {
+    "label": "chicken feed",
+    "definition": "SIREN DB annotation:\n* ingredient: grain added FOODON:03460152\n* poultry as consumer FOODON:03510018",
+    "iri": "http://purl.obolibrary.org/obo/FOODON_03310338"
+  },
+  "project": {
+    "label": "project",
+    "definition": "A project is a planned process that is undertaken or attempted to meet some requirement. [Allotrope]",
+    "iri": "http://purl.allotrope.org/ontologies/process#AFP_0003730"
+  },
+  "list": {
+    "label": "list",
+    "definition": "A list is an ordered collection of items. [Allotrope]",
+    "iri": "http://purl.allotrope.org/ontologies/common#AFC_0000160"
+  },
+  "full": {
+    "label": "Full",
+    "definition": "Containing as much or as many as is possible or normal.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C25517"
+  },
+  "index value": {
+    "label": "Index Value",
+    "definition": "A statistic which assigns a single number to several individual statistics in order to quantify trends and evaluate a value or quantity as compared with a standard or a base value.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C67368"
+  },
+  "prior": {
+    "label": "Prior",
+    "definition": "Earlier in time or order.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C25629"
+  },
+  "sterile": {
+    "label": "sterile",
+    "definition": "A fertility quality inhering in a bearer by virtue of the bearer's being incapable of initiating, sustaining, or supporting reproduction.",
+    "iri": "http://purl.obolibrary.org/obo/PATO_0000956"
+  },
+  "intestinal": {
+    "label": "Intestinal",
+    "definition": "Of, or related to, or referring to the intestines.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C25266"
+  },
+  "tract": {
+    "label": "tract",
+    "definition": "A neuron projection bundle linking two or more synaptic neuropil domains or subdomains within the CNS.",
+    "iri": "http://purl.obolibrary.org/obo/FBbt_00005100"
+  },
+  "midgut": {
+    "label": "midgut",
+    "definition": "Middle subdivision of a digestive tract[CJM]. In vertebrates: The middle part of the alimentary canal from the stomach, or entrance of the bile duct, to, or including, the large intestine[GO].",
+    "iri": "http://purl.obolibrary.org/obo/UBERON_0001045"
+  },
+  "hindgut": {
+    "label": "hindgut",
+    "definition": "The caudalmost subdivision of a digestive tract.",
+    "iri": "http://purl.obolibrary.org/obo/UBERON_0001046"
+  },
+  "observable": {
+    "label": "observable",
+    "definition": "Features of ascomycete fungal cells, cultures, or colonies that can be detected, observed, measured, or monitored.",
+    "iri": "http://purl.obolibrary.org/obo/APO_0000017"
+  },
+  "reservoir": {
+    "label": "reservoir",
+    "definition": "The reservoir is a container that stores solutions. [Allotrope]",
+    "iri": "http://purl.allotrope.org/ontologies/equipment#AFE_0000378"
+  },
+  "issue": {
+    "label": "Issue",
+    "definition": "One of a series of documents that are published periodically.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C43415"
+  },
+  "informative": {
+    "label": "Informative",
+    "definition": "Refers to data that is useful in forming an opinion or judging an outcome.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C94366"
+  },
+  "component of": {
+    "label": "component of",
+    "definition": "A physical object that is a component that is a physical part of another physical object that is a system. [Allotrope]",
+    "iri": "http://purl.allotrope.org/ontologies/property#AFX_0000939"
+  },
+  "contain": {
+    "label": "Contain",
+    "definition": "Include or hold; have within or as a component.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C79873"
+  },
+  "lower": {
+    "label": "Lower",
+    "definition": "To become lower, grow less, or diminish, as in amount, intensity, degree, or value.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C86568"
+  },
+  "inhibition": {
+    "label": "inhibition",
+    "definition": "The interaction between the proteins or the formation of a complex is disrupted by a biological molecule or by a modification of the interactors.",
+    "iri": "http://purl.obolibrary.org/obo/MI_0623"
+  },
+  "pig manure": {
+    "label": "pig manure",
+    "definition": "Manure which is primarily composed of pig feces.",
+    "iri": "http://purl.obolibrary.org/obo/ENVO_00003860"
+  },
+  "increased": {
+    "label": "increased",
+    "definition": "The observed feature is increased compared to that in the wild type (faster, stronger, higher, larger, etc.).",
+    "iri": "http://purl.obolibrary.org/obo/APO_0000004"
+  },
+  "occur": {
+    "label": "Occur",
+    "definition": "Come to pass.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C54069"
+  },
+  "antimicrobial peptide production": {
+    "label": "antimicrobial peptide production",
+    "definition": "The synthesis or release of an antimicrobial peptide during an immune response, resulting in an increase in intracellular or extracellular levels. Such peptides may have protective properties against bacteria, fungi, viruses, or protozoa.",
+    "iri": "http://purl.obolibrary.org/obo/GO_0002775"
+  },
+  "membrane": {
+    "label": "membrane",
+    "definition": "A lipid bilayer along with all the proteins and protein complexes embedded in it and attached to it.",
+    "iri": "http://purl.obolibrary.org/obo/GO_0016020"
+  },
+  "disruption": {
+    "label": "disruption",
+    "definition": "a negative regulation that results in a disruption.",
+    "iri": "http://purl.obolibrary.org/obo/INO_0000091"
+  },
+  "evidence": {
+    "label": "evidence",
+    "definition": "A type of information that is used to support an assertion.",
+    "iri": "http://purl.obolibrary.org/obo/ECO_0000000"
+  },
+  "defensins": {
+    "label": "Defensins",
+    "definition": "Highly conserved cysteine-rich peptides that play a role in host defense, and may be produced in response to microbial products or proinflammatory cytokines. Defensins bind to microbial cell membranes and can become aggregate either to form pore-like structures or to encapsulate the microbe. These peptide aggregates lead to destabilization of the cell membrane and, subsequently, to lysis of the microbe.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C1063"
+  },
+  "phenomenon": {
+    "label": "Phenomenon",
+    "definition": "A fact or situation that is observed to exist.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C61380"
+  },
+  "minimal": {
+    "label": "minimal",
+    "definition": "Being smallest in amount, extent or degree.",
+    "iri": "http://purl.obolibrary.org/obo/PATO_0002123"
+  },
+  "competitive inhibition": {
+    "label": "competitive inhibition",
+    "definition": "A competitive inhibitor binds only to free enzyme. Often this binding event occurs on the active site of the target, precisely where substrate also binds. It will raise the apparent KM value for its substrate with no change in the apparent Vmax value. As a result, competitive inhibition can be overcome, observed by an increase in the apparent KI value, at higher concentrations of substrate.",
+    "iri": "http://www.bioassayontology.org/bao#BAO_0000482"
+  },
+  "dominant": {
+    "label": "dominant",
+    "definition": "A phenotypic attribute is described as dominant when it is manifest in individuals heterozygous for the allele that causes that phenotype.",
+    "iri": "http://purl.obolibrary.org/obo/FBcv_0000299"
+  },
+  "exposure": {
+    "label": "Exposure",
+    "definition": "The act of subjecting someone or something to an influencing experience.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C17941"
+  },
+  "recent": {
+    "label": "recent",
+    "definition": "A quality of a process which occurs near to or not long before the present.",
+    "iri": "http://purl.obolibrary.org/obo/PATO_0001484"
+  },
+  "overall": {
+    "label": "Overall",
+    "definition": "Including everything.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C25605"
+  },
+  "include": {
+    "label": "Include",
+    "definition": "Add as part of something else; put in as part of a set, group, or category.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C74521"
+  },
+  "direct": {
+    "label": "Direct",
+    "definition": "As an immediate result; having nothing intervening; without deviation or interruption.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C62254"
+  },
+  "previous": {
+    "label": "Previous",
+    "definition": "Occurring prior to something else.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C25627"
+  },
+  "spp": {
+    "label": "SPP",
+    "definition": "The protein-coding gene SPP located on the chromosome 2.",
+    "iri": "http://identifiers.org/ncbigene/814841"
+  },
+  "composed of": {
+    "label": "composed of",
+    "definition": "The property specifies of which kind of general portion of material something is built of. [Allotrope]",
+    "iri": "http://purl.allotrope.org/ontologies/property#AFX_0000940"
+  },
+  "contained in": {
+    "label": "contained in",
+    "definition": "Inverse of contains. [Allotrope]",
+    "iri": "http://purl.allotrope.org/ontologies/property#AFX_0001049"
+  },
+  "aerobic": {
+    "label": "aerobic",
+    "definition": "A quality inhering in a bearer by virtue of the bearer's dependence on oxygen.",
+    "iri": "http://purl.obolibrary.org/obo/PATO_0001455"
+  },
+  "glucose": {
+    "label": "glucose",
+    "definition": "An aldohexose used as a source of energy and metabolic intermediate.",
+    "iri": "http://purl.obolibrary.org/obo/CHEBI_17234"
+  },
+  "concentration": {
+    "label": "concentration",
+    "definition": "A concentration (datum) is a quantification facet that quantifies a quality inhering in a substance by virtue of the amount of the bearer's there is mixed with another substance. [Allotrope]",
+    "iri": "http://purl.allotrope.org/ontologies/result#AFR_0002036"
+  },
+  "degradation": {
+    "label": "degradation",
+    "definition": "Degradation is the state of changing in the qualities of a material under the influence of one or more environmental factors such as heat, light or chemicals such as acids, alkalies and some salts to a lower level of quality. [Allotrope]",
+    "iri": "http://purl.allotrope.org/ontologies/process#AFP_0003641"
+  },
+  "starch": {
+    "label": "starch",
+    "definition": "The most important reserve polysaccharide found in plants. It is a glucan consisting of amylose and amylopectin.",
+    "iri": "http://purl.obolibrary.org/obo/CHEBI_28017"
+  },
+  "expected": {
+    "label": "Expected",
+    "definition": "Considered likely or probable; anticipated.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C25501"
+  },
+  "bene\ufb01t": {
+    "label": "Benefit",
+    "definition": "The positive effects of something.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C25387"
+  },
+  "mammalian": {
+    "label": "mammalian",
+    "definition": "This includes animal models typically used in drug discovery for toxicity or pharmacology studies, such as mouse, rat (mammals).",
+    "iri": "http://www.bioassayontology.org/bao#BAO_0000362"
+  },
+  "likely": {
+    "label": "Likely",
+    "definition": "Having a good chance of being the case or of coming about.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C85550"
+  },
+  "surrounding": {
+    "label": "surrounding",
+    "definition": "A spatial quality inhering in a bearer by virtue of the bearer's being extended on all sides of another entity simultaneously.",
+    "iri": "http://purl.obolibrary.org/obo/FBcv_0000048"
+  },
+  "arti\ufb01cial": {
+    "label": "artificial",
+    "definition": "A biosample that was synthesized in a laboratory.",
+    "iri": "http://purl.obolibrary.org/obo/FBcv_0003144"
+  },
+  "additional": {
+    "label": "Additional",
+    "definition": "Added; extra; further.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C25406"
+  },
+  "highest": {
+    "label": "Highest",
+    "definition": "Approaching or constituting a maximum; the highest point (of something).",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C25525"
+  },
+  "role": {
+    "label": "role",
+    "definition": "A realizable entity  the manifestation of which brings about some result or end that is not essential to a continuant  in virtue of the kind of thing that it is but that can be served or participated in by that kind of continuant  in some kinds of natural, social or institutional contexts.",
+    "iri": "http://purl.obolibrary.org/obo/BFO_0000023"
+  },
+  "commensal": {
+    "label": "commensal",
+    "definition": "An organism bearing a commensal role.",
+    "iri": "http://purl.obolibrary.org/obo/IDO_0000525"
+  },
+  "decreased": {
+    "label": "decreased",
+    "definition": "The observed feature is decreased compared to that in the wild type (slower, weaker, lower, smaller, etc.).",
+    "iri": "http://purl.obolibrary.org/obo/APO_0000003"
+  },
+  "prevalence": {
+    "label": "prevalence",
+    "definition": "prevalence is a ratio formed by the number of subjects diagnosed with a disease divided by the total population size.",
+    "iri": "http://purl.obolibrary.org/obo/STATO_0000412"
+  },
+  "low": {
+    "label": "Low",
+    "definition": "A minimum level or position or degree; less than normal in degree, intensity or amount.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C54722"
+  },
+  "documented": {
+    "label": "Documented",
+    "definition": "Furnished with or supported by documents and documentation.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C25356"
+  },
+  "competitive relationship": {
+    "label": "competitive relationship",
+    "definition": "A relationship between two or more persons or groups which is competitive in nature.",
+    "iri": "http://purl.obolibrary.org/obo/GSSO_012469"
+  },
+  "explanation": {
+    "label": "Explanation",
+    "definition": "A set of statements describing a group of facts that clarifies the cause, context and/or consequence of those facts.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C86073"
+  },
+  "read depth": {
+    "label": "Read Depth",
+    "definition": "The number of times a particular locus (site, nucleotide, amplicon, region) was sequenced.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C155320"
+  },
+  "expect": {
+    "label": "expect",
+    "definition": "X|Tandem expectancy score",
+    "iri": "http://purl.obolibrary.org/obo/PRIDE_0000183"
+  },
+  "burden": {
+    "label": "Burden",
+    "definition": "The quantity of something that is borne or carried by an individual or population.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C85883"
+  },
+  "useful": {
+    "label": "Useful",
+    "definition": "Helpful for doing or achieving something.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C107498"
+  },
+  "future": {
+    "label": "Future",
+    "definition": "A time that is yet to come.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C67527"
+  },
+  "help": {
+    "label": "HELP",
+    "definition": "The package contains a modular pipeline for analysis of HELP microarray data, and includes graphical and mathematical tools with more general applications",
+    "iri": "http://www.ebi.ac.uk/swo/SWO_0000213"
+  },
+  "answer": {
+    "label": "Answer",
+    "definition": "A statement (either spoken or written) that is made in reply to a question or request or criticism or accusation; a statement that solves a problem or explains how to solve the problem.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C49149"
+  },
+  "microbiome": {
+    "label": "microbiome",
+    "definition": "A collection or collectivity of microorganisms.",
+    "iri": "http://www.ebi.ac.uk/efo/EFO_0004982"
+  },
+  "makeup": {
+    "label": "makeup",
+    "definition": "Any of various cosmetics that are applied to the face to enhance one's appearance.",
+    "iri": "http://purl.obolibrary.org/obo/GSSO_007553"
+  },
+  "diet": {
+    "label": "diet",
+    "definition": "The customary allowance of food and drink taken by a person or an animal from day to day, particularly one especially planned to meet specific requirements of the individual, including or excluding certain items of food; a prescribed course of eating and drinking in which the amount and kind of food, as well as the times at which it is to be taken, are regulated for therapeutic purposes or selected with reference to a particular state of health.",
+    "iri": "http://purl.obolibrary.org/obo/ExO_0000106"
+  },
+  "consensus": {
+    "label": "Consensus",
+    "definition": "Agreement as the result of multiple results or opinions.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C64197"
+  },
+  "regardless": {
+    "label": "Regardless",
+    "definition": "Lacking consideration or without thoughtful attention.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C103851"
+  },
+  "external": {
+    "label": "External",
+    "definition": "Happening or arising or located outside or beyond some limits, or especially, some surface.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C44280"
+  },
+  "bsf": {
+    "label": "bsf",
+    "definition": "The protein-coding gene bsf (bicoid stability factor) located on the chromosome 2L mapped at 36F5-36F5.",
+    "iri": "http://identifiers.org/ncbigene/35100"
+  },
+  "vermicompost": {
+    "label": "vermicompost",
+    "definition": "A compost that is the product of the decomposition process using various species of worms, usually red wigglers, white worms, and other earthworms, to create a mixture of decomposing vegetable or food waste, bedding materials, and vermicast.",
+    "iri": "http://purl.obolibrary.org/obo/AGRO_00002042"
+  },
+  "abundance": {
+    "label": "Abundance",
+    "definition": "Relative degree of plentifulness.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C70589"
+  },
+  "linking": {
+    "label": "linking",
+    "definition": "Linking is coupling flows together by means of an intermediary flow. [NIST]",
+    "iri": "http://purl.allotrope.org/ontologies/process#AFP_0003358"
+  },
+  "excreta": {
+    "label": "excreta",
+    "definition": "A portion of organism substance that is the product of an excretion process that will be eliminated from the body. An excretion process is elimination by an organism of the waste products that arise as a result of metabolic activity.",
+    "iri": "http://purl.obolibrary.org/obo/UBERON_0000174"
+  },
+  "puri\ufb01cation": {
+    "label": "purification",
+    "definition": "A purification is a removing process that is used to physically separate an analyte from byproducts, reagents or contaminating substances. [Allotrope, CHMO]",
+    "iri": "http://purl.allotrope.org/ontologies/process#AFP_0000812"
+  },
+  "top": {
+    "label": "top",
+    "definition": "Someone, typically a man, who is penetrating someone else during sexual intercourse or someone who has a preference for penetrating during such intercourse.",
+    "iri": "http://purl.obolibrary.org/obo/GSSO_000346"
+  },
+  "processing": {
+    "label": "Processing",
+    "definition": "The act of preparing or putting through a prescribed procedure.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C48177"
+  },
+  "novel": {
+    "label": "novel",
+    "definition": "An attribute of a genomic feature that represents a feature not previously found in a given genome, e.g. an extrachromosomal replicon or aneusomic third copy of a chromosome.",
+    "iri": "http://purl.obolibrary.org/obo/GENO_0000685"
+  },
+  "uses": {
+    "label": "uses",
+    "definition": "A relation that is an inverse of \"used_in\" relation.",
+    "iri": "http://purl.obolibrary.org/obo/ECO_9000001"
+  },
+  "process": {
+    "label": "process",
+    "definition": "An occurrent that has temporal proper parts and for some time t, p s-depends_on some material entity at t.",
+    "iri": "http://purl.obolibrary.org/obo/BFO_0000015"
+  },
+  "bacteriostatic": {
+    "label": "bacteriostatic",
+    "definition": "Static agent bearing a bacteriostatic disposition.",
+    "iri": "http://purl.obolibrary.org/obo/IDO_0001040"
+  },
+  "and/or": {
+    "label": "And/Or",
+    "definition": "Used to indicate that either or both of two items or options may be valid.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C48928"
+  },
+  "characterization": {
+    "label": "Characterization",
+    "definition": "The act of describing distinctive characteristics or essential features.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C62606"
+  },
+  "participate": {
+    "label": "Participate",
+    "definition": "To take part in an activity.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C203923"
+  },
+  "integrity": {
+    "label": "Integrity",
+    "definition": "The state of being complete or undivided, of being sound or undamaged.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C62446"
+  },
+  "materials": {
+    "label": "Materials",
+    "definition": "Material entity supplies, consumables, or chemicals used in the performance of scientific research",
+    "iri": "http://champ-project.org/images/ontology/cao.owl#CAO_000150"
+  },
+  "metal": {
+    "label": "Metal",
+    "definition": "Electropositive chemical elements characterised by ductility, malleability, luster, and conductance of heat and electricity. They can replace the hydrogen of an acid and form bases with hydroxyl radicals.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C637"
+  },
+  "lid": {
+    "label": "lid",
+    "definition": "The protein-coding gene lid (little imaginal discs) located on the chromosome 2L mapped at 26B2-26B2.",
+    "iri": "http://identifiers.org/ncbigene/33837"
+  },
+  "autoclaving": {
+    "label": "autoclaving",
+    "definition": "A material processing step that involves heating apparatus in an autoclave.",
+    "iri": "http://purl.obolibrary.org/obo/CHMO_0002846"
+  },
+  "supermarket": {
+    "label": "supermarket",
+    "definition": "A self-service shop offering a wide variety of food, beverages and household products, organized into sections.",
+    "iri": "http://purl.obolibrary.org/obo/ENVO_03501290"
+  },
+  "deionized water": {
+    "label": "deionized water",
+    "definition": "This is any condition in which the main influencing factor is deionized water, a form of purified water that is filtered through one or two tanks of ion-exchange resin which replaces cations with hydrogen (H+) ions and anions with hydroxyl (OH-) ions, leaving a mineral-free water.",
+    "iri": "http://purl.obolibrary.org/obo/XCO_0001119"
+  },
+  "random": {
+    "label": "Random",
+    "definition": "Governed by or depending on chance; lacking any definite plan or order or purpose.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C60702"
+  },
+  "cotton swab": {
+    "label": "cotton swab",
+    "definition": "A device which is a cotton pad mounted on one or both ends of a stick.",
+    "iri": "http://purl.obolibrary.org/obo/OBI_0002821"
+  },
+  "incubator": {
+    "label": "incubator",
+    "definition": "A device in which environmental conditions (light, photoperiod, temperature, humidity, etc.) can be controlled",
+    "iri": "http://purl.obolibrary.org/obo/OBI_0000136"
+  },
+  "relative humidity": {
+    "label": "relative humidity",
+    "definition": "Relative humidity is the ratio, often expressed as a percentage, of the partial pressure of water in the atmosphere at some observed temperature, to the saturation vapor pressure of pure water at this temperature. [IUPAC]",
+    "iri": "http://purl.allotrope.org/ontologies/result#AFR_0002614"
+  },
+  "diluted": {
+    "label": "diluted",
+    "definition": "A concentration which is relatively low. [PATO]",
+    "iri": "http://purl.obolibrary.org/obo/PATO_0001161"
+  },
+  "optical density": {
+    "label": "optical density",
+    "definition": "A physical quality that inheres in a bearer by virtue of the amount of light that the bearer of the quality is able to transmit",
+    "iri": "http://purl.obolibrary.org/obo/MCO_0000077"
+  },
+  "dilution": {
+    "label": "dilution",
+    "definition": "Dilution is the process of adding a solvent to a solution to lower its concentration. [Allotrope]",
+    "iri": "http://purl.allotrope.org/ontologies/process#AFP_0000785"
   }
 }
