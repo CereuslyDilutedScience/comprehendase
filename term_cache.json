@@ -2208,5 +2208,10 @@
     "label": "Resource",
     "definition": "Resource published or curated by a single agent.",
     "iri": "http://www.w3.org/ns/dcat#Resource"
+  },
+  "throughout global communities": {
+    "label": "Global Communities",
+    "definition": "Nonprofit in United States established in 1952",
+    "iri": "https://ror.org/04rqj7157"
   }
 }
