@@ -1243,5 +1243,10 @@
     "label": "antibiotic",
     "definition": "A substance that is biostatic or biocidal at low concentrations towards bacteria, yeasts, moulds, or other form of life, especially pathogenic or noxious organisms. Although the term was originally restricted to substances produced by microorganisms, its use was later expanded to include derivatives of such substances and it is now commonly used to include entirely synthetic compounds.",
     "iri": "http://purl.obolibrary.org/obo/CHEBI_22582"
+  },
+  "methicillin": {
+    "label": "methicillin",
+    "definition": "A penicillin that is 6-aminopenicillanic acid in which one of the amino hydrogens is replaced by a 2,6-dimethoxybenzoyl group.",
+    "iri": "http://purl.obolibrary.org/obo/CHEBI_6827"
   }
 }
