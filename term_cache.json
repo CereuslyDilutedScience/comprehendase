@@ -1773,5 +1773,10 @@
     "label": "supports",
     "definition": "Example: We support Galileo's statement [X], that Earth moves.",
     "iri": "http://purl.org/spar/cito/supports"
+  },
+  "chicken feed": {
+    "label": "chicken feed",
+    "definition": "SIREN DB annotation:\n* ingredient: grain added FOODON:03460152\n* poultry as consumer FOODON:03510018",
+    "iri": "http://purl.obolibrary.org/obo/FOODON_03310338"
   }
 }
