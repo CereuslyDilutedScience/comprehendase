@@ -16288,5 +16288,10 @@
     "label": "normal pathogen protein and host protein colocalization within host",
     "definition": "A pathogen host interaction phenotype, in which the colocalization of a pathogen protein and a host protein within a host cell is normal (i.e. indistinguishable from wild type).",
     "iri": "http://purl.obolibrary.org/obo/PHIPO_0000270"
+  },
+  "2015. a review": {
+    "label": "review",
+    "definition": "An article or book published after examination of published material on a subject.",
+    "iri": "http://purl.obolibrary.org/obo/FBcv_0000220"
   }
 }
