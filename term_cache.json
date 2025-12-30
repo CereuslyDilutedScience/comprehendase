@@ -16338,5 +16338,10 @@
     "label": "Engineered > Food production > Dairy products > Fermented dairy products",
     "definition": "env_broad: anthropogenic environment; env_medium: dairy food product; mixs_extension: MIXS:FoodFoodProductionFacility; other: food production; partial",
     "iri": "https://w3id.org/gold.path/5456"
+  },
+  "2016. prevalence, molecular": {
+    "label": "prevalence",
+    "definition": "prevalence is a ratio formed by the number of subjects diagnosed with a disease divided by the total population size.",
+    "iri": "http://purl.obolibrary.org/obo/STATO_0000412"
   }
 }
