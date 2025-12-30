@@ -628,5 +628,10 @@
     "label": "Associated",
     "definition": "Joined in some kind of relationship.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C25281"
+  },
+  "genbank accession": {
+    "label": "GenBank accession",
+    "definition": "Accession number of an entry from the GenBank sequence database.",
+    "iri": "http://edamontology.org/data_2292"
   }
 }
