@@ -16763,5 +16763,10 @@
     "label": "production",
     "definition": "A process in which an entity comes into being as a result of the process.",
     "iri": "http://purl.obolibrary.org/obo/IDO_0000607"
+  },
+  "of an antimicrobial": {
+    "label": "resistant to an antimicrobial agent",
+    "definition": "An antimicrobial agent resistance phenotype where growth and reproduction of a microbe occurs in the presence of the antimicrobial agent specified in the Annotation Extension field.",
+    "iri": "http://purl.obolibrary.org/obo/OMP_0007876"
   }
 }
