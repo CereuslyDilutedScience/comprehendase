@@ -2218,5 +2218,10 @@
     "label": "Participate",
     "definition": "To take part in an activity.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C203923"
+  },
+  "integrity": {
+    "label": "Integrity",
+    "definition": "The state of being complete or undivided, of being sound or undamaged.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C62446"
   }
 }
