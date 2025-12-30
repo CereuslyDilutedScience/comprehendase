@@ -3833,5 +3833,10 @@
     "label": "Possible",
     "definition": "Capable of happening or occurring.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C82490"
+  },
+  "treatment was excluded": {
+    "label": "Feel Treatment was Right Question",
+    "definition": "A question about whether an individual feels or felt that the treatment they received was right for them.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C121906"
   }
 }
