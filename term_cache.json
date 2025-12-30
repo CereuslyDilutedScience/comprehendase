@@ -2018,5 +2018,10 @@
     "label": "Attractive",
     "definition": "Pleasing to the eye or mind especially through beauty or charm.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C73114"
+  },
+  "more sustainable": {
+    "label": "Sustainable Growth",
+    "definition": "Achievement of an economic system that can continue to grow for the foreseeable future.",
+    "iri": "http://id.nlm.nih.gov/mesh/D000075042"
   }
 }
