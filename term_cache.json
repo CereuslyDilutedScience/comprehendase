@@ -1843,5 +1843,10 @@
     "label": "Issue",
     "definition": "One of a series of documents that are published periodically.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C43415"
+  },
+  "informative": {
+    "label": "Informative",
+    "definition": "Refers to data that is useful in forming an opinion or judging an outcome.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C94366"
   }
 }
