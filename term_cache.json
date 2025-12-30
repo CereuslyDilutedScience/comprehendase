@@ -16503,5 +16503,10 @@
     "label": "Reactive Metal Particles (Norway)",
     "definition": "Company in Norway established in 2010",
     "iri": "https://ror.org/04apegc06"
+  },
+  "allergen risks. foods": {
+    "label": "risks",
+    "definition": "Specific physiologic risks associated to the diet plan.",
+    "iri": "http://schema.org/risks"
   }
 }
