@@ -3458,5 +3458,10 @@
     "label": "Second Portion of the Duodenum",
     "definition": "The descending portion of the duodenum between the neck of the gallbladder and the inferior duodenal flexure.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C33522"
+  },
+  "and third trials.": {
+    "label": "Clinical Trials and Surveys Corporation",
+    "definition": "Other in United States established in 1989",
+    "iri": "https://ror.org/02yp59539"
   }
 }
