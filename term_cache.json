@@ -1573,5 +1573,10 @@
     "label": "Worry that Skin Condition May Be Serious",
     "definition": "A response indicating that an individual worries that their skin condition may be serious.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C172759"
+  },
+  "wide-scale adoption of": {
+    "label": "adoption",
+    "definition": "A process whereby a person assumes the parenting of another, usually a child, from that person's biological or legal parent or parents.",
+    "iri": "http://purl.obolibrary.org/obo/GSSO_003906"
   }
 }
