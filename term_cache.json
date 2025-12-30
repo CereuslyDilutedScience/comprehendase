@@ -2258,5 +2258,10 @@
     "label": "Random",
     "definition": "Governed by or depending on chance; lacking any definite plan or order or purpose.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C60702"
+  },
+  "cotton swab": {
+    "label": "cotton swab",
+    "definition": "A device which is a cotton pad mounted on one or both ends of a stick.",
+    "iri": "http://purl.obolibrary.org/obo/OBI_0002821"
   }
 }
