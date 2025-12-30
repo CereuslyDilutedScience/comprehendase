@@ -2600,5 +2600,14 @@
     "label": "Locus",
     "definition": "The position of a gene or a chromosomal marker on a chromosome; also, a stretch of DNA at a particular place on a particular chromosome. The use of locus is sometimes restricted to mean regions of DNA that are expressed.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C45822"
+  },
+  "sequence typing and": null,
+  "sequence typing": null,
+  "typing and multiple-locus": null,
+  "typing and": null,
+  "typing": {
+    "label": "Typing",
+    "definition": "",
+    "iri": "http://snomed.info/id/246232002"
   }
 }
