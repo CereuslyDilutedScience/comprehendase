@@ -1868,5 +1868,10 @@
     "label": "inhibition",
     "definition": "The interaction between the proteins or the formation of a complex is disrupted by a biological molecule or by a modification of the interactors.",
     "iri": "http://purl.obolibrary.org/obo/MI_0623"
+  },
+  "pig manure": {
+    "label": "pig manure",
+    "definition": "Manure which is primarily composed of pig feces.",
+    "iri": "http://purl.obolibrary.org/obo/ENVO_00003860"
   }
 }
