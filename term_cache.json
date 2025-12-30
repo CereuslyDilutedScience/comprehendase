@@ -2178,5 +2178,10 @@
     "label": "top",
     "definition": "Someone, typically a man, who is penetrating someone else during sexual intercourse or someone who has a preference for penetrating during such intercourse.",
     "iri": "http://purl.obolibrary.org/obo/GSSO_000346"
+  },
+  "processing": {
+    "label": "Processing",
+    "definition": "The act of preparing or putting through a prescribed procedure.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C48177"
   }
 }
