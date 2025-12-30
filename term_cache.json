@@ -5368,5 +5368,10 @@
     "label": "Gram Negative Bacteria",
     "definition": "Any bacteria with a thin peptidoglycan layer and an outer lipid membrane that stains pink with the Gram staining technique.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C173514"
+  },
+  "studies have shown": {
+    "label": "Have",
+    "definition": "Used to describe the possession, relationships, or the state of something or someone.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C101282"
   }
 }
