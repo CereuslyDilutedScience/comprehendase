@@ -7563,5 +7563,10 @@
     "label": "diluted",
     "definition": "A concentration which is relatively low. [PATO]",
     "iri": "http://purl.obolibrary.org/obo/PATO_0001161"
+  },
+  "an optical density": {
+    "label": "optical density",
+    "definition": "A physical quality that inheres in a bearer by virtue of the amount of light that the bearer of the quality is able to transmit",
+    "iri": "http://purl.obolibrary.org/obo/MCO_0000077"
   }
 }
