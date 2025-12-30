@@ -16673,5 +16673,10 @@
     "label": "territory",
     "definition": "An environmental zone which an animal consistently defends against conspecifics or, occasionally, animals of other species",
     "iri": "http://purl.obolibrary.org/obo/ecocore_00000133"
+  },
+  "2005. storage quality": {
+    "label": "lipid storage increased process quality, abnormal",
+    "definition": "Abnormal(ly) increased process quality (of) lipid storage.",
+    "iri": "http://purl.obolibrary.org/obo/ZP_0017654"
   }
 }
