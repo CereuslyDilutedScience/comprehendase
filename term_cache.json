@@ -521,5 +521,23 @@
     "label": "Obtained",
     "definition": "",
     "iri": "http://snomed.info/id/398092000"
+  },
+  "sequence of m.": null,
+  "of m. bovis": null,
+  "m. bovis strain": null,
+  "bovis strain xby01,": null,
+  "bovis strain": null,
+  "xby01, which caused": null,
+  "which caused respiratory": null,
+  "which caused": null,
+  "caused respiratory diseases": null,
+  "caused respiratory": null,
+  "caused": null,
+  "respiratory diseases in": null,
+  "respiratory diseases": null,
+  "respiratory": {
+    "label": "Respiratory",
+    "definition": "Pertaining to respiration.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C25656"
   }
 }
