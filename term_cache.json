@@ -2028,5 +2028,10 @@
     "label": "artificial",
     "definition": "A biosample that was synthesized in a laboratory.",
     "iri": "http://purl.obolibrary.org/obo/FBcv_0003144"
+  },
+  "additional": {
+    "label": "Additional",
+    "definition": "Added; extra; further.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C25406"
   }
 }
