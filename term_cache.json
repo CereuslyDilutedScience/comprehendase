@@ -1810,5 +1810,14 @@
     "label": "Accepted",
     "definition": "Generally approved or used.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C62559"
+  },
+  "the assembly with": null,
+  "the assembly": null,
+  "assembly with the": null,
+  "assembly with": null,
+  "assembly": {
+    "label": "assembly",
+    "definition": "The process of individual components of a sample associating to form a new pattern or structure.",
+    "iri": "http://purl.obolibrary.org/obo/CHMO_0001302"
   }
 }
