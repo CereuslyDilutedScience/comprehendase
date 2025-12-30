@@ -2638,5 +2638,10 @@
     "label": "indicating",
     "definition": "Indicating is signaling to make something known to the user about a flow. [NIST]",
     "iri": "http://purl.allotrope.org/ontologies/process#AFP_0003488"
+  },
+  "suppression of gram-positive": {
+    "label": "gram positive",
+    "definition": "A gram stain phenotype where a cell or cells retain crystal violet stain when decolorized with an organic solvent such as ethanol.",
+    "iri": "http://purl.obolibrary.org/obo/OMP_0000188"
   }
 }
