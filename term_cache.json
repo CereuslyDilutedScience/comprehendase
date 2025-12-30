@@ -7008,5 +7008,10 @@
     "label": "commensal",
     "definition": "An organism bearing a commensal role.",
     "iri": "http://purl.obolibrary.org/obo/IDO_0000525"
+  },
+  "in the gut": {
+    "label": "gut on the exterior",
+    "definition": "An epidermal enclosure defect that results in internal organs lying on the outside of the embryo.",
+    "iri": "http://purl.obolibrary.org/obo/WBPhenotype_0001774"
   }
 }
