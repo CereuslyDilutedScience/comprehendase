@@ -6978,5 +6978,10 @@
     "label": "Include",
     "definition": "Add as part of something else; put in as part of a set, group, or category.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C74521"
+  },
+  "but are not": {
+    "label": "Feel People Are Around Me but Not with Me Question",
+    "definition": "A question about whether an individual feels that people are around them but not with them.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C173010"
   }
 }
