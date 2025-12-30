@@ -2423,5 +2423,10 @@
     "label": "Have Concerns About How You Look Question",
     "definition": "A question about whether an individual experiences or experienced concerns about how they look.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C159926"
+  },
+  "been raised regarding": {
+    "label": "raised",
+    "definition": "A shape quality inhering in a colony by virtue of the bearer's appearing above the medium surface with terraced edges.",
+    "iri": "http://purl.obolibrary.org/obo/PATO_0001369"
   }
 }
