@@ -2458,5 +2458,10 @@
     "label": "multi-species collection of microbes",
     "definition": "A multi-species collection of organisms that consists of two or more microbes from at least two species.",
     "iri": "http://purl.obolibrary.org/obo/PCO_0000051"
+  },
+  "within harvested bsfl": {
+    "label": "harvested crop",
+    "definition": "A crop that has been harvested after an harvesting process.",
+    "iri": "http://purl.obolibrary.org/obo/AGRO_00002049"
   }
 }
