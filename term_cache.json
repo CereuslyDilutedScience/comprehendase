@@ -2374,5 +2374,29 @@
     "label": "involved in",
     "definition": "C involved_in p if and only if c enables some process p', and p' is part of p [RO]",
     "iri": "http://purl.obolibrary.org/obo/RO_0002331"
+  },
+  "drafting and revising": null,
+  "drafting and": null,
+  "drafting": null,
+  "and revising the": null,
+  "and revising": null,
+  "revising the manuscript.": null,
+  "revising the": null,
+  "revising": null,
+  "the manuscript. because": null,
+  "the manuscript.": null,
+  "manuscript. because they": null,
+  "manuscript. because": null,
+  "manuscript.": null,
+  "because they made": null,
+  "because they": null,
+  "they made equal": null,
+  "they made": null,
+  "made equal contributions": null,
+  "made equal": null,
+  "made": {
+    "label": "made",
+    "definition": "Something that was made by this agent.",
+    "iri": "http://xmlns.com/foaf/0.1/made"
   }
 }
