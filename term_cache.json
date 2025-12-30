@@ -16748,5 +16748,10 @@
     "label": "Host-associated > Mollusca > Larvae",
     "definition": "anatomical_site: larva; host_taxon: Mollusca; mixs_extension: MIXS:HostAssociated; complete",
     "iri": "https://w3id.org/gold.path/4632"
+  },
+  "of the black": {
+    "label": "Institute of the Black World",
+    "definition": "Education in United States established in 1969",
+    "iri": "https://ror.org/043spm784"
   }
 }
