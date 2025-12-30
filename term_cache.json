@@ -188,5 +188,10 @@
     "label": "Small",
     "definition": "Limited in number, quantity, magnitude or extent.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C25376"
+  },
+  "affected": {
+    "label": "Affected",
+    "definition": "To be influenced by or changed.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C64917"
   }
 }
