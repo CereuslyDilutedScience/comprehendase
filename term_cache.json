@@ -1513,5 +1513,10 @@
     "label": "confluent",
     "definition": "A spatial pattern (or gall arrangement) in which adjacent objects (galls) are positioned in such a way that each gall cannot readily be distinguished as an individual.",
     "iri": "http://purl.obolibrary.org/obo/GALLONT_0000020"
+  },
+  "quanti\ufb01cation": {
+    "label": "quantification",
+    "definition": "In mathematics and empirical science, quantification (or quantitation) is the act of counting and measuring that maps human sense observations and experiences into members of some set of numbers. [Wikipedia]",
+    "iri": "http://purl.allotrope.org/ontologies/process#AFP_0002849"
   }
 }
