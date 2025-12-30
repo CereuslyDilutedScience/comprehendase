@@ -1603,5 +1603,10 @@
     "label": "mrsA",
     "definition": "Probable phospho-sugar mutase / MrsA protein homolog",
     "iri": "http://purl.obolibrary.org/obo/OGG_3000887589"
+  },
+  "various environments that": {
+    "label": "Extreme Environments",
+    "definition": "An ENVIRONMENT which falls outside the range of tolerance for the survival of organisms that are not specifically adapted to survive or thrive in it. Examples of such environments are among the hottest and coldest places on earth.",
+    "iri": "http://id.nlm.nih.gov/mesh/D000071251"
   }
 }
