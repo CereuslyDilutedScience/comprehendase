@@ -3993,5 +3993,10 @@
     "label": "Equally Likely for Both",
     "definition": "A response indicating that 2 things are equally likely.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C153609"
+  },
+  "sampling days were": {
+    "label": "sampling",
+    "definition": "Sampling is the process of taking parts or partitions of an object aggregate or data set for the interest for studying it. [Allotrope]",
+    "iri": "http://purl.allotrope.org/ontologies/process#AFP_0003634"
   }
 }
