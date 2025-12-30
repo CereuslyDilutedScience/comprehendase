@@ -6313,5 +6313,10 @@
     "label": "land-tied island",
     "definition": "A continental island connected to its adjacent land by a natural feature, such as a causeway.",
     "iri": "http://purl.obolibrary.org/obo/ENVO_00000269"
+  },
+  "to the high": {
+    "label": "sensitive to high pH",
+    "definition": "A cell phenotype observed in the vegetative growth phase of the life cycle in which cells show increased sensitivity to pH higher than that of standard S. pombe growth media (about 5.8). Cells stop growing (and may die) at a pH that allows wild type cells to grow.",
+    "iri": "http://purl.obolibrary.org/obo/FYPO_0001987"
   }
 }
