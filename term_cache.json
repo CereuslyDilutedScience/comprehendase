@@ -693,5 +693,10 @@
     "label": "Genital",
     "definition": "The group of organs and glands involved with having a child. In women, these are the uterus (womb), the fallopian tubes, the ovaries, and the vagina (birth canal). The reproductive system in men includes the testes, the prostate, and the penis.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C13348"
+  },
+  "dairy": {
+    "label": "dairy",
+    "definition": "A dairy is a building in which animal milk is harvested and, optionally, processed for human consumption.",
+    "iri": "http://purl.obolibrary.org/obo/ENVO_00003862"
   }
 }
