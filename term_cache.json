@@ -675,5 +675,12 @@
     "label": "Third",
     "definition": "A suffix denoting the third person having the same complete name (first, middle, and family names).",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C49464"
+  },
+  "day of incubation,": null,
+  "day of": null,
+  "day": {
+    "label": "day",
+    "definition": "A one-dimensional temporal region which spans the duration an astronomical body completes one rotation on its axis.",
+    "iri": "http://purl.obolibrary.org/obo/ENVO_01003005"
   }
 }
