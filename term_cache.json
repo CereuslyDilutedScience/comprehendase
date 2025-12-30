@@ -16178,5 +16178,10 @@
     "label": "chicken manure",
     "definition": "Poultry manure made of chicken feces.",
     "iri": "http://purl.obolibrary.org/obo/ENVO_03501252"
+  },
+  "2018. gut antimicrobial": {
+    "label": "antimicrobial",
+    "definition": "A material entity with an antimicrobial disposition.",
+    "iri": "http://purl.obolibrary.org/obo/IDO_0000558"
   }
 }
