@@ -6733,5 +6733,10 @@
     "label": "day 7 of adulthood",
     "definition": "7th day after eclosion.",
     "iri": "http://purl.obolibrary.org/obo/FBdv_00007082"
+  },
+  "a read depth": {
+    "label": "Read Depth",
+    "definition": "The number of times a particular locus (site, nucleotide, amplicon, region) was sequenced.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C155320"
   }
 }
