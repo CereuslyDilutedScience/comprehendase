@@ -2253,5 +2253,26 @@
     "label": "GenBank accession",
     "definition": "Accession number of an entry from the GenBank sequence database.",
     "iri": "http://edamontology.org/data_2292"
+  },
+  "no. cp045797, bioproject": null,
+  "no. cp045797,": null,
+  "cp045797, bioproject accession": null,
+  "cp045797, bioproject": null,
+  "cp045797,": null,
+  "bioproject accession no.": null,
+  "bioproject accession": null,
+  "bioproject": null,
+  "accession no. prjna587561,": null,
+  "no. prjna587561, sra": null,
+  "no. prjna587561,": null,
+  "prjna587561, sra accession": null,
+  "prjna587561, sra": null,
+  "prjna587561,": null,
+  "sra accession no.": null,
+  "sra accession": null,
+  "sra": {
+    "label": "sra",
+    "definition": "stationary-phase-induced ribosome-associated protein",
+    "iri": "http://purl.obolibrary.org/obo/OGG_3000946030"
   }
 }
