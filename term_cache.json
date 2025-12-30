@@ -4528,5 +4528,10 @@
     "label": "compiled software code",
     "definition": "A software that is the specified output of some compilation of software process",
     "iri": "http://purl.obolibrary.org/obo/APOLLO_SV_00000525"
+  },
+  "reads mapped to": {
+    "label": "proportion mapped reads",
+    "definition": "A sequence datum that is the specified output of a read mapping and is the ratio of the count of mapped reads to the total count of reads.",
+    "iri": "http://purl.obolibrary.org/obo/OBI_0003056"
   }
 }
