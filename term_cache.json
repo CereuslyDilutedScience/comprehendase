@@ -978,5 +978,10 @@
     "label": "Common",
     "definition": "Widely known or encountered; standard; of no special distinction or quality.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C43461"
+  },
+  "study": {
+    "label": "Study",
+    "definition": "A detailed examination, analysis, or critical inspection of a subject designed to discover facts about it.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C63536"
   }
 }
