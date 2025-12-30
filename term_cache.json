@@ -4088,5 +4088,10 @@
     "label": "Days Between Diagnosis and Treatment",
     "definition": "The number of days from the date of initial pathologic diagnosis to when treatment began.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C156417"
+  },
+  "the day of": {
+    "label": "Day of the Week",
+    "definition": "Any of the seven named, 24-hour divisions of a calendar week.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C77539"
   }
 }
