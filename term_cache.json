@@ -1228,5 +1228,10 @@
     "label": "Topic",
     "definition": "A category denoting a rather broad domain or field of interest, study, application, work, data, or technology. Topics have no clearly defined borders between each other.",
     "iri": "http://purl.obolibrary.org/obo/topic_0003"
+  },
+  "variant of": {
+    "label": "variant of",
+    "definition": "An object property that represents a relation between a molecular variant and a gene or protein where the variant derives from the gene or protein",
+    "iri": "http://purl.obolibrary.org/obo/CIDO_0000244"
   }
 }
