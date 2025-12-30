@@ -4898,5 +4898,10 @@
     "label": "table",
     "definition": "A table is a placement device with a flat top and one or more legs, providing a level surface for placement. [Allotrope]",
     "iri": "http://purl.allotrope.org/ontologies/equipment#AFE_0002210"
+  },
+  "weissella was almost": {
+    "label": "Almost Constantly",
+    "definition": "A response indicating that something was occurring or recurring nearly continually without interruption.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C125404"
   }
 }
