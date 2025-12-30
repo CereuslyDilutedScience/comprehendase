@@ -2312,5 +2312,32 @@
     "label": "work",
     "definition": "A physical quality which is equal to the energy transferred by a force to a moving object.",
     "iri": "http://purl.obolibrary.org/obo/PATO_0001026"
+  },
+  "was supported by": null,
+  "was supported": null,
+  "supported by the": null,
+  "supported by": null,
+  "supported": null,
+  "research and": null,
+  "program of": null,
+  "of china (grant": null,
+  "china (grant 2016yfd0500900).": null,
+  "china (grant": null,
+  "(grant 2016yfd0500900). both": null,
+  "(grant 2016yfd0500900).": null,
+  "(grant": null,
+  "shijing sun performed": null,
+  "sun performed the": null,
+  "sun performed": null,
+  "performed the major": null,
+  "performed the": null,
+  "the major experiments": null,
+  "the major": null,
+  "major experiments described": null,
+  "major experiments": null,
+  "major": {
+    "label": "Major",
+    "definition": "",
+    "iri": "http://purl.obolibrary.org/obo/NCBITaxon_1925465"
   }
 }
