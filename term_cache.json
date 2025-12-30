@@ -5878,5 +5878,10 @@
     "label": "has potential to developmentally contribute to",
     "definition": "x has potential to developmentrally contribute to y iff x developmentally contributes to y or x is capable of developmentally contributing to y",
     "iri": "http://purl.obolibrary.org/obo/RO_0002385"
+  },
+  "overall reduction of": {
+    "label": "Overall",
+    "definition": "Including everything.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C25605"
   }
 }
