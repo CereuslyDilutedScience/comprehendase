@@ -1658,5 +1658,10 @@
     "label": "impact",
     "definition": "Bruker Daltonics' impact: ESI Q-TOF, Nanospray, APCI, APPI, GC-APCI, CaptiveSpray.",
     "iri": "http://purl.obolibrary.org/obo/MS_1002077"
+  },
+  "rarefaction": {
+    "label": "Rarefaction",
+    "definition": "The calculation of species richness for a number of individual samples, based on plots of the number of species as a function of the number of samples (rarefaction curves).",
+    "iri": "http://edamontology.org/operation_3797"
   }
 }
