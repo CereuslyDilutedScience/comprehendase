@@ -2843,5 +2843,10 @@
     "label": "ant as a sugar source",
     "definition": "Adult female mosquitoes of the sabethine genus Malaya have evolved a remarkable manner of acquiring fluids of plant origin: they imbibe fluid regurgitated by ants of the genus Crematogaster. The habit has not been described for males.",
     "iri": "http://purl.obolibrary.org/obo/IDOMAL_0002404"
+  },
+  "of inoculum for": {
+    "label": "inoculum for fermentation",
+    "definition": "vital biomass containing microorganisms added to start the fermentation process",
+    "iri": "http://purl.obolibrary.org/obo/ONS_0000146"
   }
 }
