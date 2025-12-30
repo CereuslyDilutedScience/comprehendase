@@ -7718,5 +7718,10 @@
     "label": "crayfish preparation (unsterilized)",
     "definition": "SIREN DB annotation:\n* skeletal meat part FOODON:03420175",
     "iri": "http://purl.obolibrary.org/obo/FOODON_03316326"
+  },
+  "ad libitum for": {
+    "label": "ExionLC AD",
+    "definition": "SCIEX ExionLC AD UHPLC system.",
+    "iri": "http://purl.obolibrary.org/obo/MS_1003653"
   }
 }
