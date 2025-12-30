@@ -3278,5 +3278,10 @@
     "label": "C.I. Trials",
     "definition": "Facility in United States",
     "iri": "https://ror.org/05hc6gd57"
+  },
+  "the \ufb01rst trial": {
+    "label": "The Japan-Multinational Trial Organization",
+    "definition": "Nonprofit in Japan established in 1999",
+    "iri": "https://ror.org/0528hwm66"
   }
 }
