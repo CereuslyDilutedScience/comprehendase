@@ -15983,5 +15983,10 @@
     "label": "Research Complex at Harwell",
     "definition": "Facility in United Kingdom established in 2006",
     "iri": "https://ror.org/00gqx0331"
+  },
+  "and former": {
+    "label": "former smoker",
+    "definition": "A person who was not smoking at the time of the interview but has smoked at least 100 cigarettes in their life.",
+    "iri": "http://purl.obolibrary.org/obo/ExO_0000116"
   }
 }
