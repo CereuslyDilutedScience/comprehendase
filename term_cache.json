@@ -1207,5 +1207,12 @@
     "label": "parameters for",
     "definition": "",
     "iri": "http://www.biomodels.net/kisao/KISAO#KISAO_0000695"
+  },
+  "the illumina data": null,
+  "illumina data analysis": null,
+  "illumina data": {
+    "label": "ILLUMINA data",
+    "definition": "",
+    "iri": "http://www.ebi.ac.uk/swo/SWO_0000233"
   }
 }
