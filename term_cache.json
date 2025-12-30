@@ -3063,5 +3063,10 @@
     "label": "Prior to Study",
     "definition": "The time period before the study.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C175039"
+  },
+  "investigate changes in": {
+    "label": "to investigate",
+    "definition": "to investigate is the capability to uncover facts.",
+    "iri": "http://semanticscience.org/resource/SIO_000408"
   }
 }
