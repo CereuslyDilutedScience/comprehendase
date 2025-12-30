@@ -16488,5 +16488,10 @@
     "label": "consuming",
     "definition": "A process where a essential material entity participant ceases to exist at the end and  it was existing at the start. [Allotrope]",
     "iri": "http://purl.allotrope.org/ontologies/process#AFP_0003316"
+  },
+  "soldier \ufb02y (hermetia": {
+    "label": "soldier",
+    "definition": "A person who fights as part of an army. A soldier can be a conscripted or volunteer enlisted person, a non-commissioned officer, or an officer.",
+    "iri": "http://purl.obolibrary.org/obo/GSSO_005823"
   }
 }
