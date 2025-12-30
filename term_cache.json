@@ -1023,5 +1023,10 @@
     "label": "climate change",
     "definition": "The long-term fluctuations in temperature, precipitation, wind, and all other aspects of the Earth's climate. External processes, such as solar-irradiance variations, variations of the Earth's orbital parameters (eccentricity, precession, and inclination), lithosphere motions, and volcanic activity, are factors in climatic variation. Internal variations of the climate system, e.g., changes in the abundance of greenhouse gases, also may produce fluctuations of sufficient magnitude and variability to explain observed climate change through the feedback processes interrelating the components of the climate system.",
     "iri": "http://purl.obolibrary.org/obo/ENVO_01000629"
+  },
+  "attractive": {
+    "label": "Attractive",
+    "definition": "Pleasing to the eye or mind especially through beauty or charm.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C73114"
   }
 }
