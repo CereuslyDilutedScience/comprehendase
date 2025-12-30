@@ -703,5 +703,11 @@
     "label": "Slight",
     "definition": "Small or little in size, quantity, or degree.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C103807"
+  },
+  "color change of": null,
+  "color change": {
+    "label": "Color change (qualifier value)",
+    "definition": "",
+    "iri": "http://snomed.info/id/263715003"
   }
 }
