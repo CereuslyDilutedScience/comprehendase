@@ -438,5 +438,10 @@
     "label": "Access",
     "definition": "The right to obtain or make use of or take advantage of something (as services or membership); the right to enter.  Also, an act or means of approaching.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C25396"
+  },
+  "article": {
+    "label": "Article",
+    "definition": "Nonfictional prose forming an independent part of a publication.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C47902"
   }
 }
