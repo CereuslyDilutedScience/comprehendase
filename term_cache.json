@@ -3403,5 +3403,10 @@
     "label": "death from other causes",
     "definition": "A recorded follow-up status noting that a patient died from other causes than the condition under study.",
     "iri": "http://www.ebi.ac.uk/efo/EFO_0030051"
+  },
+  "(tukey\u2019s test, t": {
+    "label": "t-test",
+    "definition": "The t-test is a process of quantifying the closeness of two sets of data points. It is defined as the ratio of the difference between the means of the two sets divided by the standard error of the difference. [Allotrope]",
+    "iri": "http://purl.allotrope.org/ontologies/process#AFP_0002693"
   }
 }
