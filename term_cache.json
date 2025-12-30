@@ -23,5 +23,10 @@
     "label": "genome",
     "definition": "A genome is a material entity that represents the entirety of an organism's hereditary information. The genome includes both the genes and the non-coding sequences of the DNA and RNA.",
     "iri": "http://purl.obolibrary.org/obo/OGG_0000000001"
+  },
+  "sequence": {
+    "label": "Sequence",
+    "definition": "A nucleic acid or protein sequence information.",
+    "iri": "https://w3id.org/evorao/Sequence"
   }
 }
