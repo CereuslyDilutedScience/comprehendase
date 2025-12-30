@@ -5558,5 +5558,10 @@
     "label": "In Vivo",
     "definition": "Located or occurring in the body.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C15744"
+  },
+  "also supports the": {
+    "label": "supports",
+    "definition": "Example: We support Galileo's statement [X], that Earth moves.",
+    "iri": "http://purl.org/spar/cito/supports"
   }
 }
