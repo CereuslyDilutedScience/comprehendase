@@ -986,5 +986,18 @@
     "label": "Genomic DNA",
     "definition": "The DNA that is part of the normal chromosomal complement of an organism.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C95940"
+  },
+  "with a bacterial": null,
+  "a bacterial dna": null,
+  "a bacterial": null,
+  "bacterial dna kit": null,
+  "bacterial dna": null,
+  "bacterial": null,
+  "dna kit (omega": null,
+  "dna kit": null,
+  "dna": {
+    "label": "DNA",
+    "definition": "High molecular weight, linear polymers, composed of nucleotides containing deoxyribose and linked by phosphodiester bonds; DNA contain the genetic information of organisms (from CHEBI).",
+    "iri": "http://purl.obolibrary.org/obo/FBcv_0000579"
   }
 }
