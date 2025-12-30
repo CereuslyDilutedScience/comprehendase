@@ -2018,5 +2018,10 @@
     "label": "hyperfunction of decreasing",
     "definition": "Hyperfunction of decreasing is a subtype of hyperfunctioning: A process that performs an excesssive decreasing amount or decreasing number of objects.",
     "iri": "http://purl.obolibrary.org/obo/TXPO_0001832"
+  },
+  "availability of farmland": {
+    "label": "availability",
+    "definition": "The state or condition in which this item is accessible and ready for use or can be obtained.",
+    "iri": "https://w3id.org/evorao/availability"
   }
 }
