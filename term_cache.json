@@ -16343,5 +16343,10 @@
     "label": "prevalence",
     "definition": "prevalence is a ratio formed by the number of subjects diagnosed with a disease divided by the total population size.",
     "iri": "http://purl.obolibrary.org/obo/STATO_0000412"
+  },
+  "characterization, and antimicrobial": {
+    "label": "antimicrobial resistance (AMR) phenotypic testing characterization tag",
+    "definition": "A phenotypic microbiological characterization data tag which indicates the presence of antimicrobial resistance (AMR) phenotypic testing characterization data.",
+    "iri": "http://purl.obolibrary.org/obo/GENEPIO_0100725"
   }
 }
