@@ -718,5 +718,10 @@
     "label": "plasma",
     "definition": "Plasma is a state of matter in which an ionized gaseous substance becomes highly electrically conductive to the point that long-range electric and magnetic fields dominate the behavior of the matter. [Wikipedia]",
     "iri": "http://purl.allotrope.org/ontologies/material#AFM_0000404"
+  },
+  "decreased virulence": {
+    "label": "decreased virulence",
+    "definition": "An altered virulence phenotype where the rate, frequency, timing, or extent of the ability of a microbe to cause disease in another organism (the host) is decreased relative to a designated control.",
+    "iri": "http://purl.obolibrary.org/obo/OMP_0000061"
   }
 }
