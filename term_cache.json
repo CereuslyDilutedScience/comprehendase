@@ -2033,5 +2033,10 @@
     "label": "Additional",
     "definition": "Added; extra; further.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C25406"
+  },
+  "highest": {
+    "label": "Highest",
+    "definition": "Approaching or constituting a maximum; the highest point (of something).",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C25525"
   }
 }
