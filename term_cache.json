@@ -5678,5 +5678,10 @@
     "label": "Occur",
     "definition": "Come to pass.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C54069"
+  },
+  "result of antimicrobial": {
+    "label": "Antimicrobial Nonsusceptibility Result",
+    "definition": "A microbial susceptibility test result in which the growth of microorganisms is not inhibited by the usually achievable concentrations of antimicrobial agent when the recommended dosage is used for the site of infection. This category may be applied to new antimicrobial agents for which no resistant microorganisms have been encountered at the time the initial interpretive criteria are determined. Microorganisms that test with an MIC above or a zone measurement below the susceptible interpretive criteria may be designated as nonsusceptible. A designation of nonsusceptible does not necessarily mean that a resistance mechanism(s) exists in the microorganism.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C85561"
   }
 }
