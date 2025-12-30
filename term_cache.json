@@ -2398,5 +2398,10 @@
     "label": "Variant Pathogenic/Likely Pathogenic",
     "definition": "An ad hoc category that describes genetic variants with 90% or greater certainty of contributing to the development of a disease.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C168803"
+  },
+  "in a variety": {
+    "label": "Variety",
+    "definition": "In botanical nomenclature, a rank below subspecies but above forma.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C62709"
   }
 }
