@@ -3238,5 +3238,10 @@
     "label": "Toxicokinetic Samples Taken",
     "definition": "A designation that subjects within the trial set had samples collected to support toxicokinetic analysis.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C198409"
+  },
+  "day 7 than": {
+    "label": "More Often than Once a Day",
+    "definition": "An indication that something is scheduled, or occurs, more than once a day.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C129570"
   }
 }
