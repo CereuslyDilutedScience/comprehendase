@@ -4348,5 +4348,10 @@
     "label": "no evidence data found",
     "definition": "A type of curator inference that results when research finds no evidence information in the scientific literature, at reference databases, or from other resources.",
     "iri": "http://purl.obolibrary.org/obo/ECO_0000035"
+  },
+  "are presented for": {
+    "label": "Are",
+    "definition": "A unit of area equal to 100 square meters. Are is a non-SI unit accepted for use with SI.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C68869"
   }
 }
