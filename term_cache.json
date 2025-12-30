@@ -28,5 +28,10 @@
     "label": "Sequence",
     "definition": "A nucleic acid or protein sequence information.",
     "iri": "https://w3id.org/evorao/Sequence"
+  },
+  "strain": {
+    "label": "strain",
+    "definition": "A strain is a quality quantification facet that quantifies the magnitude of deformation representing the displacement between particles in the body relative to a reference length. [Allotrope]",
+    "iri": "http://purl.allotrope.org/ontologies/result#AFR_0002591"
   }
 }
