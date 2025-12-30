@@ -8093,5 +8093,10 @@
     "label": "6 Lead Standard",
     "definition": "An electrocardiogram lead placement on the patient using a six electrode lead set with three standard leads and three augmented derived leads to elicit an electrical view of the heart.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C90350"
+  },
+  "deviation [sd]). after": {
+    "label": "deviation",
+    "definition": "A deviation is a quantification facet that quantifies the absolute or relative difference of an observed value from another value. [Allotrope]",
+    "iri": "http://purl.allotrope.org/ontologies/result#AFR_0002204"
   }
 }
