@@ -16563,5 +16563,10 @@
     "label": "Organic",
     "definition": "A substance relating to or containing elemental carbon or carbon compounds.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C63848"
+  },
+  "waste streams on": {
+    "label": "Sierra Streams Institute",
+    "definition": "Nonprofit in United States established in 1995",
+    "iri": "https://ror.org/029pa0p32"
   }
 }
