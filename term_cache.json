@@ -6818,5 +6818,10 @@
     "label": "given name",
     "definition": "A given name is a name that is a part of a person's personal name. [Wikipedia]",
     "iri": "http://purl.allotrope.org/ontologies/result#AFR_0001062"
+  },
+  "of one bacterium": {
+    "label": "one of condition",
+    "definition": "A one of condition is a collection of conditions that is valid if exactly one of its condition items is valid. [Allotrope]",
+    "iri": "http://purl.allotrope.org/ontologies/common#AFC_0000093"
   }
 }
