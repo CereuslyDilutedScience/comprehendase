@@ -1733,5 +1733,10 @@
     "label": "Lauric Acid",
     "definition": "A saturated medium-chain fatty acid with a 12-carbon backbone. Lauric acid is found naturally in various plant and animal fats and oils, and is a major component of coconut oil and palm kernel oil.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C68384"
+  },
+  "medium-chain fatty acid": {
+    "label": "medium-chain fatty acid",
+    "definition": "Any fatty acid with a chain length of between C6 and C12.",
+    "iri": "http://purl.obolibrary.org/obo/CHEBI_59554"
   }
 }
