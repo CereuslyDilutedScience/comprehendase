@@ -2448,5 +2448,10 @@
     "label": "Treatment Group",
     "definition": "A study population that receives an intervention(s) within a trial. This could include the investigational product(s) or a comparator (e.g., placebo or an approved intervention).",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C161322"
+  },
+  "jar": {
+    "label": "jar",
+    "definition": "Jars are cylindrical containers with wide openings that may be sealed. [Wikipedia]",
+    "iri": "http://purl.allotrope.org/ontologies/equipment#AFE_0001410"
   }
 }
