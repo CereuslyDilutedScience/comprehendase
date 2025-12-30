@@ -6983,5 +6983,10 @@
     "label": "Feel People Are Around Me but Not with Me Question",
     "definition": "A question about whether an individual feels that people are around them but not with them.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C173010"
+  },
+  "limited to bacilli,": {
+    "label": "Limited to brainstem",
+    "definition": "The area of interest is confined to the brainstem.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C182288"
   }
 }
