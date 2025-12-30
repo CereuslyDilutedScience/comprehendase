@@ -15833,5 +15833,10 @@
     "label": "Severity Three Out of Three",
     "definition": "A severity result of three, on a three level scale.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C147505"
+  },
+  "\ufb01rst two trials,": {
+    "label": "C.I. Trials",
+    "definition": "Facility in United States",
+    "iri": "https://ror.org/05hc6gd57"
   }
 }
