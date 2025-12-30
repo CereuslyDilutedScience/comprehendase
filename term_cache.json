@@ -2878,5 +2878,10 @@
     "label": "contamination",
     "definition": "The process of existence without reproduction of a pathogen of a particular biological taxon in or on some material entity or the process of reproduction of a pathogen in or on a material entity that is not an organism.",
     "iri": "http://purl.obolibrary.org/obo/APOLLO_SV_00000186"
+  },
+  "of meat": {
+    "label": "grade of meat",
+    "definition": "LanguaL curation note: Use the appropriate narrower term only if meat is the first or sole ingredient of a food product.",
+    "iri": "http://purl.obolibrary.org/obo/FOODON_03530064"
   }
 }
