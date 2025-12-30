@@ -523,5 +523,10 @@
     "label": "multiple",
     "definition": "A quality inhering in a bearer by virtue of the bearer's being present in more than two copies.",
     "iri": "http://purl.obolibrary.org/obo/PATO_0002118"
+  },
+  "accepted": {
+    "label": "Accepted",
+    "definition": "Generally approved or used.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C62559"
   }
 }
