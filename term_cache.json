@@ -1546,5 +1546,20 @@
     "label": "Value",
     "definition": "A numerical quantity measured or assigned or computed.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C25712"
+  },
+  "bp, the sequence": null,
+  "reads totaled 376,136,235": null,
+  "totaled 376,136,235 bp,": null,
+  "totaled 376,136,235": null,
+  "coverage was 381": null,
+  ". an aliquot": null,
+  "an aliquot of": null,
+  "an aliquot": null,
+  "aliquot of 8": null,
+  "aliquot of": null,
+  "aliquot": {
+    "label": "Aliquot",
+    "definition": "Pertaining to a portion of the whole; any one of two or more samples of something, of the same volume or weight.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C25414"
   }
 }
