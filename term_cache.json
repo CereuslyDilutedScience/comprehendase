@@ -1828,5 +1828,10 @@
     "label": "hindgut",
     "definition": "The caudalmost subdivision of a digestive tract.",
     "iri": "http://purl.obolibrary.org/obo/UBERON_0001046"
+  },
+  "observable": {
+    "label": "observable",
+    "definition": "Features of ascomycete fungal cells, cultures, or colonies that can be detected, observed, measured, or monitored.",
+    "iri": "http://purl.obolibrary.org/obo/APO_0000017"
   }
 }
