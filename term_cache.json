@@ -318,5 +318,10 @@
     "label": "fluorometer",
     "definition": "A fluorometer is an instrument for the detection and measurement of parameters of fluoresence, which in turn are used to identify the presence and amount of specific molecules in the sample.",
     "iri": "http://purl.obolibrary.org/obo/OBI_0400143"
+  },
+  "sample": {
+    "label": "sample",
+    "definition": "Terms to describe the sample.",
+    "iri": "http://purl.obolibrary.org/obo/MS_1000457"
   }
 }
