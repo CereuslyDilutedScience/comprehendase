@@ -683,5 +683,10 @@
     "label": "agent of",
     "definition": "'agent of' is a relation between a participant and a process, in which the participant is active in the relevant process.",
     "iri": "http://purl.obolibrary.org/obo/TXPO_0001896"
+  },
+  "agent": {
+    "label": "agent",
+    "definition": "An agent is an identifier that identifies the agent performing some action. [Allotrope]",
+    "iri": "http://purl.allotrope.org/ontologies/result#AFR_0003144"
   }
 }
