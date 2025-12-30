@@ -16508,5 +16508,10 @@
     "label": "risks",
     "definition": "Specific physiologic risks associated to the diet plan.",
     "iri": "http://schema.org/risks"
+  },
+  "peptide3 from black": {
+    "label": "black",
+    "definition": "A color that lacks any hues as parts.",
+    "iri": "http://purl.obolibrary.org/obo/PATO_0000317"
   }
 }
