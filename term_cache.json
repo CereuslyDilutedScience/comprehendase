@@ -3833,5 +3833,10 @@
     "label": "Substrate",
     "definition": "Any chemical that can be modified or consumed during a chemical reaction or biological process.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C120264"
+  },
+  "using illumina miseq": {
+    "label": "Illumina MiSeq",
+    "definition": "A DNA sequencer which is manufactured by the Illumina corporation. Built upon sequencing by synthesis technology, the machine provides an end-to-end solution (cluster generation, amplification, sequencing, and data analysis) in a single machine.",
+    "iri": "http://purl.obolibrary.org/obo/OBI_0002003"
   }
 }
