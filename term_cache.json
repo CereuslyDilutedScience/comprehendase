@@ -1528,5 +1528,10 @@
     "label": "difference between",
     "definition": "A relation that holds between an effect estimate and two outcome estimates",
     "iri": "http://humanbehaviourchange.org/ontology/BCIOR_000007"
+  },
+  "fig": {
+    "label": "fig",
+    "definition": "A fruit multiple of a fig plant (Ficus carica).",
+    "iri": "http://purl.obolibrary.org/obo/FOODON_00003266"
   }
 }
