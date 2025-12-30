@@ -227,9 +227,16 @@ def is_candidate_phrase(phrase):
     if all(looks_like_author_name(w) for w in words):
         return False
 
-    # Allow species names (Genus species)
-    if len(words) == 2 and words[0][0].isupper() and words[1].islower():
-        return True
+    # Species names (Genus species) with flexible capitalization
+    if len(words) == 2:
+        w1, w2 = words
+        
+    # Genus: capitalized or abbreviated (E. or Escherichia)
+        if re.match(r"^[A-Z][a-z]+$|^[A-Z]\.$", w1):
+        
+            # species: usually lowercase but allow capitalized due to PDF errors
+            if re.match(r"^[a-zA-Z]+$", w2):
+                return True
 
     # Allow subspecies phrases
     if "subspecies" in phrase.lower():
