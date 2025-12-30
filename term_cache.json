@@ -3178,5 +3178,10 @@
     "label": "Trial",
     "definition": "A run or execution of an activity.\nFor example, one execution of a script.",
     "iri": "https://w3id.org/reproduceme#Trial"
+  },
+  "differences were detected": {
+    "label": "Were Molecular Abnormalities Detected Question",
+    "definition": "A question about whether molecular abnormalities were detected.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C160766"
   }
 }
