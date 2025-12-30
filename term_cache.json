@@ -2274,5 +2274,25 @@
     "label": "sra",
     "definition": "stationary-phase-induced ribosome-associated protein",
     "iri": "http://purl.obolibrary.org/obo/OGG_3000946030"
+  },
+  "accession no. srx7531776": null,
+  "no. srx7531776 and": null,
+  "no. srx7531776": null,
+  "srx7531776 and srx7531777,": null,
+  "srx7531776 and": null,
+  "srx7531776": null,
+  "and srx7531777, and": null,
+  "and srx7531777,": null,
+  "srx7531777, and biosample": null,
+  "srx7531777, and": null,
+  "srx7531777,": null,
+  "and biosample accession": null,
+  "and biosample": null,
+  "biosample accession no.": null,
+  "biosample accession": null,
+  "biosample": {
+    "label": "biosample",
+    "definition": "Biological source material characterized by an experiment.",
+    "iri": "http://purl.obolibrary.org/obo/FBcv_0003024"
   }
 }
