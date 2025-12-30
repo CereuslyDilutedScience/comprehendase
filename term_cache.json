@@ -2253,5 +2253,10 @@
     "label": "deionized water",
     "definition": "This is any condition in which the main influencing factor is deionized water, a form of purified water that is filtered through one or two tanks of ion-exchange resin which replaces cations with hydrogen (H+) ions and anions with hydroxyl (OH-) ions, leaving a mineral-free water.",
     "iri": "http://purl.obolibrary.org/obo/XCO_0001119"
+  },
+  "random": {
+    "label": "Random",
+    "definition": "Governed by or depending on chance; lacking any definite plan or order or purpose.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C60702"
   }
 }
