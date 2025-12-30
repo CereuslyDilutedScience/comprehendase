@@ -1288,5 +1288,10 @@
     "label": "Prevalent",
     "definition": "Widespread, especially in a particular area or at a particular time.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C159688"
+  },
+  "poisoning": {
+    "label": "poisoning",
+    "definition": "A condition or physical state produced by the ingestion, injection, inhalation of or exposure to a deleterious agent.",
+    "iri": "http://purl.obolibrary.org/obo/MONDO_0029000"
   }
 }
