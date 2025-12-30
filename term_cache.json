@@ -7578,5 +7578,10 @@
     "label": "Measured",
     "definition": "Having been determined by measurement.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C44473"
+  },
+  "by dilution plating": {
+    "label": "dilution",
+    "definition": "Dilution is the process of adding a solvent to a solution to lower its concentration. [Allotrope]",
+    "iri": "http://purl.allotrope.org/ontologies/process#AFP_0000785"
   }
 }
