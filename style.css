@@ -104,12 +104,12 @@ header {
 }
 
 .logo-img {
-  max-width: 600px;
-  height: 200px;
+  max-width: 550px;
+  height: 150px;
   display: block;
   overflow: hidden;
   margin: 0;
-    align-items: center;
+  align-items: center;
   justify-content: center;
   padding-bottom: 0;
 
