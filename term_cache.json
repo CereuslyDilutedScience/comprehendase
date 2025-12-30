@@ -1738,5 +1738,10 @@
     "label": "medium-chain fatty acid",
     "definition": "Any fatty acid with a chain length of between C6 and C12.",
     "iri": "http://purl.obolibrary.org/obo/CHEBI_59554"
+  },
+  "like": {
+    "label": "Like",
+    "definition": "A feeling of fondness for a person or thing.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C77969"
   }
 }
