@@ -16393,5 +16393,10 @@
     "label": "galacturonic acid derived from galacturonan derived from pectin",
     "definition": "Galacturonic acid which is derived from galacturonan derived from pectin.",
     "iri": "http://purl.obolibrary.org/obo/CDNO_0100019"
+  },
+  "of food substrates": {
+    "label": "number of substrates",
+    "definition": "Number of molecules which are acted upon by an enzyme.",
+    "iri": "http://biomodels.net/SBO/SBO_0000149"
   }
 }
