@@ -2598,5 +2598,10 @@
     "label": "growth of the alimentary canal",
     "definition": "During the larval stage the alimentary canal grows by increase in cell size and with the formation polytene and endopolyploid nuclei.",
     "iri": "http://purl.obolibrary.org/obo/IDOMAL_0002453"
+  },
+  "of many gram-negative": {
+    "label": "gram negative",
+    "definition": "A gram stain phenotype where a cell or cells do not retain crystal violet stain when decolorized with an organic solvent such as ethanol.",
+    "iri": "http://purl.obolibrary.org/obo/OMP_0000189"
   }
 }
