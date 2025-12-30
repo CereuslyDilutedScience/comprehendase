@@ -1723,5 +1723,10 @@
     "label": "Sequenced Acquisition",
     "definition": "Image acquisition that is performed by acquiring single or multi detector data while rotating the source about the gantry while the table is not moving; additional slices may be acquired by incrementing the table position and again rotating the source about the gantry while the table is not moving. (from DICOM)",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C203520"
+  },
+  "assess bacterial and": {
+    "label": "assess fairness",
+    "definition": "Activity/Process whereby digital objects are evaluated with the relevant FAIR metrics and assessment tools.",
+    "iri": "http://purl.obolibrary.org/obo/T4FS_0000288"
   }
 }
