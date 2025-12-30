@@ -4188,5 +4188,10 @@
     "label": "Shared",
     "definition": "Have in common; held or experienced in common.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C38019"
+  },
+  "or three treatments.": {
+    "label": "Three or Four Days",
+    "definition": "A response indicating that something happens or happened on three or four days.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C126450"
   }
 }
