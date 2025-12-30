@@ -15968,5 +15968,10 @@
     "label": "Program",
     "definition": "A broad framework of goals to be achieved.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C52647"
+  },
+  "grant dge-1922560, by": {
+    "label": "Grant",
+    "definition": "A financial assistance mechanism through which money and/or direct assistance is provided to carry out approved activities.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C16644"
   }
 }
