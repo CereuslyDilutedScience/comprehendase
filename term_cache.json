@@ -428,5 +428,10 @@
     "label": "library",
     "definition": "A curated collection of sources of information and similar resources, selected by experts and made accessible to a defined community for reference or borrowing. It provides physical or digital access to material, and may be a physical location or a virtual space, or both.",
     "iri": "http://purl.obolibrary.org/obo/GSSO_004225"
+  },
+  "preparation": {
+    "label": "Preparation",
+    "definition": "The act or process of making something ready.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C25625"
   }
 }
