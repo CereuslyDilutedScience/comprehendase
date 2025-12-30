@@ -1583,5 +1583,10 @@
     "label": "black",
     "definition": "A color that lacks any hues as parts.",
     "iri": "http://purl.obolibrary.org/obo/PATO_0000317"
+  },
+  "soldier \ufb02y larvae": {
+    "label": "soldier",
+    "definition": "A person who fights as part of an army. A soldier can be a conscripted or volunteer enlisted person, a non-commissioned officer, or an officer.",
+    "iri": "http://purl.obolibrary.org/obo/GSSO_005823"
   }
 }
