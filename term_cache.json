@@ -6348,5 +6348,10 @@
     "label": "spacer",
     "definition": "[definition source]: Wikipedia",
     "iri": "http://purl.bioontology.org/ontology/npo#NPO_485"
+  },
+  "sequencing, 25 bacterial": {
+    "label": "sequencing",
+    "definition": "Refers to the level of sequencing performed on the nucleic acid. Possible values include 'Not sequenced' (no sequencing has been performed), 'Partly sequenced' (only a portion of the nucleic acid sequence has been determined), and 'Fully sequenced' (the entire nucleic acid sequence has been determined).",
+    "iri": "https://w3id.org/evorao/sequencing"
   }
 }
