@@ -823,5 +823,10 @@
     "label": "Conversion",
     "definition": "PEFF keyword for the description of the conversion from original format to this current one.",
     "iri": "http://purl.obolibrary.org/obo/PEFF_0000016"
+  },
+  "animal": {
+    "label": "animal",
+    "definition": "Any of a kingdom (Animalia) of living things including many-celled organisms and often many of the single-celled ones (as protozoans) that typically differ from plants in having cells without cellulose walls, in lacking chlorophyll and the capacity for photosynthesis, in requiring more complex food materials (as proteins), in being organized to a greater degree of complexity, and in having the capacity for spontaneous movement and rapid motor responses to stimulation.",
+    "iri": "http://purl.obolibrary.org/obo/BTO_0000042"
   }
 }
