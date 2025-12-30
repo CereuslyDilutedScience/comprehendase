@@ -2298,5 +2298,10 @@
     "label": "rate",
     "definition": "A quality of a single process inhering in a bearer by virtue of the bearer's occurrence per unit time.",
     "iri": "http://purl.obolibrary.org/obo/PATO_0000161"
+  },
+  "volume": {
+    "label": "volume",
+    "definition": "A volume datum is a quality quantification facet that quantifies some amount of 3-dimensional space an entity occupies. [Allotrope]",
+    "iri": "http://purl.allotrope.org/ontologies/result#AFR_0001843"
   }
 }
