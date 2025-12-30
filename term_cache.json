@@ -1908,5 +1908,10 @@
     "label": "Defensins",
     "definition": "Highly conserved cysteine-rich peptides that play a role in host defense, and may be produced in response to microbial products or proinflammatory cytokines. Defensins bind to microbial cell membranes and can become aggregate either to form pore-like structures or to encapsulate the microbe. These peptide aggregates lead to destabilization of the cell membrane and, subsequently, to lysis of the microbe.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C1063"
+  },
+  "phenomenon": {
+    "label": "Phenomenon",
+    "definition": "A fact or situation that is observed to exist.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C61380"
   }
 }
