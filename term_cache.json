@@ -4183,5 +4183,10 @@
     "label": "Were Itchy Question",
     "definition": "A question about whether an individual feels or felt itchy.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C136347"
+  },
+  "shared among two": {
+    "label": "Shared",
+    "definition": "Have in common; held or experienced in common.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C38019"
   }
 }
