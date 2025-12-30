@@ -6683,5 +6683,10 @@
     "label": "Likely",
     "definition": "Having a good chance of being the case or of coming about.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C85550"
+  },
+  "to compete": {
+    "label": "to bind to",
+    "definition": "to bind to is the capability to physically interact with another object through a set of non-covalent interactions.",
+    "iri": "http://semanticscience.org/resource/SIO_000780"
   }
 }
