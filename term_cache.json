@@ -7113,5 +7113,10 @@
     "label": "Less Productive Than Could Be Question",
     "definition": "A question about whether an individual is or was less productive than they could be.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C175964"
+  },
+  "attributed to their": {
+    "label": "Adverse Event Attributed to Disease",
+    "definition": "An indication that an adverse event is causally related to the natural history of disease.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C166261"
   }
 }
