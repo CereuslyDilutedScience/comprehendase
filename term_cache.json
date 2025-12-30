@@ -2793,5 +2793,10 @@
     "label": "Contaminated",
     "definition": "The presence of any substance or organism that makes a preparation impure.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C68768"
+  },
+  "reference to mrsa": {
+    "label": "mrsA",
+    "definition": "Probable phospho-sugar mutase / MrsA protein homolog",
+    "iri": "http://purl.obolibrary.org/obo/OGG_3000887589"
   }
 }
