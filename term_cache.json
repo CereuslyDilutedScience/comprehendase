@@ -6613,5 +6613,10 @@
     "label": "concentration",
     "definition": "A concentration (datum) is a quantification facet that quantifies a quality inhering in a substance by virtue of the amount of the bearer's there is mixed with another substance. [Allotrope]",
     "iri": "http://purl.allotrope.org/ontologies/result#AFR_0002036"
+  },
+  "degradation of these": {
+    "label": "None of These Describe Me",
+    "definition": "A response indicating that an individual feels that no option listed is a good description for them.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C177109"
   }
 }
