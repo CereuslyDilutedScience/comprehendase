@@ -15828,5 +15828,10 @@
     "label": "Analyzed form",
     "definition": "A descriptive qualifier that indicates the nature/extent/availability of an analyte as it was determined in the sample, e.g. dissolved, labile, total etc.",
     "iri": "http://champ-project.org/images/ontology/cao.owl#CAO_000080"
+  },
+  "of the three": {
+    "label": "Severity Three Out of Three",
+    "definition": "A severity result of three, on a three level scale.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C147505"
   }
 }
