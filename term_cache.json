@@ -1483,5 +1483,10 @@
     "label": "Interpretation",
     "definition": "An act or process of elucidation, explication, or explanation of the meaning of an event or thing.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C41255"
+  },
+  "sampling": {
+    "label": "sampling",
+    "definition": "Sampling is the process of taking parts or partitions of an object aggregate or data set for the interest for studying it. [Allotrope]",
+    "iri": "http://purl.allotrope.org/ontologies/process#AFP_0003634"
   }
 }
