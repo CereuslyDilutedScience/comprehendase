@@ -1848,5 +1848,10 @@
     "label": "Informative",
     "definition": "Refers to data that is useful in forming an opinion or judging an outcome.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C94366"
+  },
+  "component of": {
+    "label": "component of",
+    "definition": "A physical object that is a component that is a physical part of another physical object that is a system. [Allotrope]",
+    "iri": "http://purl.allotrope.org/ontologies/property#AFX_0000939"
   }
 }
