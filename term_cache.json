@@ -2348,5 +2348,10 @@
     "label": "to remove",
     "definition": "To take away a part of a flow from its prefixed place. [NIST]",
     "iri": "http://purl.allotrope.org/ontologies/function#AFFN_0000108"
+  },
+  "traces": {
+    "label": "Traces",
+    "definition": "Nonprofit in France established in 1994",
+    "iri": "https://ror.org/019szx567"
   }
 }
