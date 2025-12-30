@@ -1388,5 +1388,10 @@
     "label": "left",
     "definition": "A directional quality inhering in a bearer by virtue of the bearer's direction that is similar to the direction of an object to the north when it faces east.",
     "iri": "http://purl.obolibrary.org/obo/PATO_0000366"
+  },
+  "serve": {
+    "label": "serve",
+    "definition": "To present in order to make a statement; to make a statement generally.",
+    "iri": "http://purl.obolibrary.org/obo/GSSO_008926"
   }
 }
