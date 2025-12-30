@@ -1818,5 +1818,10 @@
     "label": "tract",
     "definition": "A neuron projection bundle linking two or more synaptic neuropil domains or subdomains within the CNS.",
     "iri": "http://purl.obolibrary.org/obo/FBbt_00005100"
+  },
+  "midgut": {
+    "label": "midgut",
+    "definition": "Middle subdivision of a digestive tract[CJM]. In vertebrates: The middle part of the alimentary canal from the stomach, or entrance of the bile duct, to, or including, the large intestine[GO].",
+    "iri": "http://purl.obolibrary.org/obo/UBERON_0001045"
   }
 }
