@@ -3018,5 +3018,10 @@
     "label": "C.I. Trials",
     "definition": "Facility in United States",
     "iri": "https://ror.org/05hc6gd57"
+  },
+  "were not different": {
+    "label": "Routine Cytogenetics Were not Completed",
+    "definition": "A response that routine cytogenetic testing was not completed.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C160755"
   }
 }
