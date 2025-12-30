@@ -2203,5 +2203,10 @@
     "label": "Consideration",
     "definition": "Careful thought or deliberation.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C113416"
+  },
+  "in resource scarcity": {
+    "label": "Resource",
+    "definition": "Resource published or curated by a single agent.",
+    "iri": "http://www.w3.org/ns/dcat#Resource"
   }
 }
