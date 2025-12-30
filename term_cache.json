@@ -4318,5 +4318,10 @@
     "label": "Were Itchy Question",
     "definition": "A question about whether an individual feels or felt itchy.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C136347"
+  },
+  "in all samples.": {
+    "label": "inheres in at all times",
+    "definition": "b inheres_in c at t =Def. b is a dependent continuant & c is an independent continuant that is not a spatial region & b s-depends_on c at t. (axiom label in BFO2 Reference: [051-002])",
+    "iri": "http://purl.obolibrary.org/obo/BFO_0000052"
   }
 }
