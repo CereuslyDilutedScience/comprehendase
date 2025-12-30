@@ -3108,5 +3108,10 @@
     "label": "Contaminated",
     "definition": "The presence of any substance or organism that makes a preparation impure.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C68768"
+  },
+  "substrate, with a": {
+    "label": "number of a substrate",
+    "definition": "The amount, expressed as a number, of a specific substrate comprising an entity pool. This may be expressed, for example, as the number of molecules, or the number of moles. The participant role 'substrate' is defined in SBO:0000015.",
+    "iri": "http://biomodels.net/SBO/SBO_0000514"
   }
 }
