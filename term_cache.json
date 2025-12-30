@@ -1983,5 +1983,10 @@
     "label": "glucose",
     "definition": "An aldohexose used as a source of energy and metabolic intermediate.",
     "iri": "http://purl.obolibrary.org/obo/CHEBI_17234"
+  },
+  "concentration": {
+    "label": "concentration",
+    "definition": "A concentration (datum) is a quantification facet that quantifies a quality inhering in a substance by virtue of the amount of the bearer's there is mixed with another substance. [Allotrope]",
+    "iri": "http://purl.allotrope.org/ontologies/result#AFR_0002036"
   }
 }
