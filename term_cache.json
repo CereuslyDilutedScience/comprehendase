@@ -16333,5 +16333,10 @@
     "label": "Monterey Jack cheese made from raw milk",
     "definition": "SIREN DB annotation:\n* solid FOODON:03430151\n* not heat-treated FOODON:03440003\n* curd FOODON:03420245\n* lactic acid-other agent fermentation process FOODON:03460107\n* curing or aging process FOODON:03460253",
     "iri": "http://purl.obolibrary.org/obo/FOODON_03311068"
+  },
+  "dairy products. food": {
+    "label": "Engineered > Food production > Dairy products > Fermented dairy products",
+    "definition": "env_broad: anthropogenic environment; env_medium: dairy food product; mixs_extension: MIXS:FoodFoodProductionFacility; other: food production; partial",
+    "iri": "https://w3id.org/gold.path/5456"
   }
 }
