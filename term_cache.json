@@ -4083,5 +4083,10 @@
     "label": "difference in differences",
     "definition": "A statistic that is a subtraction of one difference from another.",
     "iri": "http://purl.obolibrary.org/obo/STATO_0000665"
+  },
+  "between panels a": {
+    "label": "Between",
+    "definition": "The space or interval separating two things.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C94545"
   }
 }
