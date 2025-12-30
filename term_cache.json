@@ -7808,5 +7808,10 @@
     "label": "introduced",
     "definition": "The ecological state of a species living outside its native distributional range, which has arrived there by human activity, either deliberate or accidental.",
     "iri": "http://purl.obolibrary.org/obo/ECOCORE_00000071"
+  },
+  "into experimental substrates.": {
+    "label": "number of substrates",
+    "definition": "Number of molecules which are acted upon by an enzyme.",
+    "iri": "http://biomodels.net/SBO/SBO_0000149"
   }
 }
