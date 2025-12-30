@@ -368,5 +368,10 @@
     "label": "data analysis",
     "definition": "A process of inspecting, cleaning, transforming, and modeling data with the goal of highlighting useful information, suggesting conclusions, and supporting decision making.",
     "iri": "http://semanticscience.org/resource/SIO_001051"
+  },
+  "read": {
+    "label": "read",
+    "definition": "A read is a process boundary within a measuring where a data about the measured object is captured. [Allotrope]",
+    "iri": "http://purl.allotrope.org/ontologies/process#AFP_0003805"
   }
 }
