@@ -4798,5 +4798,10 @@
     "label": "in relation from",
     "definition": "a in relation from b is a comparative relation in a is the object of reference in a relation with b.",
     "iri": "http://semanticscience.org/resource/SIO_000892"
+  },
+  "three different substrates": {
+    "label": "number of substrates",
+    "definition": "Number of molecules which are acted upon by an enzyme.",
+    "iri": "http://biomodels.net/SBO/SBO_0000149"
   }
 }
