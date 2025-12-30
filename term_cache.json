@@ -5813,5 +5813,10 @@
     "label": "Are",
     "definition": "A unit of area equal to 100 square meters. Are is a non-SI unit accepted for use with SI.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C68869"
+  },
+  "originate from either": {
+    "label": "Female-Specific Cancer Risk Can Be Passed from Either Parent Question",
+    "definition": "A question about whether an individual agrees that female-specific cancer risk, such as ovarian cancer, can generally be passed on from either the father or mother.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C213607"
   }
 }
