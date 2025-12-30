@@ -1006,5 +1006,31 @@
     "label": "KIT",
     "definition": "",
     "iri": "http://identifiers.org/ensembl/ENSG00000157404"
+  },
+  "beijing, china) according": null,
+  "china) according to": null,
+  "china) according": null,
+  "according to the": null,
+  "according to": null,
+  "according": null,
+  "to the manufacturer\u2019s": null,
+  "the manufacturer\u2019s instructions.": null,
+  "the manufacturer\u2019s": null,
+  "manufacturer\u2019s instructions. the": null,
+  "manufacturer\u2019s instructions.": null,
+  "manufacturer\u2019s": null,
+  "instructions. the genomic": null,
+  "instructions. the": null,
+  "instructions.": null,
+  "the genomic dna": null,
+  "the genomic": null,
+  "genomic dna was": null,
+  "was quanti\ufb01ed by": null,
+  "was quanti\ufb01ed": null,
+  "quanti\ufb01ed by using": null,
+  "quanti\ufb01ed by": {
+    "label": "quantified by",
+    "definition": "Relation of something that is quantified by some quantity value which expresses it relative to some other thing. [Allotrope]",
+    "iri": "http://purl.allotrope.org/ontologies/property#AFX_0002684"
   }
 }
