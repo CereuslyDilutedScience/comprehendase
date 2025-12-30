@@ -1673,5 +1673,10 @@
     "label": "Toxicokinetic Samples Taken",
     "definition": "A designation that subjects within the trial set had samples collected to support toxicokinetic analysis.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C198409"
+  },
+  "after 3 and": {
+    "label": "After Breakfast and Supper",
+    "definition": "After breakfast and supper.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C64599"
   }
 }
