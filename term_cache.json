@@ -2898,5 +2898,10 @@
     "label": "simulated population",
     "definition": "A simulation of a population or populations of organisms of a particular biological taxon that simulates a particular type of event or types of event that occur in a specified time interval.",
     "iri": "http://purl.obolibrary.org/obo/APOLLO_SV_00000031"
+  },
+  "suppression of mrsa": {
+    "label": "mrsA",
+    "definition": "Probable phospho-sugar mutase / MrsA protein homolog",
+    "iri": "http://purl.obolibrary.org/obo/OGG_3000887589"
   }
 }
