@@ -513,5 +513,10 @@
     "label": "genome assembly",
     "definition": "The result of reconstruction of the genome achieved by aligning and merging smaller fragments.",
     "iri": "http://purl.obolibrary.org/obo/FBcv_0003086"
+  },
+  "assembly": {
+    "label": "assembly",
+    "definition": "The process of individual components of a sample associating to form a new pattern or structure.",
+    "iri": "http://purl.obolibrary.org/obo/CHMO_0001302"
   }
 }
