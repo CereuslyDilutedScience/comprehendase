@@ -3303,5 +3303,10 @@
     "label": "Specific Pathogen Free Organism",
     "definition": "An organism that is born and reared in an environment that is lacking a select individual disease-causing organism or a whole class of pathogens.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C14275"
+  },
+  "treatment was statistically": {
+    "label": "Feel Treatment was Right Question",
+    "definition": "A question about whether an individual feels or felt that the treatment they received was right for them.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C121906"
   }
 }
