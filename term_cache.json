@@ -7038,5 +7038,10 @@
     "label": "has potential to developmentally contribute to",
     "definition": "x has potential to developmentrally contribute to y iff x developmentally contributes to y or x is capable of developmentally contributing to y",
     "iri": "http://purl.obolibrary.org/obo/RO_0002385"
+  },
+  "counts of staphylococcus": {
+    "label": "counts",
+    "definition": "Counts are like ratio scale that they have a zero point but there are no meaningful fractional units. [Allotrope]",
+    "iri": "http://purl.allotrope.org/ontologies/result#AFR_0000915"
   }
 }
