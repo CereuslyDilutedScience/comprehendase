@@ -1668,5 +1668,10 @@
     "label": "glass substrate",
     "definition": "A subtrate made of glass.",
     "iri": "http://www.ebi.ac.uk/efo/EFO_0005062"
+  },
+  "samples were taken": {
+    "label": "Toxicokinetic Samples Taken",
+    "definition": "A designation that subjects within the trial set had samples collected to support toxicokinetic analysis.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C198409"
   }
 }
