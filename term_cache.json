@@ -1708,5 +1708,10 @@
     "label": "fraction extracted",
     "definition": "The fraction of the total quantity of a substance extracted in a separation experiment under specified conditions.",
     "iri": "http://purl.obolibrary.org/obo/CHMO_0002853"
+  },
+  "potato substrates on": {
+    "label": "number of substrates",
+    "definition": "Number of molecules which are acted upon by an enzyme.",
+    "iri": "http://biomodels.net/SBO/SBO_0000149"
   }
 }
