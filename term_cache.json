@@ -7478,5 +7478,10 @@
     "label": "TSA cell",
     "definition": "TSA is an aggressive and poorly immunogenic cell line established from a moderately differentiated mammary adenocarcinoma that arose spontaneously in a multiparous BALB/c mouse.",
     "iri": "http://purl.obolibrary.org/obo/BTO_0004282"
+  },
+  "nj) plates. growth": {
+    "label": "Thick growth plates",
+    "definition": "Increased thickness (dimension along the axis of the bone) of the growth plate.",
+    "iri": "http://purl.obolibrary.org/obo/HP_0025369"
   }
 }
