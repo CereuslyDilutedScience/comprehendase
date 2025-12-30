@@ -898,5 +898,10 @@
     "label": "Taken",
     "definition": "Having been accepted for some purpose; ingested as a medication.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C25701"
+  },
+  "diversity": {
+    "label": "Diversity",
+    "definition": "Variety; quality, state, fact, or instance of being different.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C62263"
   }
 }
