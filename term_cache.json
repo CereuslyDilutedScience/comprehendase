@@ -68,5 +68,10 @@
     "label": "Content",
     "definition": "Everything that is included in a collection, container, or communication.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C44476"
+  },
+  "bacterium": {
+    "label": "Bacterium",
+    "definition": "The bacterium as a biological material.",
+    "iri": "https://w3id.org/evorao/Bacterium"
   }
 }
