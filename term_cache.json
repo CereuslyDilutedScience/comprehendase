@@ -3043,5 +3043,10 @@
     "label": "Conducted Interference",
     "definition": "Problems related to electromagnetic interference (EMI) by physical contact with conductors (e.g. wires, resistors, terminals) as opposed to radiated EMI which is caused by induction (without physical contact of the conductors).",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C92037"
+  },
+  "the \ufb01rst trial,": {
+    "label": "The Japan-Multinational Trial Organization",
+    "definition": "Nonprofit in Japan established in 1999",
+    "iri": "https://ror.org/0528hwm66"
   }
 }
