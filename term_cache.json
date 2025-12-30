@@ -6973,5 +6973,10 @@
     "label": "focus",
     "definition": "An optical quality where light rays originating from a point on the object converge.",
     "iri": "http://purl.obolibrary.org/obo/PATO_0001516"
+  },
+  "were consistently the": {
+    "label": "Consistently Decreased Social Activities Question",
+    "definition": "A question about whether an individual experiences or experienced consistently decreased interest or participation in social activities.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C159932"
   }
 }
