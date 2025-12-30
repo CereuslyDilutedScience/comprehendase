@@ -7033,5 +7033,10 @@
     "label": "commensal",
     "definition": "An organism bearing a commensal role.",
     "iri": "http://purl.obolibrary.org/obo/IDO_0000525"
+  },
+  "contribute to decreased": {
+    "label": "has potential to developmentally contribute to",
+    "definition": "x has potential to developmentrally contribute to y iff x developmentally contributes to y or x is capable of developmentally contributing to y",
+    "iri": "http://purl.obolibrary.org/obo/RO_0002385"
   }
 }
