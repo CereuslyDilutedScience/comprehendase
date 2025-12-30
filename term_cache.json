@@ -2353,5 +2353,10 @@
     "label": "Are",
     "definition": "A unit of area equal to 100 square meters. Are is a non-SI unit accepted for use with SI.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C68869"
+  },
+  "necessary to": {
+    "label": "necessary (continuant)",
+    "definition": "A necessity quality (continuant) inhering in a bearer by virtue of the bearer's being essential or indispensable.",
+    "iri": "http://purl.obolibrary.org/obo/PATO_0001635"
   }
 }
