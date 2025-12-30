@@ -183,5 +183,10 @@
     "label": "isolate",
     "definition": "Identifier given to a pathogen that has been isolated from an infected host and propagated in a laboratory culture. The isolate information may include an internal reference code from the laboratory that took the sample or performed the isolation, as well as details about the specific conditions of isolation, such as the name of the town, hospital, and type of host.",
     "iri": "https://w3id.org/evorao/isolate"
+  },
+  "small": {
+    "label": "Small",
+    "definition": "Limited in number, quantity, magnitude or extent.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C25376"
   }
 }
