@@ -64,4 +64,4 @@ pages_output.append({
         })
 
 doc.close()
-    return pages_output
+return pages_output
