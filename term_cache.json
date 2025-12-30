@@ -5098,5 +5098,10 @@
     "label": "Did Not Have",
     "definition": "A response indicating that an individual did not experience something.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C192133"
+  },
+  "impact diversity indices": {
+    "label": "Office of Economic Impact and Diversity",
+    "definition": "Government in United States established in 1979",
+    "iri": "https://ror.org/05hsv7e61"
   }
 }
