@@ -16188,5 +16188,10 @@
     "label": "Accidents and Adverse Effects",
     "definition": "Causes of death attributable to accidents or their adverse events.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C105736"
+  },
+  "value of": {
+    "label": "specifies value of",
+    "definition": "A relation between a value specification and an entity which the specification is about.",
+    "iri": "http://purl.obolibrary.org/obo/OBI_0001927"
   }
 }
