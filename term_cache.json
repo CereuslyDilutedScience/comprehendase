@@ -5123,5 +5123,10 @@
     "label": "Sierra Streams Institute",
     "definition": "Nonprofit in United States established in 1995",
     "iri": "https://ror.org/029pa0p32"
+  },
+  "chicken feed were": {
+    "label": "chicken feed",
+    "definition": "SIREN DB annotation:\n* ingredient: grain added FOODON:03460152\n* poultry as consumer FOODON:03510018",
+    "iri": "http://purl.obolibrary.org/obo/FOODON_03310338"
   }
 }
