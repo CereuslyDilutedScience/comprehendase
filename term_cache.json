@@ -3138,5 +3138,10 @@
     "label": "to be compared",
     "definition": "to be compared is the capability of an object to be examined in order to note the similarities or differences among a set of objects.",
     "iri": "http://semanticscience.org/resource/SIO_000722"
+  },
+  "the treatment containing": {
+    "label": "The Cancer Treatment Center",
+    "definition": "Healthcare in United States established in 1986",
+    "iri": "https://ror.org/05waabg59"
   }
 }
