@@ -1909,27 +1909,12 @@
     "definition": "The amount of a harvested crop",
     "iri": "http://purl.obolibrary.org/obo/AGRO_00010019"
   },
-  "of harvested": {
-    "label": "number of plants harvested",
-    "definition": "The amount of a harvested crop",
-    "iri": "http://purl.obolibrary.org/obo/AGRO_00010019"
-  },
-  "harvested larvae by": {
-    "label": "food harvested by hunting",
-    "definition": "Food material that is obtained by hunting, the practice of seeking, pursuing and capturing or killing wild animals.",
-    "iri": "http://purl.obolibrary.org/obo/FOODON_00003377"
-  },
-  "pathogenic microorganisms inhabiting": {
+  "by pathogenic microorganisms": {
     "label": "Variant Pathogenic/Likely Pathogenic",
     "definition": "An ad hoc category that describes genetic variants with 90% or greater certainty of contributing to the development of a disease.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C168803"
   },
-  "decaying substrates may": {
-    "label": "May",
-    "definition": "The fifth month of the year in the Gregorian calendar.",
-    "iri": "http://purl.obolibrary.org/obo/NCIT_C106184"
-  },
-  "decaying substrates": {
+  "inhabiting decaying substrates": {
     "label": "number of substrates",
     "definition": "Number of molecules which are acted upon by an enzyme.",
     "iri": "http://biomodels.net/SBO/SBO_0000149"
@@ -1954,16 +1939,6 @@
     "definition": "An entity applies a specification or mathematical function, if the specification specifies the entity and the entity conforms or follows the specification. [Allotrope]",
     "iri": "http://purl.allotrope.org/ontologies/property#AFX_0002849"
   },
-  "a suppression": {
-    "label": "suppression",
-    "definition": "An effect in which two genetic perturbations, when combined, result in a phenotype that is less severe/penetrant than the most severe phenotype of the original perturbations, in effect making the organism more \"wild type\" in character with regards to the phenotype in question. With respect to any single quantifiable phenotype, this may be expressed as an inequality as:\na* < ab <= wt [E = a*]\nOR\nwt <= ab < a* [E = a*]\nwhere 'a*' is the most severe observed phenotype value of the individual perturbations, 'ab' is the observed phenotype value of the double perturbation, 'E' is the expected phenotype value of the double perturbation, and 'wt' is the wild type phenotype value.",
-    "iri": "http://purl.obolibrary.org/obo/MI_0796"
-  },
-  "suppression applies to": {
-    "label": "applies",
-    "definition": "An entity applies a specification or mathematical function, if the specification specifies the entity and the entity conforms or follows the specification. [Allotrope]",
-    "iri": "http://purl.allotrope.org/ontologies/property#AFX_0002849"
-  },
   "aureus, which": {
     "label": "during which exists",
     "definition": "inverse of exists at [BFO]",
@@ -1975,11 +1950,6 @@
     "iri": "http://purl.obolibrary.org/obo/FBcv_0000069"
   },
   "bacterium pathogenic to": {
-    "label": "Variant Pathogenic/Likely Pathogenic",
-    "definition": "An ad hoc category that describes genetic variants with 90% or greater certainty of contributing to the development of a disease.",
-    "iri": "http://purl.obolibrary.org/obo/NCIT_C168803"
-  },
-  "bacterium pathogenic": {
     "label": "Variant Pathogenic/Likely Pathogenic",
     "definition": "An ad hoc category that describes genetic variants with 90% or greater certainty of contributing to the development of a disease.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C168803"
@@ -2029,32 +1999,12 @@
     "definition": "The long-term fluctuations in temperature, precipitation, wind, and all other aspects of the Earth's climate. External processes, such as solar-irradiance variations, variations of the Earth's orbital parameters (eccentricity, precession, and inclination), lithosphere motions, and volcanic activity, are factors in climatic variation. Internal variations of the climate system, e.g., changes in the abundance of greenhouse gases, also may produce fluctuations of sufficient magnitude and variability to explain observed climate change through the feedback processes interrelating the components of the climate system.",
     "iri": "http://purl.obolibrary.org/obo/ENVO_01000629"
   },
-  "and climate": {
-    "label": "Climate and Energy Fund",
-    "definition": "Government in Austria established in 2007",
-    "iri": "https://ror.org/044ym4p17"
-  },
-  "climate change (1).": {
-    "label": "climate change",
-    "definition": "The long-term fluctuations in temperature, precipitation, wind, and all other aspects of the Earth's climate. External processes, such as solar-irradiance variations, variations of the Earth's orbital parameters (eccentricity, precession, and inclination), lithosphere motions, and volcanic activity, are factors in climatic variation. Internal variations of the climate system, e.g., changes in the abundance of greenhouse gases, also may produce fluctuations of sufficient magnitude and variability to explain observed climate change through the feedback processes interrelating the components of the climate system.",
-    "iri": "http://purl.obolibrary.org/obo/ENVO_01000629"
-  },
   "integration of": {
     "label": "integration",
     "definition": "The method used to obtain the integral of a function or curve. [Allotrope]",
     "iri": "http://purl.allotrope.org/ontologies/process#AFP_0000970"
   },
   "into the diets": {
-    "label": "Elimination Diets",
-    "definition": "Temporary dietary restrictions designed to help identify specific foods or FOOD ADDITIVES that trigger ALLERGIC REACTIONS, symptoms of DIGESTIVE SYSTEM DISORDERS, or other adverse food reactions.",
-    "iri": "http://id.nlm.nih.gov/mesh/D000092724"
-  },
-  "into the": {
-    "label": "import into the mitochondrion",
-    "definition": "The directed movement of substances from the cytosol into the mitochondrion.",
-    "iri": "http://purl.obolibrary.org/obo/GO_0170036"
-  },
-  "the diets of": {
     "label": "Elimination Diets",
     "definition": "Temporary dietary restrictions designed to help identify specific foods or FOOD ADDITIVES that trigger ALLERGIC REACTIONS, symptoms of DIGESTIVE SYSTEM DISORDERS, or other adverse food reactions.",
     "iri": "http://id.nlm.nih.gov/mesh/D000092724"
@@ -2094,22 +2044,7 @@
     "definition": "An indefinite small quantity that is more than two but less than many.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C107221"
   },
-  "several species": {
-    "label": "Several",
-    "definition": "An indefinite small quantity that is more than two but less than many.",
-    "iri": "http://purl.obolibrary.org/obo/NCIT_C107221"
-  },
   "the black soldier": {
-    "label": "soldier",
-    "definition": "A person who fights as part of an army. A soldier can be a conscripted or volunteer enlisted person, a non-commissioned officer, or an officer.",
-    "iri": "http://purl.obolibrary.org/obo/GSSO_005823"
-  },
-  "the black": {
-    "label": "The Welsh Black Cattle Society",
-    "definition": "Nonprofit in United Kingdom established in 1904",
-    "iri": "https://ror.org/005smnq10"
-  },
-  "soldier \ufb02y editor": {
     "label": "soldier",
     "definition": "A person who fights as part of an army. A soldier can be a conscripted or volunteer enlisted person, a non-commissioned officer, or an officer.",
     "iri": "http://purl.obolibrary.org/obo/GSSO_005823"
@@ -2123,5 +2058,1275 @@
     "label": "Article",
     "definition": "Nonfictional prose forming an independent part of a publication.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C47902"
+  },
+  "4.0 international license.": {
+    "label": "Creative Commons Attribution 4.0 International Public License",
+    "definition": "This work is licensed under a Creative Commons Attribution 4.0 International License http://creativecommons.org/licenses/by/4.0/.\n\nTHESE MATERIALS ARE PROVIDED \"AS IS\" AND ALLOTROPE EXPRESSLY DISCLAIMS ALL WARRANTIES, EXPRESS, IMPLIED OR STATUTORY, INCLUDING, WITHOUT LIMITATION, THE WARRANTIES OF NON-INFRINGEMENT, TITLE, MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.\n\nCopyright \u00a9 2015-2025 Allotrope Foundation",
+    "iri": "http://purl.allotrope.org/voc/creative-commons-attribution-license"
+  },
+  "alyokhin@maine.edu. the authors": {
+    "label": "authors",
+    "definition": "The list of authors.",
+    "iri": "https://w3id.org/evorao/authors"
+  },
+  "declare no con\ufb02ict": {
+    "label": "No",
+    "definition": "The non-affirmative response to a question.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C49487"
+  },
+  "interest. received 20": {
+    "label": "interest",
+    "definition": "Interest is a positive emotion which motivates learning, exploration and curiosity. Feelings of interest are associated with the novelty and complexity of stimuli. [Source: OCEAS]",
+    "iri": "http://purl.obolibrary.org/obo/MFOEM_000033"
+  },
+  "october 2022 september/october": {
+    "label": "October",
+    "definition": "The tenth month of the year in the Gregorian calendar.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C106189"
+  },
+  "10.1128/spectrum.02321-22 1 research": {
+    "label": "Spectrum Clinical Research (India)",
+    "definition": "Company in India established in 2006",
+    "iri": "https://ror.org/00s8enb31"
+  },
+  "illucens [bsf]), particularly": {
+    "label": "bsf",
+    "definition": "The protein-coding gene bsf (bicoid stability factor) located on the chromosome 2L mapped at 36F5-36F5.",
+    "iri": "http://identifiers.org/ncbigene/35100"
+  },
+  "(bsfl), has emerged": {
+    "label": "F0 adults emerged from field collected eggs",
+    "definition": "Mosquitoes collected as eggs in the field and grown to adult stage before determining resistance to insecticides.",
+    "iri": "http://purl.obolibrary.org/obo/MIRO_30000002"
+  },
+  "alternative feed ingredient": {
+    "label": "animal feed ingredient",
+    "definition": "An ingredient that is used in the preparation of animal feed.",
+    "iri": "http://purl.obolibrary.org/obo/FOODON_00004322"
+  },
+  "for several": {
+    "label": "Several",
+    "definition": "An indefinite small quantity that is more than two but less than many.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C107221"
+  },
+  "reasons. bsfl are": {
+    "label": "Are",
+    "definition": "A unit of area equal to 100 square meters. Are is a non-SI unit accepted for use with SI.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C68869"
+  },
+  "quick-developing and proli\ufb01c": {
+    "label": "quick and dirty MALDI sample preparation",
+    "definition": "Quick & dirty (Q&D) sample preparation separating matrix handling from sample handling.",
+    "iri": "http://purl.obolibrary.org/obo/MS_1001993"
+  },
+  "produce 500 to": {
+    "label": "to produce",
+    "definition": "The function to bring something into existence. [Allotrope]",
+    "iri": "http://purl.allotrope.org/ontologies/function#AFFN_0000196"
+  },
+  "900 eggs per": {
+    "label": "eggs per brood",
+    "definition": "An average value that specifies the number of eggs produced during one reproductive cycle for each individual female within a population.",
+    "iri": "http://purl.obolibrary.org/obo/APOLLO_SV_00000453"
+  },
+  "female (2). these": {
+    "label": "None of These Describe Me",
+    "definition": "A response indicating that an individual feels that no option listed is a good description for them.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C177109"
+  },
+  "can develop on": {
+    "label": "Can Stand on Tiptoes Question",
+    "definition": "A question about whether an individual is able to stand on their tiptoes.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C209985"
+  },
+  "substrates, including food": {
+    "label": "number of substrates",
+    "definition": "Number of molecules which are acted upon by an enzyme.",
+    "iri": "http://biomodels.net/SBO/SBO_0000149"
+  },
+  "and other animals,": {
+    "label": "other animals exposure",
+    "definition": "Treatment involving the exposure of plant to the pests that do not falll under the well known classes of birds, mammals, insects, nematode and molluscs.",
+    "iri": "http://purl.obolibrary.org/obo/PECO_0007084"
+  },
+  "and a variety": {
+    "label": "Variety",
+    "definition": "In botanical nomenclature, a rank below subspecies but above forma.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C62709"
+  },
+  "by-products from food,": {
+    "label": "Child Feels Concerned by Inadequate Food Products Labels Question",
+    "definition": "A question about whether an individual's child feels concerned by poor labelling on food products.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C209970"
+  },
+  "agriculture, and aquaculture": {
+    "label": "Agriculture and Food",
+    "definition": "Facility in Australia",
+    "iri": "https://ror.org/03n17ds51"
+  },
+  "industries (2). capturing": {
+    "label": "capturing behaviour",
+    "definition": "Suite of behaviors involved in securing a prey item once it has been located.",
+    "iri": "http://purl.obolibrary.org/obo/NBO_0020292"
+  },
+  "that are otherwise": {
+    "label": "SOAPP-R - Felt That Things Are Overwhelming",
+    "definition": "Screener and Opioid Assessment for Patients with Pain - Revised (SOAPP-R) How often have you felt that things are just too overwhelming that you can't handle them?",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C100873"
+  },
+  "in these wastes": {
+    "label": "voiding of nitrogenous wastes",
+    "definition": "During the first day after feeding, deamination of amino acids produces excess nitrogen which is voided in the form of low molecular weight nitrogenous metabolites.",
+    "iri": "http://purl.obolibrary.org/obo/IDOMAL_0002046"
+  },
+  "is bene\ufb01cial to": {
+    "label": "is equivalent to",
+    "definition": "Property is a note about a proposed logical expression in order to describe the term as defined class. [Allotrope]",
+    "iri": "http://purl.allotrope.org/ontologies/property#AFX_0002794"
+  },
+  "the food cycle": {
+    "label": "food cycle",
+    "definition": "A food web in which the outputs of a trophic interaction are consumed by organisms acting in a lower trophic level relative to the initial interaction.",
+    "iri": "http://purl.obolibrary.org/obo/ECOCORE_00000002"
+  },
+  "and the environment,": {
+    "label": "Extraordinary Opportunity: Genes and the Environment",
+    "definition": "Goal: identify and characterize every major human gene that predisposes people to cancer; begin to apply these discoveries through clinical practice to help patients at risk; address the psychosocial, ethical, and legal issues associated with inherited cancer susceptibility (NCI Web)",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C16132"
+  },
+  "especially taking into": {
+    "label": "taking",
+    "definition": "Taking material is the exporting of material from a location or site. [Allotrope]",
+    "iri": "http://purl.allotrope.org/ontologies/process#AFP_0003576"
+  },
+  "consideration the increases": {
+    "label": "Consideration",
+    "definition": "Careful thought or deliberation.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C113416"
+  },
+  "in resource scarcity": {
+    "label": "Resource",
+    "definition": "Resource published or curated by a single agent.",
+    "iri": "http://www.w3.org/ns/dcat#Resource"
+  },
+  "throughout global communities": {
+    "label": "Global Communities",
+    "definition": "Nonprofit in United States established in 1952",
+    "iri": "https://ror.org/04rqj7157"
+  },
+  "(2). a common": {
+    "label": "Common",
+    "definition": "Widely known or encountered; standard; of no special distinction or quality.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C43461"
+  },
+  "for industrial bsfl": {
+    "label": "Centre for Industrial Technological Development",
+    "definition": "Nonprofit in Spain established in 1977",
+    "iri": "https://ror.org/0124x7055"
+  },
+  "rearing includes bioconversion": {
+    "label": "rearing measurement",
+    "definition": "Any measurement of a movement in which a quadrupedal subject rises up on its back legs.",
+    "iri": "http://purl.obolibrary.org/obo/CMO_0001515"
+  },
+  "larval": {
+    "label": "larval-larval ecdysis",
+    "definition": "The ecdysis between any of the four larval instars.",
+    "iri": "http://purl.obolibrary.org/obo/IDOMAL_0002202"
+  },
+  "the rearing": {
+    "label": "rearing measurement",
+    "definition": "Any measurement of a movement in which a quadrupedal subject rises up on its back legs.",
+    "iri": "http://purl.obolibrary.org/obo/CMO_0001515"
+  },
+  "of bsfl on": {
+    "label": "acts on population of",
+    "definition": "p acts on population of c iff c' is a collection, has members of type c, and p has participant c",
+    "iri": "http://purl.obolibrary.org/obo/RO_0012003"
+  },
+  "an increasingly common": {
+    "label": "an",
+    "definition": "A paste which is made from beans, grains, or other vegetables which are boiled, mashed, and diluted into a slurry which strained and then filtered, squeezed dry, and then usually sweetened.",
+    "iri": "http://purl.obolibrary.org/obo/FOODON_00002387"
+  },
+  "industry for recycling": {
+    "label": "Institute for Information Industry",
+    "definition": "Nonprofit in Taiwan established in 1979",
+    "iri": "https://ror.org/01d8kr740"
+  },
+  "waste and generating": {
+    "label": "generating",
+    "definition": "Generating is a subtype of funcioning: A process that produces output from nothing.",
+    "iri": "http://purl.obolibrary.org/obo/TXPO_0000381"
+  },
+  "livestock feed ingredients": {
+    "label": "livestock",
+    "definition": "Domesticated farm animals raised for home use or profit but excluding POULTRY. Typically livestock includes CATTLE; SHEEP; HORSES; SWINE; GOATS; and others.",
+    "iri": "http://purl.bioontology.org/ontology/MESH/D058751"
+  },
+  "3). bsfl have": {
+    "label": "Have",
+    "definition": "Used to describe the possession, relationships, or the state of something or someone.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C101282"
+  },
+  "been successfully integrated": {
+    "label": "Integrated",
+    "definition": "Combining things, people, or ideas of different types in one effective unit, group, or system.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C165682"
+  },
+  "during experimental trials": {
+    "label": "NCI Early-Phase and Experimental Clinical Trials Biospecimen Bank",
+    "definition": "A biorepository responsible for collecting, processing and storing a variety of human specimens from patients with cancer who are participating in NCI-funded Experimental Therapeutics Clinical Trials Network (ETCTN) and other NCI-supported early and experimental clinical trials.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C186296"
+  },
+  "concerns have": {
+    "label": "Have Concerns About How You Look Question",
+    "definition": "A question about whether an individual experiences or experienced concerns about how they look.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C159926"
+  },
+  "been raised regarding": {
+    "label": "raised",
+    "definition": "A shape quality inhering in a colony by virtue of the bearer's appearing above the medium surface with terraced edges.",
+    "iri": "http://purl.obolibrary.org/obo/PATO_0001369"
+  },
+  "the long-term safety": {
+    "label": "Long-Term",
+    "definition": "Involving or being in effect for a long time.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C25322"
+  },
+  "and security of": {
+    "label": "University of Security and Economics",
+    "definition": "Education in Bulgaria established in 2003",
+    "iri": "https://ror.org/03athrm05"
+  },
+  "bsfl use, particularly": {
+    "label": "Use",
+    "definition": "To put into action or service.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C95018"
+  },
+  "the accumulation of": {
+    "label": "accumulation of xenobiotics",
+    "definition": "Accumulation of xenobiotics is a subtype of accumulation of substances in a biological object: A process that keeps xenobiotics in an organism, tissue, organelle, or cell.",
+    "iri": "http://purl.obolibrary.org/obo/TXPO_0000169"
+  },
+  "microbes within harvested": {
+    "label": "harvested crop",
+    "definition": "A crop that has been harvested after an harvesting process.",
+    "iri": "http://purl.obolibrary.org/obo/AGRO_00002049"
+  },
+  "substrate (5). it": {
+    "label": "it/it pronouns",
+    "definition": "A pronoun set composed of it, its, and itself.",
+    "iri": "http://purl.obolibrary.org/obo/GSSO_011533"
+  },
+  "is imperative to": {
+    "label": "is equivalent to",
+    "definition": "Property is a note about a proposed logical expression in order to describe the term as defined class. [Allotrope]",
+    "iri": "http://purl.allotrope.org/ontologies/property#AFX_0002794"
+  },
+  "that bsfl rearing": {
+    "label": "rearing measurement",
+    "definition": "Any measurement of a movement in which a quadrupedal subject rises up on its back legs.",
+    "iri": "http://purl.obolibrary.org/obo/CMO_0001515"
+  },
+  "facilities are": {
+    "label": "Are",
+    "definition": "A unit of area equal to 100 square meters. Are is a non-SI unit accepted for use with SI.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C68869"
+  },
+  "proliferation and spread": {
+    "label": "sardine and tomato spread",
+    "definition": "SIREN DB annotation:\n* semisolid FOODON:03430144\n* fully heat-treated FOODON:03440014\n* whole animal or most parts used FOODON:03420173\n* ingredient: flavoring, spice or herb added FOODON:03460227",
+    "iri": "http://purl.obolibrary.org/obo/FOODON_03305729"
+  },
+  "of pathogenic": {
+    "label": "Variant Pathogenic/Likely Pathogenic",
+    "definition": "An ad hoc category that describes genetic variants with 90% or greater certainty of contributing to the development of a disease.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C168803"
+  },
+  "into the relationship": {
+    "label": "import into the mitochondrion",
+    "definition": "The directed movement of substances from the cytosol into the mitochondrion.",
+    "iri": "http://purl.obolibrary.org/obo/GO_0170036"
+  },
+  "colonize substrates are": {
+    "label": "Are",
+    "definition": "A unit of area equal to 100 square meters. Are is a non-SI unit accepted for use with SI.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C68869"
+  },
+  "necessary to": {
+    "label": "necessary (continuant)",
+    "definition": "A necessity quality (continuant) inhering in a bearer by virtue of the bearer's being essential or indispensable.",
+    "iri": "http://purl.obolibrary.org/obo/PATO_0001635"
+  },
+  "the safety": {
+    "label": "The Lithuanian Maritime Safety Administration",
+    "definition": "Government in Lithuania established in 2002",
+    "iri": "https://ror.org/042qxra19"
+  },
+  "as feed. several": {
+    "label": "Several",
+    "definition": "An indefinite small quantity that is more than two but less than many.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C107221"
+  },
+  "in vitro studies": {
+    "label": "In Vitro",
+    "definition": "In the laboratory; literally, \"in glass\".",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C15263"
+  },
+  "have been conducted": {
+    "label": "MFIS - Have Been Forgetful",
+    "definition": "Modified Fatigue Impact Scale (MFIS) Because of my fatigue during the past 4 weeks I have been forgetful.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C113971"
+  },
+  "showing they are": {
+    "label": "GOSE - Work: How Restricted Are They",
+    "definition": "Extended Glasgow Outcome Scale (GOSE) How restricted are they?",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C115837"
+  },
+  "capable of dramatic": {
+    "label": "capable of",
+    "definition": "A relation between a material entity (such as a cell) and a process, in which the material entity has the ability to carry out the process.",
+    "iri": "http://purl.obolibrary.org/obo/RO_0002215"
+  },
+  "alteration of substrates": {
+    "label": "number of substrates",
+    "definition": "Number of molecules which are acted upon by an enzyme.",
+    "iri": "http://biomodels.net/SBO/SBO_0000149"
+  },
+  "including suppressing pathogenic": {
+    "label": "Variant Pathogenic/Likely Pathogenic",
+    "definition": "An ad hoc category that describes genetic variants with 90% or greater certainty of contributing to the development of a disease.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C168803"
+  },
+  "in a variety": {
+    "label": "Variety",
+    "definition": "In botanical nomenclature, a rank below subspecies but above forma.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C62709"
+  },
+  "of organic wastes": {
+    "label": "voiding of nitrogenous wastes",
+    "definition": "During the first day after feeding, deamination of amino acids produces excess nitrogen which is voided in the form of low molecular weight nitrogenous metabolites.",
+    "iri": "http://purl.obolibrary.org/obo/IDOMAL_0002046"
+  },
+  "suppress the growth": {
+    "label": "growth of the alimentary canal",
+    "definition": "During the larval stage the alimentary canal grows by increase in cell size and with the formation polytene and endopolyploid nuclei.",
+    "iri": "http://purl.obolibrary.org/obo/IDOMAL_0002453"
+  },
+  "of many gram-negative": {
+    "label": "gram negative",
+    "definition": "A gram stain phenotype where a cell or cells do not retain crystal violet stain when decolorized with an organic solvent such as ethanol.",
+    "iri": "http://purl.obolibrary.org/obo/OMP_0000189"
+  },
+  "bacterial species, such": {
+    "label": "Label as Such",
+    "definition": "An instruction for product to be labeled as explicitly directed.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C64662"
+  },
+  "coli": {
+    "label": "Taenia coli",
+    "definition": "The taeniae coli (also teniae coli) are three separate longitudinal ribbons of smooth muscle on the outside of the ascending, transverse, descending and sigmoid colons. They are visible, and can be seen just below the serosa or fibrosa. They are the Mesocolic, Free and Omental Coli. The teniae coli contracts length wise to produce the haustra, the bulges in the colon. The bands converge at the root of the vermiform appendix and the rectum. These bands correspond to the outer layer of the muscularis externa, in other portions of the digestive tract.",
+    "iri": "http://purl.obolibrary.org/obo/UBERON_0012419"
+  },
+  "spp.": {
+    "label": "SPP",
+    "definition": "The protein-coding gene SPP located on the chromosome 2.",
+    "iri": "http://identifiers.org/ncbigene/814841"
+  },
+  "there are also": {
+    "label": "NPI - Talk to People Who Are Not There",
+    "definition": "Neuropsychiatric Inventory (NPI) Does the patient talk to people who are not there?",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C100634"
+  },
+  "abilities on gram-positive": {
+    "label": "gram positive",
+    "definition": "A gram stain phenotype where a cell or cells retain crystal violet stain when decolorized with an organic solvent such as ethanol.",
+    "iri": "http://purl.obolibrary.org/obo/OMP_0000188"
+  },
+  "spp. (10, 12).": {
+    "label": "SPP",
+    "definition": "The protein-coding gene SPP located on the chromosome 2.",
+    "iri": "http://identifiers.org/ncbigene/814841"
+  },
+  "evidence indicating bsfl": {
+    "label": "indicating",
+    "definition": "Indicating is signaling to make something known to the user about a flow. [NIST]",
+    "iri": "http://purl.allotrope.org/ontologies/process#AFP_0003488"
+  },
+  "suppression of gram-positive": {
+    "label": "gram positive",
+    "definition": "A gram stain phenotype where a cell or cells retain crystal violet stain when decolorized with an organic solvent such as ethanol.",
+    "iri": "http://purl.obolibrary.org/obo/OMP_0000188"
+  },
+  "species at the": {
+    "label": "molecular species at pH 7.4 descriptor",
+    "definition": "Molecular Species is a description of the predominant form of the molecule at pH7.4.",
+    "iri": "http://semanticscience.org/resource/CHEMINF_000326"
+  },
+  "in vivo level": {
+    "label": "In Vivo",
+    "definition": "Located or occurring in the body.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C15744"
+  },
+  "an emerging": {
+    "label": "emerging pathogen",
+    "definition": "An infectious agent whose infection incidence is increasing following its first introduction into a new host Species.",
+    "iri": "http://purl.obolibrary.org/obo/IDO_0000583"
+  },
+  "topic (10, 13).": {
+    "label": "Topic",
+    "definition": "A category denoting a rather broad domain or field of interest, study, application, work, data, or technology. Topics have no clearly defined borders between each other.",
+    "iri": "http://purl.obolibrary.org/obo/topic_0003"
+  },
+  "variant of s.": {
+    "label": "S phase checkpoint variant",
+    "definition": "Mitotic cells exhibit variations during the passage through a cell cycle control point late in the S phase of the mitotic cell cycle, which ensures DNA replication is complete, compared to control cells.",
+    "iri": "http://purl.obolibrary.org/obo/WBPhenotype_0000875"
+  },
+  "resistant to the": {
+    "label": "resistant to",
+    "definition": "A resistance quality inhering in a bearer by virtue of the bearer's resistance to a stimulus.",
+    "iri": "http://purl.obolibrary.org/obo/PATO_0001178"
+  },
+  "antibiotic methicillin": {
+    "label": "methicillin",
+    "definition": "A penicillin that is 6-aminopenicillanic acid in which one of the amino hydrogens is replaced by a 2,6-dimethoxybenzoyl group.",
+    "iri": "http://purl.obolibrary.org/obo/CHEBI_6827"
+  },
+  "(14). while mrsa": {
+    "label": "mrsA",
+    "definition": "Probable phospho-sugar mutase / MrsA protein homolog",
+    "iri": "http://purl.obolibrary.org/obo/OGG_3000887589"
+  },
+  "particular concern as": {
+    "label": "Concern",
+    "definition": "A matter of interest or importance.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C79892"
+  },
+  "a nosocomial pathogen,": {
+    "label": "Nosocomial Infection",
+    "definition": "An infection acquired in a hospital or other healthcare setting.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C115164"
+  },
+  "found ubiquitously in": {
+    "label": "ubiquitously expressed in",
+    "definition": "x is ubiquitously expressed in y if and only if x is expressed in y, and the majority of cells in y express x",
+    "iri": "http://purl.obolibrary.org/obo/RO_0002291"
+  },
+  "agricultural and slaughterhouse": {
+    "label": "Rural and Agricultural Sociology",
+    "definition": "Rural and Agricultural Sociology is a field of sociology traditionally associated with the study of social structure and conflict in rural areas and agricultural settings. The sociology of food and agriculture is one focus of rural sociology, and much of the field is dedicated to the economics of farm production. Other areas of study include rural migration and other demographic patterns, environmental sociology, amenity-led development, public lands policies, so-called \"boomtown\" development, social disruption, the sociology of natural resources (including forests, mining, fishing and other areas), rural cultures, and identities, rural health care, and educational policies.",
+    "iri": "http://aims.fao.org/aos/agrovoc/c_6707"
+  },
+  "settings (15). mrsa": {
+    "label": "mrsA",
+    "definition": "Probable phospho-sugar mutase / MrsA protein homolog",
+    "iri": "http://purl.obolibrary.org/obo/OGG_3000887589"
+  },
+  "has": {
+    "label": "has characteristic",
+    "definition": "Inverse of characteristic_of",
+    "iri": "http://purl.obolibrary.org/obo/RO_0000053"
+  },
+  "16), in animal": {
+    "label": "edema in animal",
+    "definition": "An abnormal accumulation of fluid in the whole organism.",
+    "iri": "http://purl.obolibrary.org/obo/PLANP_0000801"
+  },
+  "housing environments (17),": {
+    "label": "Extreme Environments",
+    "definition": "An ENVIRONMENT which falls outside the range of tolerance for the survival of organisms that are not specifically adapted to survive or thrive in it. Examples of such environments are among the hottest and coldest places on earth.",
+    "iri": "http://id.nlm.nih.gov/mesh/D000071251"
+  },
+  "skin of": {
+    "label": "skin",
+    "definition": "The organ covering the body that consists of the dermis and epidermis.",
+    "iri": "http://purl.obolibrary.org/obo/UBERON_0002097"
+  },
+  "animals (15) and": {
+    "label": "Animals and Society Institute",
+    "definition": "Nonprofit in United States established in 1983",
+    "iri": "https://ror.org/03p26k524"
+  },
+  "matter (18). it": {
+    "label": "it/it pronouns",
+    "definition": "A pronoun set composed of it, its, and itself.",
+    "iri": "http://purl.obolibrary.org/obo/GSSO_011533"
+  },
+  "is known": {
+    "label": "Known",
+    "definition": "Recognized, familiar, or within the scope of knowledge.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C80137"
+  },
+  "to cause sickness": {
+    "label": "to cause disease",
+    "definition": "to cause disease is the capability to materially change a biological object in that it functions abnormally.",
+    "iri": "http://semanticscience.org/resource/SIO_000547"
+  },
+  "among farm animals,": {
+    "label": "environmental pets or farm animals information",
+    "definition": "An information content entity about presence of pets or farm animals in the environment of subject, if yes the animals should be specified; can include multiple animals present.",
+    "iri": "http://purl.obolibrary.org/obo/EUPATH_0000602"
+  },
+  "particularly mastitis in": {
+    "label": "mastitis",
+    "definition": "A breast disease characterized by painful infection of the breast tissue.",
+    "iri": "http://purl.obolibrary.org/obo/DOID_10690"
+  },
+  "dairy cows (15).": {
+    "label": "COWS - Sweating",
+    "definition": "Clinical Opiate Withdrawal Scale (COWS) Sweating.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C102057"
+  },
+  "furthermore, one of": {
+    "label": "one of condition",
+    "definition": "A one of condition is a collection of conditions that is valid if exactly one of its condition items is valid. [Allotrope]",
+    "iri": "http://purl.allotrope.org/ontologies/common#AFC_0000093"
+  },
+  "the most prevalent": {
+    "label": "Prevalent",
+    "definition": "Widespread, especially in a particular area or at a particular time.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C159688"
+  },
+  "poisoning in both": {
+    "label": "Both",
+    "definition": "One and the other; relating to or being two in conjunction.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C49636"
+  },
+  "animals and": {
+    "label": "Animals and Society Institute",
+    "definition": "Nonprofit in United States established in 1983",
+    "iri": "https://ror.org/03p26k524"
+  },
+  "is the ingestion": {
+    "label": "ingestion",
+    "definition": "The process of taking a material (e.g., stressor) into the mouth or body.",
+    "iri": "http://purl.obolibrary.org/obo/ExO_0000056"
+  },
+  "enterotoxins produced by": {
+    "label": "produced by",
+    "definition": "a produced_by b iff some process that occurs_in b has_output a.",
+    "iri": "http://purl.obolibrary.org/obo/RO_0003001"
+  },
+  "20). enterotoxigenic strains": {
+    "label": "Rat Strains",
+    "definition": "Breeds of rats utilized for biological research.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C14417"
+  },
+  "aureus have been": {
+    "label": "MFIS - Have Been Forgetful",
+    "definition": "Modified Fatigue Impact Scale (MFIS) Because of my fatigue during the past 4 weeks I have been forgetful.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C113971"
+  },
+  "but not limited": {
+    "label": "Not Limited at All",
+    "definition": "A response indicating that an individual does not feel limited at all.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C110985"
+  },
+  "dairy,": {
+    "label": "dairy",
+    "definition": "A dairy is a building in which animal milk is harvested and, optionally, processed for human consumption.",
+    "iri": "http://purl.obolibrary.org/obo/ENVO_00003862"
+  },
+  "products (20). contamination": {
+    "label": "contamination",
+    "definition": "The process of existence without reproduction of a pathogen of a particular biological taxon in or on some material entity or the process of reproduction of a pathogen in or on a material entity that is not an organism.",
+    "iri": "http://purl.obolibrary.org/obo/APOLLO_SV_00000186"
+  },
+  "of meat": {
+    "label": "grade of meat",
+    "definition": "LanguaL curation note: Use the appropriate narrower term only if meat is the first or sole ingredient of a food product.",
+    "iri": "http://purl.obolibrary.org/obo/FOODON_03530064"
+  },
+  "products by mrsa": {
+    "label": "mrsA",
+    "definition": "Probable phospho-sugar mutase / MrsA protein homolog",
+    "iri": "http://purl.obolibrary.org/obo/OGG_3000887589"
+  },
+  "strains has": {
+    "label": "Rat Strains",
+    "definition": "Breeds of rats utilized for biological research.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C14417"
+  },
+  "been linked": {
+    "label": "BWCS - Been Constipated",
+    "definition": "Bowel Control Scale (BWCS) During the past 4 weeks, how often have you been constipated?",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C113957"
+  },
+  "infections of": {
+    "label": "Infections",
+    "definition": "Invasion of the host organism by microorganisms or their toxins or by parasites that can cause pathological conditions or diseases.",
+    "iri": "http://id.nlm.nih.gov/mesh/D007239"
+  },
+  "can survive": {
+    "label": "can",
+    "definition": "carbonic anhydrase",
+    "iri": "http://purl.obolibrary.org/obo/OGG_3000944832"
+  },
+  "radiation, and heat": {
+    "label": "drying by infrared heat radiation",
+    "definition": "LanguaL curation note: Used when susceptible materials are dried by electromagnetic radiation with wave-lengths between 0.76um and 1 mm.",
+    "iri": "http://purl.obolibrary.org/obo/FOODON_03470166"
+  },
+  "treatments (20).": {
+    "label": "number of treatments",
+    "definition": "Number of treatments tested during an experiment.",
+    "iri": "http://purl.obolibrary.org/obo/AGRO_00000323"
+  },
+  "be necessary for": {
+    "label": "necessary (continuant)",
+    "definition": "A necessity quality (continuant) inhering in a bearer by virtue of the bearer's being essential or indispensable.",
+    "iri": "http://purl.obolibrary.org/obo/PATO_0001635"
+  },
+  "elderly, immunocompromised, or": {
+    "label": "Immunocompromised",
+    "definition": "A loss of any arm of immune functions, resulting in potential or actual increase in infections. This state may be reached secondary to specific genetic lesions, syndromes with unidentified or polygenic causes, acquired deficits from other disease states, or as result of therapy for other diseases or conditions.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C14139"
+  },
+  "from staphylococcal food": {
+    "label": "Staphylococcal Food Poisoning",
+    "definition": "Food poisoning that is caused by Staphylococcal infection.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C35037"
+  },
+  "23). previous research": {
+    "label": "Previous Research Experience Indicator",
+    "definition": "An indication as to whether the study subject has been in a previous study.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C158348"
+  },
+  "a reduction in": {
+    "label": "Reduction in Life Expectancy",
+    "definition": "Decrease in lifetime/ lifespan of an individual. Decline in the normal duration or in average life.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C172027"
+  },
+  "the populations of": {
+    "label": "The Institute for Bird Populations",
+    "definition": "Nonprofit in United States established in 1989",
+    "iri": "https://ror.org/010tqdr51"
+  },
+  "several strains of": {
+    "label": "Several",
+    "definition": "An indefinite small quantity that is more than two but less than many.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C107221"
+  },
+  "aureus over": {
+    "label": "Over",
+    "definition": "Being above or beyond something.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C65018"
+  },
+  "in organic substrates": {
+    "label": "number of substrates",
+    "definition": "Number of molecules which are acted upon by an enzyme.",
+    "iri": "http://biomodels.net/SBO/SBO_0000149"
+  },
+  "inhabited by bsfl": {
+    "label": "by",
+    "definition": "The protein-coding gene by (blistery) located on the chromosome 3R mapped at 85D19-85D22|3-48.7 cM.",
+    "iri": "http://identifiers.org/ncbigene/41144"
+  },
+  "to the best": {
+    "label": "Best",
+    "definition": "Having the most positive qualities.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C25432"
+  },
+  "knowledge, no information": {
+    "label": "Knowledge and Information Systems",
+    "definition": "Knowledge and Information Systems create, share, and manage knowledge and information.",
+    "iri": "http://aims.fao.org/aos/agrovoc/c_9000089"
+  },
+  "is currently": {
+    "label": "Currently Receiving",
+    "definition": "An indication that an individual is receiving something at the present time.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C159274"
+  },
+  "available on this": {
+    "label": "Available on the Cloud",
+    "definition": "Data or documents are able to be accessed via a cloud server.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C183343"
+  },
+  "topic regarding mrsa,": {
+    "label": "mrsA",
+    "definition": "Probable phospho-sugar mutase / MrsA protein homolog",
+    "iri": "http://purl.obolibrary.org/obo/OGG_3000887589"
+  },
+  "despite its importance": {
+    "label": "Importance Weight",
+    "definition": "The relative importance granted to something.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C48192"
+  },
+  "public health (13).": {
+    "label": "Public Health",
+    "definition": "The science and practice of protecting and improving the health of a community, as by preventive medicine, health education, control of communicable diseases, application of sanitary measures, and monitoring of environmental hazards.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C17039"
+  },
+  "the goal of": {
+    "label": "goal",
+    "definition": "A <cognitive representation> of an end state towards which one is striving.",
+    "iri": "http://humanbehaviourchange.org/ontology/BCIO_006049"
+  },
+  "study was to": {
+    "label": "Prior to Study",
+    "definition": "The time period before the study.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C175039"
+  },
+  "investigate changes in": {
+    "label": "to investigate",
+    "definition": "to investigate is the capability to uncover facts.",
+    "iri": "http://semanticscience.org/resource/SIO_000408"
+  },
+  "bacterial community in": {
+    "label": "Community In Action",
+    "definition": "Nonprofit in United States established in 2009",
+    "iri": "https://ror.org/00q1wqg27"
+  },
+  "response to the": {
+    "label": "response to the skin odours",
+    "definition": "Aliphatic acids and other unidentified products of the skin surface serve as kairomones. Certain constituents or hydrolytic products of urine possibly also serve as kairomone.",
+    "iri": "http://purl.obolibrary.org/obo/IDOMAL_0002108"
+  },
+  "of bsfl within": {
+    "label": "acts upstream of or within",
+    "definition": "C acts upstream of or within p if c is enables 'p' and p' causally upstream of or within p [RO]",
+    "iri": "http://purl.obolibrary.org/obo/RO_0002264"
+  },
+  "contaminated potato substrate,": {
+    "label": "Contaminated",
+    "definition": "The presence of any substance or organism that makes a preparation impure.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C68768"
+  },
+  "reference to mrsa": {
+    "label": "mrsA",
+    "definition": "Probable phospho-sugar mutase / MrsA protein homolog",
+    "iri": "http://purl.obolibrary.org/obo/OGG_3000887589"
+  },
+  "colonization. disposal of": {
+    "label": "Disposal",
+    "definition": "The act or means of getting rid of something.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C48166"
+  },
+  "is often": {
+    "label": "Not Often Concerned that Appearance is Worsening",
+    "definition": "A response indicating that an individual is not or was not often concerned that their appearance is worsening.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C124200"
+  },
+  "problem for farmers": {
+    "label": "For farmers (United Kingdom)",
+    "definition": "Company in United Kingdom established in 1893",
+    "iri": "https://ror.org/024g9p727"
+  },
+  "because there are": {
+    "label": "NPI - Talk to People Who Are Not There",
+    "definition": "Neuropsychiatric Inventory (NPI) Does the patient talk to people who are not there?",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C100634"
+  },
+  "limited opportunities for": {
+    "label": "Extraordinary Opportunities for Investment",
+    "definition": "Research areas of exceptional promise in the cancer field.  To qualify as extraordinary opportunities these research initiatives must: Respond to important recent developments in knowledge and technology; Offer approaches to cancer research beyond the size, scope, and funding of our current research activities; Be implemented with specific, defined investments; Be described in terms of achievable milestones, with clear consequences for not investing; and Promise advances for making progress against all cancers. (from 2001 Bypass Budget)",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C16088"
+  },
+  "their processing. when": {
+    "label": "When",
+    "definition": "At what time, how soon, in what circumstances?",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C65140"
+  },
+  "left as": {
+    "label": "As",
+    "definition": "In the same amount or manner; to the same degree; in the role, function, or capacity of.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C64938"
+  },
+  "these tubers serve": {
+    "label": "serve",
+    "definition": "To present in order to make a statement; to make a statement generally.",
+    "iri": "http://purl.obolibrary.org/obo/GSSO_008926"
+  },
+  "as a source": {
+    "label": "ant as a sugar source",
+    "definition": "Adult female mosquitoes of the sabethine genus Malaya have evolved a remarkable manner of acquiring fluids of plant origin: they imbibe fluid regurgitated by ants of the genus Crematogaster. The habit has not been described for males.",
+    "iri": "http://purl.obolibrary.org/obo/IDOMAL_0002404"
+  },
+  "of inoculum for": {
+    "label": "inoculum for fermentation",
+    "definition": "vital biomass containing microorganisms added to start the fermentation process",
+    "iri": "http://purl.obolibrary.org/obo/ONS_0000146"
+  },
+  "several important potato": {
+    "label": "Several",
+    "definition": "An indefinite small quantity that is more than two but less than many.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C107221"
+  },
+  "earlier": {
+    "label": "Friends for an Earlier Breast Cancer Test",
+    "definition": "Nonprofit in United States established in 1995",
+    "iri": "https://ror.org/02psef266"
+  },
+  "are a suitable": {
+    "label": "Are",
+    "definition": "A unit of area equal to 100 square meters. Are is a non-SI unit accepted for use with SI.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C68869"
+  },
+  "substrate for bsfl": {
+    "label": "Michaelis constant for substrate",
+    "definition": "Synonym: Kms",
+    "iri": "http://biomodels.net/SBO/SBO_0000322"
+  },
+  "growth and": {
+    "label": "metabolism and growth",
+    "definition": "Processes relating to metabolism and growth.",
+    "iri": "http://purl.obolibrary.org/obo/APO_0000094"
+  },
+  "potato is known": {
+    "label": "Known",
+    "definition": "Recognized, familiar, or within the scope of knowledge.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C80137"
+  },
+  "to support growth": {
+    "label": "to support",
+    "definition": "To firmly fix a material into a defined location, or secure an energy or signal into a specific course. [NIST]",
+    "iri": "http://purl.allotrope.org/ontologies/function#AFFN_0000028"
+  },
+  "therefore, we focused": {
+    "label": "focused",
+    "definition": "An optical quality inhering in a bearer by virtue of the bearer's having focus.",
+    "iri": "http://purl.obolibrary.org/obo/PATO_0001517"
+  },
+  "this investigation on": {
+    "label": "comment on investigation",
+    "definition": "A textual entity that is about any of the aspects of an investigation worth noting",
+    "iri": "http://purl.obolibrary.org/obo/OBI_0001898"
+  },
+  "simulated potato waste.": {
+    "label": "simulated population",
+    "definition": "A simulation of a population or populations of organisms of a particular biological taxon that simulates a particular type of event or types of event that occur in a specified time interval.",
+    "iri": "http://purl.obolibrary.org/obo/APOLLO_SV_00000031"
+  },
+  "suppression of mrsa": {
+    "label": "mrsA",
+    "definition": "Probable phospho-sugar mutase / MrsA protein homolog",
+    "iri": "http://purl.obolibrary.org/obo/OGG_3000887589"
+  },
+  "microbiology spectrum september/october": {
+    "label": "October",
+    "definition": "The tenth month of the year in the Gregorian calendar.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C106189"
+  },
+  "results total bacterial": {
+    "label": "total number of bacterial colony forming units recovered",
+    "definition": "The enumeration, i.e. measurement of the total number, of bacterial colony forming units (CFUs) in a specified sample of fluid removed from and/or solution used to wash the interior of a cavity in a body or an organ. A bacterial CFU is an individual bacterium which is able to clonally propagate itself into an entire colony of identical cells.",
+    "iri": "http://purl.obolibrary.org/obo/CMO_0002657"
+  },
+  "counts. treatments had": {
+    "label": "counts",
+    "definition": "Counts are like ratio scale that they have a zero point but there are no meaningful fractional units. [Allotrope]",
+    "iri": "http://purl.allotrope.org/ontologies/result#AFR_0000915"
+  },
+  "a signi\ufb01cant effect": {
+    "label": "A Little Effect",
+    "definition": "A response indicating that there is little effect.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C209733"
+  },
+  "total bacterial counts": {
+    "label": "counts",
+    "definition": "Counts are like ratio scale that they have a zero point but there are no meaningful fractional units. [Allotrope]",
+    "iri": "http://purl.allotrope.org/ontologies/result#AFR_0000915"
+  },
+  "0.0003). however, there": {
+    "label": "Someone There Question",
+    "definition": "Questions about whether an individual has someone there for them.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C172728"
+  },
+  "a signi\ufb01cant difference": {
+    "label": "Difference",
+    "definition": "The quality of being unlike or dissimilar.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C46003"
+  },
+  "among the trials": {
+    "label": "C.I. Trials",
+    "definition": "Facility in United States",
+    "iri": "https://ror.org/05hc6gd57"
+  },
+  "the \ufb01rst trial": {
+    "label": "The Japan-Multinational Trial Organization",
+    "definition": "Nonprofit in Japan established in 1999",
+    "iri": "https://ror.org/0528hwm66"
+  },
+  "that was conducted": {
+    "label": "Conducted Interference",
+    "definition": "Problems related to electromagnetic interference (EMI) by physical contact with conductors (e.g. wires, resistors, terminals) as opposed to radiated EMI which is caused by induction (without physical contact of the conductors).",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C92037"
+  },
+  "broth (tsb) in": {
+    "label": "packed in broth",
+    "definition": "A broth which is used as a packing medium for meat, poultry or seafood material where the broth is derived from the packed food material.",
+    "iri": "http://purl.obolibrary.org/obo/FOODON_03480042"
+  },
+  "the pathogen-free treatment": {
+    "label": "Treatment Free Epoch",
+    "definition": "A period in a study immediately following the end of treatment during which the subject(s) is no longer receiving investigational therapy or treatment and is not being assessed.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C186262"
+  },
+  "statistically different": {
+    "label": "different type",
+    "definition": "An evidence type concordance for evidence lines that are from different types.",
+    "iri": "http://purl.obolibrary.org/obo/CIO_0000038"
+  },
+  "the second trial": {
+    "label": "The Japan-Multinational Trial Organization",
+    "definition": "Nonprofit in Japan established in 1999",
+    "iri": "https://ror.org/0528hwm66"
+  },
+  "(tukey\u2019s test, t": {
+    "label": "t-test",
+    "definition": "The t-test is a process of quantifying the closeness of two sets of data points. It is defined as the ratio of the difference between the means of the two sets divided by the standard error of the difference. [Allotrope]",
+    "iri": "http://purl.allotrope.org/ontologies/process#AFP_0002693"
+  },
+  "the third trial": {
+    "label": "The Japan-Multinational Trial Organization",
+    "definition": "Nonprofit in Japan established in 1999",
+    "iri": "https://ror.org/0528hwm66"
+  },
+  "= 0.0023), both": {
+    "label": "Both",
+    "definition": "One and the other; relating to or being two in conjunction.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C49636"
+  },
+  "of which were": {
+    "label": "Which Pulmonary Function Tests Were Performed Question",
+    "definition": "A question about which pulmonary tests were performed.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C159314"
+  },
+  "conducted with supplemental": {
+    "label": "Conducted Interference",
+    "definition": "Problems related to electromagnetic interference (EMI) by physical contact with conductors (e.g. wires, resistors, terminals) as opposed to radiated EMI which is caused by induction (without physical contact of the conductors).",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C92037"
+  },
+  "tsb in that": {
+    "label": "process that results in death",
+    "definition": "A process that results in death.",
+    "iri": "http://purl.obolibrary.org/obo/IDO_0000657"
+  },
+  "treatment. at the": {
+    "label": "Age at First Treatment",
+    "definition": "The age at which the first treatment event occurred.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C124440"
+  },
+  "same time, the": {
+    "label": "Stayed the Same",
+    "definition": "A subjective response indicating that something is unchanged.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C125460"
+  },
+  "latter two trials": {
+    "label": "C.I. Trials",
+    "definition": "Facility in United States",
+    "iri": "https://ror.org/05hc6gd57"
+  },
+  "were not different": {
+    "label": "Routine Cytogenetics Were not Completed",
+    "definition": "A response that routine cytogenetic testing was not completed.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C160755"
+  },
+  "from each other": {
+    "label": "death from other causes",
+    "definition": "A recorded follow-up status noting that a patient died from other causes than the condition under study.",
+    "iri": "http://www.ebi.ac.uk/efo/EFO_0030051"
+  },
+  "we also analyzed": {
+    "label": "Analyzed form",
+    "definition": "A descriptive qualifier that indicates the nature/extent/availability of an analyte as it was determined in the sample, e.g. dissolved, labile, total etc.",
+    "iri": "http://champ-project.org/images/ontology/cao.owl#CAO_000080"
+  },
+  "results": {
+    "label": "RESULTS and RESULTS Educational Fund",
+    "definition": "Nonprofit in United States established in 1980",
+    "iri": "https://ror.org/01kfs3w30"
+  },
+  "the trials conducted": {
+    "label": "Conducted Interference",
+    "definition": "Problems related to electromagnetic interference (EMI) by physical contact with conductors (e.g. wires, resistors, terminals) as opposed to radiated EMI which is caused by induction (without physical contact of the conductors).",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C92037"
+  },
+  "the \ufb01rst trial,": {
+    "label": "The Japan-Multinational Trial Organization",
+    "definition": "Nonprofit in Japan established in 1999",
+    "iri": "https://ror.org/0528hwm66"
+  },
+  "were not signi\ufb01cant": {
+    "label": "Routine Cytogenetics Were not Completed",
+    "definition": "A response that routine cytogenetic testing was not completed.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C160755"
+  },
+  "in the uninoculated": {
+    "label": "In the Field",
+    "definition": "A setting outside the clinic or a comparable health care facility, e.g., a doctor's office, the subject's home or workplace, a school, a public park, or a restaurant.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C102650"
+  },
+  "jars complicated the": {
+    "label": "Complicated",
+    "definition": "Difficult to analyze or understand.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C86059"
+  },
+  "those results. for": {
+    "label": "Results for Development Institute",
+    "definition": "Nonprofit in United States established in 2007",
+    "iri": "https://ror.org/05fjfdm02"
+  },
+  "the pooled results": {
+    "label": "Pooled Sample",
+    "definition": "A sample containing a mixture of multiple individual specimens of interest that were collected in a study.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C165587"
+  },
+  "of the second": {
+    "label": "Second Portion of the Duodenum",
+    "definition": "The descending portion of the duodenum between the neck of the gallbladder and the inferior duodenal flexure.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C33522"
+  },
+  "and third trials,": {
+    "label": "Clinical Trials and Surveys Corporation",
+    "definition": "Other in United States established in 1989",
+    "iri": "https://ror.org/02yp59539"
+  },
+  "were signi\ufb01cant": {
+    "label": "Were Itchy Question",
+    "definition": "A question about whether an individual feels or felt itchy.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C136347"
+  },
+  "= 0.0002), while": {
+    "label": "Hyperkalemia while symptomatic",
+    "definition": "Increased concentration of potassium in the blood circulation specifically measured during a disease flareup, attack, or exacerbation.",
+    "iri": "http://purl.obolibrary.org/obo/HP_6000833"
+  },
+  "of the sampling": {
+    "label": "sampling",
+    "definition": "Sampling is the process of taking parts or partitions of an object aggregate or data set for the interest for studying it. [Allotrope]",
+    "iri": "http://purl.allotrope.org/ontologies/process#AFP_0003634"
+  },
+  "the interactions of": {
+    "label": "decoupling in the presence of scalar interactions",
+    "definition": "A sequence of composite pulses designed to remove signal splitting due to heteronuclear J-couplings in multinuclear liquid NMR experiments. Also used to allow transfer of magnetisation between nuclei (by making the spins precess with at the same chemical shift and thus enjoy strong coupling\u2013-isotropic mixing). For the pulse sequence see J. Magn. Reson., (1988), 77, pg 274.",
+    "iri": "http://purl.obolibrary.org/obo/CHMO_0001846"
+  },
+  "0.1072) were not": {
+    "label": "Routine Cytogenetics Were not Completed",
+    "definition": "A response that routine cytogenetic testing was not completed.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C160755"
+  },
+  "signi\ufb01cant. both treatments": {
+    "label": "Both",
+    "definition": "One and the other; relating to or being two in conjunction.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C49636"
+  },
+  "(potato plus mrsa": {
+    "label": "mrsA",
+    "definition": "Probable phospho-sugar mutase / MrsA protein homolog",
+    "iri": "http://purl.obolibrary.org/obo/OGG_3000887589"
+  },
+  "bsfl [p1mrsa1bsfl] and": {
+    "label": "And",
+    "definition": "An article which expresses the relation of connection or addition. It is used to conjoin a word with a word, a clause with a clause, or a sentence with a sentence.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C37912"
+  },
+  "signi\ufb01cantly reduced total": {
+    "label": "Reduced total lung capacity",
+    "definition": "Abnormally reduced volume of air in the lungs upon the maximum effort of inspiration.",
+    "iri": "http://purl.obolibrary.org/obo/HP_0033169"
+  },
+  "bacterial counts in": {
+    "label": "counts",
+    "definition": "Counts are like ratio scale that they have a zero point but there are no meaningful fractional units. [Allotrope]",
+    "iri": "http://purl.allotrope.org/ontologies/result#AFR_0000915"
+  },
+  "substrates compared to": {
+    "label": "to be compared",
+    "definition": "to be compared is the capability of an object to be examined in order to note the similarities or differences among a set of objects.",
+    "iri": "http://semanticscience.org/resource/SIO_000722"
+  },
+  "the treatment containing": {
+    "label": "The Cancer Treatment Center",
+    "definition": "Healthcare in United States established in 1986",
+    "iri": "https://ror.org/05waabg59"
+  },
+  "(p1mrsa) but were": {
+    "label": "Were Itchy Question",
+    "definition": "A question about whether an individual feels or felt itchy.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C136347"
+  },
+  "different": {
+    "label": "different type",
+    "definition": "An evidence type concordance for evidence lines that are from different types.",
+    "iri": "http://purl.obolibrary.org/obo/CIO_0000038"
+  },
+  "(fig. 1). mrsa": {
+    "label": "mrsA",
+    "definition": "Probable phospho-sugar mutase / MrsA protein homolog",
+    "iri": "http://purl.obolibrary.org/obo/OGG_3000887589"
+  },
+  "1). mrsa counts.": {
+    "label": "counts",
+    "definition": "Counts are like ratio scale that they have a zero point but there are no meaningful fractional units. [Allotrope]",
+    "iri": "http://purl.allotrope.org/ontologies/result#AFR_0000915"
+  },
+  "in the \ufb01rst": {
+    "label": "In the Field",
+    "definition": "A setting outside the clinic or a comparable health care facility, e.g., a doctor's office, the subject's home or workplace, a school, a public park, or a restaurant.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C102650"
+  },
+  "trial, signi\ufb01cant differences": {
+    "label": "Individual Differences",
+    "definition": "Nonprofit in United States",
+    "iri": "https://ror.org/05patbw61"
+  },
+  "trial, signi\ufb01cant": {
+    "label": "Trial",
+    "definition": "A run or execution of an activity.\nFor example, one execution of a script.",
+    "iri": "https://w3id.org/reproduceme#Trial"
+  },
+  "differences were detected": {
+    "label": "Were Molecular Abnormalities Detected Question",
+    "definition": "A question about whether molecular abnormalities were detected.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C160766"
+  },
+  "both among the": {
+    "label": "Both",
+    "definition": "One and the other; relating to or being two in conjunction.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C49636"
+  },
+  "0.0001) as well": {
+    "label": "Sleep as Well as Always",
+    "definition": "A response indicating that an individual sleeps or slept as well as they always have.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C124165"
+  },
+  "as between the": {
+    "label": "Skin Between the Eyebrows",
+    "definition": "The integumentary covering located medial to the orbital ridges and superior to the nose.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C142317"
+  },
+  "days of sampling": {
+    "label": "sampling",
+    "definition": "Sampling is the process of taking parts or partitions of an object aggregate or data set for the interest for studying it. [Allotrope]",
+    "iri": "http://purl.allotrope.org/ontologies/process#AFP_0003634"
+  },
+  "the interaction between": {
+    "label": "Skin Between the Eyebrows",
+    "definition": "The integumentary covering located medial to the orbital ridges and superior to the nose.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C142317"
+  },
+  "these two variables": {
+    "label": "SeroNet Variables",
+    "definition": "Terms that have been designated as being a variable within the SeroNet terminology.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C179026"
+  },
+  "0.0013). fewer mrsa": {
+    "label": "mrsA",
+    "definition": "Probable phospho-sugar mutase / MrsA protein homolog",
+    "iri": "http://purl.obolibrary.org/obo/OGG_3000887589"
+  },
+  "cells were": {
+    "label": "Were Itchy Question",
+    "definition": "A question about whether an individual feels or felt itchy.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C136347"
+  },
+  "in samples taken": {
+    "label": "Toxicokinetic Samples Taken",
+    "definition": "A designation that subjects within the trial set had samples collected to support toxicokinetic analysis.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C198409"
+  },
+  "in samples": {
+    "label": "Number of Tissue Samples in Specimen",
+    "definition": "The total number of tissue samples within the specimen.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C176276"
+  },
+  "samples taken on": {
+    "label": "Toxicokinetic Samples Taken",
+    "definition": "A designation that subjects within the trial set had samples collected to support toxicokinetic analysis.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C198409"
+  },
+  "day 7 than": {
+    "label": "More Often than Once a Day",
+    "definition": "An indication that something is scheduled, or occurs, more than once a day.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C129570"
+  },
+  "day 3 (fig.": {
+    "label": "fig",
+    "definition": "A fruit multiple of a fig plant (Ficus carica).",
+    "iri": "http://purl.obolibrary.org/obo/FOODON_00003266"
+  },
+  "both days,": {
+    "label": "Both",
+    "definition": "One and the other; relating to or being two in conjunction.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C49636"
+  },
+  "none of the": {
+    "label": "None of the Time",
+    "definition": "A response indicating that something happens or happened none of the time.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C110994"
+  },
+  "(p1bsfl) had detectable": {
+    "label": "Detectable",
+    "definition": "The capability of being noticed, identified or discovered.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C111567"
+  },
+  "levels of mrsa": {
+    "label": "mrsA",
+    "definition": "Probable phospho-sugar mutase / MrsA protein homolog",
+    "iri": "http://purl.obolibrary.org/obo/OGG_3000887589"
+  },
+  "(below the 107cfu/g": {
+    "label": "Below the Diaphragm Disease",
+    "definition": "A finding that refers to disease confined to sites located below the diaphragm.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C39761"
+  },
+  "(below the": {
+    "label": "Below the Diaphragm Disease",
+    "definition": "A finding that refers to disease confined to sites located below the diaphragm.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C39761"
+  },
+  "(below": {
+    "label": "below",
+    "definition": "Below indicates a vertical position that is lower than another. [Allotrope]",
+    "iri": "http://purl.allotrope.org/ontologies/result#AFR_0002505"
+  },
+  "threshold) (fig. 2).": {
+    "label": "fig",
+    "definition": "A fruit multiple of a fig plant (Ficus carica).",
+    "iri": "http://purl.obolibrary.org/obo/FOODON_00003266"
+  },
+  "threshold) (fig.": {
+    "label": "fig",
+    "definition": "A fruit multiple of a fig plant (Ficus carica).",
+    "iri": "http://purl.obolibrary.org/obo/FOODON_00003266"
+  },
+  "samples (p1mrsa and": {
+    "label": "Coded Data and Samples",
+    "definition": "Coded data and samples are labelled with at least one unique code and do not carry any personal identifiers.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C68756"
+  },
+  "signi\ufb01cantly fewer mrsa": {
+    "label": "mrsA",
+    "definition": "Probable phospho-sugar mutase / MrsA protein homolog",
+    "iri": "http://purl.obolibrary.org/obo/OGG_3000887589"
+  },
+  "counts when black": {
+    "label": "counts",
+    "definition": "Counts are like ratio scale that they have a zero point but there are no meaningful fractional units. [Allotrope]",
+    "iri": "http://purl.allotrope.org/ontologies/result#AFR_0000915"
+  },
+  "were present (fig.": {
+    "label": "fig",
+    "definition": "A fruit multiple of a fig plant (Ficus carica).",
+    "iri": "http://purl.obolibrary.org/obo/FOODON_00003266"
+  },
+  "day 3": {
+    "label": "day",
+    "definition": "A one-dimensional temporal region which spans the duration an astronomical body completes one rotation on its axis.",
+    "iri": "http://purl.obolibrary.org/obo/ENVO_01003005"
+  },
+  "day 7 (df": {
+    "label": "day 7 of adulthood",
+    "definition": "7th day after eclosion.",
+    "iri": "http://purl.obolibrary.org/obo/FBdv_00007082"
+  },
+  "day 7": {
+    "label": "day 7 of adulthood",
+    "definition": "7th day after eclosion.",
+    "iri": "http://purl.obolibrary.org/obo/FBdv_00007082"
   }
 }
