@@ -8118,5 +8118,10 @@
     "label": "Added",
     "definition": "Combined or joined to increase in size or quantity or scope.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C45330"
+  },
+  "jar was covered": {
+    "label": "jar",
+    "definition": "Jars are cylindrical containers with wide openings that may be sealed. [Wikipedia]",
+    "iri": "http://purl.allotrope.org/ontologies/equipment#AFE_0001410"
   }
 }
