@@ -2083,5 +2083,10 @@
     "label": "October",
     "definition": "The tenth month of the year in the Gregorian calendar.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C106189"
+  },
+  "10.1128/spectrum.02321-22 1 research": {
+    "label": "Spectrum Clinical Research (India)",
+    "definition": "Company in India established in 2006",
+    "iri": "https://ror.org/00s8enb31"
   }
 }
