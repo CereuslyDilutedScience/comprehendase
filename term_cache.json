@@ -4408,5 +4408,10 @@
     "label": "Each",
     "definition": "Used to refer to every member of a group of people or things, considered individually.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C64933"
+  },
+  "treatment-day combination, only": {
+    "label": "Treatment Cycle Day Number",
+    "definition": "A number that indicates the position of a day within a treatment cycle.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C166221"
   }
 }
