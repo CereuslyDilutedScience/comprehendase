@@ -4578,5 +4578,10 @@
     "label": "Routine Cytogenetics Were not Completed",
     "definition": "A response that routine cytogenetic testing was not completed.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C160755"
+  },
+  "one treatment": {
+    "label": "treatment",
+    "definition": "A planned process whose completion is hypothesized by a health care provider to eliminate, prevent, or alleviate a disorder, the signs and symptoms of a disorder, or a pathological process",
+    "iri": "http://purl.obolibrary.org/obo/OGMS_0000090"
   }
 }
