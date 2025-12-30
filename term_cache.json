@@ -780,5 +780,12 @@
     "label": "Until",
     "definition": "Up to the point of some specific time or event.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C65136"
+  },
+  "visible colonies appeared": null,
+  "visible colonies": null,
+  "visible": {
+    "label": "visible",
+    "definition": "A post-embryonic, macroscopic, anatomical phenotype.",
+    "iri": "http://purl.obolibrary.org/obo/FBcv_0000354"
   }
 }
