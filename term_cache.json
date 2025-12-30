@@ -2288,5 +2288,10 @@
     "label": "raised",
     "definition": "A shape quality inhering in a colony by virtue of the bearer's appearing above the medium surface with terraced edges.",
     "iri": "http://purl.obolibrary.org/obo/PATO_0001369"
+  },
+  "the long-term safety": {
+    "label": "Long-Term",
+    "definition": "Involving or being in effect for a long time.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C25322"
   }
 }
