@@ -1938,5 +1938,10 @@
     "label": "applies",
     "definition": "An entity applies a specification or mathematical function, if the specification specifies the entity and the entity conforms or follows the specification. [Allotrope]",
     "iri": "http://purl.allotrope.org/ontologies/property#AFX_0002849"
+  },
+  "aureus, which": {
+    "label": "during which exists",
+    "definition": "inverse of exists at [BFO]",
+    "iri": "http://purl.obolibrary.org/obo/BFO_0000157"
   }
 }
