@@ -418,5 +418,10 @@
     "label": "standard",
     "definition": "A standard is a norm or requirement that is established for technical systems. [Wikipedia]",
     "iri": "http://purl.allotrope.org/ontologies/result#AFR_0001276"
+  },
+  "library preparation": {
+    "label": "library preparation",
+    "definition": "is a process which results in the creation of a library from fragments of DNA using cloning vectors or oligonucleotides with the role of adaptors.",
+    "iri": "http://purl.obolibrary.org/obo/OBI_0000711"
   }
 }
