@@ -6368,5 +6368,10 @@
     "label": "Three",
     "definition": "A natural number greater than 2 and less than 4 and the quantity that it denotes: the sum of two and one.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C66834"
+  },
+  "bacterial genera": {
+    "label": "Genera (Croatia)",
+    "definition": "Company in Croatia established in 1901",
+    "iri": "https://ror.org/0518jvn15"
   }
 }
