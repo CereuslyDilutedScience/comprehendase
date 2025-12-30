@@ -2378,5 +2378,10 @@
     "label": "Institute for Information Industry",
     "definition": "Nonprofit in Taiwan established in 1979",
     "iri": "https://ror.org/01d8kr740"
+  },
+  "waste and generating": {
+    "label": "generating",
+    "definition": "Generating is a subtype of funcioning: A process that produces output from nothing.",
+    "iri": "http://purl.obolibrary.org/obo/TXPO_0000381"
   }
 }
