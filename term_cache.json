@@ -16043,5 +16043,10 @@
     "label": "For",
     "definition": "The reason of something.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C64956"
+  },
+  "http://www .allaboutfeed.net/new-proteins/articles/2016/12/eu-agrees-oninsect-protein -for-aquafeed-70425e/.": {
+    "label": "agrees with",
+    "definition": "Example: We share Galileo's opinion: the Earth moves [X].",
+    "iri": "http://purl.org/spar/cito/agreesWith"
   }
 }
