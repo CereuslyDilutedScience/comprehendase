@@ -635,5 +635,27 @@
     "label": "Affected",
     "definition": "To be influenced by or changed.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C64917"
+  },
+  "parts of the": null,
+  "parts of": null,
+  "parts": null,
+  "of the lungs": null,
+  "the lungs were": null,
+  "lungs were homogenized": null,
+  "lungs were": null,
+  "were homogenized in": null,
+  "were homogenized": null,
+  "homogenized in 10": null,
+  "homogenized in": null,
+  "homogenized": null,
+  "of mycoplasma broth": null,
+  "mycoplasma broth (bd,": null,
+  "mycoplasma broth": null,
+  "broth (bd, difco)": null,
+  "broth (bd,": null,
+  "broth": {
+    "label": "broth",
+    "definition": "",
+    "iri": "http://purl.obolibrary.org/obo/FOODON_03309462"
   }
 }
