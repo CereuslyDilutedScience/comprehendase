@@ -2063,5 +2063,10 @@
     "label": "Have Recently Lost Weight and Clothing Has Become Looser Question",
     "definition": "A question about whether an individual has or had recent weight loss so that their clothing has become looser.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C157018"
+  },
+  "an attractive option.": {
+    "label": "Attractive",
+    "definition": "Pleasing to the eye or mind especially through beauty or charm.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C73114"
   }
 }
