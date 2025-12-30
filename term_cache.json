@@ -1398,5 +1398,10 @@
     "label": "inoculum",
     "definition": "Concentration at which bacterial cells in suspension, calculated with respect to final volume (colony forming units/milliliter (cfu/mL)). The standard for broth dilution is 5 x 105cfu/mL. The standard for agar dilution is 104cfu/mL.",
     "iri": "http://purl.obolibrary.org/obo/ARO_3004417"
+  },
+  "development": {
+    "label": "development",
+    "definition": "Developmental processes.",
+    "iri": "http://purl.obolibrary.org/obo/APO_0000023"
   }
 }
