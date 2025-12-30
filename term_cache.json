@@ -1308,5 +1308,10 @@
     "label": "Limited",
     "definition": "Restricted or in amount, size, or extent.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C142988"
+  },
+  "infections": {
+    "label": "Infections",
+    "definition": "Invasion of the host organism by microorganisms or their toxins or by parasites that can cause pathological conditions or diseases.",
+    "iri": "http://id.nlm.nih.gov/mesh/D007239"
   }
 }
