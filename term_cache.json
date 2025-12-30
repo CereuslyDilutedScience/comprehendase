@@ -808,5 +808,12 @@
     "label": "purified",
     "definition": "Molecule has undergone one or more purification steps to isolate it from the cellular environment.",
     "iri": "http://purl.obolibrary.org/obo/MI_0350"
+  },
+  "twice by single-colony": null,
+  "twice by": null,
+  "twice": {
+    "label": "Twice",
+    "definition": "Two times.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C65134"
   }
 }
