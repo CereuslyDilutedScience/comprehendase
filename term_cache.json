@@ -8233,5 +8233,10 @@
     "label": "Care",
     "definition": "The work of attending to someone or something.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C61488"
+  },
+  "was exercised during": {
+    "label": "Was Insulin Administered During Surgery Question",
+    "definition": "A question about whether insulin was administered during surgery.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C159291"
   }
 }
