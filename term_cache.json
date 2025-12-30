@@ -16368,5 +16368,10 @@
     "label": "toxin-mediated infectious botulism",
     "definition": "Aform of botulism (see this term), a rare acquired neuromuscular junction disease, characterized by descending flaccid paralysis caused by botulinum neurotoxins (BoNTs), produced in vivo leading to toxin-mediated infection. Infectious botulism includes wound botulism and intestinal toxemia botulism (infant botulism and adult intestinal botulism).",
     "iri": "http://purl.obolibrary.org/obo/MONDO_0016468"
+  },
+  "med j": {
+    "label": "Med",
+    "definition": "The protein-coding gene Med (Medea) located on the chromosome 3R mapped at 100C7-100D1|3-106 cM.",
+    "iri": "http://identifiers.org/ncbigene/43725"
   }
 }
