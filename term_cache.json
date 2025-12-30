@@ -4843,5 +4843,10 @@
     "label": "mrsA",
     "definition": "Probable phospho-sugar mutase / MrsA protein homolog",
     "iri": "http://purl.obolibrary.org/obo/OGG_3000887589"
+  },
+  "have inhibited escherichia": {
+    "label": "inhibited",
+    "definition": "Conceptual or material entity that is the object of an inhibition process, and is acted upon by an inhibitor.",
+    "iri": "http://biomodels.net/SBO/SBO_0000642"
   }
 }
