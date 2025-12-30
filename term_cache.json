@@ -2543,5 +2543,10 @@
     "label": "skin",
     "definition": "The organ covering the body that consists of the dermis and epidermis.",
     "iri": "http://purl.obolibrary.org/obo/UBERON_0002097"
+  },
+  "animals (15) and": {
+    "label": "Animals and Society Institute",
+    "definition": "Nonprofit in United States established in 1983",
+    "iri": "https://ror.org/03p26k524"
   }
 }
