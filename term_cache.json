@@ -43,5 +43,10 @@
     "label": "young",
     "definition": "An age which is relatively low.",
     "iri": "http://purl.obolibrary.org/obo/PATO_0000309"
+  },
+  "calf": {
+    "label": "Calf",
+    "definition": "The posterior aspect of the lower extremity that extends from the knee to the foot.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C93027"
   }
 }
