@@ -1618,5 +1618,10 @@
     "label": "exposure to humans",
     "definition": "A history of exposure to Homo sapiens.",
     "iri": "http://purl.obolibrary.org/obo/ECTO_3000005"
+  },
+  "whether black soldier": {
+    "label": "soldier",
+    "definition": "A person who fights as part of an army. A soldier can be a conscripted or volunteer enlisted person, a non-commissioned officer, or an officer.",
+    "iri": "http://purl.obolibrary.org/obo/GSSO_005823"
   }
 }
