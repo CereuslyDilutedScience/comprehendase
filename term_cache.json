@@ -2328,5 +2328,10 @@
     "label": "plastic",
     "definition": "An environnmental material which 1) is composed primarily of polymers with high molecular mass and 2) once deformed does not spontaneously return to its original shape.",
     "iri": "http://purl.obolibrary.org/obo/ENVO_06105101"
+  },
+  "physical": {
+    "label": "Physical",
+    "definition": "Having substance or material existence; concerned with material things; of or pertaining to the body as distinguished from the mind or spirit.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C25618"
   }
 }
