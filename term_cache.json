@@ -5613,5 +5613,10 @@
     "label": "Polyclonal pig Insulin raised in guinea pig",
     "definition": "A polyclonal antibody raised in guinea pig that targets the pig \"Insulin\" antigen.",
     "iri": "http://purl.obolibrary.org/obo/BCGO_9004309"
+  },
+  "manure within treatments": {
+    "label": "manure",
+    "definition": "An environmental material consisting of organic matter from plants and/or animals that is used in agriculture as fertilizer.",
+    "iri": "http://purl.obolibrary.org/obo/ENVO_03501300"
   }
 }
