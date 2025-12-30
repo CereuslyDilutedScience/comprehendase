@@ -2728,5 +2728,10 @@
     "label": "Best",
     "definition": "Having the most positive qualities.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C25432"
+  },
+  "knowledge, no information": {
+    "label": "Knowledge and Information Systems",
+    "definition": "Knowledge and Information Systems create, share, and manage knowledge and information.",
+    "iri": "http://aims.fao.org/aos/agrovoc/c_9000089"
   }
 }
