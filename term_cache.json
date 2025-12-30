@@ -2473,5 +2473,10 @@
     "label": "ambient temperature",
     "definition": "An ambient temperature is a quantity facet that quantifies the temperature of the surrounding atmosphere. [Allotrope]",
     "iri": "http://purl.allotrope.org/ontologies/result#AFR_0002157"
+  },
+  "natural": {
+    "label": "Natural",
+    "definition": "A description for something that exists in or is produced by nature, and is not artificial or man-made.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C85060"
   }
 }
