@@ -16468,5 +16468,10 @@
     "label": "J wave",
     "definition": "The J wave is a positive convex deflection that occurs at the junction of the QRS complex and ST segment, the J-point.",
     "iri": "http://purl.obolibrary.org/obo/HP_0012272"
+  },
+  "of salmonella inoculated": {
+    "label": "gene of Salmonella",
+    "definition": "A gene of an organism of Salmonella",
+    "iri": "http://purl.obolibrary.org/obo/OGG_2_590"
   }
 }
