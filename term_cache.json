@@ -16743,5 +16743,10 @@
     "label": "Fragmentation of the epiphyses of the phalanges of the hand",
     "definition": "Fragmented appearance of the epiphyses of the phalanges of the fingers.",
     "iri": "http://purl.obolibrary.org/obo/HP_0010232"
+  },
+  "associated with larvae": {
+    "label": "Host-associated > Mollusca > Larvae",
+    "definition": "anatomical_site: larva; host_taxon: Mollusca; mixs_extension: MIXS:HostAssociated; complete",
+    "iri": "https://w3id.org/gold.path/4632"
   }
 }
