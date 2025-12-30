@@ -2143,5 +2143,10 @@
     "label": "number of substrates",
     "definition": "Number of molecules which are acted upon by an enzyme.",
     "iri": "http://biomodels.net/SBO/SBO_0000149"
+  },
+  "and other animals,": {
+    "label": "other animals exposure",
+    "definition": "Treatment involving the exposure of plant to the pests that do not falll under the well known classes of birds, mammals, insects, nematode and molluscs.",
+    "iri": "http://purl.obolibrary.org/obo/PECO_0007084"
   }
 }
