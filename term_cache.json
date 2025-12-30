@@ -3843,5 +3843,10 @@
     "label": "Representational Difference Analysis",
     "definition": "This PCR technique enables researchers to compare the DNA of normal and afflicted tissue to isolate the DNA regions gained or lost in disease carriers. The essence of the technique is to compare two regions of DNA, one with a \"target sequence\" and one without. The target sequence may be either DNA added to the genome, by a virus or by genetic amplification, or DNA deleted from a normal chromosome, as in many cancers. Pairing DNA fragments from healthy and diseased tissue allows researchers to quickly identify missing or added DNA sequence and thereby pinpoint genetic alterations that may be involved in disease. (from Cold Spring Harbor)",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C18114"
+  },
+  "between the": {
+    "label": "Skin Between the Eyebrows",
+    "definition": "The integumentary covering located medial to the orbital ridges and superior to the nose.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C142317"
   }
 }
