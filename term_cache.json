@@ -2438,5 +2438,10 @@
     "label": "NPI - Talk to People Who Are Not There",
     "definition": "Neuropsychiatric Inventory (NPI) Does the patient talk to people who are not there?",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C100634"
+  },
+  "abilities on gram-positive": {
+    "label": "gram positive",
+    "definition": "A gram stain phenotype where a cell or cells retain crystal violet stain when decolorized with an organic solvent such as ethanol.",
+    "iri": "http://purl.obolibrary.org/obo/OMP_0000188"
   }
 }
