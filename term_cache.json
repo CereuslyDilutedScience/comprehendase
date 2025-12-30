@@ -2823,5 +2823,10 @@
     "label": "Extraordinary Opportunities for Investment",
     "definition": "Research areas of exceptional promise in the cancer field.  To qualify as extraordinary opportunities these research initiatives must: Respond to important recent developments in knowledge and technology; Offer approaches to cancer research beyond the size, scope, and funding of our current research activities; Be implemented with specific, defined investments; Be described in terms of achievable milestones, with clear consequences for not investing; and Promise advances for making progress against all cancers. (from 2001 Bypass Budget)",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C16088"
+  },
+  "their processing. when": {
+    "label": "When",
+    "definition": "At what time, how soon, in what circumstances?",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C65140"
   }
 }
