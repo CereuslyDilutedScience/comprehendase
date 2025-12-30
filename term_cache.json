@@ -3038,5 +3038,10 @@
     "label": "Topic",
     "definition": "A category denoting a rather broad domain or field of interest, study, application, work, data, or technology. Topics have no clearly defined borders between each other.",
     "iri": "http://purl.obolibrary.org/obo/topic_0003"
+  },
+  "mrsa, despite its": {
+    "label": "mrsA",
+    "definition": "Probable phospho-sugar mutase / MrsA protein homolog",
+    "iri": "http://purl.obolibrary.org/obo/OGG_3000887589"
   }
 }
