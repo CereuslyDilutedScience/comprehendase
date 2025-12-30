@@ -3003,5 +3003,10 @@
     "label": "process that results in death",
     "definition": "A process that results in death.",
     "iri": "http://purl.obolibrary.org/obo/IDO_0000657"
+  },
+  "treatment. at the": {
+    "label": "Age at First Treatment",
+    "definition": "The age at which the first treatment event occurred.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C124440"
   }
 }
