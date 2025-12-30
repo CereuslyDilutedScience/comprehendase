@@ -2313,5 +2313,10 @@
     "label": "food cycle",
     "definition": "A food web in which the outputs of a trophic interaction are consumed by organisms acting in a lower trophic level relative to the initial interaction.",
     "iri": "http://purl.obolibrary.org/obo/ECOCORE_00000002"
+  },
+  "and the environment,": {
+    "label": "Extraordinary Opportunity: Genes and the Environment",
+    "definition": "Goal: identify and characterize every major human gene that predisposes people to cancer; begin to apply these discoveries through clinical practice to help patients at risk; address the psychosocial, ethical, and legal issues associated with inherited cancer susceptibility (NCI Web)",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C16132"
   }
 }
