@@ -1381,5 +1381,25 @@
     "label": "library preparation",
     "definition": "is a process which results in the creation of a library from fragments of DNA using cloning vectors or oligonucleotides with the role of adaptors.",
     "iri": "http://purl.obolibrary.org/obo/OBI_0000711"
+  },
+  "procedures. for paci\ufb01c": null,
+  "procedures. for": null,
+  "procedures.": null,
+  "biosciences sequenc-": null,
+  "2020. complete genome": null,
+  "isolated from henan": null,
+  "announc 9:e00001-20.": null,
+  "university of": null,
+  "shen et": null,
+  "this is": null,
+  "an open- access": null,
+  "open- access article": null,
+  "open- access": null,
+  "access article distributed": null,
+  "access article": null,
+  "access": {
+    "label": "Access",
+    "definition": "The right to obtain or make use of or take advantage of something (as services or membership); the right to enter.  Also, an act or means of approaching.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C25396"
   }
 }
