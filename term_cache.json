@@ -1663,5 +1663,10 @@
     "label": "Rarefaction",
     "definition": "The calculation of species richness for a number of individual samples, based on plots of the number of species as a function of the number of samples (rarefaction curves).",
     "iri": "http://edamontology.org/operation_3797"
+  },
+  "discussion": {
+    "label": "Discussion",
+    "definition": "An extended communication (often interactive) dealing with some particular topic.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C71323"
   }
 }
