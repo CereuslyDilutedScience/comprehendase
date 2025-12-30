@@ -2988,5 +2988,10 @@
     "label": "Both",
     "definition": "One and the other; relating to or being two in conjunction.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C49636"
+  },
+  "of which were": {
+    "label": "Which Pulmonary Function Tests Were Performed Question",
+    "definition": "A question about which pulmonary tests were performed.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C159314"
   }
 }
