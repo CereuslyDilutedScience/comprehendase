@@ -16048,5 +16048,10 @@
     "label": "agrees with",
     "definition": "Example: We share Galileo's opinion: the Earth moves [X].",
     "iri": "http://purl.org/spar/cito/agreesWith"
+  },
+  "makkar hps, tran": {
+    "label": "(traN)",
+    "definition": "mating pair stabilization",
+    "iri": "http://purl.obolibrary.org/obo/OGG_3_21885349"
   }
 }
