@@ -16108,5 +16108,10 @@
     "label": "Black people by nationality",
     "definition": "Black persons categorized by nationality.",
     "iri": "http://purl.obolibrary.org/obo/GSSO_003731"
+  },
+  "blow \ufb02ies, bacteria,": {
+    "label": "blow",
+    "definition": "The protein-coding gene blow (blown fuse) located on the chromosome 2R mapped at 43E1-43E3.",
+    "iri": "http://identifiers.org/ncbigene/35694"
   }
 }
