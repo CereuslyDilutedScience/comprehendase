@@ -505,5 +505,21 @@
     "label": "hosts",
     "definition": "Relation between a Platform and a Sensor, Actuator, Sampler, or Platform, hosted or mounted on it.",
     "iri": "http://www.w3.org/ns/sosa/hosts"
+  },
+  "in this study,": null,
+  "in this": null,
+  "this study, we": null,
+  "this study,": null,
+  "study, we obtained": null,
+  "study, we": null,
+  "study,": null,
+  "we obtained the": null,
+  "we obtained": null,
+  "obtained the complete": null,
+  "obtained the": null,
+  "obtained": {
+    "label": "Obtained",
+    "definition": "",
+    "iri": "http://snomed.info/id/398092000"
   }
 }
