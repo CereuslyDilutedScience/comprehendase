@@ -3958,5 +3958,10 @@
     "label": "material to be added",
     "definition": "a material that is added to another one in a material combination process",
     "iri": "http://purl.obolibrary.org/obo/OBI_1110108"
+  },
+  "p1bsfl treatment. substrate": {
+    "label": "Substrate",
+    "definition": "Any chemical that can be modified or consumed during a chemical reaction or biological process.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C120264"
   }
 }
