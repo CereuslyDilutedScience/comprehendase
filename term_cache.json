@@ -1283,5 +1283,10 @@
     "label": "One",
     "definition": "The smallest natural number and quantity it denotes: a single entity, unit, or object.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C66832"
+  },
+  "prevalent": {
+    "label": "Prevalent",
+    "definition": "Widespread, especially in a particular area or at a particular time.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C159688"
   }
 }
