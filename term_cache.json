@@ -3688,5 +3688,10 @@
     "label": "Trial",
     "definition": "A run or execution of an activity.\nFor example, one execution of a script.",
     "iri": "https://w3id.org/reproduceme#Trial"
+  },
+  "on selective media": {
+    "label": "growth defective on low phosphate media",
+    "definition": "Animals are unable to grow on media depleted of phosphate.",
+    "iri": "http://purl.obolibrary.org/obo/WBPhenotype_0002235"
   }
 }
