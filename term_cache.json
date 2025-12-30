@@ -2568,5 +2568,10 @@
     "label": "GOSE - Work: How Restricted Are They",
     "definition": "Extended Glasgow Outcome Scale (GOSE) How restricted are they?",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C115837"
+  },
+  "of dramatic alteration": {
+    "label": "dramatic scene",
+    "definition": "A part of a dramatic work that is set in the same place or time. In the theatre, generally a number of scenes constitute an act.",
+    "iri": "http://purl.obolibrary.org/obo/GSSO_012524"
   }
 }
