@@ -5418,5 +5418,10 @@
     "label": "some die during larval stage",
     "definition": "A phenotype of a population that is the death of a significant proportion of animals in that population during the larval stage.",
     "iri": "http://purl.obolibrary.org/obo/FBcv_0002023"
+  },
+  "dong et": {
+    "label": "hoi-dong",
+    "definition": "Hoi-dong is fermented sea mussel",
+    "iri": "http://purl.obolibrary.org/obo/FOODON_00001305"
   }
 }
