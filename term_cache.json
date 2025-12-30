@@ -1718,5 +1718,10 @@
     "label": "human",
     "definition": "A member of the the species Homo sapiens. [Allotrope]",
     "iri": "http://purl.obolibrary.org/obo/NCBITaxon_9606"
+  },
+  "feces": {
+    "label": "feces",
+    "definition": "Portion of semisolid bodily waste discharged through the anus[MW,modified].",
+    "iri": "http://purl.obolibrary.org/obo/UBERON_0001988"
   }
 }
