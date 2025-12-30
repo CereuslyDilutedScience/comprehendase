@@ -2648,5 +2648,10 @@
     "label": "Rat Strains",
     "definition": "Breeds of rats utilized for biological research.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C14417"
+  },
+  "been linked": {
+    "label": "BWCS - Been Constipated",
+    "definition": "Bowel Control Scale (BWCS) During the past 4 weeks, how often have you been constipated?",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C113957"
   }
 }
