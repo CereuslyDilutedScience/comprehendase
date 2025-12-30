@@ -2478,5 +2478,10 @@
     "label": "Natural",
     "definition": "A description for something that exists in or is produced by nature, and is not artificial or man-made.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C85060"
+  },
+  "to collect": {
+    "label": "to collect",
+    "definition": "Function to add a member to an aggregate or to bring a flow together. [Allotrope]",
+    "iri": "http://purl.allotrope.org/ontologies/function#AFFN_0000007"
   }
 }
