@@ -682,5 +682,17 @@
     "label": "day",
     "definition": "A one-dimensional temporal region which spans the duration an astronomical body completes one rotation on its axis.",
     "iri": "http://purl.obolibrary.org/obo/ENVO_01003005"
+  },
+  "of incubation, when": null,
+  "of incubation,": null,
+  "incubation, when a": null,
+  "incubation, when": null,
+  "incubation,": null,
+  "when a slight": null,
+  "when a": null,
+  "when": {
+    "label": "When",
+    "definition": "At what time, how soon, in what circumstances?",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C65140"
   }
 }
