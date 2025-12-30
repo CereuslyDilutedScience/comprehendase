@@ -1059,5 +1059,14 @@
     "label": "sample",
     "definition": "Terms to describe the sample.",
     "iri": "http://purl.obolibrary.org/obo/MS_1000457"
+  },
+  "with high quality": null,
+  "with high": null,
+  "high quality (optical": null,
+  "high quality": null,
+  "high": {
+    "label": "High",
+    "definition": "An elevated level or position or degree; greater than normal in degree or intensity or amount.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C25227"
   }
 }
