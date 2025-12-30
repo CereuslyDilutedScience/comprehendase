@@ -2440,5 +2440,16 @@
     "label": "references",
     "definition": "",
     "iri": "http://purl.org/dc/terms/references"
+  },
+  "1996. mycoplasma bovis": null,
+  "mycoplasma bovis as": null,
+  "as an agent": null,
+  "an agent of": null,
+  "an agent": null,
+  "agent of mastitis,": null,
+  "agent of": {
+    "label": "agent of",
+    "definition": "'agent of' is a relation between a participant and a process, in which the participant is active in the relevant process.",
+    "iri": "http://purl.obolibrary.org/obo/TXPO_0001896"
   }
 }
