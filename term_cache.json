@@ -1823,5 +1823,10 @@
     "label": "Often",
     "definition": "A subjective answer that something occurs frequently.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C120595"
+  },
+  "varied. among the": {
+    "label": "Stand Among Friends",
+    "definition": "Nonprofit in United States established in 1997",
+    "iri": "https://ror.org/00r80b982"
   }
 }
