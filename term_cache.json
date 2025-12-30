@@ -160,5 +160,17 @@
     "label": "genome",
     "definition": "A genome is a material entity that represents the entirety of an organism's hereditary information. The genome includes both the genes and the non-coding sequences of the DNA and RNA.",
     "iri": "http://purl.obolibrary.org/obo/OGG_0000000001"
+  },
+  "of xby01 contains": null,
+  "of xby01": null,
+  "xby01 contains a": null,
+  "xby01 contains": null,
+  "xby01": null,
+  "contains a single": null,
+  "contains a": null,
+  "contains": {
+    "label": "contains",
+    "definition": "",
+    "iri": "http://purl.obolibrary.org/obo/RO_0001019"
   }
 }
