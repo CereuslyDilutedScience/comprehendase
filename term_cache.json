@@ -404,5 +404,19 @@
     "label": "Including",
     "definition": "",
     "iri": "http://snomed.info/id/55919000"
+  },
+  "lipopro- teins and": null,
+  "lipopro- teins": null,
+  "teins and secreted": null,
+  "teins and": null,
+  "teins": null,
+  "and secreted proteins,": null,
+  "and secreted": null,
+  "secreted proteins, might": null,
+  "secreted proteins,": null,
+  "secreted": {
+    "label": "secreted",
+    "definition": "These proteins are translocated from the inside of the cell to the cell's exterior. Proteins targeted for secretion undergo glycosylation and other postranslational modifications in the endoplasmic reticulum and the golgi complex, and are enclosed in secretory vesicles. The fusion of vesicles to the cell membrane releases the secretory proteins to the exterior. Examples include growth factors, tumor necrosis factors, cytokines, etc.",
+    "iri": "http://www.bioassayontology.org/bao#BAO_0000369"
   }
 }
