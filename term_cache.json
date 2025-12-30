@@ -553,5 +553,10 @@
     "label": "custom",
     "definition": "Frequent repetition of the same behavior; way of behavior common to many; ordinary manner; habitual practice; method of doing, living or behaving.",
     "iri": "http://purl.obolibrary.org/obo/GSSO_009672"
+  },
+  "to assemble": {
+    "label": "to assemble",
+    "definition": "to assemble is the capability to combine entities together into a larger object that persists in time.",
+    "iri": "http://semanticscience.org/resource/SIO_000388"
   }
 }
