@@ -1858,5 +1858,10 @@
     "label": "Contain",
     "definition": "Include or hold; have within or as a component.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C79873"
+  },
+  "lower": {
+    "label": "Lower",
+    "definition": "To become lower, grow less, or diminish, as in amount, intensity, degree, or value.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C86568"
   }
 }
