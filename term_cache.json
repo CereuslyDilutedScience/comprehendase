@@ -2603,5 +2603,10 @@
     "label": "ingestion",
     "definition": "The process of taking a material (e.g., stressor) into the mouth or body.",
     "iri": "http://purl.obolibrary.org/obo/ExO_0000056"
+  },
+  "enterotoxins produced by": {
+    "label": "produced by",
+    "definition": "a produced_by b iff some process that occurs_in b has_output a.",
+    "iri": "http://purl.obolibrary.org/obo/RO_0003001"
   }
 }
