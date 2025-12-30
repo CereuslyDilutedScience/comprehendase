@@ -16668,5 +16668,10 @@
     "label": "Access to Care",
     "definition": "The ability of individuals or a population to utilize and obtain care from the health care system.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C15244"
+  },
+  "territory. science": {
+    "label": "territory",
+    "definition": "An environmental zone which an animal consistently defends against conspecifics or, occasionally, animals of other species",
+    "iri": "http://purl.obolibrary.org/obo/ecocore_00000133"
   }
 }
