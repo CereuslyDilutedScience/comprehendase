@@ -793,5 +793,10 @@
     "label": "Passages",
     "definition": "Facility in France established in 2016",
     "iri": "https://ror.org/00s40r567"
+  },
+  "methicillin-resistant staphylococcus aureus": {
+    "label": "methicillin-resistant Staphylococcus aureus",
+    "definition": "Any strain of Staphylococcus aureus that has tested resistant (R) to at least one of methicillin, oxacillin or cefoxitin by standard susceptibility testing methods.",
+    "iri": "http://purl.obolibrary.org/obo/ARO_3004306"
   }
 }
