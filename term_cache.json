@@ -1880,5 +1880,14 @@
     "label": "Calculated",
     "definition": "",
     "iri": "http://snomed.info/id/258090004"
+  },
+  "by custom perl": null,
+  "by custom": null,
+  "custom perl scripts,": null,
+  "custom perl": null,
+  "custom": {
+    "label": "custom",
+    "definition": "Frequent repetition of the same behavior; way of behavior common to many; ordinary manner; habitual practice; method of doing, living or behaving.",
+    "iri": "http://purl.obolibrary.org/obo/GSSO_009672"
   }
 }
