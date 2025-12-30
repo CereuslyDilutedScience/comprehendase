@@ -623,5 +623,10 @@
     "label": "Accession",
     "definition": "The process of increasing by addition (as to a collection or group).",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C45257"
+  },
+  "associated": {
+    "label": "Associated",
+    "definition": "Joined in some kind of relationship.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C25281"
   }
 }
