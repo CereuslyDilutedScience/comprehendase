@@ -7233,5 +7233,10 @@
     "label": "produced by",
     "definition": "a produced_by b iff some process that occurs_in b has_output a.",
     "iri": "http://purl.obolibrary.org/obo/RO_0003001"
+  },
+  "process of recycling": {
+    "label": "recycling process",
+    "definition": "A process during which materials deemed as waste are separated and converted into a form which can be used as input by the same processes which generated them.",
+    "iri": "http://purl.obolibrary.org/obo/ENVO_01000741"
   }
 }
