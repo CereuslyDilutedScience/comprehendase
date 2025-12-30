@@ -16578,5 +16578,10 @@
     "label": "Age at Laboratory Test",
     "definition": "The age of an individual when the laboratory test was conducted.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C192254"
+  },
+  "and large scale.": {
+    "label": "large-scale survey",
+    "definition": "Generation and analysis of genome-wide sets of mutants that typically utilizes robotic methods.",
+    "iri": "http://purl.obolibrary.org/obo/APO_0000114"
   }
 }
