@@ -16778,5 +16778,10 @@
     "label": "Lactobacillus fermentum",
     "definition": "A species of facultatively anaerobic, Gram positive, rod shaped bacteria in the phylum Firmicutes. This species is nonmotile, ferments L arabinose, esculin and sucrose, catalase negative and alpha galactosidase positive. L. fermentum is a commensal organism of the urogenital tract with probiotic activity.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C86478"
+  },
+  "against clinical pathogenic": {
+    "label": "Variant Pathogenic/Likely Pathogenic",
+    "definition": "An ad hoc category that describes genetic variants with 90% or greater certainty of contributing to the development of a disease.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C168803"
   }
 }
