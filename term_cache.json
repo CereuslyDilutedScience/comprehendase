@@ -4008,5 +4008,10 @@
     "label": "Treatment Cycle Day Number",
     "definition": "A number that indicates the position of a day within a treatment cycle.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C166221"
+  },
+  "interaction. overall treatment": {
+    "label": "Treatment Rating Overall Question",
+    "definition": "A question about how an individual would rate their treatment overall.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C121910"
   }
 }
