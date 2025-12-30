@@ -4178,5 +4178,10 @@
     "label": "inclusion compound",
     "definition": "A complex in which one component (the host) forms a cavity or, in the case of a crystal, a crystal lattice containing spaces in the shape of long tunnels or channels in which molecular entities of a second chemical species (the guest) are located. There is no covalent bonding between guest and host, the attraction being generally due to van der Waals forces.",
     "iri": "http://purl.obolibrary.org/obo/CHEBI_39022"
+  },
+  "of those readings": {
+    "label": "Low Readings",
+    "definition": "Reading provided by the device is too low or lower than expected.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C63046"
   }
 }
