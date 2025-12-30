@@ -2383,5 +2383,10 @@
     "label": "Possible",
     "definition": "Capable of happening or occurring.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C82490"
+  },
+  "air": {
+    "label": "air",
+    "definition": "The mixture of gases (roughly (by molar content/volume: 78% nitrogen, 20.95% oxygen, 0.93% argon, 0.038% carbon dioxide, trace amounts of other gases, and a variable amount (average around 1%) of water vapor) that surrounds the planet Earth. [ENVO]",
+    "iri": "http://purl.obolibrary.org/obo/ENVO_00002005"
   }
 }
