@@ -1693,5 +1693,10 @@
     "label": "Against",
     "definition": "In opposition to or in competition with someone or something.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C64937"
+  },
+  "table": {
+    "label": "table",
+    "definition": "A table is a placement device with a flat top and one or more legs, providing a level surface for placement. [Allotrope]",
+    "iri": "http://purl.allotrope.org/ontologies/equipment#AFE_0002210"
   }
 }
