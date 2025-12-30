@@ -16273,5 +16273,10 @@
     "label": "vet-2",
     "definition": "The protein-coding gene vet-2 located on the chromosome I.",
     "iri": "http://identifiers.org/ncbigene/172993"
+  },
+  "of different": {
+    "label": "different type",
+    "definition": "An evidence type concordance for evidence lines that are from different types.",
+    "iri": "http://purl.obolibrary.org/obo/CIO_0000038"
   }
 }
