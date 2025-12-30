@@ -122,5 +122,18 @@
     "label": "Isolated",
     "definition": "",
     "iri": "http://snomed.info/id/46651001"
+  },
+  "from a severely": null,
+  "a severely diseased": null,
+  "a severely": null,
+  "severely diseased young": null,
+  "severely diseased": null,
+  "severely": null,
+  "diseased young calf": null,
+  "diseased young": null,
+  "diseased": {
+    "label": "Diseased",
+    "definition": "An indication that an anatomic structure has detectable aberrations.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C175249"
   }
 }
