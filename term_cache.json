@@ -2788,5 +2788,10 @@
     "label": "acts upstream of or within",
     "definition": "C acts upstream of or within p if c is enables 'p' and p' causally upstream of or within p [RO]",
     "iri": "http://purl.obolibrary.org/obo/RO_0002264"
+  },
+  "contaminated potato substrate,": {
+    "label": "Contaminated",
+    "definition": "The presence of any substance or organism that makes a preparation impure.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C68768"
   }
 }
