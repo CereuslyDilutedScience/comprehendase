@@ -1753,5 +1753,17 @@
     "label": "Correct",
     "definition": "Free from error; especially conforming to fact or truth.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C68815"
+  },
+  "the pacbio long": null,
+  "the pacbio": null,
+  "pacbio long reads.": null,
+  "pacbio long": null,
+  "pacbio": null,
+  "long reads. first,": null,
+  "long reads.": null,
+  "long": {
+    "label": "Long",
+    "definition": "A variable that is stored as a signed 64-bit (8-byte) integer.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C48311"
   }
 }
