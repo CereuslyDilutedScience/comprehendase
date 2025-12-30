@@ -563,5 +563,10 @@
     "label": "Corrected",
     "definition": "Having had errors or mistakes removed.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C37934"
+  },
+  "generation": {
+    "label": "Generation",
+    "definition": "An instance of prov:Generation provides additional descriptions about the binary prov:wasGeneratedBy relation from a generated prov:Entity to the prov:Activity that generated it. For example, :cake prov:wasGeneratedBy :baking; prov:qualifiedGeneration [ a prov:Generation; prov:activity :baking; :foo :bar ].",
+    "iri": "http://www.w3.org/ns/prov#Generation"
   }
 }
