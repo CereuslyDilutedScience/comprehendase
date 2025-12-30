@@ -3108,5 +3108,10 @@
     "label": "Routine Cytogenetics Were not Completed",
     "definition": "A response that routine cytogenetic testing was not completed.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C160755"
+  },
+  "signi\ufb01cant. both treatments": {
+    "label": "Both",
+    "definition": "One and the other; relating to or being two in conjunction.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C49636"
   }
 }
