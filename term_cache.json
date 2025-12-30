@@ -2703,5 +2703,10 @@
     "label": "The Institute for Bird Populations",
     "definition": "Nonprofit in United States established in 1989",
     "iri": "https://ror.org/010tqdr51"
+  },
+  "several strains of": {
+    "label": "Several",
+    "definition": "An indefinite small quantity that is more than two but less than many.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C107221"
   }
 }
