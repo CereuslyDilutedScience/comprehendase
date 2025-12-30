@@ -2458,5 +2458,10 @@
     "label": "Empty",
     "definition": "Holding or containing nothing.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C63628"
+  },
+  "chemical": {
+    "label": "chemical",
+    "definition": "A chemical entity is a physical entity of interest in chemistry including molecular entities, parts thereof, and chemical substances (from CHEBI).",
+    "iri": "http://purl.obolibrary.org/obo/FBcv_0000525"
   }
 }
