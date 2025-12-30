@@ -3888,5 +3888,10 @@
     "label": "recorded",
     "definition": "A categorical choice indicating that a datum is available for retrieval.",
     "iri": "http://purl.obolibrary.org/obo/GENEPIO_0001851"
+  },
+  "samples from three": {
+    "label": "From Position Dimension Three",
+    "definition": "A reference to the third directional coordinate of the entity in the old location.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C164522"
   }
 }
