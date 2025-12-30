@@ -1803,5 +1803,10 @@
     "label": "Prior",
     "definition": "Earlier in time or order.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C25629"
+  },
+  "sterile": {
+    "label": "sterile",
+    "definition": "A fertility quality inhering in a bearer by virtue of the bearer's being incapable of initiating, sustaining, or supporting reproduction.",
+    "iri": "http://purl.obolibrary.org/obo/PATO_0000956"
   }
 }
