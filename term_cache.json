@@ -6678,5 +6678,10 @@
     "label": "Plant or Plant Part Extract",
     "definition": "Any extract from a plant or from part of a plant.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C106105"
+  },
+  "systems are likely": {
+    "label": "Likely",
+    "definition": "Having a good chance of being the case or of coming about.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C85550"
   }
 }
