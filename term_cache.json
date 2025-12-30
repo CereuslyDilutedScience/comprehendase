@@ -2093,5 +2093,10 @@
     "label": "Burden",
     "definition": "The quantity of something that is borne or carried by an individual or population.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C85883"
+  },
+  "useful": {
+    "label": "Useful",
+    "definition": "Helpful for doing or achieving something.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C107498"
   }
 }
