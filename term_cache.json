@@ -1763,5 +1763,10 @@
     "label": "peptide",
     "definition": "Amide derived from two or more amino carboxylic acid molecules (the same or different) by formation of a covalent bond from the carbonyl carbon of one to the nitrogen atom of another with formal loss of water. The term is usually applied to structures formed from alpha-amino acids, but it includes those derived from any amino carboxylic acid. X = OH, OR, NH2, NHR, etc.",
     "iri": "http://purl.obolibrary.org/obo/CHEBI_16670"
+  },
+  "activity": {
+    "label": "activity",
+    "definition": "An activity is a process that is cumulative but not homomeric. [Allotrope, DOLCE]",
+    "iri": "http://purl.allotrope.org/ontologies/process#AFP_0003620"
   }
 }
