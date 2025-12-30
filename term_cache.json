@@ -7348,5 +7348,10 @@
     "label": "lid",
     "definition": "The protein-coding gene lid (little imaginal discs) located on the chromosome 2L mapped at 26B2-26B2.",
     "iri": "http://identifiers.org/ncbigene/33837"
+  },
+  "screw bands, and": {
+    "label": "Oligoclonal Bands",
+    "definition": "The presence of more than one immunoglobulin band in the serum, urine, or cerebrospinal fluid. It usually results from infectious or immunologic disorders.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C113809"
   }
 }
