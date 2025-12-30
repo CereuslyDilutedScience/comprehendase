@@ -1633,5 +1633,10 @@
     "label": "index",
     "definition": "A facet that represents some strictly ordered key in an associative array or the position of a member in a list. [Allotrope]",
     "iri": "http://purl.allotrope.org/ontologies/result#AFR_0000928"
+  },
+  "heavy": {
+    "label": "Heavy",
+    "definition": "Of comparatively great physical weight or density.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C68807"
   }
 }
