@@ -3193,5 +3193,10 @@
     "label": "Sleep as Well as Always",
     "definition": "A response indicating that an individual sleeps or slept as well as they always have.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C124165"
+  },
+  "as between the": {
+    "label": "Skin Between the Eyebrows",
+    "definition": "The integumentary covering located medial to the orbital ridges and superior to the nose.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C142317"
   }
 }
