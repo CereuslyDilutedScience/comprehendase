@@ -6533,5 +6533,10 @@
     "label": "larval-larval ecdysis",
     "definition": "The ecdysis between any of the four larval instars.",
     "iri": "http://purl.obolibrary.org/obo/IDOMAL_0002202"
+  },
+  "within this investigation,": {
+    "label": "investigation",
+    "definition": "a planned process that consists of parts: planning, study design execution, documentation and which produce conclusion(s).",
+    "iri": "http://purl.obolibrary.org/obo/OBI_0000066"
   }
 }
