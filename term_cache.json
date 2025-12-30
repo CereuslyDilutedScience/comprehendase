@@ -560,5 +560,33 @@
     "label": "farm",
     "definition": "An area of land which is used for the cultivation of crops or grazing of livestock, including any agricultural constructions therein.",
     "iri": "http://purl.obolibrary.org/obo/ENVO_00000078"
+  },
+  "2019. m. bovis": null,
+  "bovis strain xby01": null,
+  "strain xby01 was": null,
+  "strain xby01": null,
+  "xby01 was isolated": null,
+  "xby01 was": null,
+  "isolated from the": null,
+  "from the lungs": null,
+  "the lungs of": null,
+  "the lungs": null,
+  "lungs of a": null,
+  "lungs of": null,
+  "lungs": null,
+  "of a young": null,
+  "a young calf": null,
+  "a young": null,
+  "young calf that": null,
+  "calf that had": null,
+  "calf that": null,
+  "that had died": null,
+  "that had": null,
+  "had died from": null,
+  "had died": null,
+  "had": {
+    "label": "HAD",
+    "definition": "",
+    "iri": "http://purl.obolibrary.org/obo/RS_0000484"
   }
 }
