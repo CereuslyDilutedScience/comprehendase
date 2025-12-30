@@ -4988,5 +4988,10 @@
     "label": "Lowest",
     "definition": "In the lowest position, nearest the ground, at the bottom; minimal in magnitude, lowest in rank or importance; an extreme state of adversity.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C43517"
+  },
+  "potato spiked with": {
+    "label": "spiked sample",
+    "definition": "An experimental sample that is produced by spiking test material that is essentially free of a given analyte.",
+    "iri": "http://purl.obolibrary.org/obo/CHMO_0002851"
   }
 }
