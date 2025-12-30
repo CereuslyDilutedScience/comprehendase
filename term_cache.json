@@ -6628,5 +6628,10 @@
     "label": "Reduced circulating growth hormone concentration",
     "definition": "Concentration of growth hormone in the blood circulation below normal limits.",
     "iri": "http://purl.obolibrary.org/obo/HP_0034323"
+  },
+  "this study is": {
+    "label": "is study design of",
+    "definition": "A relation between a study design and an investigation when part of the investigation is a study design execution that carries out the study design.",
+    "iri": "http://purl.obolibrary.org/obo/OBI_0003704"
   }
 }
