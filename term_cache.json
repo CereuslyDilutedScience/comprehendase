@@ -2158,5 +2158,10 @@
     "label": "Abundance",
     "definition": "Relative degree of plentifulness.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C70589"
+  },
+  "linking": {
+    "label": "linking",
+    "definition": "Linking is coupling flows together by means of an intermediary flow. [NIST]",
+    "iri": "http://purl.allotrope.org/ontologies/process#AFP_0003358"
   }
 }
