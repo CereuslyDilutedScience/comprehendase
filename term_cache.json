@@ -848,5 +848,10 @@
     "label": "Problem",
     "definition": "A difficulty, disorder, or condition needing resolution.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C28020"
+  },
+  "adoption": {
+    "label": "adoption",
+    "definition": "A process whereby a person assumes the parenting of another, usually a child, from that person's biological or legal parent or parents.",
+    "iri": "http://purl.obolibrary.org/obo/GSSO_003906"
   }
 }
