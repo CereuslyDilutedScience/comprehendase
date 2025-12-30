@@ -2063,5 +2063,10 @@
     "label": "Creative Commons Attribution 4.0 International Public License",
     "definition": "This work is licensed under a Creative Commons Attribution 4.0 International License http://creativecommons.org/licenses/by/4.0/.\n\nTHESE MATERIALS ARE PROVIDED \"AS IS\" AND ALLOTROPE EXPRESSLY DISCLAIMS ALL WARRANTIES, EXPRESS, IMPLIED OR STATUTORY, INCLUDING, WITHOUT LIMITATION, THE WARRANTIES OF NON-INFRINGEMENT, TITLE, MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.\n\nCopyright \u00a9 2015-2025 Allotrope Foundation",
     "iri": "http://purl.allotrope.org/voc/creative-commons-attribution-license"
+  },
+  "alyokhin@maine.edu. the authors": {
+    "label": "authors",
+    "definition": "The list of authors.",
+    "iri": "https://w3id.org/evorao/authors"
   }
 }
