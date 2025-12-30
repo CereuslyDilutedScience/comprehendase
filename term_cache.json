@@ -7058,5 +7058,10 @@
     "label": "other cephalosporins and penems",
     "definition": "This subfamily includes other penem and cephalosporin antibiotics without defined classification by generation.",
     "iri": "http://purl.obolibrary.org/obo/ARO_3009109"
+  },
+  "bacteria were not": {
+    "label": "Routine Cytogenetics Were not Completed",
+    "definition": "A response that routine cytogenetic testing was not completed.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C160755"
   }
 }
