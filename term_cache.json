@@ -1193,5 +1193,10 @@
     "label": "capable of",
     "definition": "A relation between a material entity (such as a cell) and a process, in which the material entity has the ability to carry out the process.",
     "iri": "http://purl.obolibrary.org/obo/RO_0002215"
+  },
+  "alteration": {
+    "label": "Alteration",
+    "definition": "The act or process of modifying something.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C28344"
   }
 }
