@@ -1723,5 +1723,10 @@
     "label": "feces",
     "definition": "Portion of semisolid bodily waste discharged through the anus[MW,modified].",
     "iri": "http://purl.obolibrary.org/obo/UBERON_0001988"
+  },
+  "chicken manure": {
+    "label": "chicken manure",
+    "definition": "Poultry manure made of chicken feces.",
+    "iri": "http://purl.obolibrary.org/obo/ENVO_03501252"
   }
 }
