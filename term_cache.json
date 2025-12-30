@@ -188,5 +188,12 @@
     "label": "circular",
     "definition": "A shape quality inhering in a bearer by virtue of the bearer's being such that every part of the surface or the circumference is equidistant from the center.",
     "iri": "http://purl.obolibrary.org/obo/PATO_0000411"
+  },
+  "chromosome of 986,067": null,
+  "chromosome of": null,
+  "chromosome": {
+    "label": "chromosome",
+    "definition": "A structure composed of a very long molecule of DNA and associated proteins (e.g. histones) that carries hereditary information.",
+    "iri": "http://purl.obolibrary.org/obo/GO_0005694"
   }
 }
