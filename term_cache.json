@@ -8378,5 +8378,10 @@
     "label": "Average",
     "definition": "A statistical calculation describing the central tendency of a set of numbers; used to interpret quantitative data.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C37917"
+  },
+  "of dilutions of": {
+    "label": "capable of part of",
+    "definition": "c stands in this relationship to p if and only if there exists some p' such that c is capable_of p', and p' is part_of p.",
+    "iri": "http://purl.obolibrary.org/obo/RO_0002216"
   }
 }
