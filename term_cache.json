@@ -16728,5 +16728,10 @@
     "label": "first antibiotic in treatment",
     "definition": "The first mention of an antibiotic that is administered as part of a treatment.",
     "iri": "http://purl.obolibrary.org/obo/EUPATH_0050504"
+  },
+  "streptomyces spp.": {
+    "label": "SPP",
+    "definition": "The protein-coding gene SPP located on the chromosome 2.",
+    "iri": "http://identifiers.org/ncbigene/814841"
   }
 }
