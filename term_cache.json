@@ -2373,5 +2373,10 @@
     "label": "account",
     "definition": "An account describes authority and authorization to access resources on a system. [Allotrope]",
     "iri": "http://purl.allotrope.org/ontologies/result#AFR_0001483"
+  },
+  "any": {
+    "label": "Any",
+    "definition": "One, some, every, or all without specification.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C81168"
   }
 }
