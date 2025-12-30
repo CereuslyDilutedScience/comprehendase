@@ -6903,5 +6903,10 @@
     "label": "Have",
     "definition": "Used to describe the possession, relationships, or the state of something or someone.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C101282"
+  },
+  "compared the gut": {
+    "label": "gut on the exterior",
+    "definition": "An epidermal enclosure defect that results in internal organs lying on the outside of the embryo.",
+    "iri": "http://purl.obolibrary.org/obo/WBPhenotype_0001774"
   }
 }
