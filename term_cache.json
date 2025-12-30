@@ -5863,5 +5863,10 @@
     "label": "recent",
     "definition": "A quality of a process which occurs near to or not long before the present.",
     "iri": "http://purl.obolibrary.org/obo/PATO_0001484"
+  },
+  "suggesting": {
+    "label": "Voltage Criteria Suggesting Left Ventricular Hypertrophy, Without Secondary ECG Findings",
+    "definition": "An electrocardiographic finding of large QRS amplitudes that may indicate left ventricular hypertrophy, but is without any of the secondary findings that are typically seen with this diagnosis: left atrial enlargement, left axis deviation, or typical pattern of ST depression and T wave inversion.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C130067"
   }
 }
