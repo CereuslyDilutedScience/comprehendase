@@ -4858,5 +4858,10 @@
     "label": "we",
     "definition": "A second- or third-person pronoun for a person in the speaker's care.",
     "iri": "http://purl.obolibrary.org/obo/GSSO_002476"
+  },
+  "genera comprised by": {
+    "label": "Genera (Croatia)",
+    "definition": "Company in Croatia established in 1901",
+    "iri": "https://ror.org/0518jvn15"
   }
 }
