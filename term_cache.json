@@ -7238,5 +7238,10 @@
     "label": "recycling process",
     "definition": "A process during which materials deemed as waste are separated and converted into a form which can be used as input by the same processes which generated them.",
     "iri": "http://purl.obolibrary.org/obo/ENVO_01000741"
+  },
+  "potato wastes. overall": {
+    "label": "Overall",
+    "definition": "Including everything.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C25605"
   }
 }
