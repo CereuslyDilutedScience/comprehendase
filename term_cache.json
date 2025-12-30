@@ -1698,5 +1698,10 @@
     "label": "mrsA",
     "definition": "Probable phospho-sugar mutase / MrsA protein homolog",
     "iri": "http://purl.obolibrary.org/obo/OGG_3000887589"
+  },
+  "respectively. dna": {
+    "label": "DNA-dependent DNA replication DNA ligation",
+    "definition": "The re-formation of a broken phosphodiester bond in the DNA backbone, carried out by DNA ligase, that contributes to DNA-dependent DNA replication.",
+    "iri": "http://purl.obolibrary.org/obo/GO_0051104"
   }
 }
