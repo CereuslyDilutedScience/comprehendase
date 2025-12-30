@@ -2073,5 +2073,10 @@
     "label": "Sustainable Growth",
     "definition": "Achievement of an economic system that can continue to grow for the foreseeable future.",
     "iri": "http://id.nlm.nih.gov/mesh/D000075042"
+  },
+  "than other feeds,": {
+    "label": "Other Than",
+    "definition": "Distinct from those already mentioned, listed, or considered.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C151896"
   }
 }
