@@ -1728,5 +1728,10 @@
     "label": "chicken manure",
     "definition": "Poultry manure made of chicken feces.",
     "iri": "http://purl.obolibrary.org/obo/ENVO_03501252"
+  },
+  "lauric acid": {
+    "label": "Lauric Acid",
+    "definition": "A saturated medium-chain fatty acid with a 12-carbon backbone. Lauric acid is found naturally in various plant and animal fats and oils, and is a major component of coconut oil and palm kernel oil.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C68384"
   }
 }
