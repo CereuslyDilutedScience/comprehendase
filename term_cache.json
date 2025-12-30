@@ -1708,5 +1708,15 @@
     "label": "Combination",
     "definition": "A collection of things that have been assembled together to form a new whole.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C61517"
+  },
+  "illumina and pacbio": null,
+  "illumina and": null,
+  "and pacbio rs": null,
+  "and pacbio": null,
+  "pacbio rs sequencing": null,
+  "pacbio rs": {
+    "label": "PacBio RS",
+    "definition": "A DNA sequencer manufactured by the Pacific Biosciences corporation which utilizes \u201cSMRT Cells\u201d for single-molecule real-time sequencing. The RS was the first model made by the company.",
+    "iri": "http://purl.obolibrary.org/obo/GENEPIO_0100131"
   }
 }
