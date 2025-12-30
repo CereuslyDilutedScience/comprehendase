@@ -1363,5 +1363,10 @@
     "label": "to investigate",
     "definition": "to investigate is the capability to uncover facts.",
     "iri": "http://semanticscience.org/resource/SIO_000408"
+  },
+  "community": {
+    "label": "community",
+    "definition": "Two or more distinct populations that are part of the same biotic ecosystem.",
+    "iri": "http://purl.obolibrary.org/obo/APOLLO_SV_00000094"
   }
 }
