@@ -2493,5 +2493,10 @@
     "label": "damage",
     "definition": "A structural quality inhering in a bearer by virtue of whether the bearer has been harmed or injured or spoiled.",
     "iri": "http://purl.obolibrary.org/obo/PATO_0001020"
+  },
+  "disturbance": {
+    "label": "Disturbance",
+    "definition": "A departure or divergence from that which is considered normal.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C75521"
   }
 }
