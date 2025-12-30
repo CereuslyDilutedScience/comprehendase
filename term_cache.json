@@ -16388,5 +16388,10 @@
     "label": "nisin",
     "definition": "A type-A lantibiotic containing 34 amino acid residues (including lanthionine (Lan), methyllanthionine (MeLan), didehydroalanine (Dha) and didehydroaminobutyric acid (Dhb)) and five thioether bridges. It is obtained by fermentation of the bacterium <em>Lactococcus lactis</em> and shows particular activity against <em>Clostridium botulinum</em>. It is used in the production of various processed foods to suppress Gram-positive spoilage and pathogenic bacteria and so extend shelf life.",
     "iri": "http://purl.obolibrary.org/obo/CHEBI_71629"
+  },
+  "acid from": {
+    "label": "galacturonic acid derived from galacturonan derived from pectin",
+    "definition": "Galacturonic acid which is derived from galacturonan derived from pectin.",
+    "iri": "http://purl.obolibrary.org/obo/CDNO_0100019"
   }
 }
