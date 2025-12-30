@@ -15923,5 +15923,10 @@
     "label": "Thank You",
     "definition": "An expression of gratitude.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C94783"
+  },
+  "emily mclaughlin, and": {
+    "label": "McLaughlin Research Institute",
+    "definition": "Nonprofit in United States established in 1954",
+    "iri": "https://ror.org/05j752d14"
   }
 }
