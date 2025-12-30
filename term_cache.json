@@ -1978,5 +1978,10 @@
     "label": "Institute for Sustainability",
     "definition": "Nonprofit in United Kingdom established in 2009",
     "iri": "https://ror.org/04carjf23"
+  },
+  "under the": {
+    "label": "Skin Under the Eye",
+    "definition": "The integument that covers the area directly below the eye.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C198300"
   }
 }
