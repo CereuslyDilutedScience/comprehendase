@@ -3308,5 +3308,10 @@
     "label": "counts",
     "definition": "Counts are like ratio scale that they have a zero point but there are no meaningful fractional units. [Allotrope]",
     "iri": "http://purl.allotrope.org/ontologies/result#AFR_0000915"
+  },
+  "were present (fig.": {
+    "label": "fig",
+    "definition": "A fruit multiple of a fig plant (Ficus carica).",
+    "iri": "http://purl.obolibrary.org/obo/FOODON_00003266"
   }
 }
