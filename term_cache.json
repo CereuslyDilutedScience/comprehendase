@@ -1978,5 +1978,10 @@
     "label": "aerobic",
     "definition": "A quality inhering in a bearer by virtue of the bearer's dependence on oxygen.",
     "iri": "http://purl.obolibrary.org/obo/PATO_0001455"
+  },
+  "glucose": {
+    "label": "glucose",
+    "definition": "An aldohexose used as a source of energy and metabolic intermediate.",
+    "iri": "http://purl.obolibrary.org/obo/CHEBI_17234"
   }
 }
