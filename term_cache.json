@@ -1889,5 +1889,25 @@
     "label": "custom",
     "definition": "Frequent repetition of the same behavior; way of behavior common to many; ordinary manner; habitual practice; method of doing, living or behaving.",
     "iri": "http://purl.obolibrary.org/obo/GSSO_009672"
+  },
+  "perl scripts, which": null,
+  "perl scripts,": null,
+  "scripts, which allowed": null,
+  "scripts, which": null,
+  "scripts,": null,
+  "which allowed us": null,
+  "which allowed": null,
+  "allowed us to": null,
+  "allowed us": null,
+  "allowed": null,
+  "us to judge": null,
+  "to judge whether": null,
+  "to judge": null,
+  "judge whether the": null,
+  "judge whether": null,
+  "judge": {
+    "label": "Judge",
+    "definition": "",
+    "iri": "http://snomed.info/id/11205001"
   }
 }
