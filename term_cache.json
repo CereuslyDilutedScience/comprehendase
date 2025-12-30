@@ -2408,5 +2408,10 @@
     "label": "paper",
     "definition": "An article reporting original research, published in a peer-reviewed journal.",
     "iri": "http://purl.obolibrary.org/obo/FBcv_0000212"
+  },
+  "not done": {
+    "label": "Not Done",
+    "definition": "Indicates a task, process or examination that has either not been initiated or not been completed.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C49484"
   }
 }
