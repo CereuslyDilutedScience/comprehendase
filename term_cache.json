@@ -16083,5 +16083,10 @@
     "label": "RES complex",
     "definition": "A protein complex that is required for efficient splicing, and prevents leakage of unspliced pre-mRNAs from the nucleus (named for pre-mRNA REtention and Splicing). In Saccharomyces, the complex consists of Ist3p, Bud13p, and Pml1p.",
     "iri": "http://purl.obolibrary.org/obo/GO_0070274"
+  },
+  "2020. manure pretreatments": {
+    "label": "manure",
+    "definition": "An environmental material consisting of organic matter from plants and/or animals that is used in agriculture as fertilizer.",
+    "iri": "http://purl.obolibrary.org/obo/ENVO_03501300"
   }
 }
