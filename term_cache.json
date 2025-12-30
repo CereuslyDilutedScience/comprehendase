@@ -2108,5 +2108,10 @@
     "label": "Several",
     "definition": "An indefinite small quantity that is more than two but less than many.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C107221"
+  },
+  "reasons. bsfl are": {
+    "label": "Are",
+    "definition": "A unit of area equal to 100 square meters. Are is a non-SI unit accepted for use with SI.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C68869"
   }
 }
