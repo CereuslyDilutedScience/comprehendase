@@ -5673,5 +5673,10 @@
     "label": "Have Been Able to Remember to do Things Question",
     "definition": "A question about whether an individual has or had been able to remember to do things, like take medicine or buy something they need.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C118751"
+  },
+  "occur as a": {
+    "label": "Occur",
+    "definition": "Come to pass.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C54069"
   }
 }
