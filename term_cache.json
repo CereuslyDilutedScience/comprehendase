@@ -3748,5 +3748,10 @@
     "label": "Center for Naval Analyses",
     "definition": "Nonprofit in United States established in 1942",
     "iri": "https://ror.org/000z4wj31"
+  },
+  "possible. on day": {
+    "label": "Possible",
+    "definition": "Capable of happening or occurring.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C82490"
   }
 }
