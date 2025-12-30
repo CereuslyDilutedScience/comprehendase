@@ -1032,5 +1032,15 @@
     "label": "quantified by",
     "definition": "Relation of something that is quantified by some quantity value which expresses it relative to some other thing. [Allotrope]",
     "iri": "http://purl.allotrope.org/ontologies/property#AFX_0002684"
+  },
+  "a tbs-380 \ufb02uorometer": null,
+  "tbs-380 \ufb02uorometer (turner": null,
+  "tbs-380 \ufb02uorometer": null,
+  "\ufb02uorometer (turner biosystems,": null,
+  "\ufb02uorometer (turner": null,
+  "\ufb02uorometer": {
+    "label": "fluorometer",
+    "definition": "A fluorometer is an instrument for the detection and measurement of parameters of fluoresence, which in turn are used to identify the presence and amount of specific molecules in the sample.",
+    "iri": "http://purl.obolibrary.org/obo/OBI_0400143"
   }
 }
