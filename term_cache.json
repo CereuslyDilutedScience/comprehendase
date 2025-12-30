@@ -2263,5 +2263,10 @@
     "label": "livestock",
     "definition": "Domesticated farm animals raised for home use or profit but excluding POULTRY. Typically livestock includes CATTLE; SHEEP; HORSES; SWINE; GOATS; and others.",
     "iri": "http://purl.bioontology.org/ontology/MESH/D058751"
+  },
+  "3). bsfl have": {
+    "label": "Have",
+    "definition": "Used to describe the possession, relationships, or the state of something or someone.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C101282"
   }
 }
