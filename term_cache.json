@@ -45,5 +45,15 @@
     "label": "order",
     "definition": "An order facet adds information of the ordering of some information in an aggregation of information. [Allotrope]",
     "iri": "http://purl.allotrope.org/ontologies/result#AFR_0000932"
+  },
+  "of the names": null,
+  "the names of": null,
+  "the names": null,
+  "names of the": null,
+  "names of": null,
+  "names": {
+    "label": "Names",
+    "definition": "",
+    "iri": "http://purl.obolibrary.org/obo/OMIT_0010309"
   }
 }
