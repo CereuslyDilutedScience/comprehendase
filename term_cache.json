@@ -2427,5 +2427,18 @@
     "label": "Listed",
     "definition": "Included on a list of items.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C203645"
+  },
+  "as co-\ufb01rst authors.": null,
+  "co-\ufb01rst authors. references": null,
+  "co-\ufb01rst authors.": null,
+  "authors. references 1.": null,
+  "authors. references": null,
+  "authors.": null,
+  "references 1. pfutzner": null,
+  "references 1.": null,
+  "references": {
+    "label": "references",
+    "definition": "",
+    "iri": "http://purl.org/dc/terms/references"
   }
 }
