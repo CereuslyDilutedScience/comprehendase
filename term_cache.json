@@ -6238,5 +6238,10 @@
     "label": "mrsA",
     "definition": "Probable phospho-sugar mutase / MrsA protein homolog",
     "iri": "http://purl.obolibrary.org/obo/OGG_3000887589"
+  },
+  "sterilized potato substrate,": {
+    "label": "cream (sterilized)",
+    "definition": "SIREN DB annotation:\n* liquid, low viscosity, with no visible particles FOODON:03430123\n* fully heat-treated FOODON:03440014\n* cream food product FOODON:00001216\n* sterilization by heating FOODON:03470123",
+    "iri": "http://purl.obolibrary.org/obo/FOODON_03305284"
   }
 }
