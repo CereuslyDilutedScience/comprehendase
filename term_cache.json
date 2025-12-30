@@ -6908,5 +6908,10 @@
     "label": "16S rRNA sequencing",
     "definition": "16S ribosomal RNA sequencing is a sequencing method used to identify and compare bacteria present within a given sample. 16S rRNA gene sequencing is a well-established method for studying phylogeny and taxonomy of samples from complex microbiomes or environments that are difficult or impossible to study.",
     "iri": "http://purl.obolibrary.org/obo/GENEPIO_0000053"
+  },
+  "fungal internal": {
+    "label": "Internal",
+    "definition": "Happening or arising or located within some limits, or especially, within some surface.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C25234"
   }
 }
