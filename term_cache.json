@@ -2339,5 +2339,12 @@
     "label": "Major",
     "definition": "",
     "iri": "http://purl.obolibrary.org/obo/NCBITaxon_1925465"
+  },
+  "experiments described in": null,
+  "experiments described": null,
+  "experiments": {
+    "label": "experiments",
+    "definition": "",
+    "iri": "http://purl.uniprot.org/core/experiments"
   }
 }
