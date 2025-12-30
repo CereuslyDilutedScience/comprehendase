@@ -1323,5 +1323,10 @@
     "label": "Infant",
     "definition": "An age group comprised of individuals between one month and two years of age.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C27956"
+  },
+  "suffering": {
+    "label": "suffering",
+    "definition": "Suffering is the unpleasant emotion and aversion associated with the perception of harm or threat of harm in an individual.",
+    "iri": "http://semanticscience.org/resource/SIO_000869"
   }
 }
