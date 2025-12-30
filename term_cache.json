@@ -2318,5 +2318,10 @@
     "label": "cornmeal",
     "definition": "A meal (coarse flour) ground from dried corn (maize)",
     "iri": "http://purl.obolibrary.org/obo/FOODON_03310257"
+  },
+  "colony": {
+    "label": "colony",
+    "definition": "An organism population persisting in a site it has colonized.",
+    "iri": "http://purl.obolibrary.org/obo/IDO_0000615"
   }
 }
