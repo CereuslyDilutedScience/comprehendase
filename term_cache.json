@@ -16583,5 +16583,10 @@
     "label": "large-scale survey",
     "definition": "Generation and analysis of genome-wide sets of mutants that typically utilizes robotic methods.",
     "iri": "http://purl.obolibrary.org/obo/APO_0000114"
+  },
+  "2020. dual oxidase": {
+    "label": "Dual Oxidase 1",
+    "definition": "Dual oxidase 1 (1551 aa, ~177 kDa) is encoded by the human DUOX1 gene. This protein is involved in the positive regulation of both lactoperoxidase antimicrobial activity and thyroid hormone biosynthesis.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C200905"
   }
 }
