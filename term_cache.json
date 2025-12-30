@@ -7213,5 +7213,10 @@
     "label": "Expected",
     "definition": "Considered likely or probable; anticipated.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C25501"
+  },
+  "treatments that were": {
+    "label": "How Often had Stools That Were Loose or Liquid Question",
+    "definition": "A question about how often an individual had stools that were loose or liquid.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C125025"
   }
 }
