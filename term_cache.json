@@ -6083,5 +6083,10 @@
     "label": "mammalian milk or milk component",
     "definition": "A broad term that includes milk and its components, cream, curd and whey; use the appropriate specific term when milk or a milk product is the principal ingredient. Use the appropriate term under *MEAT ANIMAL* to index the source of the milk (note: 21 CFR 131.110 defines milk as cow's milk).",
     "iri": "http://purl.obolibrary.org/obo/FOODON_03420113"
+  },
+  "systems are likely": {
+    "label": "Likely",
+    "definition": "Having a good chance of being the case or of coming about.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C85550"
   }
 }
