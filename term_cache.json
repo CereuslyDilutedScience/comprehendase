@@ -1928,5 +1928,10 @@
     "label": "dominant",
     "definition": "A phenotypic attribute is described as dominant when it is manifest in individuals heterozygous for the allele that causes that phenotype.",
     "iri": "http://purl.obolibrary.org/obo/FBcv_0000299"
+  },
+  "exposure": {
+    "label": "Exposure",
+    "definition": "The act of subjecting someone or something to an influencing experience.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C17941"
   }
 }
