@@ -728,5 +728,10 @@
     "label": "Potential",
     "definition": "The likelihood or possibility that a specific state or condition will exist or that an action will occur.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C62230"
+  },
+  "based on": {
+    "label": "based on",
+    "definition": "The sequence on which the description of a modified sequence is based.",
+    "iri": "http://purl.uniprot.org/core/basedOn"
   }
 }
