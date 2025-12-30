@@ -7083,5 +7083,10 @@
     "label": "linking",
     "definition": "Linking is coupling flows together by means of an intermediary flow. [NIST]",
     "iri": "http://purl.allotrope.org/ontologies/process#AFP_0003358"
+  },
+  "the bsfl excreta": {
+    "label": "excreta",
+    "definition": "A portion of organism substance that is the product of an excretion process that will be eliminated from the body. An excretion process is elimination by an organism of the waste products that arise as a result of metabolic activity.",
+    "iri": "http://purl.obolibrary.org/obo/UBERON_0000174"
   }
 }
