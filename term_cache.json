@@ -2683,5 +2683,10 @@
     "label": "Immunocompromised",
     "definition": "A loss of any arm of immune functions, resulting in potential or actual increase in infections. This state may be reached secondary to specific genetic lesions, syndromes with unidentified or polygenic causes, acquired deficits from other disease states, or as result of therapy for other diseases or conditions.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C14139"
+  },
+  "from staphylococcal food": {
+    "label": "Staphylococcal Food Poisoning",
+    "definition": "Food poisoning that is caused by Staphylococcal infection.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C35037"
   }
 }
