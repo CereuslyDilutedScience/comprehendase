@@ -1928,5 +1928,10 @@
     "label": "Several",
     "definition": "An indefinite small quantity that is more than two but less than many.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C107221"
+  },
+  "showed that such": {
+    "label": "Label as Such",
+    "definition": "An instruction for product to be labeled as explicitly directed.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C64662"
   }
 }
