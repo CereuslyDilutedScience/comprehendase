@@ -6908,5 +6908,10 @@
     "label": "gut on the exterior",
     "definition": "An epidermal enclosure defect that results in internal organs lying on the outside of the embryo.",
     "iri": "http://purl.obolibrary.org/obo/WBPhenotype_0001774"
+  },
+  "microbiome of bsfl": {
+    "label": "microbiome",
+    "definition": "A collection or collectivity of microorganisms.",
+    "iri": "http://www.ebi.ac.uk/efo/EFO_0004982"
   }
 }
