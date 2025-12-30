@@ -6153,5 +6153,10 @@
     "label": "16S rRNA sequencing",
     "definition": "16S ribosomal RNA sequencing is a sequencing method used to identify and compare bacteria present within a given sample. 16S rRNA gene sequencing is a well-established method for studying phylogeny and taxonomy of samples from complex microbiomes or environments that are difficult or impossible to study.",
     "iri": "http://purl.obolibrary.org/obo/GENEPIO_0000053"
+  },
+  "sequencing of extracted": {
+    "label": "fraction extracted",
+    "definition": "The fraction of the total quantity of a substance extracted in a separation experiment under specified conditions.",
+    "iri": "http://purl.obolibrary.org/obo/CHMO_0002853"
   }
 }
