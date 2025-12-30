@@ -1128,5 +1128,10 @@
     "label": "Integrated",
     "definition": "Combining things, people, or ideas of different types in one effective unit, group, or system.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C165682"
+  },
+  "during": {
+    "label": "during",
+    "definition": "During is the contextual role of an information object that is about something within a temporal range of a process. [Allotrope]",
+    "iri": "http://purl.allotrope.org/ontologies/role#AFRL_0000094"
   }
 }
