@@ -8243,5 +8243,10 @@
     "label": "Collection",
     "definition": "Set of products and services with some common characteristics.",
     "iri": "https://w3id.org/evorao/Collection"
+  },
+  "avoid damage or": {
+    "label": "Limit or Avoid Public Places",
+    "definition": "The act of keeping away from publicly accessible gathering spaces.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C178630"
   }
 }
