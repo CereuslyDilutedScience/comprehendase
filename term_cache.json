@@ -2643,5 +2643,10 @@
     "label": "mrsA",
     "definition": "Probable phospho-sugar mutase / MrsA protein homolog",
     "iri": "http://purl.obolibrary.org/obo/OGG_3000887589"
+  },
+  "strains has": {
+    "label": "Rat Strains",
+    "definition": "Breeds of rats utilized for biological research.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C14417"
   }
 }
