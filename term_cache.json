@@ -16318,5 +16318,10 @@
     "label": "rev",
     "definition": "p19",
     "iri": "http://purl.obolibrary.org/obo/OGG_3000155908"
+  },
+  "prevalence and antimicrobial": {
+    "label": "prevalence",
+    "definition": "prevalence is a ratio formed by the number of subjects diagnosed with a disease divided by the total population size.",
+    "iri": "http://purl.obolibrary.org/obo/STATO_0000412"
   }
 }
