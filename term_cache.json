@@ -4968,5 +4968,10 @@
     "label": "Data index",
     "definition": "An index of data of biological relevance.",
     "iri": "http://edamontology.org/data_0955"
+  },
+  "from reads mapped": {
+    "label": "proportion mapped reads",
+    "definition": "A sequence datum that is the specified output of a read mapping and is the ratio of the count of mapped reads to the total count of reads.",
+    "iri": "http://purl.obolibrary.org/obo/OBI_0003056"
   }
 }
