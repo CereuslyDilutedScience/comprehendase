@@ -1478,5 +1478,10 @@
     "label": "Complicated",
     "definition": "Difficult to analyze or understand.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C86059"
+  },
+  "interpretation": {
+    "label": "Interpretation",
+    "definition": "An act or process of elucidation, explication, or explanation of the meaning of an event or thing.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C41255"
   }
 }
