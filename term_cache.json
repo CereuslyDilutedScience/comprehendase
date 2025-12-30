@@ -7298,5 +7298,10 @@
     "label": "reciprocal of difference",
     "definition": "A statistic that is a quotient of one and a difference.",
     "iri": "http://purl.obolibrary.org/obo/STATO_0000634"
+  },
+  "of magnitude) by": {
+    "label": "magnitude",
+    "definition": "Reverse logarithmic measure of the brightness of an object.",
+    "iri": "http://www.ontology-of-units-of-measure.org/resource/om-2/Magnitude"
   }
 }
