@@ -258,5 +258,10 @@
     "label": "Isolation",
     "definition": "A state of separation; the act of isolating something; setting something apart from others; marked by separation of or from usually contiguous elements.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C25549"
+  },
+  "pcr": {
+    "label": "polymerase chain reaction",
+    "definition": "PCR is the process in which a DNA polymerase is used to amplify a piece of DNA by in vitro enzymatic replication. As PCR progresses, the DNA thus generated is itself used as a template for replication. This sets in motion a chain reaction in which the DNA template is exponentially amplified.",
+    "iri": "http://purl.obolibrary.org/obo/OBI_0000415"
   }
 }
