@@ -5143,5 +5143,10 @@
     "label": "Nutrition Research, Vitamins, Other",
     "definition": "The study of the role of vitamins other than those previously specified, their precursons, and their analogs in cancer causation or prevention and in general health.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C15966"
+  },
+  "published over the": {
+    "label": "published",
+    "definition": "Publication published in a journal.",
+    "iri": "http://www.ebi.ac.uk/efo/EFO_0001796"
   }
 }
