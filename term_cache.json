@@ -4253,5 +4253,10 @@
     "label": "present in taxon",
     "definition": "S present_in_taxon T if some instance of T has some S. This does not means that all instances of T have an S - it may only be certain life stages or sexes that have S",
     "iri": "http://purl.obolibrary.org/obo/RO_0002175"
+  },
+  "4). microbial community": {
+    "label": "microbial community",
+    "definition": "An ecological community which is composed of co-existing populations of microbial organisms that interact, directly or indirectly, such that they impact one another's ecological fitness.",
+    "iri": "http://purl.obolibrary.org/obo/PCO_1000004"
   }
 }
