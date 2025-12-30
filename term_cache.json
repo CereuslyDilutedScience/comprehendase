@@ -1753,5 +1753,10 @@
     "label": "gut",
     "definition": "Structure consisting of a simple epithelium surrounded by visceral muscles, nerves and tracheae. The gut is divided into foregut, midgut and hindgut regions, based on developmental origin.",
     "iri": "http://purl.obolibrary.org/obo/FBbt_00047143"
+  },
+  "to reduce": {
+    "label": "to reduce",
+    "definition": "to reduce is the capability to add an electron or an decrease in oxidation state of a chemical entity.",
+    "iri": "http://semanticscience.org/resource/SIO_010359"
   }
 }
