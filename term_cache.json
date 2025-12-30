@@ -6108,5 +6108,10 @@
     "label": "surrounding",
     "definition": "A spatial quality inhering in a bearer by virtue of the bearer's being extended on all sides of another entity simultaneously.",
     "iri": "http://purl.obolibrary.org/obo/FBcv_0000048"
+  },
+  "micro\ufb02ora, which may": {
+    "label": "May",
+    "definition": "The fifth month of the year in the Gregorian calendar.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C106184"
   }
 }
