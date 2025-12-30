@@ -2573,5 +2573,10 @@
     "label": "mastitis",
     "definition": "A breast disease characterized by painful infection of the breast tissue.",
     "iri": "http://purl.obolibrary.org/obo/DOID_10690"
+  },
+  "dairy cows (15).": {
+    "label": "COWS - Sweating",
+    "definition": "Clinical Opiate Withdrawal Scale (COWS) Sweating.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C102057"
   }
 }
