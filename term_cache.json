@@ -2633,5 +2633,10 @@
     "label": "SPP",
     "definition": "The protein-coding gene SPP located on the chromosome 2.",
     "iri": "http://identifiers.org/ncbigene/814841"
+  },
+  "evidence indicating bsfl": {
+    "label": "indicating",
+    "definition": "Indicating is signaling to make something known to the user about a flow. [NIST]",
+    "iri": "http://purl.allotrope.org/ontologies/process#AFP_0003488"
   }
 }
