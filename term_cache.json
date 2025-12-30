@@ -2013,5 +2013,10 @@
     "label": "Skin Under the Eye",
     "definition": "The integument that covers the area directly below the eye.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C198300"
+  },
+  "conditions of decreasing": {
+    "label": "hyperfunction of decreasing",
+    "definition": "Hyperfunction of decreasing is a subtype of hyperfunctioning: A process that performs an excesssive decreasing amount or decreasing number of objects.",
+    "iri": "http://purl.obolibrary.org/obo/TXPO_0001832"
   }
 }
