@@ -5843,5 +5843,10 @@
     "label": "antimicrobial",
     "definition": "A material entity with an antimicrobial disposition.",
     "iri": "http://purl.obolibrary.org/obo/IDO_0000558"
+  },
+  "properties of bsfl": {
+    "label": "complex-properties",
+    "definition": "Information on the complex being annotated. Attribute generally associated to an interaction.",
+    "iri": "http://purl.obolibrary.org/obo/MI_0629"
   }
 }
