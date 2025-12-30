@@ -5398,5 +5398,10 @@
     "label": "Example",
     "definition": "Usage example and description.",
     "iri": "https://w3id.org/linkml/Example"
+  },
+  "and staphylococcus, which": {
+    "label": "during which exists",
+    "definition": "inverse of exists at [BFO]",
+    "iri": "http://purl.obolibrary.org/obo/BFO_0000157"
   }
 }
