@@ -1498,5 +1498,10 @@
     "label": "Detectable",
     "definition": "The capability of being noticed, identified or discovered.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C111567"
+  },
+  "observed": {
+    "label": "Observed",
+    "definition": "Ascertained or determined through monitoring or observation.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C25599"
   }
 }
