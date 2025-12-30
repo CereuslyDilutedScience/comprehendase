@@ -6753,5 +6753,10 @@
     "label": "we",
     "definition": "A second- or third-person pronoun for a person in the speaker's care.",
     "iri": "http://purl.obolibrary.org/obo/GSSO_002476"
+  },
+  "expect that staphylococcal": {
+    "label": "expect",
+    "definition": "X|Tandem expectancy score",
+    "iri": "http://purl.obolibrary.org/obo/PRIDE_0000183"
   }
 }
