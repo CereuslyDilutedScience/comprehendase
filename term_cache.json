@@ -1898,5 +1898,10 @@
     "label": "disruption",
     "definition": "a negative regulation that results in a disruption.",
     "iri": "http://purl.obolibrary.org/obo/INO_0000091"
+  },
+  "evidence": {
+    "label": "evidence",
+    "definition": "A type of information that is used to support an assertion.",
+    "iri": "http://purl.obolibrary.org/obo/ECO_0000000"
   }
 }
