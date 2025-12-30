@@ -4388,5 +4388,10 @@
     "label": "Exposure as Collected Start Day",
     "definition": "The first day of the exposure collection period.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C117498"
+  },
+  "genera in the": {
+    "label": "Genera (Croatia)",
+    "definition": "Company in Croatia established in 1901",
+    "iri": "https://ror.org/0518jvn15"
   }
 }
