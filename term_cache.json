@@ -128,5 +128,10 @@
     "label": "secreted",
     "definition": "These proteins are translocated from the inside of the cell to the cell's exterior. Proteins targeted for secretion undergo glycosylation and other postranslational modifications in the endoplasmic reticulum and the golgi complex, and are enclosed in secretory vesicles. The fusion of vesicles to the cell membrane releases the secretory proteins to the exterior. Examples include growth factors, tumor necrosis factors, cytokines, etc.",
     "iri": "http://www.bioassayontology.org/bao#BAO_0000369"
+  },
+  "adhesion": {
+    "label": "adhesion",
+    "definition": "Adherence to a substrate in the environment or in a host.",
+    "iri": "http://purl.obolibrary.org/obo/APO_0000288"
   }
 }
