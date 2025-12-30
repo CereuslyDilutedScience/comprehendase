@@ -16498,5 +16498,10 @@
     "label": "Heavy",
     "definition": "Of comparatively great physical weight or density.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C68807"
+  },
+  "metal and cross-reactive": {
+    "label": "Reactive Metal Particles (Norway)",
+    "definition": "Company in Norway established in 2010",
+    "iri": "https://ror.org/04apegc06"
   }
 }
