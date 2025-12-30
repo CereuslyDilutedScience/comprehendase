@@ -1793,5 +1793,10 @@
     "label": "Full",
     "definition": "Containing as much or as many as is possible or normal.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C25517"
+  },
+  "index value": {
+    "label": "Index Value",
+    "definition": "A statistic which assigns a single number to several individual statistics in order to quantify trends and evaluate a value or quantity as compared with a standard or a base value.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C67368"
   }
 }
