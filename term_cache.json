@@ -1703,5 +1703,10 @@
     "label": "DNA-dependent DNA replication DNA ligation",
     "definition": "The re-formation of a broken phosphodiester bond in the DNA backbone, carried out by DNA ligase, that contributes to DNA-dependent DNA replication.",
     "iri": "http://purl.obolibrary.org/obo/GO_0051104"
+  },
+  "was extracted from": {
+    "label": "fraction extracted",
+    "definition": "The fraction of the total quantity of a substance extracted in a separation experiment under specified conditions.",
+    "iri": "http://purl.obolibrary.org/obo/CHMO_0002853"
   }
 }
