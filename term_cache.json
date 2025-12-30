@@ -2803,5 +2803,10 @@
     "label": "Stand Among Friends",
     "definition": "Nonprofit in United States established in 1997",
     "iri": "https://ror.org/00r80b982"
+  },
+  "farm animals, particularly": {
+    "label": "environmental pets or farm animals information",
+    "definition": "An information content entity about presence of pets or farm animals in the environment of subject, if yes the animals should be specified; can include multiple animals present.",
+    "iri": "http://purl.obolibrary.org/obo/EUPATH_0000602"
   }
 }
