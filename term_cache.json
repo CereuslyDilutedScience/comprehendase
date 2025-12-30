@@ -2368,5 +2368,11 @@
     "label": "Both",
     "definition": "One and the other; relating to or being two in conjunction.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C49636"
+  },
+  "involved in drafting": null,
+  "involved in": {
+    "label": "involved in",
+    "definition": "C involved_in p if and only if c enables some process p', and p' is part of p [RO]",
+    "iri": "http://purl.obolibrary.org/obo/RO_0002331"
   }
 }
