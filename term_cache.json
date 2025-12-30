@@ -2634,5 +2634,25 @@
     "label": "Identification",
     "definition": "A taxonomic determination (e.g., the assignment to a taxon).",
     "iri": "http://rs.tdwg.org/dwc/terms/Identification"
+  },
+  "mycoplasma bovis and": null,
+  "and myco- plasma": null,
+  "and myco-": null,
+  "myco- plasma agalactiae": null,
+  "plasma agalactiae based": null,
+  "plasma agalactiae": null,
+  "agalactiae based on": null,
+  "agalactiae based": null,
+  "agalactiae": null,
+  "based on the": null,
+  "the uvrc genes": null,
+  "uvrc genes by": null,
+  "uvrc genes": null,
+  "genes by pcr.": null,
+  "genes by": null,
+  "genes": {
+    "label": "Genes",
+    "definition": "",
+    "iri": "http://purl.obolibrary.org/obo/OMIT_0006994"
   }
 }
