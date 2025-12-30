@@ -913,5 +913,10 @@
     "label": "spacer",
     "definition": "[definition source]: Wikipedia",
     "iri": "http://purl.bioontology.org/ontology/npo#NPO_485"
+  },
+  "reduced": {
+    "label": "reduced",
+    "definition": "Qualifier that describes a phenotype that has reduced penetrance or expressivity when compared to wild-type.",
+    "iri": "http://purl.obolibrary.org/obo/FBcv_0000343"
   }
 }
