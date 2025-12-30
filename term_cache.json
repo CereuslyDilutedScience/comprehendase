@@ -4888,5 +4888,10 @@
     "label": "crayfish preparation (unsterilized)",
     "definition": "SIREN DB annotation:\n* skeletal meat part FOODON:03420175",
     "iri": "http://purl.obolibrary.org/obo/FOODON_03316326"
+  },
+  "chicken manure after": {
+    "label": "chicken manure",
+    "definition": "Poultry manure made of chicken feces.",
+    "iri": "http://purl.obolibrary.org/obo/ENVO_03501252"
   }
 }
