@@ -878,5 +878,10 @@
     "label": "mrsA",
     "definition": "Probable phospho-sugar mutase / MrsA protein homolog",
     "iri": "http://purl.obolibrary.org/obo/OGG_3000887589"
+  },
+  "potato": {
+    "label": "potato",
+    "definition": "A shoot axis tuber of a potato plant (Solanum tuberosum).",
+    "iri": "http://purl.obolibrary.org/obo/FOODON_03315354"
   }
 }
