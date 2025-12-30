@@ -1248,5 +1248,10 @@
     "label": "methicillin",
     "definition": "A penicillin that is 6-aminopenicillanic acid in which one of the amino hydrogens is replaced by a 2,6-dimethoxybenzoyl group.",
     "iri": "http://purl.obolibrary.org/obo/CHEBI_6827"
+  },
+  "concern": {
+    "label": "Concern",
+    "definition": "A matter of interest or importance.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C79892"
   }
 }
