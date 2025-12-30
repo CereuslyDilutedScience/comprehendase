@@ -5253,5 +5253,10 @@
     "label": "mrsA",
     "definition": "Probable phospho-sugar mutase / MrsA protein homolog",
     "iri": "http://purl.obolibrary.org/obo/OGG_3000887589"
+  },
+  "p+bsfl day 3": {
+    "label": "day",
+    "definition": "A one-dimensional temporal region which spans the duration an astronomical body completes one rotation on its axis.",
+    "iri": "http://purl.obolibrary.org/obo/ENVO_01003005"
   }
 }
