@@ -2203,5 +2203,10 @@
     "label": "bacteriostatic",
     "definition": "Static agent bearing a bacteriostatic disposition.",
     "iri": "http://purl.obolibrary.org/obo/IDO_0001040"
+  },
+  "and/or": {
+    "label": "And/Or",
+    "definition": "Used to indicate that either or both of two items or options may be valid.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C48928"
   }
 }
