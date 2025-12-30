@@ -2803,5 +2803,10 @@
     "label": "Disposal",
     "definition": "The act or means of getting rid of something.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C48166"
+  },
+  "is often": {
+    "label": "Not Often Concerned that Appearance is Worsening",
+    "definition": "A response indicating that an individual is not or was not often concerned that their appearance is worsening.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C124200"
   }
 }
