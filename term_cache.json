@@ -1864,5 +1864,12 @@
     "label": "Genome Size",
     "definition": "",
     "iri": "http://purl.obolibrary.org/obo/OMIT_0027643"
+  },
+  "information were calculated": null,
+  "information were": null,
+  "information": {
+    "label": "Information",
+    "definition": "Knowledge derived from study, experience, or instruction that has been gathered or received by communication.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C48191"
   }
 }
