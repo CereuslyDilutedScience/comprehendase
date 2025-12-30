@@ -2698,5 +2698,10 @@
     "label": "Concern",
     "definition": "A matter of interest or importance.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C79892"
+  },
+  "a nosocomial pathogen,": {
+    "label": "Nosocomial Infection",
+    "definition": "An infection acquired in a hospital or other healthcare setting.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C115164"
   }
 }
