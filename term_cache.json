@@ -1783,5 +1783,10 @@
     "label": "Twenty",
     "definition": "A natural number greater than nineteen and less than twenty-one and the quantity that it denotes.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C105799"
+  },
+  "bacterial genera and": {
+    "label": "Genera (Croatia)",
+    "definition": "Company in Croatia established in 1901",
+    "iri": "https://ror.org/0518jvn15"
   }
 }
