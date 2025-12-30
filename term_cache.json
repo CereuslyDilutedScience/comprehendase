@@ -15898,5 +15898,10 @@
     "label": "option",
     "definition": "A sub property of object. The options subject to this action.",
     "iri": "http://schema.org/option"
+  },
+  "material supplemental material": {
+    "label": "material",
+    "definition": "A material entity that occupies space and possesses a rest mass. [Allotrope]",
+    "iri": "http://purl.allotrope.org/ontologies/material#AFM_0000275"
   }
 }
