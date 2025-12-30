@@ -6978,5 +6978,10 @@
     "label": "Consistently Decreased Social Activities Question",
     "definition": "A question about whether an individual experiences or experienced consistently decreased interest or participation in social activities.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C159932"
+  },
+  "highest among all": {
+    "label": "Highest",
+    "definition": "Approaching or constituting a maximum; the highest point (of something).",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C25525"
   }
 }
