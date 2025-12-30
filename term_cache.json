@@ -1373,5 +1373,10 @@
     "label": "response to",
     "definition": "A quality inhering in a bearer by virtue of the whether the bearer's disposition to react to a stimulus or an agent.",
     "iri": "http://purl.obolibrary.org/obo/PATO_0000077"
+  },
+  "contaminated": {
+    "label": "Contaminated",
+    "definition": "The presence of any substance or organism that makes a preparation impure.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C68768"
   }
 }
