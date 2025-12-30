@@ -5428,5 +5428,10 @@
     "label": "fatty acid",
     "definition": "Any aliphatic monocarboxylic acid derived from or contained in esterified form in an animal or vegetable fat, oil or wax. Natural fatty acids commonly have a chain of 4 to 28 carbons (usually unbranched and even-numbered), which may be saturated or unsaturated. By extension, the term is sometimes used to embrace all acyclic aliphatic carboxylic acids.",
     "iri": "http://purl.obolibrary.org/obo/CHEBI_35366"
+  },
+  "derivatives in high": {
+    "label": "Jasmonate derivatives",
+    "definition": "Any octanoid that is derived from jasmonate.",
+    "iri": "http://purl.obolibrary.org/obo/CHEBI_167055"
   }
 }
