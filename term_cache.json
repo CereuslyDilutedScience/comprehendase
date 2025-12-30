@@ -2113,5 +2113,10 @@
     "label": "Are",
     "definition": "A unit of area equal to 100 square meters. Are is a non-SI unit accepted for use with SI.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C68869"
+  },
+  "quick-developing and proli\ufb01c": {
+    "label": "quick and dirty MALDI sample preparation",
+    "definition": "Quick & dirty (Q&D) sample preparation separating matrix handling from sample handling.",
+    "iri": "http://purl.obolibrary.org/obo/MS_1001993"
   }
 }
