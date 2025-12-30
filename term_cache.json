@@ -6888,5 +6888,10 @@
     "label": "land-tied island",
     "definition": "A continental island connected to its adjacent land by a natural feature, such as a causeway.",
     "iri": "http://purl.obolibrary.org/obo/ENVO_00000269"
+  },
+  "the high diversity": {
+    "label": "Diversity",
+    "definition": "Variety; quality, state, fact, or instance of being different.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C62263"
   }
 }
