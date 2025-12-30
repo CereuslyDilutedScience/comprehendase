@@ -5083,5 +5083,10 @@
     "label": "A Few Times",
     "definition": "A response indicating that something happened less than half the time.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C129349"
+  },
+  "sequence sampling depth": {
+    "label": "sampling depth setting",
+    "definition": "A sampling depth setting is a control setting that specifies the focal depth of a probing signal. [Allotrope]",
+    "iri": "http://purl.allotrope.org/ontologies/result#AFR_0002933"
   }
 }
