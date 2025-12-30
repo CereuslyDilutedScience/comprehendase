@@ -2233,5 +2233,10 @@
     "label": "Metal",
     "definition": "Electropositive chemical elements characterised by ductility, malleability, luster, and conductance of heat and electricity. They can replace the hydrogen of an acid and form bases with hydroxyl radicals.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C637"
+  },
+  "lid": {
+    "label": "lid",
+    "definition": "The protein-coding gene lid (little imaginal discs) located on the chromosome 2L mapped at 26B2-26B2.",
+    "iri": "http://identifiers.org/ncbigene/33837"
   }
 }
