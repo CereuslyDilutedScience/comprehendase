@@ -3153,5 +3153,10 @@
     "label": "As",
     "definition": "In the same amount or manner; to the same degree; in the role, function, or capacity of.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C64938"
+  },
+  "these tubers serve": {
+    "label": "serve",
+    "definition": "To present in order to make a statement; to make a statement generally.",
+    "iri": "http://purl.obolibrary.org/obo/GSSO_008926"
   }
 }
