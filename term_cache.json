@@ -16773,5 +16773,10 @@
     "label": "activity directly regulates activity of",
     "definition": "Holds between molecular entities A and B where A can physically interact with B and in doing so regulates a process that B is capable of.  For example, A and B may be gene products and binding of B by A regulates the kinase activity of B.",
     "iri": "http://purl.obolibrary.org/obo/RO_0002448"
+  },
+  "confusa, lactobacillus fermentum,": {
+    "label": "Lactobacillus fermentum",
+    "definition": "A species of facultatively anaerobic, Gram positive, rod shaped bacteria in the phylum Firmicutes. This species is nonmotile, ferments L arabinose, esculin and sucrose, catalase negative and alpha galactosidase positive. L. fermentum is a commensal organism of the urogenital tract with probiotic activity.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C86478"
   }
 }
