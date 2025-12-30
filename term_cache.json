@@ -16638,5 +16638,10 @@
     "label": "MicroArray and Gene Expression",
     "definition": "A group that aims to standardize the representation of microarray expression data that facilitates microarray information exchange between different data systems. (www.mged.org)",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C54278"
+  },
+  "impact of soil": {
+    "label": "impact",
+    "definition": "Bruker Daltonics' impact: ESI Q-TOF, Nanospray, APCI, APPI, GC-APCI, CaptiveSpray.",
+    "iri": "http://purl.obolibrary.org/obo/MS_1002077"
   }
 }
