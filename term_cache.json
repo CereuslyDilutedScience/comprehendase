@@ -5133,5 +5133,10 @@
     "label": "capable of part of",
     "definition": "c stands in this relationship to p if and only if there exists some p' such that c is capable_of p', and p' is part_of p.",
     "iri": "http://purl.obolibrary.org/obo/RO_0002216"
+  },
+  "as well (13).": {
+    "label": "Sleep as Well as Always",
+    "definition": "A response indicating that an individual sleeps or slept as well as they always have.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C124165"
   }
 }
