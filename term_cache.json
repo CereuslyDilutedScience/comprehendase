@@ -16988,5 +16988,10 @@
     "label": "Taxonomy",
     "definition": "A structured representation of data about the classification and naming of biological organisms into groups according to shared characteristics.",
     "iri": "https://w3id.org/evorao/Taxonomy"
+  },
+  "ranks for ecological": {
+    "label": "Centre for Ecological Research",
+    "definition": "Facility in Hungary established in 2012",
+    "iri": "https://ror.org/04bhfmv97"
   }
 }
