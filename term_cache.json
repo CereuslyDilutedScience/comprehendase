@@ -2753,5 +2753,10 @@
     "label": "edema in animal",
     "definition": "An abnormal accumulation of fluid in the whole organism.",
     "iri": "http://purl.obolibrary.org/obo/PLANP_0000801"
+  },
+  "housing environments (17),": {
+    "label": "Extreme Environments",
+    "definition": "An ENVIRONMENT which falls outside the range of tolerance for the survival of organisms that are not specifically adapted to survive or thrive in it. Examples of such environments are among the hottest and coldest places on earth.",
+    "iri": "http://id.nlm.nih.gov/mesh/D000071251"
   }
 }
