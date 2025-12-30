@@ -491,5 +491,12 @@
     "label": "dissemination",
     "definition": "",
     "iri": "https://w3id.org/mixs/SampDisStageEnum#dissemination"
+  },
+  "within hosts (3).": null,
+  "within hosts": null,
+  "within": {
+    "label": "Within",
+    "definition": "On the inside; contained in.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C25282"
   }
 }
