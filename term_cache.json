@@ -6203,5 +6203,10 @@
     "label": "Inhibition of Amyloidogenesis",
     "definition": "Inhibition of Amyloidogenesis is a process that prevents the formation or growth of amyloid structures.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C45553"
+  },
+  "aureus in pig": {
+    "label": "Polyclonal pig Insulin raised in guinea pig",
+    "definition": "A polyclonal antibody raised in guinea pig that targets the pig \"Insulin\" antigen.",
+    "iri": "http://purl.obolibrary.org/obo/BCGO_9004309"
   }
 }
