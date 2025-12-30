@@ -7703,5 +7703,10 @@
     "label": "Maintained",
     "definition": "Software has developers actively maintaining it (fixing bugs)",
     "iri": "http://www.ebi.ac.uk/swo/maturity/SWO_9000073"
+  },
+  "8-qt ventilated plastic": {
+    "label": "Ventilated Cigarette",
+    "definition": "A cigarette that incorporates a special filter perforated with small holes. A cigarette of this design results in lower machine-measured tar and nicotine yields and was promoted as safer and marketed as a \"light\" cigarette.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C162671"
   }
 }
