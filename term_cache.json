@@ -588,5 +588,17 @@
     "label": "HAD",
     "definition": "",
     "iri": "http://purl.obolibrary.org/obo/RS_0000484"
+  },
+  "died from serious": null,
+  "died from": null,
+  "died": null,
+  "from serious pneumonia.": null,
+  "from serious": null,
+  "serious pneumonia. to": null,
+  "serious pneumonia.": null,
+  "serious": {
+    "label": "Serious",
+    "definition": "Causing fear or anxiety by threatening great harm; of great consequence.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C54035"
   }
 }
