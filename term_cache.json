@@ -2838,5 +2838,10 @@
     "label": "serve",
     "definition": "To present in order to make a statement; to make a statement generally.",
     "iri": "http://purl.obolibrary.org/obo/GSSO_008926"
+  },
+  "as a source": {
+    "label": "ant as a sugar source",
+    "definition": "Adult female mosquitoes of the sabethine genus Malaya have evolved a remarkable manner of acquiring fluids of plant origin: they imbibe fluid regurgitated by ants of the genus Crematogaster. The habit has not been described for males.",
+    "iri": "http://purl.obolibrary.org/obo/IDOMAL_0002404"
   }
 }
