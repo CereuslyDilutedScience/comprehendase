@@ -1365,5 +1365,14 @@
     "label": "Following",
     "definition": "",
     "iri": "http://snomed.info/id/255260001"
+  },
+  "illumina\u2019s standard genomic": null,
+  "illumina\u2019s standard": null,
+  "standard genomic dna": null,
+  "standard genomic": null,
+  "standard": {
+    "label": "standard",
+    "definition": "A standard is a norm or requirement that is established for technical systems. [Wikipedia]",
+    "iri": "http://purl.allotrope.org/ontologies/result#AFR_0001276"
   }
 }
