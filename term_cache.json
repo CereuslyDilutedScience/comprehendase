@@ -1278,5 +1278,10 @@
     "label": "Sickness",
     "definition": "A state of ill health, bodily malfunction, or discomfort.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C107499"
+  },
+  "one": {
+    "label": "One",
+    "definition": "The smallest natural number and quantity it denotes: a single entity, unit, or object.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C66832"
   }
 }
