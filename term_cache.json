@@ -6253,5 +6253,10 @@
     "label": "increased apoptosis in tracheoesophageal fold",
     "definition": "An increased occurrence of apoptotic process in tracheoesophageal fold.",
     "iri": "http://purl.obolibrary.org/obo/XPO_0141678"
+  },
+  "in treatments": {
+    "label": "number of treatments",
+    "definition": "Number of treatments tested during an experiment.",
+    "iri": "http://purl.obolibrary.org/obo/AGRO_00000323"
   }
 }
