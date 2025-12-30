@@ -2353,5 +2353,10 @@
     "label": "Traces",
     "definition": "Nonprofit in France established in 1994",
     "iri": "https://ror.org/019szx567"
+  },
+  "before": {
+    "label": "before",
+    "definition": "t1 before t2 iff:= t1 before_or_simulataneous_with t2 and not (t1 simultaneous_with t2) [RO]",
+    "iri": "http://purl.obolibrary.org/obo/RO_0002083"
   }
 }
