@@ -2308,5 +2308,10 @@
     "label": "weight",
     "definition": "A numerical value indicating relative importance or priority, generally processed in ascending order. This weight helps prioritize content when organizing or processing data. Its value can be negative, with a default set to 0.",
     "iri": "https://w3id.org/evorao/weight"
+  },
+  "maintained": {
+    "label": "Maintained",
+    "definition": "Software has developers actively maintaining it (fixing bugs)",
+    "iri": "http://www.ebi.ac.uk/swo/maturity/SWO_9000073"
   }
 }
