@@ -4893,5 +4893,10 @@
     "label": "chicken manure",
     "definition": "Poultry manure made of chicken feces.",
     "iri": "http://purl.obolibrary.org/obo/ENVO_03501252"
+  },
+  "15 days (11).": {
+    "label": "11-15 days post-L4 adult hermaphrodite Ce",
+    "definition": "At 20 Centigrade: 11-15 days after L4-adult molt. 14-18 days after first cleavage.",
+    "iri": "http://purl.obolibrary.org/obo/WBls_0000074"
   }
 }
