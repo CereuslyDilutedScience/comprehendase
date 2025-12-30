@@ -2686,5 +2686,31 @@
     "label": "Short",
     "definition": "A variable that is stored as a signed 16-bit (2-byte) integer.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C73939"
+  },
+  "read sequence data.": null,
+  "read sequence": null,
+  "sequence data. genome": null,
+  "sequence data.": null,
+  "data. genome res": null,
+  "data. genome": null,
+  "data.": null,
+  "i. 2017. abyss": null,
+  "2017. abyss 2.0:": null,
+  "2017. abyss": null,
+  "abyss 2.0: resource-ef\ufb01cient": null,
+  "abyss 2.0:": null,
+  "2.0: resource-ef\ufb01cient assembly": null,
+  "resource-ef\ufb01cient assembly of": null,
+  "resource-ef\ufb01cient assembly": null,
+  "assembly of large": null,
+  "assembly of": null,
+  "of large genomes": null,
+  "of large": null,
+  "large genomes using": null,
+  "large genomes": null,
+  "large": {
+    "label": "Large",
+    "definition": "Of considerable or relatively great size, extent, or capacity.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C49508"
   }
 }
