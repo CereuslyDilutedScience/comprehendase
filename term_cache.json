@@ -6213,5 +6213,10 @@
     "label": "manure",
     "definition": "An environmental material consisting of organic matter from plants and/or animals that is used in agriculture as fertilizer.",
     "iri": "http://purl.obolibrary.org/obo/ENVO_03501300"
+  },
+  "containing bsfl.": {
+    "label": "containing",
+    "definition": "Containing is the state of keeping an object in the inside of a cavity. [Allotrope]",
+    "iri": "http://purl.allotrope.org/ontologies/process#AFP_0003623"
   }
 }
