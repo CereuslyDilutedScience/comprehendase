@@ -2468,5 +2468,10 @@
     "label": "fume hood",
     "definition": "A hood in which to conduct experiments that give off poisonous fumes that vents them to a non-enclosed environment.",
     "iri": "http://purl.obolibrary.org/obo/CHMO_0010020"
+  },
+  "ambient temperature": {
+    "label": "ambient temperature",
+    "definition": "An ambient temperature is a quantity facet that quantifies the temperature of the surrounding atmosphere. [Allotrope]",
+    "iri": "http://purl.allotrope.org/ontologies/result#AFR_0002157"
   }
 }
