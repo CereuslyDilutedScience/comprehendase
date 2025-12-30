@@ -3893,5 +3893,10 @@
     "label": "From Position Dimension Three",
     "definition": "A reference to the third directional coordinate of the entity in the old location.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C164522"
+  },
+  "different substrates": {
+    "label": "number of substrates",
+    "definition": "Number of molecules which are acted upon by an enzyme.",
+    "iri": "http://biomodels.net/SBO/SBO_0000149"
   }
 }
