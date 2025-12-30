@@ -6338,5 +6338,10 @@
     "label": "MicroArray and Gene Expression",
     "definition": "A group that aims to standardize the representation of microarray expression data that facilitates microarray information exchange between different data systems. (www.mged.org)",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C54278"
+  },
+  "fungal internal": {
+    "label": "Internal",
+    "definition": "Happening or arising or located within some limits, or especially, within some surface.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C25234"
   }
 }
