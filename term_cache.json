@@ -2098,5 +2098,10 @@
     "label": "Useful",
     "definition": "Helpful for doing or achieving something.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C107498"
+  },
+  "future": {
+    "label": "Future",
+    "definition": "A time that is yet to come.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C67527"
   }
 }
