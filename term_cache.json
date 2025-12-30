@@ -2958,5 +2958,10 @@
     "label": "packed in broth",
     "definition": "A broth which is used as a packing medium for meat, poultry or seafood material where the broth is derived from the packed food material.",
     "iri": "http://purl.obolibrary.org/obo/FOODON_03480042"
+  },
+  "the pathogen-free treatment": {
+    "label": "Treatment Free Epoch",
+    "definition": "A period in a study immediately following the end of treatment during which the subject(s) is no longer receiving investigational therapy or treatment and is not being assessed.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C186262"
   }
 }
