@@ -33,3 +33,4 @@ steps:
 
 images:
   - "us-east4-docker.pkg.dev/cereuslydilutedscience/cloud-run-source-deploy/comprehendase:$SHORT_SHA"
+  logging: CLOUD_LOGGING_ONLY
