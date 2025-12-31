@@ -46,11 +46,8 @@ def phrase_is_citation(phrase):
 def lookup_term_ols4(term):
     """
     Query the OLS4 API for a scientific term.
-    Uses in-memory caching to avoid repeated lookups.
     Returns a dict with label, definition, iri OR None if not found.
     """
-
-    key = term.strip().lower()
 
     url = "https://www.ebi.ac.uk/ols4/api/search"
     params = {
@@ -67,27 +64,21 @@ def lookup_term_ols4(term):
 
         docs = data.get("response", {}).get("docs", [])
         if not docs:
-            # Do NOT cache missing terms
             return None
 
         doc = docs[0]
         definition = (doc.get("description") or [""])[0].strip()
 
-        # Only cache if definition is non-empty
         if definition:
-            result = {
+            return {
                 "label": doc.get("label"),
                 "definition": definition,
                 "iri": doc.get("iri")
             }
 
-       
-
-        # If definition is empty, do NOT cache
         return None
 
     except Exception:
-        # Do NOT cache failures
         return None
 
 
