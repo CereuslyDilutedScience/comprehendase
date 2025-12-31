@@ -81,7 +81,6 @@ def lookup_term_ols4(term):
     except Exception:
         return None
 
-
 # -----------------------------
 # TERM FILTERING
 # -----------------------------
