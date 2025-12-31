@@ -53,27 +53,29 @@ def extract():
     image_paths = render_pdf_pages(filepath, output_folder=STATIC_PAGE_FOLDER)
     print(f"Rendered pages — {time.time() - start_time:.2f}s")
 
-    # 3. NEW: Run ontology on the whole document at once
+    # 3. NEW: Run ontology on the whole document
     ontology_hits = extract_ontology_terms(pages)
     print(f"Ontology lookup complete — {time.time() - start_time:.2f}s")
 
     # 4. Attach ontology results to pages
     for page_index, page in enumerate(pages):
+
+        # Attach single-word hits
         for w in page["words"]:
             text = w["text"]
             if text in ontology_hits:
                 w["term"] = ontology_hits[text]["label"]
                 w["definition"] = ontology_hits[text]["definition"]
 
+        # Attach phrase hits
         for phrase_obj in page["phrases"]:
             phrase = phrase_obj["text"]
             if phrase in ontology_hits:
-                # Attach definition to the FIRST word of the phrase
                 first_word = phrase_obj["words"][0]
                 first_word["term"] = ontology_hits[phrase]["label"]
                 first_word["definition"] = ontology_hits[phrase]["definition"]
 
-                # Mark the rest as skip
+                # Mark remaining words as skip
                 for w in phrase_obj["words"][1:]:
                     w["skip"] = True
 
