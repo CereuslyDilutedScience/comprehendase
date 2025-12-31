@@ -6,9 +6,7 @@ import re
 # -----------------------------
 
 def looks_like_author_name(word):
-    """
-    Detect capitalized author last names commonly found in citations.
-    """
+    """Detect capitalized author last names commonly found in citations."""
     if re.match(r"^[A-Z][a-z]+$", word):
         return True
     if re.match(r"^[A-Z][a-z]+,$", word):
@@ -17,12 +15,7 @@ def looks_like_author_name(word):
 
 
 def phrase_is_citation(phrase):
-    """
-    Detect multi-word citation patterns like:
-    - Smith et al.
-    - Johnson and Lee
-    - Baker et al., 2020
-    """
+    """Detect multi-word citation patterns."""
     lower = phrase.lower()
 
     if "et al" in lower:
@@ -44,11 +37,7 @@ def phrase_is_citation(phrase):
 # -----------------------------
 
 def lookup_term_ols4(term):
-    """
-    Query the OLS4 API for a scientific term.
-    Returns a dict with label, definition, iri OR None if not found.
-    """
-
+    """Query the OLS4 API for a scientific term."""
     url = "https://www.ebi.ac.uk/ols4/api/search"
     params = {
         "q": term,
@@ -81,6 +70,7 @@ def lookup_term_ols4(term):
     except Exception:
         return None
 
+
 # -----------------------------
 # TERM FILTERING
 # -----------------------------
@@ -103,17 +93,7 @@ SCI_SUFFIXES = (
 
 
 def is_candidate_term(word):
-    """
-    Decide if a single word is worth checking in OLS.
-    Expanded to include:
-    - strain names (XBY01, H37Rv)
-    - gene names (uvrC, recA)
-    - families (-aceae)
-    - orders (-ales)
-    - classes (Mollicutes)
-    - proteins (lipoproteins)
-    """
-
+    """Filter single-word terms."""
     word_clean = re.sub(r"[^A-Za-z0-9\-]", "", word)
 
     if len(word_clean) < 3:
@@ -125,35 +105,34 @@ def is_candidate_term(word):
     if word_clean.isdigit():
         return False
 
-    # Reject author names ONLY for single-word terms
     if looks_like_author_name(word_clean):
         return False
 
-    # Gene names (uvrC, recA, BRCA1)
+    # Gene names
     if re.match(r"^[A-Za-z]{2,6}\d*[A-Za-z]*$", word_clean):
         return True
 
-    # Strain names (XBY01, H37Rv, K12, etc.)
+    # Strain names
     if re.match(r"^[A-Z]{1,4}\d{1,4}[A-Za-z0-9]*$", word_clean):
         return True
 
-    # Family names (-aceae)
+    # Family names
     if word_clean.lower().endswith("aceae"):
         return True
 
-    # Order names (-ales)
+    # Order names
     if word_clean.lower().endswith("ales"):
         return True
 
-    # Class names (Mollicutes-style)
+    # Class names
     if re.match(r"^[A-Z][a-z]+$", word_clean):
         return True
-    
-    # Broad taxonomic names (e.g., Firmicutes, Actinobacteria, Proteobacteria)
+
+    # Broad taxonomic names
     if re.match(r"^[A-Z][a-zA-Z]+$", word_clean):
         return True
 
-    # Protein names
+    # Proteins
     if word_clean.lower().endswith("protein") or word_clean.lower().endswith("proteins"):
         return True
 
@@ -167,74 +146,70 @@ def is_candidate_term(word):
 
 
 def is_candidate_phrase(phrase):
-    """
-    Decide if a multi-word phrase is worth checking in OLS.
-    Expanded to include:
-    - species (Genus species)
-    - subspecies
-    - serotypes
-    - strain phrases
-    """
-
+    """Filter multi-word phrases."""
     words = phrase.split()
 
-    # Reject citation patterns
     if phrase_is_citation(phrase):
         return False
 
-    # Reject if ALL words look like author names
     if all(looks_like_author_name(w) for w in words):
         return False
 
-    # Species names (Genus species) with flexible capitalization
+    # Species names (Genus species)
     if len(words) == 2:
         w1, w2 = words
-        
-    # Genus: capitalized or abbreviated (E. or Escherichia)
         if re.match(r"^[A-Z][a-z]+$|^[A-Z]\.$", w1):
-        
-            # species: usually lowercase but allow capitalized due to PDF errors
             if re.match(r"^[a-zA-Z]+$", w2):
                 return True
 
-    # Allow subspecies phrases
-    if "subspecies" in phrase.lower():
+    # Subspecies, serotypes, strains
+    lower = phrase.lower()
+    if "subspecies" in lower or "serotype" in lower or "strain" in lower:
         return True
 
-    # Allow serotype phrases
-    if "serotype" in phrase.lower():
-        return True
-
-    # Allow strain phrases
-    if "strain" in phrase.lower():
-        return True
-
-    # Multi-word scientific concepts:
-    # Keep only if at least ONE word looks scientific
+    # Multi-word scientific concepts
     if len(words) > 1:
         if any(is_candidate_term(w) for w in words):
             return True
         return False
 
-    # Fallback to single-word logic
     return is_candidate_term(phrase)
 
 
 # -----------------------------
-# N-GRAM GENERATION
+# MAIN ENTRYPOINT (NEW)
 # -----------------------------
 
-def generate_ngrams(words, max_n=3):
+def extract_ontology_terms(pages_output):
     """
-    Generate n-grams (3-word, 2-word, 1-word) from a list of words.
-    Returns tuples: (start_index, end_index, phrase)
+    NEW: This replaces n-gram generation.
+    Uses the 'phrases' list from extraction_text.py.
     """
-    ngrams = []
-    for i in range(len(words)):
-        for n in range(max_n, 0, -1):
-            if i + n <= len(words):
-                phrase = " ".join(words[i:i+n])
-                ngrams.append((i, i+n, phrase))
-    return ngrams
 
+    found_terms = {}
 
+    for page in pages_output:
+        # 1. Try multi-word phrases first
+        for phrase_obj in page["phrases"]:
+            phrase = phrase_obj["text"]
+
+            if not is_candidate_phrase(phrase):
+                continue
+
+            hit = lookup_term_ols4(phrase)
+            if hit:
+                found_terms[phrase] = hit
+                continue
+
+        # 2. Fallback: single words
+        for w in page["words"]:
+            word = w["text"]
+
+            if not is_candidate_term(word):
+                continue
+
+            hit = lookup_term_ols4(word)
+            if hit:
+                found_terms[word] = hit
+
+    return found_terms
