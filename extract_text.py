@@ -107,10 +107,10 @@ def extract_pdf_layout(pdf_path):
         flush_phrase()
 
         # --- DEBUG: inspect phrases containing key terms ---
-print("\n=== DEBUG PHRASES (page", page_index + 1, ") ===")
-for p in phrases:
-    if any(k in p["text"].lower() for k in ["otitis", "media", "uvrc", "xby"]):
-        print("PHRASE:", p["text"])
+    print("\n=== DEBUG PHRASES (page", page_index + 1, ") ===")
+    for p in phrases:
+        if any(k in p["text"].lower() for k in ["otitis", "media", "uvrc", "xby"]):
+            print("PHRASE:", p["text"])
         
         # --- STEP 4: Save page output ---
         pages_output.append({
