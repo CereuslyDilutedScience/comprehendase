@@ -11,7 +11,6 @@ document.getElementById("pdf-input").addEventListener("change", () => {
     button.disabled = fileInput.files.length === 0;
 });
 
-
 // Handle the "Reconstruct layout" button click
 document.getElementById("process-btn").addEventListener("click", async () => {
     const fileInput = document.getElementById("pdf-input");
@@ -73,36 +72,37 @@ function renderPages(pages, viewer) {
         const overlay = document.createElement("div");
         overlay.className = "text-overlay";
 
-      img.onload = () => {
-    const scaleX = img.clientWidth / page.width;
-    const scaleY = img.clientHeight / page.height;
+        img.onload = () => {
+            const scaleX = img.clientWidth / page.width;
+            const scaleY = img.clientHeight / page.height;
 
-    overlay.style.width = img.clientWidth + "px";
-    overlay.style.height = img.clientHeight + "px";
+            overlay.style.width = img.clientWidth + "px";
+            overlay.style.height = img.clientHeight + "px";
 
-    page.words.forEach((word) => {
-        if (word.skip) return;
+            page.words.forEach((word) => {
+                if (word.skip) return;
 
-        const span = document.createElement("span");
-        span.className = "word";
-        span.textContent = word.term || word.text;
-        span.style.color = "transparent"; 
+                const span = document.createElement("span");
+                span.className = "word";
 
+                // Always show the REAL PDF text
+                span.textContent = word.text;
+                span.style.color = "transparent";
 
-        if (word.definition) {
-            span.classList.add("has-definition");
-            span.title = word.definition;
-                  
-      }
+                // Add definition tooltip if present
+                if (word.definition) {
+                    span.classList.add("has-definition");
+                    span.title = word.definition;
+                }
 
-   
-        span.style.left = (word.x * scaleX) + "px";
-        span.style.top = (word.y * scaleY) + "px";
-        span.style.fontSize = (word.height * scaleY) + "px";
+                // Positioning
+                span.style.left = (word.x * scaleX) + "px";
+                span.style.top = (word.y * scaleY) + "px";
+                span.style.fontSize = (word.height * scaleY) + "px";
 
-        overlay.appendChild(span);
-    });
-};
+                overlay.appendChild(span);
+            });
+        };
 
         pageWrapper.appendChild(img);
         pageWrapper.appendChild(overlay);
