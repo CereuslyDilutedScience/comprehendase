@@ -55,7 +55,7 @@ def extract_pdf_layout(pdf_path):
 
         words = merged_words
 
-        # --- STEP 3: Phrase reconstruction (NEW) ---
+        # --- STEP 3: Phrase reconstruction (UPDATED adjacency logic) ---
         phrases = []
         current_phrase = []
 
@@ -82,7 +82,10 @@ def extract_pdf_layout(pdf_path):
                 else:
                     prev = current_phrase[-1]
                     same_line = (prev["line"] == w["line"])
-                    adjacent = (w["word_no"] == prev["word_no"] + 1)
+
+                    # --- UPDATED: allow small gaps in word_no (1–2) ---
+                    gap = w["word_no"] - prev["word_no"]
+                    adjacent = (1 <= gap <= 2)
 
                     if same_line and adjacent:
                         current_phrase.append(w)
