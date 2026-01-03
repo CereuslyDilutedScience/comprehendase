@@ -1,8 +1,9 @@
 import pdfplumber
 import math
 import re
-import os 
+import os
 import sys
+
 # --- FILTER CONFIGURATION ---
 
 MONTHS = [
@@ -12,14 +13,6 @@ MONTHS = [
 
 BAD_UNITS = ["bp", "nm", "cycles", "k-mer", "kmer", "mer"]
 
-BAD_PATTERNS = [
-    r"\bdoi\b",
-    r"http[s]?:\/\/",
-    r"\b\d{1,2}[:\/]\d{1,2}\b",
-    r"\b[eE]\d{2,4}\b",
-    r"\b[A-Z]{2,}\d{2,}\b",
-]
-
 JOURNAL_HINTS = [
     "j vet", "diagn invest", "microbiology resource",
     "announcement", "infect immun", "plos", "bmc", "genome res"
@@ -28,10 +21,6 @@ JOURNAL_HINTS = [
 WORKFLOW_HINTS = [
     "aliquot", "centrifuged", "agar", "broth", "purified",
     "addition", "times using", "three times", "g dna", "dna was"
-]
-
-PLATFORM_HINTS = [
-    "truseq", "smrtbell", "pacbio", "hiseq", "abyss", "canu", "gapcloser"
 ]
 
 BIO_HINTS = [
@@ -44,54 +33,45 @@ BIO_HINTS = [
 ]
 
 
-# --- CORRECTED GARBAGE FILTER (BIOLOGICALLY SAFE) ---
+# --- GARBAGE FILTER WITH REJECTION REASONS ---
 
 def is_garbage_phrase(text):
+    """
+    Returns (True, reason) or (False, None)
+    """
     t = text.lower().strip()
 
     if not t:
-        return True
+        return True, "empty phrase"
 
-    # Allow up to 10 words (scientific terms can be long)
     if len(t.split()) > 10:
-        return True
+        return True, "too many words (>10)"
 
-    # Reject Creative Commons / license text
     if "creative commons" in t or "attribution" in t:
-        return True
+        return True, "contains journal/license text"
 
-    # Reject journal names
     if any(j in t for j in JOURNAL_HINTS):
-        return True
+        return True, "contains journal name"
 
-    # Reject workflow/procedure phrases
     if any(w in t for w in WORKFLOW_HINTS):
-        return True
+        return True, "contains workflow/procedure text"
 
-    # Reject months (citations)
     if any(m in t for m in MONTHS):
-        return True
+        return True, "contains month (likely citation)"
 
-    # Reject DOI/URL
     if "doi" in t or "http" in t:
-        return True
+        return True, "contains DOI/URL"
 
-    # Reject email-like
     if "@" in t:
-        return True
+        return True, "contains email-like text"
 
-    # Reject leading number ONLY if the phrase is not biological
     if re.match(r"^\d", t) and not any(b in t for b in BIO_HINTS):
-        return True
+        return True, "starts with number (non-biological)"
 
-    # Reject units (but allow biological context)
     if any(u in t for u in BAD_UNITS) and not any(b in t for b in BIO_HINTS):
-        return True
+        return True, "contains measurement unit"
 
-    # DO NOT reject punctuation — biological terms often contain punctuation
-    # (parentheses, hyphens, commas, etc.)
-
-    return False
+    return False, None
 
 
 # --- MAIN EXTRACTION FUNCTION ---
@@ -101,6 +81,10 @@ def extract_pdf_layout(pdf_path):
 
     with pdfplumber.open(pdf_path) as pdf:
         for page_index, page in enumerate(pdf.pages):
+
+            print(f"\n==============================")
+            print(f"=== PAGE {page_index+1} START ===")
+            print(f"==============================")
 
             # --- WORD EXTRACTION ---
             try:
@@ -115,8 +99,7 @@ def extract_pdf_layout(pdf_path):
                 print(f"ERROR extracting words on page {page_index+1}: {e}")
                 raw_words = []
 
-            print(f"\n=== PAGE {page_index+1} ===")
-            print("Raw word count:", len(raw_words))
+            print(f"Raw word count: {len(raw_words)}")
 
             # --- NORMALIZE WORD STRUCTURE ---
             words = []
@@ -148,6 +131,11 @@ def extract_pdf_layout(pdf_path):
             # --- SORT WORDS ---
             words.sort(key=lambda w: (round(w["y"] / 5), w["x"]))
 
+            # --- DEBUG: FIRST 10 WORDS ---
+            print("\nWORD DEBUG (first 10):")
+            for w in words[:10]:
+                print(f"  '{w['text']}' at x={w['x']:.1f}, y={w['y']:.1f}")
+
             # --- MERGE HYPHENATED WORDS ---
             merged_words = []
             i = 0
@@ -159,6 +147,7 @@ def extract_pdf_layout(pdf_path):
                     next_word = words[i + 1]
                     merged = current.copy()
                     merged["text"] = text.rstrip("-") + next_word["text"]
+                    print(f"MERGE: '{text}' + '{next_word['text']}' → '{merged['text']}'")
                     merged_words.append(merged)
                     i += 2
                 else:
@@ -175,8 +164,12 @@ def extract_pdf_layout(pdf_path):
                 nonlocal current_phrase
                 if current_phrase:
                     phrase_text = " ".join([w["text"] for w in current_phrase]).strip()
+                    rejected, reason = is_garbage_phrase(phrase_text)
 
-                    if not is_garbage_phrase(phrase_text):
+                    if rejected:
+                        print(f"REJECTED: \"{phrase_text}\" — reason: {reason}")
+                    else:
+                        print(f"PHRASE BUILT: \"{phrase_text}\"")
                         phrases.append({
                             "text": phrase_text,
                             "words": current_phrase.copy()
@@ -214,15 +207,23 @@ def extract_pdf_layout(pdf_path):
 
             flush_phrase()
 
-            # --- DEBUG OUTPUT ---
-            print("Total words:", len(words))
-            print("Total phrases:", len(phrases))
-            print("Key phrases containing targets:")
-            for p in phrases:
-                if any(k in p["text"].lower() for k in [
-                    "otitis", "media", "mycoplasma", "bovis", "xby01", "strain", "gene"
-                ]):
-                    print("  PHRASE:", p["text"])
+            print(f"\nTotal words after merge: {len(words)}")
+            print(f"Total phrases: {len(phrases)}")
+
+            # --- CANDIDATE TERM DEBUG (GROUPED BY SOURCE) ---
+            print(f"\n=== CANDIDATE TERMS (page {page_index+1}) ===")
+
+            # From words
+            word_terms = sorted({w["text"].lower() for w in words if w["text"].isalpha()})
+            print("From words:")
+            for t in word_terms:
+                print(f"  {t}")
+
+            # From phrases
+            phrase_terms = sorted({p["text"].lower() for p in phrases})
+            print("\nFrom phrases:")
+            for t in phrase_terms:
+                print(f"  {t}")
 
             # --- OUTPUT STRUCTURE ---
             pages_output.append({
@@ -232,5 +233,7 @@ def extract_pdf_layout(pdf_path):
                 "words": words,
                 "phrases": phrases
             })
+
+            print(f"=== PAGE {page_index+1} END ===\n")
 
     return pages_output
