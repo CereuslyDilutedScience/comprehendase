@@ -1,7 +1,8 @@
 import pdfplumber
 import math
 import re
-
+import os 
+import sys
 # --- FILTER CONFIGURATION ---
 
 MONTHS = [
