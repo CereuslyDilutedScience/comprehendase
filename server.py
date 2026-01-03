@@ -6,7 +6,7 @@ import time
 
 from extract_text import extract_pdf_layout
 from render_pages import render_pdf_pages
-from ontology import extract_ontology_terms
+import ontology   # <-- full module import
 
 app = Flask(__name__)
 CORS(app, resources={r"/*": {"origins": "https://cereuslydilutedscience.github.io"}})
@@ -53,8 +53,8 @@ def extract():
     image_paths = render_pdf_pages(filepath, output_folder=STATIC_PAGE_FOLDER)
     print(f"Rendered pages — {time.time() - start_time:.2f}s")
 
-    # 3. NEW: Run ontology on the whole document
-    ontology_hits = extract_ontology_terms(pages)
+    # 3. Run ontology on the whole document
+    ontology_hits = ontology.extract_ontology_terms(pages)   # <-- FIXED
     print(f"Ontology lookup complete — {time.time() - start_time:.2f}s")
 
     # 4. Attach ontology results to pages
