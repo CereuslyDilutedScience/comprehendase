@@ -7,7 +7,7 @@ import sys
 # CONFIG / LIMITS
 # ---------------------------------------------------------
 
-MAX_TERMS_PER_DOCUMENT = None
+MAX_TERMS_PER_DOCUMENT = 1000
 OLS4_SEARCH_URL = "https://www.ebi.ac.uk/ols4/api/search"
 
 # ---------------------------------------------------------
