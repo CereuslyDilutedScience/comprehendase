@@ -298,17 +298,26 @@ def is_candidate_phrase_full(phrase_text: str) -> bool:
     return False
 
 
-def generate_ngrams(tokens, min_n=2, max_n=3):
-    """Generate n-grams (as strings) from a list of tokens."""
-    ngrams = []
-    L = len(tokens)
-    for n in range(min_n, max_n + 1):
-        if L < n:
-            continue
-        for i in range(L - n + 1):
-            ngram = " ".join(tokens[i:i+n])
-            ngrams.append(ngram)
-    return ngrams
+def phrase_ngrams_for_ontology(phrase_text: str):
+    """
+    Given a phrase like 'family mycoplasmataceae in the class mollicutes',
+    return useful n-grams for ontology lookup.
+    """
+    tokens = phrase_text.lower().strip().split()
+    ngrams = set()
+
+    # Generate unigrams and bigrams
+    for i in range(len(tokens)):
+        unigram = tokens[i]
+        if len(unigram) >= 3:
+            ngrams.add(unigram)
+
+        if i + 1 < len(tokens):
+            bigram = f"{tokens[i]} {tokens[i+1]}"
+            if len(bigram.replace(" ", "")) >= 5:
+                ngrams.add(bigram)
+
+    return sorted(ngrams)
 
 
 def phrase_ngrams_for_ontology(phrase_text: str):
