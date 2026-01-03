@@ -1,5 +1,51 @@
 import pdfplumber
 import math
+import re
+
+MONTHS = [
+    "january","february","march","april","may","june",
+    "july","august","september","october","november","december"
+]
+
+BAD_UNITS = ["bp", "nm", "cycles", "k-mer", "kmer", "mer"]
+BAD_PATTERNS = [
+    r"\bdoi\b",
+    r"http[s]?:\/\/",
+    r"\b\d{1,2}[:\/]\d{1,2}\b",
+    r"\b[eE]\d{2,4}\b",
+    r"\b[A-Z]{2,}\d{2,}\b",
+]
+
+def is_garbage_phrase(text):
+    t = text.lower().strip()
+
+    if not t:
+        return True
+
+    if len(t.split()) > 4:
+        return True
+
+    if any(p in t for p in [",", ".", ";", ":", "(", ")", "[", "]", "{", "}"]):
+        return True
+
+    if any(m in t for m in MONTHS):
+        return True
+
+    if any(u in t for u in BAD_UNITS):
+        return True
+
+    for pat in BAD_PATTERNS:
+        if re.search(pat, t):
+            return True
+
+    if re.match(r"^\d", t):
+        return True
+
+    if "@" in t:
+        return True
+
+    return False
+
 
 def extract_pdf_layout(pdf_path):
     pages_output = []
@@ -7,7 +53,6 @@ def extract_pdf_layout(pdf_path):
     with pdfplumber.open(pdf_path) as pdf:
         for page_index, page in enumerate(pdf.pages):
 
-            # --- WORD EXTRACTION (fixed for PDFPlumber 0.11.x) ---
             try:
                 raw_words = page.extract_words(
                     use_text_flow=False,
@@ -15,17 +60,14 @@ def extract_pdf_layout(pdf_path):
                     x_tolerance=1,
                     y_tolerance=2,
                     extra_attrs=["fontname", "size"]
-                    
                 ) or []
             except Exception as e:
                 print(f"ERROR extracting words on page {page_index+1}: {e}")
                 raw_words = []
 
-            # Debug: confirm extraction is working
             print(f"\n=== PAGE {page_index+1} ===")
             print("Raw word count:", len(raw_words))
 
-            # --- NORMALIZE WORD STRUCTURE ---
             words = []
             for w in raw_words:
                 try:
@@ -48,14 +90,11 @@ def extract_pdf_layout(pdf_path):
                         "line": 0,
                         "word_no": 0
                     })
-                except Exception as e:
-                    print(f"Skipping malformed word on page {page_index+1}: {e}")
+                except:
                     continue
 
-            # --- SORT WORDS IN READING ORDER ---
             words.sort(key=lambda w: (round(w["y"] / 5), w["x"]))
 
-            # --- MERGE HYPHENATED WORDS ---
             merged_words = []
             i = 0
             while i < len(words):
@@ -74,18 +113,20 @@ def extract_pdf_layout(pdf_path):
 
             words = merged_words
 
-            # --- PHRASE RECONSTRUCTION ---
             phrases = []
             current_phrase = []
 
             def flush_phrase():
                 nonlocal current_phrase
                 if current_phrase:
-                    phrase_text = " ".join([w["text"] for w in current_phrase])
-                    phrases.append({
-                        "text": phrase_text,
-                        "words": current_phrase.copy()
-                    })
+                    phrase_text = " ".join([w["text"] for w in current_phrase]).strip()
+
+                    if not is_garbage_phrase(phrase_text):
+                        phrases.append({
+                            "text": phrase_text,
+                            "words": current_phrase.copy()
+                        })
+
                     current_phrase = []
 
             for w in words:
@@ -118,17 +159,9 @@ def extract_pdf_layout(pdf_path):
 
             flush_phrase()
 
-            # --- DEBUG PHRASES ---
             print("Total words:", len(words))
             print("Total phrases:", len(phrases))
-            print("Key phrases containing targets:")
-            for p in phrases:
-                if any(k in p["text"].lower() for k in [
-                    "otitis", "media", "mycoplasma", "bovis", "xby01", "strain", "gene"
-                ]):
-                    print("  PHRASE:", p["text"])
 
-            # --- OUTPUT STRUCTURE ---
             pages_output.append({
                 "page_number": page_index + 1,
                 "width": float(page.width) if page.width else 0.0,
