@@ -1,8 +1,8 @@
 import pdfplumber
-import math
-import re
+import subprocess
+import tempfile
 import os
-import sys
+import re
 
 # --- FILTER CONFIGURATION ---
 
@@ -36,9 +36,6 @@ BIO_HINTS = [
 # --- GARBAGE FILTER WITH REJECTION REASONS ---
 
 def is_garbage_phrase(text):
-    """
-    Returns (True, reason) or (False, None)
-    """
     t = text.lower().strip()
 
     if not t:
@@ -74,17 +71,59 @@ def is_garbage_phrase(text):
     return False, None
 
 
+# --- OCR + EXTRACTION PIPELINE ---
+
+def ocr_pdf(input_path):
+    """
+    Runs OCRmyPDF on the input PDF and returns the path to the cleaned PDF.
+    If OCR fails, returns None.
+    """
+    try:
+        temp_dir = tempfile.gettempdir()
+        cleaned_path = os.path.join(temp_dir, "ocr_cleaned.pdf")
+
+        print("\n=== OCR STEP ===")
+        print(f"Running OCRmyPDF on: {input_path}")
+        print(f"Output will be: {cleaned_path}")
+
+        subprocess.run(
+            ["ocrmypdf", "--force-ocr", "--deskew", "--clean", input_path, cleaned_path],
+            check=True
+        )
+
+        print("OCR completed successfully.")
+        return cleaned_path
+
+    except Exception as e:
+        print(f"OCR FAILED: {e}")
+        return None
+
+
 # --- MAIN EXTRACTION FUNCTION ---
 
 def extract_pdf_layout(pdf_path):
+    print("\n==============================")
+    print("=== STARTING EXTRACTION ===")
+    print("==============================")
+
+    # --- RUN OCR FIRST ---
+    cleaned_pdf = ocr_pdf(pdf_path)
+
+    if cleaned_pdf:
+        print("Using OCR-cleaned PDF for extraction.")
+        target_pdf = cleaned_pdf
+    else:
+        print("Falling back to original PDF (OCR unavailable).")
+        target_pdf = pdf_path
+
     pages_output = []
 
-    with pdfplumber.open(pdf_path) as pdf:
+    with pdfplumber.open(target_pdf) as pdf:
         for page_index, page in enumerate(pdf.pages):
 
             print(f"\n==============================")
             print(f"=== PAGE {page_index+1} START ===")
-            print(f"==============================")
+            print("==============================")
 
             # --- WORD EXTRACTION ---
             try:
@@ -193,9 +232,9 @@ def extract_pdf_layout(pdf_path):
                         current_phrase = [w]
                     else:
                         prev = current_phrase[-1]
-                        same_line = abs(prev["y"] - w["y"]) < 5
+                        same_line = abs(prev["y"] - w["y"]) < 8
                         horizontal_gap = w["x"] - (prev["x"] + prev["width"])
-                        adjacent = -3 <= horizontal_gap < 40
+                        adjacent = -3 <= horizontal_gap < 60
 
                         if same_line and adjacent:
                             current_phrase.append(w)
