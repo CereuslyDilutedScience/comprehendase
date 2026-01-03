@@ -97,7 +97,7 @@ function renderPages(pages, viewer) {
 
                 // Positioning
                 span.style.left = (word.x * scaleX) + "px";
-                span.style.top = (word.y * scaleY) + "px";
+                span.style.top = ((word.y - word.height / 2) * scaleY) + "px";
                 span.style.fontSize = (word.height * scaleY) + "px";
 
                 overlay.appendChild(span);
