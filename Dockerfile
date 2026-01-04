@@ -1,8 +1,13 @@
 # Use the official lightweight Python image
-FROM python:3.10-slim-bookworm
+FROM python:3.11-slim-bookworm
 
 # Set locale to avoid potential issues in minimal environments
 ENV LANG C.UTF-8
+
+# Install poppler so pdfinfo is available
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    poppler-utils \
+    && rm -rf /var/lib/apt/lists/*
 
 # Install system dependencies via apt-get
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -20,10 +25,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 # Install the OCRmyPDF Python package
 RUN pip install ocrmypdf
 
-# Install poppler so pdfinfo is available
-RUN apt-get update && apt-get install -y --no-install-recommends \
-    poppler-utils \
-    && rm -rf /var/lib/apt/lists/*
+
 
 # Set working directory
 WORKDIR /app
