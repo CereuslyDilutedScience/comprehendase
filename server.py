@@ -32,10 +32,6 @@ def serve_page_image(filename):
 # Cleanup old rendered folders (default: 2 hours)
 # ---------------------------------------------------------
 def cleanup_old_render_folders(base_folder="static/pages", max_age_minutes=120):
-    """
-    Deletes subfolders inside static/pages that are older than max_age_minutes.
-    Safe for Cloud Run and prevents storage buildup.
-    """
     now = time.time()
     max_age_seconds = max_age_minutes * 60
 
@@ -85,9 +81,10 @@ def extract():
     print(f"Rendering complete — {time.time() - start_time:.2f}s")
 
     # -----------------------------------------------------
-    # 3. Run ontology lookup
+    # 3. Run ontology lookup (FIX APPLIED HERE)
     # -----------------------------------------------------
-    ontology_hits = ontology.extract_ontology_terms(pages)
+    candidate_terms = ontology.extract_ontology_terms(pages)
+    ontology_hits = ontology.process_terms(candidate_terms)
     print(f"Ontology lookup complete — {time.time() - start_time:.2f}s")
 
     # -----------------------------------------------------
