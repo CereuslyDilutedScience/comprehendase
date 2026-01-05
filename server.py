@@ -31,19 +31,19 @@ def serve_page_image(filename):
 # ---------------------------------------------------------
 # Cleanup old rendered folders (default: 2 hours)
 # ---------------------------------------------------------
-def cleanup_old_render_folders(base_folder="static/pages", max_age_minutes=120):
-    now = time.time()
-    max_age_seconds = max_age_minutes * 60
+#def cleanup_old_render_folders(base_folder="static/pages", max_age_minutes=120):
+    #now = time.time()
+    #max_age_seconds = max_age_minutes * 60
 
-    for name in os.listdir(base_folder):
-        folder_path = os.path.join(base_folder, name)
+    #for name in os.listdir(base_folder):
+        #folder_path = os.path.join(base_folder, name)
 
-        if os.path.isdir(folder_path):
-            folder_age = now - os.path.getmtime(folder_path)
+        #if os.path.isdir(folder_path):
+            #folder_age = now - os.path.getmtime(folder_path)
 
-            if folder_age > max_age_seconds:
-                print(f"Cleaning up old folder: {folder_path}")
-                shutil.rmtree(folder_path, ignore_errors=True)
+            #if folder_age > max_age_seconds:
+                #print(f"Cleaning up old folder: {folder_path}")
+                #shutil.rmtree(folder_path, ignore_errors=True)
 
 
 # ---------------------------------------------------------
@@ -117,7 +117,7 @@ def extract():
     # -----------------------------------------------------
     # 5. Cleanup old folders (2-hour retention)
     # -----------------------------------------------------
-    cleanup_old_render_folders()
+    #cleanup_old_render_folders()
 
     print(f"Finished all processing — {time.time() - start_time:.2f}s")
     return jsonify({"pages": pages})
