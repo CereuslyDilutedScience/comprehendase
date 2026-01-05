@@ -70,15 +70,15 @@ def extract():
     print(f"Saved file: {filename}")
 
     # -----------------------------------------------------
-    # 1. Extract layout + get OCR-cleaned PDF path
+    # 1. Extract layout + get OCR-target PDF path
     # -----------------------------------------------------
-    cleaned_pdf, pages = extract_pdf_layout(filepath)
+    target_pdf, pages = extract_pdf_layout(filepath)
     print(f"Extraction complete — {time.time() - start_time:.2f}s")
 
     # -----------------------------------------------------
     # 2. Render images from the SAME PDF used for extraction
     # -----------------------------------------------------
-    image_paths = render_pdf_pages(cleaned_pdf, output_folder=STATIC_PAGE_FOLDER)
+    image_paths = render_pdf_pages(target_pdf, output_folder=STATIC_PAGE_FOLDER)
     print(f"Rendering complete — {time.time() - start_time:.2f}s")
 
     # -----------------------------------------------------
