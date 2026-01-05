@@ -4,9 +4,12 @@ FROM python:3.11-slim-bookworm
 # Set locale to avoid potential issues in minimal environments
 ENV LANG=C.UTF-8
 
-# Install system dependencies
+# Install system dependencies for:
+# - OCRmyPDF (Ghostscript, qpdf, tesseract, jbig2dec, unpaper, pngquant)
+# - PyMuPDF (libgl, libx11, libxext, libxrender, libglib, libfreetype)
+# - Pillow/pdfplumber (libjpeg, libpng)
 RUN apt-get update && apt-get install -y --no-install-recommends \
-    poppler-utils \
+    # OCRmyPDF dependencies
     ghostscript \
     qpdf \
     tesseract-ocr \
@@ -17,11 +20,19 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     unpaper \
     jbig2dec \
     libjbig2dec0 \
+    # Image libraries
     libjpeg62-turbo \
     libpng16-16 \
+    # PyMuPDF dependencies
+    libglib2.0-0 \
+    libgl1 \
+    libx11-6 \
+    libxext6 \
+    libxrender1 \
+    libfreetype6 \
     && rm -rf /var/lib/apt/lists/*
 
-# Install OCRmyPDF (installs jbig2enc via pip)
+# Install OCRmyPDF (includes jbig2enc via pip)
 RUN pip install --no-cache-dir ocrmypdf
 
 # Set working directory
