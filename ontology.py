@@ -12,8 +12,6 @@ MAX_BIOPORTAL_LOOKUPS = 300  # cap to prevent long runs
 BIOPORTAL_SEARCH_URL = "https://data.bioontology.org/search"
 BIOPORTAL_API_KEY = "7e84a21d-3f8e-4837-b7a9-841fb4847ddf"
 
-OLS4_SEARCH_URL = "https://www.ebi.ac.uk/ols4/api/search"
-
 # ---------------------------------------------------------
 # COMMON WORD / PATTERN FILTERS
 # ---------------------------------------------------------
@@ -207,7 +205,7 @@ def phrase_ngrams_for_ontology(phrase_text: str):
     return sorted(results)
 
 # ---------------------------------------------------------
-# BIOPORTAL LOOKUP
+# BIOPORTAL LOOKUP (ONLY LOOKUP REMAINING)
 # ---------------------------------------------------------
 
 def lookup_term_bioportal(term: str):
@@ -244,56 +242,7 @@ def lookup_term_bioportal(term: str):
         return None
 
 # ---------------------------------------------------------
-# OLS4 LOOKUP (FALLBACK)
-# ---------------------------------------------------------
-
-BIO_ONTOLOGY_PREFIXES = {
-    "go","so","pr","chebi","ncbitaxon","envo","obi","eco"
-}
-
-def lookup_term_ols4(term: str):
-    norm = normalize_term(term)
-    if not norm:
-        return None
-
-    params = {
-        "q": norm,
-        "queryFields": "label",
-        "fields": "label,description,iri,ontology_prefix",
-        "exact": "false"
-    }
-
-    try:
-        r = requests.get(OLS4_SEARCH_URL, params=params, timeout=3)
-        r.raise_for_status()
-        data = r.json()
-
-        docs = data.get("response", {}).get("docs", [])
-        for d in docs:
-            prefix = d.get("ontology_prefix", "").lower()
-            definition = d.get("description", "")
-            if prefix in BIO_ONTOLOGY_PREFIXES and definition:
-                return {
-                    "label": d.get("label", ""),
-                    "definition": definition,
-                    "iri": d.get("iri", "")
-                }
-
-        if docs and docs[0].get("description"):
-            d = docs[0]
-            return {
-                "label": d.get("label", ""),
-                "definition": d.get("description", ""),
-                "iri": d.get("iri", "")
-            }
-
-        return None
-
-    except Exception:
-        return None
-
-# ---------------------------------------------------------
-# MAIN ENTRYPOINT
+# MAIN ENTRYPOINT (OLS4 REMOVED)
 # ---------------------------------------------------------
 
 def extract_ontology_terms(pages_output):
@@ -334,9 +283,6 @@ def extract_ontology_terms(pages_output):
             hit = lookup_term_bioportal(term)
             if hit:
                 bioportal_count += 1
-
-        if not hit:
-            hit = lookup_term_ols4(term)
 
         if hit:
             found_terms[term] = hit
