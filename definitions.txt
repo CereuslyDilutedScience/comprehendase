@@ -1,3 +1,51 @@
 cell<TAB>the smallest structural unit of an organism
 assay<TAB>a laboratory test to measure a substance
 vector<TAB>a DNA molecule used to deliver genetic material
+bp
+nm
+k-mer
+kmer
+mer
+cycles
+j vet
+diagn invest
+microbiology resource
+announcement
+infect immun
+plos
+bmc
+genome res
+aliquot
+centrifuged
+agar
+broth
+purified
+addition
+g dna
+mycoplasma
+bovis
+strain
+rrna
+virulence
+lipoprotein
+mollicutes
+mycoplasmataceae
+pathogen
+mastitis
+otitis
+pneumonia
+adhesion
+invasion
+protein
+genome
+gene
+operon
+membrane
+surface
+lipid
+enzyme
+ribosomal
+subunit
+replication
+transcription
+translation
