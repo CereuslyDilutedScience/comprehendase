@@ -1,13 +1,14 @@
 import requests
 import re
 from itertools import islice
+from concurrent.futures import ThreadPoolExecutor, as_completed
 
 # ---------------------------------------------------------
 # CONFIG / LIMITS
 # ---------------------------------------------------------
 
 MAX_TERMS_PER_DOCUMENT = 500
-MAX_BIOPORTAL_LOOKUPS = 300  # cap to prevent long runs
+MAX_BIOPORTAL_LOOKUPS = 300
 
 BIOPORTAL_SEARCH_URL = "https://data.bioontology.org/search"
 BIOPORTAL_API_KEY = "7e84a21d-3f8e-4837-b7a9-841fb4847ddf"
@@ -205,7 +206,7 @@ def phrase_ngrams_for_ontology(phrase_text: str):
     return sorted(results)
 
 # ---------------------------------------------------------
-# BIOPORTAL LOOKUP (ONLY LOOKUP REMAINING)
+# BIOPORTAL LOOKUP
 # ---------------------------------------------------------
 
 def lookup_term_bioportal(term: str):
@@ -242,29 +243,37 @@ def lookup_term_bioportal(term: str):
         return None
 
 # ---------------------------------------------------------
-# MAIN ENTRYPOINT (OLS4 REMOVED)
+# UPDATED MAIN ENTRYPOINT (GLOBAL WORDS + PHRASES)
 # ---------------------------------------------------------
 
-def extract_ontology_terms(pages_output):
+def extract_ontology_terms(extracted):
+    """
+    extracted = {
+        "words": [...],
+        "phrases": [...]
+    }
+    """
+
     candidate_terms = set()
 
-    for page in pages_output:
-        for w in page.get("words", []):
-            raw = w.get("text", "")
-            if raw and is_candidate_single_word(raw):
-                norm = normalize_term(raw)
-                if norm and not is_junk_term(norm):
-                    candidate_terms.add(norm)
+    # --- GLOBAL WORDS ---
+    for w in extracted.get("words", []):
+        raw = w.get("text", "")
+        if raw and is_candidate_single_word(raw):
+            norm = normalize_term(raw)
+            if norm and not is_junk_term(norm):
+                candidate_terms.add(norm)
 
-        for phrase_obj in page.get("phrases", []):
-            phrase_text = phrase_obj.get("text", "")
-            if not phrase_text:
-                continue
+    # --- GLOBAL PHRASES ---
+    for phrase_obj in extracted.get("phrases", []):
+        phrase_text = phrase_obj.get("text", "")
+        if not phrase_text:
+            continue
 
-            for t in phrase_ngrams_for_ontology(phrase_text):
-                norm = normalize_term(t)
-                if norm and not is_junk_term(norm):
-                    candidate_terms.add(norm)
+        for t in phrase_ngrams_for_ontology(phrase_text):
+            norm = normalize_term(t)
+            if norm and not is_junk_term(norm):
+                candidate_terms.add(norm)
 
     # Limit total candidates
     candidate_terms = sorted(candidate_terms)
@@ -273,8 +282,10 @@ def extract_ontology_terms(pages_output):
 
     print("CANDIDATE TERMS (filtered):", candidate_terms, flush=True)
     return candidate_terms
-    
-from concurrent.futures import ThreadPoolExecutor, as_completed
+
+# ---------------------------------------------------------
+# PARALLEL LOOKUP
+# ---------------------------------------------------------
 
 def process_terms(candidate_terms):
     found_terms = {}
@@ -283,10 +294,8 @@ def process_terms(candidate_terms):
     print("\n=== DEBUG: Parallel ontology lookup ===")
     print("MAX_BIOPORTAL_LOOKUPS:", MAX_BIOPORTAL_LOOKUPS)
 
-    # Limit how many terms we actually look up
     terms_to_lookup = candidate_terms[:MAX_BIOPORTAL_LOOKUPS]
 
-    # Use a thread pool (10–20 workers is a good sweet spot)
     with ThreadPoolExecutor(max_workers=15) as executor:
         future_to_term = {
             executor.submit(lookup_term_bioportal, term): term
@@ -314,4 +323,3 @@ def process_terms(candidate_terms):
     print("=======================\n")
 
     return found_terms
-
