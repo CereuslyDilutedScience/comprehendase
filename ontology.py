@@ -7,8 +7,8 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 # CONFIG
 # ---------------------------------------------------------
 
-MAX_TERMS_PER_DOCUMENT = 500
-MAX_BIOPORTAL_LOOKUPS = 300
+MAX_TERMS_PER_DOCUMENT = 1000
+MAX_BIOPORTAL_LOOKUPS = 1000
 
 BIOPORTAL_SEARCH_URL = "https://data.bioontology.org/search"
 BIOPORTAL_API_KEY = "7e84a21d-3f8e-4837-b7a9-841fb4847ddf"
@@ -28,6 +28,27 @@ def normalize_term(t: str) -> str:
 
 def core_alpha(t: str) -> str:
     return re.sub(r"[^A-Za-z]", "", t)
+
+# ---------------------------------------------------------
+# ACRONYM DETECTION
+# ---------------------------------------------------------
+
+def is_acronym(token: str) -> bool:
+    """
+    True if token has >=2 uppercase letters or is a known RNAi-style acronym.
+    """
+    t = token.strip()
+    if len(t) < 2:
+        return False
+    if re.fullmatch(r"[A-Za-z0-9\-]+", t) is None:
+        return False
+
+    # RNAi / shRNA / siRNA / CRISPR patterns
+    if re.search(r"(rna|crispr|shr|sir)", t.lower()):
+        return True
+
+    # General acronym rule
+    return sum(1 for c in t if c.isupper()) >= 2
 
 # ---------------------------------------------------------
 # SPECIES DETECTION
@@ -63,9 +84,9 @@ def extract_scientific_phrases(phrase_text: str):
     """
     Phrase-first extraction:
     - Always include full phrase
-    - Include 1–5 word n-grams
-    - Allow acronyms, hyphens, numbers
-    - Keep species names
+    - Include 2–5 word n-grams
+    - Include acronyms
+    - Include scientific-looking single words (>=5 letters OR acronym OR hyphenated)
     """
     if not phrase_text:
         return []
@@ -76,7 +97,7 @@ def extract_scientific_phrases(phrase_text: str):
 
     results = set()
 
-    # 1) Full phrase (always included)
+    # 1) Full phrase
     full_norm = normalize_term(phrase_text)
     if full_norm:
         results.add(full_norm)
@@ -86,17 +107,22 @@ def extract_scientific_phrases(phrase_text: str):
         if looks_like_species(ng) or looks_like_abbrev_species(ng):
             results.add(normalize_term(" ".join(ng)))
 
-    # 3) N-grams (1–5 words)
-    for ng in generate_ngrams(tokens_norm, 1, 5):
+    # 3) Multi-word scientific phrases (2–5 words)
+    for ng in generate_ngrams(tokens_norm, 2, 5):
         joined = " ".join(ng)
         compact = joined.replace(" ", "")
+        if len(compact) >= 4:
+            results.add(joined)
 
-        # Skip extremely short junk
-        if len(compact) < 3:
-            continue
-
-        # Allow acronyms, hyphens, numbers
-        results.add(joined)
+    # 4) Scientific single words (>=5 letters OR acronym OR hyphenated)
+    for tok_raw, tok_norm in zip(tokens_raw, tokens_norm):
+        alpha = core_alpha(tok_norm)
+        if len(alpha) >= 5:
+            results.add(tok_norm)
+        elif "-" in tok_norm:
+            results.add(tok_norm)
+        elif is_acronym(tok_raw):
+            results.add(tok_norm)
 
     return sorted(results)
 
@@ -142,13 +168,6 @@ def lookup_term_bioportal(term: str):
 # ---------------------------------------------------------
 
 def extract_ontology_terms(extracted):
-    """
-    extracted = {
-        "words": [...],
-        "phrases": [...]
-    }
-    """
-
     candidate_terms = set()
 
     # --- PHRASE-FIRST EXTRACTION ---
@@ -157,13 +176,6 @@ def extract_ontology_terms(extracted):
         for t in extract_scientific_phrases(text):
             if t:
                 candidate_terms.add(t)
-
-    # --- FALLBACK: SINGLE WORDS (VERY PERMISSIVE) ---
-    for w in extracted.get("words", []):
-        raw = w.get("text", "")
-        norm = normalize_term(raw)
-        if norm and len(norm) >= 3:
-            candidate_terms.add(norm)
 
     # Limit
     candidate_terms = sorted(candidate_terms)
