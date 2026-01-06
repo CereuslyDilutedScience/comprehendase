@@ -46,7 +46,6 @@ h2, h3 {
 
 /* The rendered PDF page image */
 .page-image {
-  width: 100%;
   display: block;
 }
 
