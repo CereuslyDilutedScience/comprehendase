@@ -3,7 +3,6 @@ from werkzeug.utils import secure_filename
 from flask_cors import CORS
 import os
 import time
-import shutil
 
 from extract_text import extract_pdf_layout
 from render_pages import render_pdf_pages
@@ -26,25 +25,6 @@ CLOUD_RUN_BASE = "https://comprehendase-backend-470914920668.us-east4.run.app"
 @app.route("/static/pages/<path:filename>")
 def serve_page_image(filename):
     return send_from_directory("/tmp/pages", filename)
-
-
-
-# ---------------------------------------------------------
-# Cleanup old rendered folders (default: 2 hours)
-# ---------------------------------------------------------
-#def cleanup_old_render_folders(base_folder="static/pages", max_age_minutes=120):
-    #now = time.time()
-    #max_age_seconds = max_age_minutes * 60
-
-    #for name in os.listdir(base_folder):
-        #folder_path = os.path.join(base_folder, name)
-
-        #if os.path.isdir(folder_path):
-            #folder_age = now - os.path.getmtime(folder_path)
-
-            #if folder_age > max_age_seconds:
-                #print(f"Cleaning up old folder: {folder_path}")
-                #shutil.rmtree(folder_path, ignore_errors=True)
 
 
 # ---------------------------------------------------------
@@ -70,58 +50,77 @@ def extract():
     print(f"Saved file: {filename}")
 
     # -----------------------------------------------------
-    # 1. Extract layout + get OCR-target PDF path
+    # 1. Extract layout (GLOBAL words + phrases)
     # -----------------------------------------------------
-    target_pdf, pages = extract_pdf_layout(filepath)
+    target_pdf, extracted = extract_pdf_layout(filepath)
+    pages_meta = extracted["pages"]
+    all_words = extracted["words"]
+    all_phrases = extracted["phrases"]
+
     print(f"Extraction complete — {time.time() - start_time:.2f}s")
 
     # -----------------------------------------------------
     # 2. Render images from the SAME PDF used for extraction
     # -----------------------------------------------------
-    image_paths = render_pdf_pages(target_pdf, output_folder=STATIC_PAGE_FOLDER)
+    render_result = render_pdf_pages(target_pdf, output_folder=STATIC_PAGE_FOLDER)
+    image_folder = render_result["folder"]
+    image_list = render_result["images"]  # [{page, path}, ...]
+
     print(f"Rendering complete — {time.time() - start_time:.2f}s")
 
     # -----------------------------------------------------
-    # 3. Run ontology lookup (FIX APPLIED HERE)
+    # 3. Ontology lookup on GLOBAL phrases
     # -----------------------------------------------------
-    candidate_terms = ontology.extract_ontology_terms(pages)
+    candidate_terms = ontology.extract_ontology_terms({
+        "words": all_words,
+        "phrases": all_phrases
+    })
+
     ontology_hits = ontology.process_terms(candidate_terms)
+
     print(f"Ontology lookup complete — {time.time() - start_time:.2f}s")
 
     # -----------------------------------------------------
-    # 4. Attach ontology hits + image URLs
+    # 4. Attach ontology hits to words + phrases
     # -----------------------------------------------------
-    for page_index, page in enumerate(pages):
+    for w in all_words:
+        key = w["text"].lower().strip()
+        if key in ontology_hits:
+            w["term"] = ontology_hits[key]["label"]
+            w["definition"] = ontology_hits[key]["definition"]
 
-        # Words
-        for w in page["words"]:
-            key = w["text"].lower().strip()
-            if key in ontology_hits:
-                w["term"] = ontology_hits[key]["label"]
-                w["definition"] = ontology_hits[key]["definition"]
+    for phrase_obj in all_phrases:
+        key = phrase_obj["text"].lower().strip()
+        if key in ontology_hits:
+            first_word = phrase_obj["words"][0]
+            first_word["term"] = ontology_hits[key]["label"]
+            first_word["definition"] = ontology_hits[key]["definition"]
 
-        # Phrases
-        for phrase_obj in page["phrases"]:
-            key = phrase_obj["text"].lower().strip()
-            if key in ontology_hits:
-                first_word = phrase_obj["words"][0]
-                first_word["term"] = ontology_hits[key]["label"]
-                first_word["definition"] = ontology_hits[key]["definition"]
-
-                # Mark remaining words as skip
-                for w in phrase_obj["words"][1:]:
-                    w["skip"] = True
-
-        # Add image URL
-        page["image_url"] = f"{CLOUD_RUN_BASE}/{image_paths[page_index]}"
+            for w in phrase_obj["words"][1:]:
+                w["skip"] = True
 
     # -----------------------------------------------------
-    # 5. Cleanup old folders (2-hour retention)
+    # 5. Attach image URLs to page metadata
     # -----------------------------------------------------
-    #cleanup_old_render_folders()
+    for page in pages_meta:
+        page_number = page["page_number"]
 
+        match = next((img for img in image_list if img["page"] == page_number), None)
+        if match:
+            page["image_url"] = f"{CLOUD_RUN_BASE}/{match['path']}"
+        else:
+            page["image_url"] = None
+
+    # -----------------------------------------------------
+    # 6. Return unified output
+    # -----------------------------------------------------
     print(f"Finished all processing — {time.time() - start_time:.2f}s")
-    return jsonify({"pages": pages})
+
+    return jsonify({
+        "pages": pages_meta,
+        "words": all_words,
+        "phrases": all_phrases
+    })
 
 
 # ---------------------------------------------------------
