@@ -1,27 +1,19 @@
 cell<TAB>the smallest structural unit of an organism
 assay<TAB>a laboratory test to measure a substance
 vector<TAB>a DNA molecule used to deliver genetic material
-bp
-nm
-k-mer
-kmer
-mer
+bp<TAB>base pair; a fundamental unit in DNA and RNA, consisting of two complementary nitrogenous bases (nucleobases) held together by hydrogen bonds, forming the "rungs" of the double helix structure. In DNA, Adenine (A) pairs with Thymine (T), and Guanine (G) pairs with Cytosine (C) (A-T, G-C); in RNA, Uracil (U) replaces Thymine (A-U, G-C). These specific pairings are crucial for DNA replication, transcription, and storing genetic information. 
+nm<TAB>nanometer; a unit of length for light/atoms
+kmer<TAB>A kmer (or k-mer) is a contiguous substring of length k from a biological sequence (DNA, RNA, protein), acting as a fundamental building block in bioinformatics for tasks like genome assembly, species identification, and finding sequence patterns, essentially breaking down long sequences into manageable, fixed-length pieces for analysis. 
+mer<TAB>(from Greek meros, meaning "part") is a suffix indicating a repeating unit or subunit in a polymer, like a monomer (one part) or dimer (two parts)
 cycles
-j vet
-diagn invest
-microbiology resource
-announcement
-infect immun
 plos
 bmc
-genome res
 aliquot
 centrifuged
 agar
 broth
 purified
 addition
-g dna
 mycoplasma
 bovis
 strain
