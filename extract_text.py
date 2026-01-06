@@ -74,9 +74,6 @@ def is_garbage_phrase(text):
 # --- OCR STEP ---
 
 def ocr_pdf(input_path):
-    """
-    Runs OCRmyPDF and returns a UNIQUE cleaned PDF path.
-    """
     try:
         temp_dir = tempfile.gettempdir()
         unique_name = next(tempfile._get_candidate_names())
@@ -106,18 +103,17 @@ def extract_pdf_layout(pdf_path):
     print("=== STARTING EXTRACTION ===")
     print("==============================")
 
-    # Run OCR
     cleaned_pdf = ocr_pdf(pdf_path)
     target_pdf = cleaned_pdf if cleaned_pdf else pdf_path
 
-    pages_output = []
+    all_words = []      # GLOBAL list of all words across all pages
+    pages_output = []   # Page metadata only
 
     with pdfplumber.open(target_pdf) as pdf:
         for page_index, page in enumerate(pdf.pages):
 
             print(f"\n=== PAGE {page_index+1} START ===")
 
-            # Extract words
             try:
                 raw_words = page.extract_words(
                     use_text_flow=False,
@@ -130,8 +126,7 @@ def extract_pdf_layout(pdf_path):
                 print(f"ERROR extracting words: {e}")
                 raw_words = []
 
-            # Normalize words
-            words = []
+            normalized = []
             for w in raw_words:
                 try:
                     text = w.get("text", "")
@@ -143,97 +138,101 @@ def extract_pdf_layout(pdf_path):
                     if not text or x0 is None or x1 is None or top is None or bottom is None:
                         continue
 
-                    words.append({
+                    normalized.append({
                         "text": text,
                         "x": float(x0),
                         "y": float(top),
                         "width": float(x1 - x0),
                         "height": float(bottom - top),
-                        "block": 0,
-                        "line": 0,
-                        "word_no": 0
+                        "page": page_index + 1   # ADD PAGE IDENTIFIER
                     })
                 except:
                     continue
 
-            # Sort words
-            words.sort(key=lambda w: (round(w["y"] / 5), w["x"]))
+            # Sort words on this page
+            normalized.sort(key=lambda w: (round(w["y"] / 5), w["x"]))
 
             # Merge hyphenated words
-            merged_words = []
+            merged = []
             i = 0
-            while i < len(words):
-                current = words[i]
+            while i < len(normalized):
+                current = normalized[i]
                 text = current["text"]
 
-                if text.endswith("-") and (i + 1) < len(words):
-                    next_word = words[i + 1]
-                    merged = current.copy()
-                    merged["text"] = text.rstrip("-") + next_word["text"]
-                    merged_words.append(merged)
+                if text.endswith("-") and (i + 1) < len(normalized):
+                    nxt = normalized[i + 1]
+                    merged_word = current.copy()
+                    merged_word["text"] = text.rstrip("-") + nxt["text"]
+                    merged.append(merged_word)
                     i += 2
                 else:
-                    merged_words.append(current)
+                    merged.append(current)
                     i += 1
 
-            words = merged_words
-
-            # Phrase reconstruction
-            phrases = []
-            current_phrase = []
-
-            def flush_phrase():
-                nonlocal current_phrase
-                if current_phrase:
-                    phrase_text = " ".join([w["text"] for w in current_phrase]).strip()
-                    rejected, reason = is_garbage_phrase(phrase_text)
-
-                    if not rejected:
-                        phrases.append({
-                            "text": phrase_text,
-                            "words": current_phrase.copy()
-                        })
-
-                    current_phrase = []
-
-            for w in words:
-                raw = w["text"]
-                token = raw.strip().strip(".,;:()[]{}")
-                token = token.replace("\u200b", "").replace("\u00ad", "").replace("\u2011", "")
-
-                is_valid = (
-                    token.isalpha() or
-                    "-" in token or
-                    token.isalnum()
-                )
-
-                if is_valid:
-                    if not current_phrase:
-                        current_phrase = [w]
-                    else:
-                        prev = current_phrase[-1]
-                        same_line = abs(prev["y"] - w["y"]) < 8
-                        horizontal_gap = w["x"] - (prev["x"] + prev["width"])
-                        adjacent = -3 <= horizontal_gap < 60
-
-                        if same_line and adjacent:
-                            current_phrase.append(w)
-                        else:
-                            flush_phrase()
-                            current_phrase = [w]
-                else:
-                    flush_phrase()
-
-            flush_phrase()
+            # Add to GLOBAL list
+            all_words.extend(merged)
 
             pages_output.append({
                 "page_number": page_index + 1,
                 "width": float(page.width),
-                "height": float(page.height),
-                "words": words,
-                "phrases": phrases
+                "height": float(page.height)
             })
 
             print(f"=== PAGE {page_index+1} END ===")
 
-    return target_pdf, pages_output
+    # --- GLOBAL PHRASE RECONSTRUCTION ---
+    all_words.sort(key=lambda w: (w["page"], round(w["y"] / 5), w["x"]))
+
+    phrases = []
+    current_phrase = []
+
+    def flush_phrase():
+        nonlocal current_phrase
+        if current_phrase:
+            phrase_text = " ".join([w["text"] for w in current_phrase]).strip()
+            rejected, reason = is_garbage_phrase(phrase_text)
+
+            if not rejected:
+                phrases.append({
+                    "text": phrase_text,
+                    "words": current_phrase.copy()
+                })
+
+            current_phrase = []
+
+    for w in all_words:
+        raw = w["text"]
+        token = raw.strip().strip(".,;:()[]{}")
+        token = token.replace("\u200b", "").replace("\u00ad", "").replace("\u2011", "")
+
+        is_valid = (
+            token.isalpha() or
+            "-" in token or
+            token.isalnum()
+        )
+
+        if is_valid:
+            if not current_phrase:
+                current_phrase = [w]
+            else:
+                prev = current_phrase[-1]
+                same_line = (w["page"] == prev["page"]) and abs(prev["y"] - w["y"]) < 8
+                horizontal_gap = w["x"] - (prev["x"] + prev["width"])
+                adjacent = -3 <= horizontal_gap < 60
+
+                if same_line and adjacent:
+                    current_phrase.append(w)
+                else:
+                    flush_phrase()
+                    current_phrase = [w]
+        else:
+            flush_phrase()
+
+    flush_phrase()
+
+    return target_pdf, {
+        "pages": pages_output,
+        "words": all_words,
+        "phrases": phrases
+    }
+
