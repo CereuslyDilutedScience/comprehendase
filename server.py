@@ -52,13 +52,9 @@ def extract():
     # -----------------------------------------------------
     # 1. Extract layout (GLOBAL words + phrases)
     # -----------------------------------------------------
-    # 1. Render pages first
     render_result = render_pdf_pages(filepath)
-
-    # 2. Extract the metadata for scaling
     render_metadata = render_result["images"]
 
-    # 3. Now call extraction with BOTH arguments
     target_pdf, extracted = extract_pdf_layout(filepath, render_metadata)
     pages_meta = extracted["pages"]
     all_words = extracted["words"]
@@ -71,38 +67,41 @@ def extract():
     # -----------------------------------------------------
     render_result = render_pdf_pages(target_pdf, output_folder=STATIC_PAGE_FOLDER)
     image_folder = render_result["folder"]
-    image_list = render_result["images"]  # [{page, path}, ...]
+    image_list = render_result["images"]
 
     print(f"Rendering complete — {time.time() - start_time:.2f}s")
 
     # -----------------------------------------------------
-    # 3. Ontology lookup on GLOBAL phrases
+    # 3. Ontology + definitions lookup (UNIFIED)
     # -----------------------------------------------------
-    candidate_terms = ontology.extract_ontology_terms({
+    unified_hits = ontology.extract_ontology_terms({
         "words": all_words,
         "phrases": all_phrases
     })
 
-    ontology_hits = ontology.process_terms(candidate_terms)
-
-    print(f"Ontology lookup complete — {time.time() - start_time:.2f}s")
+    print(f"Ontology + definitions lookup complete — {time.time() - start_time:.2f}s")
 
     # -----------------------------------------------------
-    # 4. Attach ontology hits to words + phrases
+    # 4. Attach definitions to words + phrases
     # -----------------------------------------------------
     for w in all_words:
-        key = w["text"].lower().strip()
-        if key in ontology_hits:
-            w["term"] = ontology_hits[key]["label"]
-            w["definition"] = ontology_hits[key]["definition"]
+        key = w["text"].strip()
+        if key in unified_hits:
+            hit = unified_hits[key]
+            w["definition"] = hit["definition"]
+            w["source"] = hit["source"]
 
     for phrase_obj in all_phrases:
-        key = phrase_obj["text"].lower().strip()
-        if key in ontology_hits:
-            first_word = phrase_obj["words"][0]
-            first_word["term"] = ontology_hits[key]["label"]
-            first_word["definition"] = ontology_hits[key]["definition"]
+        key = phrase_obj["text"].strip()
+        if key in unified_hits:
+            hit = unified_hits[key]
 
+            # Attach definition to the FIRST word
+            first_word = phrase_obj["words"][0]
+            first_word["definition"] = hit["definition"]
+            first_word["source"] = hit["source"]
+
+            # Mark remaining words as part of the phrase
             for w in phrase_obj["words"][1:]:
                 w["skip"] = True
 
@@ -111,8 +110,8 @@ def extract():
     # -----------------------------------------------------
     for page in pages_meta:
         page_number = page["page_number"]
-
         match = next((img for img in image_list if img["page"] == page_number), None)
+
         if match:
             page["image_url"] = f"{CLOUD_RUN_BASE}/{match['path']}"
         else:
