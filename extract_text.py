@@ -165,11 +165,12 @@ def extract_pdf_layout(pdf_path):
                     normalized.append({
                         "text": text,
                         "x": float(x0),
-                        "y": float(top),
+                        "y": float(page.height - bottom),   # FIX: convert to top-left origin
                         "width": float(x1 - x0),
                         "height": float(bottom - top),
                         "page": page_index + 1
                     })
+
                 except:
                     continue
 
