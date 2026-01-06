@@ -1,1 +1,3 @@
 kmer <- k-mer
+gene <- genes
+RNA interferance <- RNAi
