@@ -47,7 +47,8 @@ document.getElementById("process-btn").addEventListener("click", async () => {
         viewer.innerHTML = "";
         output.innerHTML = "";
 
-        renderPages(data.pages, viewer);
+        // NEW: pass global words + pages
+        renderPages(data.pages, data.words, viewer);
 
         logBox.textContent = "Done.";
 
@@ -58,7 +59,7 @@ document.getElementById("process-btn").addEventListener("click", async () => {
 });
 
 // Render pages + overlay text
-function renderPages(pages, viewer) {
+function renderPages(pages, allWords, viewer) {
     pages.forEach((page) => {
         const pageWrapper = document.createElement("div");
         pageWrapper.className = "page-wrapper";
@@ -79,7 +80,10 @@ function renderPages(pages, viewer) {
             overlay.style.width = img.clientWidth + "px";
             overlay.style.height = img.clientHeight + "px";
 
-            page.words.forEach((word) => {
+            // NEW: filter global words by page number
+            const wordsOnPage = allWords.filter(w => w.page === page.page_number);
+
+            wordsOnPage.forEach((word) => {
                 if (word.skip) return;
 
                 const span = document.createElement("span");
@@ -102,7 +106,7 @@ function renderPages(pages, viewer) {
                 // Corrected text box sizing
                 const scaledFont = word.height * scaleY;
                 span.style.fontSize = scaledFont + "px";
-                span.style.lineHeight = scaledFont + "px";   // <-- FIXED
+                span.style.lineHeight = scaledFont + "px";
 
                 overlay.appendChild(span);
             });
