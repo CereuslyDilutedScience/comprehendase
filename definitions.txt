@@ -1,0 +1,3 @@
+cell<TAB>the smallest structural unit of an organism
+assay<TAB>a laboratory test to measure a substance
+vector<TAB>a DNA molecule used to deliver genetic material
