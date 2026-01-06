@@ -120,24 +120,30 @@ def ocr_pdf(input_path):
 
 # --- MAIN EXTRACTION FUNCTION ---
 
-def extract_pdf_layout(pdf_path):
+def extract_pdf_layout(pdf_path, render_metadata):
     print("\n==============================")
     print("=== STARTING EXTRACTION ===")
     print("==============================")
 
-    # Only OCR if needed
     cleaned_pdf = ocr_pdf(pdf_path)
     target_pdf = cleaned_pdf if cleaned_pdf else pdf_path
 
-    all_words = []      # GLOBAL list of all words across all pages
-    pages_output = []   # Page metadata only
+    all_words = []
+    pages_output = []
 
     with pdfplumber.open(target_pdf) as pdf:
         for page_index, page in enumerate(pdf.pages):
 
             print(f"\n=== PAGE {page_index+1} START ===")
 
-            # --- Try embedded text extraction first ---
+            # Get render metadata for THIS page
+            meta = render_metadata[page_index]
+            rendered_width = meta["rendered_width"]
+            rendered_height = meta["rendered_height"]
+            pdf_width = meta["pdf_width"]
+            pdf_height = meta["pdf_height"]
+
+            # Extract words
             try:
                 raw_words = page.extract_words(
                     use_text_flow=False,
@@ -152,7 +158,7 @@ def extract_pdf_layout(pdf_path):
 
             normalized = []
 
-            # --- Debug print limiter ---
+            # GLOBAL debug limiter (10 words TOTAL)
             debug_limit = 10
             debug_count = 0
 
@@ -167,25 +173,29 @@ def extract_pdf_layout(pdf_path):
                     if not text or x0 is None or x1 is None or top is None or bottom is None:
                         continue
 
-                    # Print only the first 10 words
+                    # Print only the first 10 words TOTAL
                     if debug_count < debug_limit:
                         print(f"WORD: {text} x={x0} top={top} bottom={bottom} width={x1-x0} height={bottom-top}")
                         debug_count += 1
 
+                    # Scale coordinates to rendered PNG
+                    scale_x = rendered_width / pdf_width
+                    scale_y = rendered_height / pdf_height
+
                     normalized.append({
                         "text": text,
-                        "x": float(x0),
-                        "y": float(top),   # using top-left origin
-                        "width": float(x1 - x0),
-                        "height": float(bottom - top),
+                        "x": float(x0) * scale_x,
+                        "y": float(top) * scale_y,
+                        "width": float(x1 - x0) * scale_x,
+                        "height": float(bottom - top) * scale_y,
                         "page": page_index + 1
                     })
 
                 except:
                     continue
 
-            # Sort words on this page
             normalized.sort(key=lambda w: (round(w["y"] / 5), w["x"]))
+
 
             # Merge hyphenated words
             merged = []
