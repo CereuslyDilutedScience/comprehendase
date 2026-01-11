@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="tinycomprehendaseenzyme.png">
+</head>
+
+<body>
+
+  <header>
+    <img src="comprehendaselogoupdate.png" alt="Comprehendase logo" class="logo-img">
+     <!-- Tagline moved here -->
+    <div class="tagline">
+    <strong>Upload PDF│Analyze Document│Explore Definitions</strong>
+    </div>
+
+
+     <!-- Controls -->
+    <section class="controls">
+      <div class="control-group upload-box">
+        <input type="file" id="pdf-input" class="upload" accept="application/pdf" />
+      
+        <button id="process-btn" class="reconstruct" disabled>
+        Analyze
+        </button>
+      </div>
+    </section>
+
+    <p class="upload-note"> 
+        <i>This site is a work in progress<br>
+        Please submit feedback below to help improve this site! <br>
+        PDF's may take a few minutes to analyze <br>
+      </i></p>
+  </header>
+
+  
+
+  <div class="page-wrapper">
+    <header class="app-header">
+      <p class="subtitle"></p>
+    </header>
+
+   
+
+    <!-- Status / log -->
+    <section class="status-section">
+      <pre id="log" class="log">Waiting for PDF upload…</pre>
+    </section>
+
+    <div id="output"></div>
+
+    <!-- Main content: visual + text -->
+    <main class="main-layout">
+      <section class="viewer-section">
+        <h2></h2>
+        <div id="page-viewer" class="page-viewer">
+          <p class="placeholder"></p>
+        </div>
+      </section>
+    </main>
+
+  </div>
+
+  <script src="script.js"></script>
+  <footer>
+    <img src="CDSlogo.png" alt="CDS logo" class="footerlogo-img">
+  </footer>
+</body>
+
+</html>

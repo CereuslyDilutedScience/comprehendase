@@ -1,0 +1,176 @@
+/* === Comprehendase Color Variables === */
+:root {
+  --bg-cream: #FDF6E3;
+  --text-dark: #002f62;
+  --accent-teal: #3EC6C1;
+  --accent-teal-hover: #3AAFA3;
+  --highlight-orange: #F76C5E;
+  --shadow-gray: rgba(0, 0, 0, 0.2);
+}
+
+/* ------------------------------ GLOBAL PAGE STYLING --------------------------------*/
+body {
+  background-color: var(--bg-cream);
+  color: var(--text-dark);
+  font-family: 'Inter', sans-serif;
+}
+
+h2, h3 {
+  font-weight: 600;
+  background-color: var(--bg-cream);
+  color: var(--text-dark);
+  font-family: 'Inter', sans-serif;
+  text-align: center;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+/* ------------------------------ PAGE DISPLAY AREA --------------------------------*/
+#output {
+  width: 100%;
+  max-width: 900px;
+  margin: 40px auto;
+}
+
+/* Wrapper for each PDF page */
+.page-wrapper {
+  position: relative;
+  padding-top: 0; 
+  margin-top: 50px;
+  margin-bottom: 50px;
+  background-color: var(--bg-cream);
+  border-radius: 8px;
+  overflow: visible;
+  box-shadow: 0 4px 14px var(--shadow-gray);
+}
+
+/* The rendered PDF page image */
+.page-image {
+  display: block;
+}
+
+/* ------------------------------ OVERLAY CONTAINER --------------------------------*/
+.text-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: auto;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+}
+
+/* ------------------------------ WORD OVERLAY STYLING --------------------------------*/
+.word {
+  position: absolute;
+  white-space: nowrap;
+  background: rgba(255, 255, 255, 0.0);
+  pointer-events: auto;
+  border-radius: 3px;
+  transition: background 0.15s ease;
+
+  /* FIX: remove padding to prevent vertical misalignment */
+  padding: 0;
+}
+
+/* Words with definitions */
+.has-definition {
+  background-color: rgba(0, 0, 0, 0.15);
+  color: #ffffff;
+  border-radius: 4px;
+
+  /* Optional: keep small padding for highlight glow */
+  padding: 0 2px;
+}
+
+/* ------------------------------ RESPONSIVE BEHAVIOR --------------------------------*/
+@media (max-width: 600px) {
+  #output {
+    margin: 20px;
+  }
+}
+
+/* === Comprehendase Catalytic Clarity Theme === */
+header {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 0;
+}
+
+.logo-img {
+  max-width: 550px;
+  height: 150px;
+  display: block;
+  overflow: hidden;
+  margin: 0 auto;
+  padding-bottom: 0;
+}
+
+/* Upload box */
+.upload-box {
+  border: none;
+  background-color: transparent;
+  padding-top: 0;
+  padding-bottom: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 12px;
+}
+
+/* Buttons */
+button.upload {
+  background-color: var(--accent-teal);
+  font-weight: 600;
+  color: #002f62;
+  border: none;
+  padding: 0;
+  border-radius: 6px;
+}
+
+button.upload:hover {
+  background-color: var(--accent-teal-hover);
+}
+
+input[type="file"].upload::file-selector-button {
+  background-color: var(--accent-teal);
+  font-weight: 600;
+  color: #002f62;
+  border: none;
+  padding: 0.5rem 0.5rem;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button.reconstruct {
+  background-color: var(--accent-teal);
+  font-weight: 600;
+  color: var(--text-dark);
+  border: none;
+  padding: 0.5rem 0.5rem;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* Center upload + analyze buttons on one line */
+.controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  margin-top: 20px;
+}
+
+.footerlogo-img {
+  max-width: 200px;
+  height: 50px;
+  display: block;
+  overflow: hidden;
+  margin: 0 auto;
+  padding-bottom: 0;
+}
