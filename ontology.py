@@ -55,7 +55,7 @@ def lookup_terms_ols4(terms):
     params = [("q", t) for t in terms]
 
     try:
-        r = requests.get(OLS4_SEARCH_URL, params=params, timeout=5)
+        r = requests.get(OLS4_SEARCH_URL, params=params, timeout=10)
         r.raise_for_status()
         data = r.json()
 
@@ -123,9 +123,29 @@ def extract_ontology_terms(extracted):
         else:
             multi_word_spans.append(p)
 
-    one_word_terms = [p["text"].strip() for p in one_word_spans if p.get("text")]
+    # ---------------------------------------------
+    # NEW STEP — COLLECT ALL WORDS FOR FALLBACK
+    # ---------------------------------------------
+    all_single_words = []
+    for p in phrases:
+        words_meta = p.get("words") or []
+        for w in words_meta:
+            all_single_words.append(w["text"].strip())
+
+    # Replace the old one_word_terms assignment
+    one_word_terms = all_single_words.copy()
 
     ols4_lookups = 0
+
+
+# ---------------------------------------------
+# NEW STEP — COLLECT ALL WORDS FOR FALLBACK
+# ---------------------------------------------
+    all_single_words = []
+    for p in phrases:
+        words_meta = p.get("words") or []
+        for w in words_meta:
+            all_single_words.append(w["text"].strip())
 
     # ---------------------------------------------
     # STEP 2 — PROCESS 2-WORD PHRASES
@@ -138,7 +158,7 @@ def extract_ontology_terms(extracted):
             results[phrase_text] = {
                 "source": "phrase_definition",
                 "definition": hit,
-                "highlight_as_phrase": True   # ⭐ ADDED
+                "highlight_as_phrase": True   
             }
             continue
 
@@ -203,8 +223,12 @@ def extract_ontology_terms(extracted):
     norm_to_originals = {}
     for w in one_word_terms:
         norm = normalize_term(w)
-        if norm:
-            norm_to_originals.setdefault(norm, set()).add(w)
+        if not norm:
+            continue
+
+        # preserve ALL occurrences
+        norm_to_originals.setdefault(norm, []).append(w)
+
 
     all_norms = list(norm_to_originals.keys())
     if len(all_norms) > MAX_TERMS_PER_DOCUMENT:
