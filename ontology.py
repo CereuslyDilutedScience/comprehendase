@@ -34,8 +34,8 @@ def normalize_term(t: str) -> str:
 # ---------------------------------------------------------
 
 OLS4_SEARCH_URL = "https://www.ebi.ac.uk/ols4/api/search"
-MAX_TERMS_PER_DOCUMENT = 1000
-MAX_OLS4_LOOKUPS = 1000
+MAX_TERMS_PER_DOCUMENT = 10000
+MAX_OLS4_LOOKUPS = 10000
 
 # ---------------------------------------------------------
 # OLS4 LOOKUP (supports batching)
@@ -52,7 +52,6 @@ def lookup_terms_ols4(terms):
     if not terms:
         return results
 
-    # OLS4 supports multiple q parameters: ?q=term1&q=term2&q=term3
     params = [("q", t) for t in terms]
 
     try:
@@ -60,7 +59,6 @@ def lookup_terms_ols4(terms):
         r.raise_for_status()
         data = r.json()
 
-        # OLS4 returns a flat list of hits for ALL queries combined
         for item in data.get("response", {}).get("docs", []):
             label = item.get("label")
             defs = item.get("description")
@@ -70,8 +68,6 @@ def lookup_terms_ols4(terms):
             if not label or not definition:
                 continue
 
-            # OLS4 returns exact matches only if the ontology contains the term
-            # So we match by exact label lowercased
             key = label.lower().strip()
             if key in results:
                 results[key] = {
@@ -141,7 +137,8 @@ def extract_ontology_terms(extracted):
         if hit:
             results[phrase_text] = {
                 "source": "phrase_definition",
-                "definition": hit
+                "definition": hit,
+                "highlight_as_phrase": True   # ⭐ ADDED
             }
             continue
 
@@ -156,7 +153,8 @@ def extract_ontology_terms(extracted):
             results[phrase_text] = {
                 "source": "ontology_phrase",
                 "definition": bp["definition"],
-                "iri": bp.get("iri", "")
+                "iri": bp.get("iri", ""),
+                "highlight_as_phrase": True   # ⭐ ADDED
             }
             continue
 
@@ -175,7 +173,8 @@ def extract_ontology_terms(extracted):
         if hit:
             results[phrase_text] = {
                 "source": "phrase_definition",
-                "definition": hit
+                "definition": hit,
+                "highlight_as_phrase": True   # ⭐ ADDED
             }
             continue
 
@@ -190,7 +189,8 @@ def extract_ontology_terms(extracted):
             results[phrase_text] = {
                 "source": "ontology_phrase",
                 "definition": bp["definition"],
-                "iri": bp.get("iri", "")
+                "iri": bp.get("iri", ""),
+                "highlight_as_phrase": True   # ⭐ ADDED
             }
             continue
 
@@ -210,7 +210,6 @@ def extract_ontology_terms(extracted):
     if len(all_norms) > MAX_TERMS_PER_DOCUMENT:
         all_norms = all_norms[:MAX_TERMS_PER_DOCUMENT]
 
-    # Batch OLS4 lookup for all 1-word terms at once
     if ols4_lookups < MAX_OLS4_LOOKUPS:
         batch = lookup_terms_ols4(all_norms)
         ols4_lookups += 1
