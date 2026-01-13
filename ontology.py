@@ -101,37 +101,26 @@ def extract_ontology_terms(extracted):
             multi_word_spans.append(p)
 
     # ---------------------------------------------
-    # NEW STEP — COLLECT ALL WORDS FOR FALLBACK
+    # STEP 2 — TRUE BATCH FOR 2-WORD PHRASES
     # ---------------------------------------------
-    all_single_words = []
-    for p in phrases:
-        words_meta = p.get("words") or []
-        for w in words_meta:
-            all_single_words.append(w["text"].strip())
+    two_word_texts = [p["text"].strip() for p in two_word_spans]
 
-    # Replace the old one_word_terms assignment
-    one_word_terms = all_single_words.copy()
+    if two_word_texts and ols4_lookups < MAX_OLS4_LOOKUPS:
+        batch = lookup_terms_ols4(two_word_texts)
+        ols4_lookups += 1
+    else:
+        batch = {t.lower(): None for t in two_word_texts}
 
-    ols4_lookups = 0
-
-    # ---------------------------------------------
-    # STEP 2 — PROCESS 2-WORD PHRASES
-    # ---------------------------------------------
     for p in two_word_spans:
         phrase_text = p["text"].strip()
-        if ols4_lookups < MAX_OLS4_LOOKUPS:
-            batch = lookup_terms_ols4([phrase_text])
-            ols4_lookups += 1
-            bp = batch.get(phrase_text.lower())
-        else:
-            bp = None
+        bp = batch.get(phrase_text.lower())
 
         if bp:
             results[phrase_text] = {
                 "source": "ontology_phrase",
                 "definition": bp["definition"],
                 "iri": bp.get("iri", ""),
-                "highlight_as_phrase": True  
+                "highlight_as_phrase": True
             }
             continue
 
@@ -141,27 +130,31 @@ def extract_ontology_terms(extracted):
         one_word_terms.extend(split_words)
 
     # ---------------------------------------------
-    # STEP 3 — PROCESS 3+ WORD PHRASES
+    # STEP 3 — TRUE BATCH FOR 3+ WORD PHRASES
     # ---------------------------------------------
+    multi_word_texts = [p["text"].strip() for p in multi_word_spans]
+
+    if multi_word_texts and ols4_lookups < MAX_OLS4_LOOKUPS:
+        batch = lookup_terms_ols4(multi_word_texts)
+        ols4_lookups += 1
+    else:
+        batch = {t.lower(): None for t in multi_word_texts}
+
     for p in multi_word_spans:
         phrase_text = p["text"].strip()
-        if ols4_lookups < MAX_OLS4_LOOKUPS:
-            batch = lookup_terms_ols4([phrase_text])
-            ols4_lookups += 1
-            bp = batch.get(phrase_text.lower())
-        else:
-            bp = None
+        bp = batch.get(phrase_text.lower())
 
         if bp:
             results[phrase_text] = {
                 "source": "ontology_phrase",
                 "definition": bp["definition"],
                 "iri": bp.get("iri", ""),
-                "highlight_as_phrase": True   
+                "highlight_as_phrase": True
             }
             continue
 
         unmatched_terms.append(phrase_text)
+
 
     # ---------------------------------------------
     # STEP 4 — PROCESS 1-WORD TERMS (LAST)
