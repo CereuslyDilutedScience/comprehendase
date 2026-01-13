@@ -13,6 +13,17 @@ def normalize_term(t: str) -> str:
     return t
 
 # ---------------------------------------------------------
+# UTILITIES
+# ---------------------------------------------------------
+
+def chunk_list(lst, size):
+    """
+    Yields successive chunks of the given list with at most `size` elements.
+    """
+    for i in range(0, len(lst), size):
+        yield lst[i:i+size]
+
+# ---------------------------------------------------------
 # OLS4 CONFIG
 # ---------------------------------------------------------
 
@@ -95,18 +106,21 @@ def extract_ontology_terms(extracted):
             multi_word_spans.append(p)
 
     # ---------------------------------------------
-    # STEP 2 — TRUE BATCH FOR 2-WORD PHRASES
+    # STEP 2 — TRUE BATCH FOR 2-WORD PHRASES (CHUNKED)
     # ---------------------------------------------
     two_word_texts = [p["text"].strip() for p in two_word_spans]
 
     if two_word_texts:
-        batch = lookup_terms_ols4(two_word_texts)
+        combined_batch = {}
+        for chunk in chunk_list(two_word_texts, 250):
+            chunk_batch = lookup_terms_ols4(chunk)
+            combined_batch.update(chunk_batch)
     else:
-        batch = {t.lower(): None for t in two_word_texts}
+        combined_batch = {}
 
     for p in two_word_spans:
         phrase_text = p["text"].strip()
-        bp = batch.get(phrase_text.lower())
+        bp = combined_batch.get(phrase_text.lower())
 
         if bp:
             results[phrase_text] = {
@@ -125,18 +139,21 @@ def extract_ontology_terms(extracted):
             one_word_spans.append({"text": w})
 
     # ---------------------------------------------
-    # STEP 3 — TRUE BATCH FOR 3+ WORD PHRASES
+    # STEP 3 — TRUE BATCH FOR 3+ WORD PHRASES (CHUNKED)
     # ---------------------------------------------
     multi_word_texts = [p["text"].strip() for p in multi_word_spans]
 
     if multi_word_texts:
-        batch = lookup_terms_ols4(multi_word_texts)
+        combined_batch = {}
+        for chunk in chunk_list(multi_word_texts, 250):
+            chunk_batch = lookup_terms_ols4(chunk)
+            combined_batch.update(chunk_batch)
     else:
-        batch = {t.lower(): None for t in multi_word_texts}
+        combined_batch = {}
 
     for p in multi_word_spans:
         phrase_text = p["text"].strip()
-        bp = batch.get(phrase_text.lower())
+        bp = combined_batch.get(phrase_text.lower())
 
         if bp:
             results[phrase_text] = {
@@ -150,7 +167,7 @@ def extract_ontology_terms(extracted):
         unmatched_terms.append(phrase_text)
 
     # ---------------------------------------------
-    # STEP 4 — PROCESS 1-WORD TERMS (LAST)
+    # STEP 4 — PROCESS 1-WORD TERMS (LAST, CHUNKED)
     # ---------------------------------------------
     norm_to_originals = {}
 
@@ -165,13 +182,16 @@ def extract_ontology_terms(extracted):
     all_norms = list(norm_to_originals.keys())
 
     if all_norms:
-        batch = lookup_terms_ols4(all_norms)
+        combined_batch = {}
+        for chunk in chunk_list(all_norms, 250):
+            chunk_batch = lookup_terms_ols4(chunk)
+            combined_batch.update(chunk_batch)
     else:
-        batch = {n: None for n in all_norms}
+        combined_batch = {}
 
     for norm in all_norms:
         originals = sorted(norm_to_originals[norm])
-        bp = batch.get(norm)
+        bp = combined_batch.get(norm)
 
         if bp:
             for word in originals:
