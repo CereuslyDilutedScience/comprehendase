@@ -112,7 +112,7 @@ def extract_ontology_terms(extracted):
 
     if two_word_texts:
         combined_batch = {}
-        for chunk in chunk_list(two_word_texts, 250):
+        for chunk in chunk_list(two_word_texts, 20):
             chunk_batch = lookup_terms_ols4(chunk)
             combined_batch.update(chunk_batch)
     else:
@@ -145,7 +145,7 @@ def extract_ontology_terms(extracted):
 
     if multi_word_texts:
         combined_batch = {}
-        for chunk in chunk_list(multi_word_texts, 250):
+        for chunk in chunk_list(multi_word_texts, 20):
             chunk_batch = lookup_terms_ols4(chunk)
             combined_batch.update(chunk_batch)
     else:
@@ -183,7 +183,7 @@ def extract_ontology_terms(extracted):
 
     if all_norms:
         combined_batch = {}
-        for chunk in chunk_list(all_norms, 250):
+        for chunk in chunk_list(all_norms, 20):
             chunk_batch = lookup_terms_ols4(chunk)
             combined_batch.update(chunk_batch)
     else:
