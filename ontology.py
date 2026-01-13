@@ -2,31 +2,18 @@ import requests
 import re
 import os
 
-
-# ---------------------------------------------------------
-# LOAD LISTS
-# ---------------------------------------------------------
-
-def load_definitions(path):
-    defs = {}
-    with open(path, encoding="utf-8") as f:
-        for line in f:
-            if "<TAB>" in line:
-                term, definition = line.strip().split("<TAB>", 1)
-                defs[term.lower()] = definition.strip()
-    return defs
-
-PHRASE_DEFS = load_definitions("phrase_definitions.txt")
-WORD_DEFS = load_definitions("word_definitions.txt")
-
 # ---------------------------------------------------------
 # NORMALIZATION (for dedupe only)
 # ---------------------------------------------------------
 
 def normalize_term(t: str) -> str:
+    # lowercase + trim
     t = t.lower().strip()
-    t = re.sub(r"[^a-z0-9\- ]", "", t)
+    # remove ONLY basic punctuation: commas, periods, semicolons, colons, quotes
+    t = re.sub(r"[.,;:!?\"']", "", t)
+    # collapse whitespace
     t = re.sub(r"\s+", " ", t)
+    
     return t
 
 # ---------------------------------------------------------
@@ -34,8 +21,8 @@ def normalize_term(t: str) -> str:
 # ---------------------------------------------------------
 
 OLS4_SEARCH_URL = "https://www.ebi.ac.uk/ols4/api/search"
-MAX_TERMS_PER_DOCUMENT = 10000
-MAX_OLS4_LOOKUPS = 10000
+MAX_TERMS_PER_DOCUMENT = 100000
+MAX_OLS4_LOOKUPS = 100000
 
 # ---------------------------------------------------------
 # OLS4 LOOKUP (supports batching)
@@ -65,7 +52,7 @@ def lookup_terms_ols4(terms):
             definition = defs[0] if isinstance(defs, list) and defs else defs
             iri = item.get("iri", "")
 
-            if not label or not definition:
+            if not definition:
                 continue
 
             key = label.lower().strip()
@@ -80,16 +67,6 @@ def lookup_terms_ols4(terms):
 
     except Exception:
         return results
-
-# ---------------------------------------------------------
-# INTERNAL LOOKUP HELPERS
-# ---------------------------------------------------------
-
-def lookup_internal_phrase(phrase: str):
-    return PHRASE_DEFS.get(phrase.lower().strip())
-
-def lookup_internal_word(word: str):
-    return WORD_DEFS.get(word.lower().strip())
 
 # ---------------------------------------------------------
 # MAIN ENTRYPOINT — PHASE 1 PIPELINE (OLS4 VERSION)
@@ -137,31 +114,11 @@ def extract_ontology_terms(extracted):
 
     ols4_lookups = 0
 
-
-# ---------------------------------------------
-# NEW STEP — COLLECT ALL WORDS FOR FALLBACK
-# ---------------------------------------------
-    all_single_words = []
-    for p in phrases:
-        words_meta = p.get("words") or []
-        for w in words_meta:
-            all_single_words.append(w["text"].strip())
-
     # ---------------------------------------------
     # STEP 2 — PROCESS 2-WORD PHRASES
     # ---------------------------------------------
     for p in two_word_spans:
         phrase_text = p["text"].strip()
-
-        hit = lookup_internal_phrase(phrase_text)
-        if hit:
-            results[phrase_text] = {
-                "source": "phrase_definition",
-                "definition": hit,
-                "highlight_as_phrase": True   
-            }
-            continue
-
         if ols4_lookups < MAX_OLS4_LOOKUPS:
             batch = lookup_terms_ols4([phrase_text])
             ols4_lookups += 1
@@ -174,7 +131,7 @@ def extract_ontology_terms(extracted):
                 "source": "ontology_phrase",
                 "definition": bp["definition"],
                 "iri": bp.get("iri", ""),
-                "highlight_as_phrase": True   # ⭐ ADDED
+                "highlight_as_phrase": True  
             }
             continue
 
@@ -188,16 +145,6 @@ def extract_ontology_terms(extracted):
     # ---------------------------------------------
     for p in multi_word_spans:
         phrase_text = p["text"].strip()
-
-        hit = lookup_internal_phrase(phrase_text)
-        if hit:
-            results[phrase_text] = {
-                "source": "phrase_definition",
-                "definition": hit,
-                "highlight_as_phrase": True   # ⭐ ADDED
-            }
-            continue
-
         if ols4_lookups < MAX_OLS4_LOOKUPS:
             batch = lookup_terms_ols4([phrase_text])
             ols4_lookups += 1
@@ -210,7 +157,7 @@ def extract_ontology_terms(extracted):
                 "source": "ontology_phrase",
                 "definition": bp["definition"],
                 "iri": bp.get("iri", ""),
-                "highlight_as_phrase": True   # ⭐ ADDED
+                "highlight_as_phrase": True   
             }
             continue
 
@@ -243,16 +190,6 @@ def extract_ontology_terms(extracted):
     for norm in all_norms:
         originals = sorted(norm_to_originals[norm])
         rep = originals[0]
-
-        hit = lookup_internal_word(rep)
-        if hit:
-            for word in originals:
-                results[word] = {
-                    "source": "word_definition",
-                    "definition": hit
-                }
-            continue
-
         bp = batch.get(norm)
         if bp:
             for word in originals:
