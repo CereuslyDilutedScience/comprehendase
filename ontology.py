@@ -17,8 +17,6 @@ def normalize_term(t: str) -> str:
 # ---------------------------------------------------------
 
 OLS4_SEARCH_URL = "https://www.ebi.ac.uk/ols4/api/search"
-MAX_TERMS_PER_DOCUMENT = 100000
-MAX_OLS4_LOOKUPS = 100000
 
 # ---------------------------------------------------------
 # OLS4 LOOKUP (supports batching)
@@ -30,7 +28,6 @@ def lookup_terms_ols4(terms):
     Returns a dict: lowercase term -> best match or None.
     """
 
-    # lowercase keys so callers can reliably use .lower()
     results = {t.lower().strip(): None for t in terms}
 
     if not terms:
@@ -97,16 +94,13 @@ def extract_ontology_terms(extracted):
         else:
             multi_word_spans.append(p)
 
-    ols4_lookups = 0
-
     # ---------------------------------------------
     # STEP 2 — TRUE BATCH FOR 2-WORD PHRASES
     # ---------------------------------------------
     two_word_texts = [p["text"].strip() for p in two_word_spans]
 
-    if two_word_texts and ols4_lookups < MAX_OLS4_LOOKUPS:
+    if two_word_texts:
         batch = lookup_terms_ols4(two_word_texts)
-        ols4_lookups += 1
     else:
         batch = {t.lower(): None for t in two_word_texts}
 
@@ -127,7 +121,6 @@ def extract_ontology_terms(extracted):
         words_meta = p.get("words") or []
         split_words = [w["text"].strip() for w in words_meta] if words_meta else phrase_text.split()
 
-        # feed fallback words into the existing one_word_spans bucket
         for w in split_words:
             one_word_spans.append({"text": w})
 
@@ -136,9 +129,8 @@ def extract_ontology_terms(extracted):
     # ---------------------------------------------
     multi_word_texts = [p["text"].strip() for p in multi_word_spans]
 
-    if multi_word_texts and ols4_lookups < MAX_OLS4_LOOKUPS:
+    if multi_word_texts:
         batch = lookup_terms_ols4(multi_word_texts)
-        ols4_lookups += 1
     else:
         batch = {t.lower(): None for t in multi_word_texts}
 
@@ -171,12 +163,9 @@ def extract_ontology_terms(extracted):
         norm_to_originals.setdefault(norm, []).append(w)
 
     all_norms = list(norm_to_originals.keys())
-    if len(all_norms) > MAX_TERMS_PER_DOCUMENT:
-        all_norms = all_norms[:MAX_TERMS_PER_DOCUMENT]
 
-    if all_norms and ols4_lookups < MAX_OLS4_LOOKUPS:
+    if all_norms:
         batch = lookup_terms_ols4(all_norms)
-        ols4_lookups += 1
     else:
         batch = {n: None for n in all_norms}
 
