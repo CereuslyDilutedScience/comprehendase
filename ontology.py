@@ -7,13 +7,9 @@ import os
 # ---------------------------------------------------------
 
 def normalize_term(t: str) -> str:
-    # lowercase + trim
     t = t.lower().strip()
-    # remove ONLY basic punctuation: commas, periods, semicolons, colons, quotes
     t = re.sub(r"[.,;:!?\"']", "", t)
-    # collapse whitespace
     t = re.sub(r"\s+", " ", t)
-    
     return t
 
 # ---------------------------------------------------------
@@ -31,10 +27,11 @@ MAX_OLS4_LOOKUPS = 100000
 def lookup_terms_ols4(terms):
     """
     Accepts a list of terms and performs a single batched OLS4 search.
-    Returns a dict: term -> best match or None.
+    Returns a dict: lowercase term -> best match or None.
     """
 
-    results = {t: None for t in terms}
+    # lowercase keys so callers can reliably use .lower()
+    results = {t.lower().strip(): None for t in terms}
 
     if not terms:
         return results
@@ -101,6 +98,7 @@ def extract_ontology_terms(extracted):
             multi_word_spans.append(p)
 
     ols4_lookups = 0
+
     # ---------------------------------------------
     # STEP 2 — TRUE BATCH FOR 2-WORD PHRASES
     # ---------------------------------------------
@@ -128,7 +126,10 @@ def extract_ontology_terms(extracted):
         # fallback → split into 1-word terms
         words_meta = p.get("words") or []
         split_words = [w["text"].strip() for w in words_meta] if words_meta else phrase_text.split()
-        one_word_terms.extend(split_words)
+
+        # feed fallback words into the existing one_word_spans bucket
+        for w in split_words:
+            one_word_spans.append({"text": w})
 
     # ---------------------------------------------
     # STEP 3 — TRUE BATCH FOR 3+ WORD PHRASES
@@ -156,26 +157,24 @@ def extract_ontology_terms(extracted):
 
         unmatched_terms.append(phrase_text)
 
-
     # ---------------------------------------------
     # STEP 4 — PROCESS 1-WORD TERMS (LAST)
     # ---------------------------------------------
-
     norm_to_originals = {}
-    for w in one_word_terms:
+
+    for p in one_word_spans:
+        w = p["text"].strip()
         norm = normalize_term(w)
         if not norm:
             continue
 
-        # preserve ALL occurrences
         norm_to_originals.setdefault(norm, []).append(w)
-
 
     all_norms = list(norm_to_originals.keys())
     if len(all_norms) > MAX_TERMS_PER_DOCUMENT:
         all_norms = all_norms[:MAX_TERMS_PER_DOCUMENT]
 
-    if ols4_lookups < MAX_OLS4_LOOKUPS:
+    if all_norms and ols4_lookups < MAX_OLS4_LOOKUPS:
         batch = lookup_terms_ols4(all_norms)
         ols4_lookups += 1
     else:
@@ -183,8 +182,8 @@ def extract_ontology_terms(extracted):
 
     for norm in all_norms:
         originals = sorted(norm_to_originals[norm])
-        rep = originals[0]
         bp = batch.get(norm)
+
         if bp:
             for word in originals:
                 results[word] = {
