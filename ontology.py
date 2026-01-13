@@ -100,6 +100,7 @@ def extract_ontology_terms(extracted):
         else:
             multi_word_spans.append(p)
 
+    ols4_lookups = 0
     # ---------------------------------------------
     # STEP 2 — TRUE BATCH FOR 2-WORD PHRASES
     # ---------------------------------------------
