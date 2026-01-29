@@ -16,7 +16,7 @@ def load_list(path):
 STOPWORDS = load_list("stopwords.txt")
 
 
-# --- GARBAGE FILTER (KEPT EXACTLY AS IS) ---
+# --- GARBAGE FILTER ---
 def is_garbage_phrase(text):
     t = text.lower().strip()
     if not t:
@@ -138,7 +138,7 @@ def boxes_overlap(a, b):
 def detect_overlapping_boxes(all_words, max_checks=1000):
     """
     Detect overlapping bounding boxes on the same page.
-    To avoid heavy computation, we cap the number of pairwise checks.
+    To avoid heavy computation, cap the number of pairwise checks.
     """
     by_page = {}
     for w in all_words:
@@ -230,7 +230,7 @@ def extract_pdf_layout(pdf_path, render_metadata):
             # Sort by reading order
             normalized.sort(key=lambda w: (round(w["y"] / 5), w["x"]))
 
-            # --- KEEP HYPHEN MERGING EXACTLY AS IS ---
+            # --- KEEP HYPHEN MERGING---
             merged = []
             i = 0
             while i < len(normalized):
