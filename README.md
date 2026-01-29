@@ -5,11 +5,10 @@ This site has been developed by a Microbiology student to aid in the comprehensi
 Process used:<br>
 Upload a scientific article in PDF format <br>
 Click Analyze<br>
-  Page text is extracted<br>
+  Page text is extracted using PDFplumber <br>
   Text is ran through logic to extract scientific words and phrases<br>
-  All words not matched locally are sent to OLS4 API to generate defintions<br>
-Output appears as the full PDF document<br>
-The document has each scientific word and/or phrase highlighted, <br>
+  All words not matched locally are sent to OLS4 API to generate definitions<br>
+Output appears transparent other than defined words and phrases appearing as a highlight positioned over the original PDF document text <br>
 Hover over the highlight to get a tooltip definition without leaving the PDF or opening another tab. <br>
 
 
