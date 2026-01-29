@@ -12,9 +12,9 @@ def normalize_term(t: str) -> str:
     t = re.sub(r"\s+", " ", t)
     return t
 
-# ---------------------------------------------------------
-# UTILITIES
-# ---------------------------------------------------------
+# ------------------------------------------------------------------------------------------------
+# UTILITIES ATTEMPT TO PARSE LOOKUP OLS4 MAX 500 PER BATCH 
+# ------------------------------------------------------------------------------------------------
 
 def chunk_list(lst, size):
     """
@@ -138,9 +138,9 @@ def extract_ontology_terms(extracted):
         for w in split_words:
             one_word_spans.append({"text": w})
 
-    # ---------------------------------------------
-    # STEP 3 — TRUE BATCH FOR 3+ WORD PHRASES (CHUNKED)
-    # ---------------------------------------------
+    # --------------------------------------------------------------------------------------------------------------------------------
+    # STEP 3 — TRUE BATCH FOR 3+ WORD PHRASES (CHUNKED) INCOMPLETE, WILL BE ADDING PHRASE DELIMINTATING LOOKUP ONCE SITE IS STABLE
+    # --------------------------------------------------------------------------------------------------------------------------------
     multi_word_texts = [p["text"].strip() for p in multi_word_spans]
 
     if multi_word_texts:
