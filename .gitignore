@@ -1,2 +1,4 @@
 .env
-
+phrase_definitions.txt
+word_definitions.txt
+synonyms.txt
