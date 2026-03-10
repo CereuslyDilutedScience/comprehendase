@@ -84,7 +84,7 @@ def extract_ontology_terms(extracted):
     unmatched_terms = []
 
     # ---------------------------------------------
-    # STEP 1 — BUCKET BY LENGTH
+    # BUCKET BY LENGTH
     # ---------------------------------------------
     one_word_spans = []
     two_word_spans = []
@@ -106,7 +106,7 @@ def extract_ontology_terms(extracted):
             multi_word_spans.append(p)
 
     # ---------------------------------------------
-    # STEP 2 — TRUE BATCH FOR 2-WORD PHRASES (CHUNKED)
+    # TRUE BATCH FOR 2-WORD PHRASES (CHUNKED)
     # ---------------------------------------------
     two_word_texts = [p["text"].strip() for p in two_word_spans]
 
@@ -139,7 +139,7 @@ def extract_ontology_terms(extracted):
             one_word_spans.append({"text": w})
 
     # --------------------------------------------------------------------------------------------------------------------------------
-    # STEP 3 — TRUE BATCH FOR 3+ WORD PHRASES (CHUNKED) INCOMPLETE, WILL BE ADDING PHRASE DELIMINTATING LOOKUP ONCE SITE IS STABLE
+    # TRUE BATCH FOR 3+ WORD PHRASES (CHUNKED) INCOMPLETE, WILL BE ADDING PHRASE DELIMINTATING LOOKUP ONCE SITE IS STABLE
     # --------------------------------------------------------------------------------------------------------------------------------
     multi_word_texts = [p["text"].strip() for p in multi_word_spans]
 
@@ -167,7 +167,7 @@ def extract_ontology_terms(extracted):
         unmatched_terms.append(phrase_text)
 
     # ---------------------------------------------
-    # STEP 4 — PROCESS 1-WORD TERMS (LAST, CHUNKED)
+    # PROCESS 1-WORD TERMS (LAST, CHUNKED)
     # ---------------------------------------------
     norm_to_originals = {}
 
