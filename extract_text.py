@@ -4,20 +4,19 @@ import tempfile
 import os
 import re
 
-from debug_tools import DEBUG  # Debug collector
+from debug_tools import DEBUG
 
-
-# --- LOAD LISTS ---
 def load_list(path):
     with open(path, encoding="utf-8") as f:
         return set(line.strip().lower() for line in f if line.strip())
 
-
+#Commonly used words, used to skip ontology and indicate phrase ending
 STOPWORDS = load_list("stopwords.txt")
 
 
 # --- GARBAGE FILTER ---
 def is_garbage_phrase(text):
+    
     t = text.lower().strip()
     if not t:
         return True, "empty phrase"
@@ -32,6 +31,9 @@ def is_garbage_phrase(text):
 
 # --- OCR STEP ---
 def ocr_pdf(input_path):
+    ''' OCR fall back when the uploaded PDF does not contain an enbedded text layout.
+    Runtime is greatly increased when OCR is needed.
+    '''
     try:
         import fitz
         doc = fitz.open(input_path)
@@ -127,7 +129,7 @@ def boxes_overlap(a, b):
     bx2 = bx1 + b.get("width", 0)
     by2 = by1 + b.get("height", 0)
 
-    # No overlap if one is completely to one side of the other
+    # NO OVERLAP DETECTION FOR DOWNSTREAM DEFINITION HIGHLIGHTING
     if ax2 <= bx1 or bx2 <= ax1:
         return False
     if ay2 <= by1 or by2 <= ay1:
@@ -177,8 +179,10 @@ def detect_overlapping_boxes(all_words, max_checks=1000):
                     DEBUG.add_anomaly("overlapping_boxes", sample)
 
 
-# --- MAIN EXTRACTION FUNCTION ---
 def extract_pdf_layout(pdf_path, render_metadata):
+    ''' Main extraction function; indicates if OCR needed, outputs all words before
+    phrase generation and page layout for rendering after ontology lookup.
+    '''
     print("\n=== STARTING EXTRACTION ===")
     DEBUG.add_flow("extraction_started")
     DEBUG.add_flow("render_metadata_received")
@@ -194,7 +198,6 @@ def extract_pdf_layout(pdf_path, render_metadata):
     all_words = []
     pages_output = []
 
-    # --- EXTRACT WORDS ---
     DEBUG.add_flow("pdfplumber_extraction_started")
     with pdfplumber.open(target_pdf) as pdf:
         for page_index, page in enumerate(pdf.pages):
@@ -227,10 +230,10 @@ def extract_pdf_layout(pdf_path, render_metadata):
                     "page": page_index + 1
                 })
 
-            # Sort by reading order
+            # SORT BY READING ORDER
             normalized.sort(key=lambda w: (round(w["y"] / 5), w["x"]))
 
-            # --- KEEP HYPHEN MERGING---
+            # KEEP HYPHEN MERGING
             merged = []
             i = 0
             while i < len(normalized):
@@ -253,17 +256,15 @@ def extract_pdf_layout(pdf_path, render_metadata):
 
     DEBUG.add_flow("pdfplumber_extraction_completed")
 
-    # Sample page-level metadata as "boxes" (complements server samples)
+    # SAMPLE PAGE-LEVEL METADATA AS "BOXES" 
     for page_info in pages_output[:5]:
         DEBUG.add_sample("boxes", page_info)
 
-    # --- SORT ALL WORDS GLOBALLY ---
+    # SORT ALL WORDS GLOBALLY
     all_words.sort(key=lambda w: (w["page"], round(w["y"] / 5), w["x"]))
 
-    # ============================================================
-    # ⭐ PURE GREEDY STOPWORD-BOUNDED EXTRACTION (NO MAX LENGTH)
-    # ============================================================
-
+ 
+    #STOPWORD DETECTION
     phrases = []
     n = len(all_words)
     i = 0
@@ -272,36 +273,36 @@ def extract_pdf_layout(pdf_path, render_metadata):
         w = all_words[i]
         raw = w["text"]
 
-        # Clean token for stopword check
+        # CLEAN TOKEN FOR STOPWATCH CHECK
         token = raw.lower().strip(".,;:()[]{}")
 
-        # Skip stopwords entirely
+        # SKIP STOPWORDS COMPLETELY/BREAKS PREVIOUS PHRASE STRING
         if token in STOPWORDS:
             i += 1
             continue
 
-        # Start a new greedy phrase
+        # START PHRASE DETECTION
         phrase_words = [w]
         j = i + 1
 
-        # Expand right until a stopword
+        # EXPAND RIGHT UNTIL NEXT STOPWORD
         while j < n:
             nxt_raw = all_words[j]["text"]
             nxt_token = nxt_raw.lower().strip(".,;:()[]{}")
 
             if nxt_token in STOPWORDS:
-                break  # stop expansion
+                break  
 
             phrase_words.append(all_words[j])
             j += 1
 
-        # Emit phrase (even if length 1)
+        # EMIT PHRASE (EVEN IF PHRASE IS 1)
         phrase_text = " ".join([pw["text"] for pw in phrase_words]).strip()
         phrase_text_clean = phrase_text.lower()
 
         rejected, reason = is_garbage_phrase(phrase_text_clean)
         if rejected and reason == "empty phrase":
-            # Track unexpected empty phrases as anomalies
+            # TRACK UNEXPECTED EMPTY PHRASE
             DEBUG.add_anomaly("empty_phrases", {
                 "reason": reason,
                 "raw_text": phrase_text,
@@ -315,12 +316,12 @@ def extract_pdf_layout(pdf_path, render_metadata):
                 "words": phrase_words.copy()
             })
 
-        # Move index to next word after phrase
+        # MOVRE INDEX TO NEXT WORD AFTER PHRASE
         i = j
 
     DEBUG.add_flow("phrase_extraction_completed")
 
-    # --- ANOMALY DETECTION ON WORDS ---
+    # ANOMALY DETECTION ON WORDS
     detect_duplicate_coordinates(all_words)
     detect_duplicate_text_spans(all_words)
     detect_overlapping_boxes(all_words)
