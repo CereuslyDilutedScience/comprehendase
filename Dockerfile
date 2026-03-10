@@ -1,10 +1,9 @@
-# Use the official lightweight Python image
+
 FROM python:3.11-slim-bookworm
 
-# Set locale to avoid potential issues in minimal environments
 ENV LANG=C.UTF-8
 
-# Install system dependencies for:
+# system dependencies:
 # - OCRmyPDF (Ghostscript, qpdf, tesseract, jbig2dec, unpaper, pngquant)
 # - PyMuPDF (libgl, libx11, libxext, libxrender, libglib, libfreetype)
 # - Pillow/pdfplumber (libjpeg, libpng)
