@@ -1,5 +1,3 @@
-# debug_tools.py
-# A clean, isolated debug collector that stays silent unless activated.
 
 class DebugCollector:
     """
@@ -35,7 +33,7 @@ class DebugCollector:
             "empty_phrases": [],
         }
 
-        # Whether debug output is active
+        # Debug output default disable
         self.enabled = False
 
     def enable(self):
@@ -116,3 +114,4 @@ class DebugCollector:
 
 # A single global collector instance that the pipeline can import.
 DEBUG = DebugCollector()
+
