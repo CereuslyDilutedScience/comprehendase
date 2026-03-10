@@ -1,9 +1,8 @@
 console.log("script.js updated");
 
-// Set your backend URL here once Cloud Run is deployed
 const BACKEND_URL = "https://comprehendase-backend-470914920668.us-east4.run.app";
 
-// Enable the button when a file is selected
+// ENABLE UPLOAD ONLY WHEN FILE IS SELECTED 
 document.getElementById("pdf-input").addEventListener("change", () => {
     const fileInput = document.getElementById("pdf-input");
     const button = document.getElementById("process-btn");
@@ -11,7 +10,7 @@ document.getElementById("pdf-input").addEventListener("change", () => {
     button.disabled = fileInput.files.length === 0;
 });
 
-// Handle the "Reconstruct layout" button click
+// RECONSTRUCT LAYOUT BUTTON 
 document.getElementById("process-btn").addEventListener("click", async () => {
     const fileInput = document.getElementById("pdf-input");
     const logBox = document.getElementById("log");
@@ -43,11 +42,11 @@ document.getElementById("process-btn").addEventListener("click", async () => {
 
         logBox.textContent = "Rendering pages…";
 
-        // Clear old content
+        // CLEAR OLD CONTENT
         viewer.innerHTML = "";
         output.innerHTML = "";
 
-        // NEW: pass global words + pages
+        // PASS GLOBAL WORDS + PAGES 
         renderPages(data.pages, data.words, viewer);
 
         logBox.textContent = "Done.";
@@ -58,18 +57,18 @@ document.getElementById("process-btn").addEventListener("click", async () => {
     }
 });
 
-// Render pages + overlay text
+// RENDER PAGES + OVERLAY TEXT
 function renderPages(pages, allWords, viewer) {
     pages.forEach((page) => {
         const pageWrapper = document.createElement("div");
         pageWrapper.className = "page-wrapper";
 
-        // Page image
+        // PAGE IMAGE
         const img = document.createElement("img");
         img.src = page.image_url;
         img.className = "page-image";
 
-        // Overlay container
+        // OVERLAY CONTAINER
         const overlay = document.createElement("div");
         overlay.className = "text-overlay";
 
@@ -93,11 +92,11 @@ function renderPages(pages, allWords, viewer) {
                 span.title = word.definition;
         }
 
-        // Use backend-scaled coordinates directly
+        // BACKEND-SCALED COORDINATES 
             span.style.left = word.x + "px";
             span.style.top  = word.y + "px";
 
-        // Use backend-scaled height directly
+        // BACKEND-SCALED HEIGHT
             span.style.fontSize = word.height + "px";
             span.style.lineHeight = word.height + "px";
 
