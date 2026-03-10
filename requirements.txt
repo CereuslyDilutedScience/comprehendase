@@ -1,0 +1,9 @@
+flask
+flask-cors
+werkzeug
+pdfplumber==0.11.4
+pymupdf==1.24.9
+pillow
+requests
+# rebuild 2026-01-08
+

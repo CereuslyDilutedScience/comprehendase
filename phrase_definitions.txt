@@ -1,0 +1,6 @@
+gene expression<TAB>the process by which a gene produces a functional product
+RNA interference<TAB>(RNA interference/RNAi) a mechanism of gene silencing using small RNAs
+virulence factor<TAB>a molecule that contributes to pathogenicity
+otitis media<TAB>commonly known as a middle ear infection, is inflammation and fluid buildup in the space behind the eardrum, often caused by viruses or bacteria from a cold or respiratory infection
+protein translation<TAB>the essential process where a cell builds proteins by decoding messenger RNA (mRNA) into a specific chain of amino acids, essentially converting the "nucleotide language" of mRNA into the "amino acid language" of proteins, a key step in gene expression. This process occurs on ribosomes, with transfer RNA (tRNA) molecules bringing specific amino acids that match three-nucleotide sequences (codons) on the mRNA, forming a polypeptide chain that then folds into a functional protein
+

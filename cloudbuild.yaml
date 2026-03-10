@@ -1,0 +1,38 @@
+steps:
+  - name: gcr.io/cloud-builders/docker
+    args:
+      [
+        "build",
+        "-t",
+        "us-east4-docker.pkg.dev/comprehendase-backend/cloud-run-source-deploy/comprehendase:$SHORT_SHA",
+        "."
+      ]
+
+  - name: gcr.io/cloud-builders/docker
+    args:
+      [
+        "push",
+        "us-east4-docker.pkg.dev/comprehendase-backend/cloud-run-source-deploy/comprehendase:$SHORT_SHA"
+      ]
+
+  - name: gcr.io/google.com/cloudsdktool/cloud-sdk
+    entrypoint: gcloud
+    args:
+      [
+        "run",
+        "deploy",
+        "comprehendase-backend",
+        "--image",
+        "us-east4-docker.pkg.dev/comprehendase-backend/cloud-run-source-deploy/comprehendase:$SHORT_SHA",
+        "--region",
+        "us-east4",
+        "--platform",
+        "managed",
+        "--allow-unauthenticated"
+      ]
+
+images:
+  - "us-east4-docker.pkg.dev/comprehendase-backend/cloud-run-source-deploy/comprehendase:$SHORT_SHA"
+
+options:
+  logging: CLOUD_LOGGING_ONLY
