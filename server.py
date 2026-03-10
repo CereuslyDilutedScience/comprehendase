@@ -8,9 +8,9 @@ from render_pages import render_pdf_pages
 import ontology
 from debug_tools import DEBUG
 
-# Uncomment this to globally enable debug collection.
-# You can also call DEBUG.enable() conditionally if you prefer.
-DEBUG.enable()
+
+# CALL DEBUG.enable() CONDITIONALLY
+#DEBUG.enable()
 
 
 app = Flask(__name__)
@@ -23,24 +23,21 @@ os.makedirs(STATIC_PAGE_FOLDER, exist_ok=True)
 
 CLOUD_RUN_BASE = "https://comprehendase-backend-470914920668.us-east4.run.app"
 
-
-# ---------------------------------------------------------
-# Serve rendered page images
-# ---------------------------------------------------------
+# ----------------------------------------
+# RENDERED PAGE IMAGES
+# ----------------------------------------
 @app.route("/static/pages/<path:filename>")
 def serve_page_image(filename):
     return send_from_directory("/tmp/pages", filename)
 
 
-# ---------------------------------------------------------
-# Main extraction endpoint
-# ---------------------------------------------------------
+
+# MAIN EXTRACTION ENDPOINT
 @app.route("/extract", methods=["POST", "OPTIONS"])
 def extract():
     if request.method == "OPTIONS":
         return '', 204
-
-    # If you prefer per-request control, you can enable here instead:
+    
     # DEBUG.enable()
 
     DEBUG.add_flow("request_received")
@@ -48,7 +45,7 @@ def extract():
     start_time = time.time()
     print("Received request")
 
-    # Validate upload
+    # VALIDATE UPLOAD
     if "file" not in request.files:
         DEBUG.add_flow("no_file_in_request")
         return jsonify({"error": "No file uploaded"}), 400
@@ -61,9 +58,9 @@ def extract():
     DEBUG.add_flow(f"file_saved:{filename}")
     print(f"Saved file: {filename}")
 
-    # -----------------------------------------------------
-    # 1. Extract layout (GLOBAL words + phrases)
-    # -----------------------------------------------------
+    # ------------------------------------------------
+    # EXTRACT LAYOUT (GLOBAL words + phrases)
+    # -------------------------------------------------
     DEBUG.add_flow("layout_extraction_started")
     render_result = render_pdf_pages(filepath)
     render_metadata = render_result["images"]
@@ -76,25 +73,24 @@ def extract():
     DEBUG.add_flow("layout_extraction_completed")
     print(f"Extraction complete — {time.time() - start_time:.2f}s")
 
-    # Set counts after extraction
+    # SET COUNTS AFTER EXTRACTION
     DEBUG.set_count("pages", len(pages_meta))
     DEBUG.set_count("words", len(all_words))
     DEBUG.set_count("phrases", len(all_phrases))
 
-    # Sample words and phrases (first few only)
+    # SAMPLE FIRST 5 WORDS AND PHRASES 
     for w in all_words[:5]:
         DEBUG.add_sample("words", w)
 
     for p in all_phrases[:5]:
         DEBUG.add_sample("phrases", p)
 
-    # Use pages_meta as a proxy for page-level / box-like info
+    # PAGE-LEVEL / BOX-LIKE INFO FIRST 5
     for page in pages_meta[:5]:
         DEBUG.add_sample("boxes", page)
 
-    # -----------------------------------------------------
-    # 2. Render images from the SAME PDF used for extraction
-    # -----------------------------------------------------
+   
+    # RENDER IMAGES FROM SAME PDF USED FOR EXTRACTION
     DEBUG.add_flow("page_rendering_started")
     render_result = render_pdf_pages(target_pdf, output_folder=STATIC_PAGE_FOLDER)
     image_folder = render_result["folder"]
@@ -104,7 +100,7 @@ def extract():
     print(f"Rendering complete — {time.time() - start_time:.2f}s")
 
     # -----------------------------------------------------
-    # 3. Ontology lookup (Phase‑1 pipeline)
+    # ONTOLOGY LOOK-UP
     # -----------------------------------------------------
     DEBUG.add_flow("ontology_lookup_started")
     unified_hits = ontology.extract_ontology_terms({
@@ -116,7 +112,7 @@ def extract():
     print(f"Ontology lookup complete — {time.time() - start_time:.2f}s")
 
     # -----------------------------------------------------
-    # 4. Attach definitions to phrases and words
+    # ATTACH DEFINITIONS TO PHRASES AND WORDS
     # -----------------------------------------------------
 
     # PHRASE LOOP — only phrase-level hits
@@ -129,7 +125,7 @@ def extract():
 
         source = hit.get("source")
 
-        # PHRASE DEFINITIONS (internal or BioPortal)
+        # PHRASE DEFINITIONS (internal or OSL4)
         if source in ("phrase_definition", "ontology_phrase"):
             definition = hit.get("definition")
             if definition:
@@ -157,17 +153,17 @@ def extract():
 
     DEBUG.add_flow("definitions_attached")
 
-    # Count how many words ended up with definitions
+    # DEFINED WORDS COUNT
     definitions_count = sum(1 for w in all_words if "definition" in w)
     DEBUG.set_count("definitions", definitions_count)
 
-    # Sample a few words that actually have definitions
+    # DEFINTIION SAMPLE FIRST 5
     words_with_def = [w for w in all_words if "definition" in w][:5]
     for w in words_with_def:
         DEBUG.add_sample("definitions", w)
 
     # -----------------------------------------------------
-    # 5. Attach image URLs
+    # ATTACH IMAGE URL
     # -----------------------------------------------------
     DEBUG.add_flow("image_url_attachment_started")
     for page in pages_meta:
@@ -182,7 +178,7 @@ def extract():
     DEBUG.add_flow("image_url_attachment_completed")
 
     # -----------------------------------------------------
-    # 6. Return unified output
+    # RETURN UNITFIED OUTPUT
     # -----------------------------------------------------
     DEBUG.add_flow("response_ready")
     print(f"Finished all processing — {time.time() - start_time:.2f}s")
@@ -200,7 +196,7 @@ def extract():
 
 
 # ---------------------------------------------------------
-# Run locally
+# RUN LOCALLY
 # ---------------------------------------------------------
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 8080))
