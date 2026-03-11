@@ -3,4 +3,5 @@ RNA interference<TAB>(RNA interference/RNAi) a mechanism of gene silencing using
 virulence factor<TAB>a molecule that contributes to pathogenicity
 otitis media<TAB>commonly known as a middle ear infection, is inflammation and fluid buildup in the space behind the eardrum, often caused by viruses or bacteria from a cold or respiratory infection
 protein translation<TAB>the essential process where a cell builds proteins by decoding messenger RNA (mRNA) into a specific chain of amino acids, essentially converting the "nucleotide language" of mRNA into the "amino acid language" of proteins, a key step in gene expression. This process occurs on ribosomes, with transfer RNA (tRNA) molecules bringing specific amino acids that match three-nucleotide sequences (codons) on the mRNA, forming a polypeptide chain that then folds into a functional protein
-
+black soldier fly larvae<TAB>Hermetia illucens, is a valuable insect species whose larvae have enormous potentials for converting organic waste into compost, while the larval biomass generated could also be harvested for its protein and fatty acid content
+Methicillin-resistant Staphylococcus aureus<TAB>(MRSA) infection caused by staphylococcus aureus bacteria that's become resistant to many of the antibiotics used to treat ordinary staphylococcus infections.
