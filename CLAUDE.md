@@ -22,9 +22,9 @@ This project is in a very early stage of development.
 *	Only PDF file uploads are supported
 *	Positional metadata must be preserved throughout the pipeline.
 *	Scientific journal articles contain diverse formatting styles and complex layouts, this must be taken into consideration. 
-*	The filtering and sorting of text before ontology look-up must be comprehensive for efficiency. 
-*	OLS4-API has specific batch request limitations per request. maximum lookup is ~500 words, decreasing to ~250 for phrase lookup. 
-	further information can be found here: https://www.ebi.ac.uk/ols4/
+*	The filtering and sorting of text before ontology look-up must be comprehensive for efficiency.
 *	OLS4-API has been chosen based on the allowance of batch requests.
+*	OLS4-API has specific batch request limitations per request. maximum per request lookup is ~500 words, decreasing to ~250 for phrase lookup. 
+	further information on the API can be found here: https://www.ebi.ac.uk/ols4/
 *	The output must provide highlights positioned percisely to overlay the original rendered PDF.
 *	definitions must appear within a tool-tip upon hovering over a highlighted term. 
