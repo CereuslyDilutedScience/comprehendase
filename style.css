@@ -1,10 +1,10 @@
 /* === Comprehendase Color Variables === */
 :root {
-  --bg-cream: #FDF6E3;
-  --text-dark: #002f62;
-  --accent-teal: #3EC6C1;
-  --accent-teal-hover: #3AAFA3;
-  --highlight-orange: #F76C5E;
+  --bg-cream: #0B0F14;
+  --text-dark: #0F2E5A;
+  --accent-teal: #2BC4C9;
+  --accent-teal-hover: #2BC4C9;
+  --highlight-orange: #7A6FF0;
   --shadow-gray: rgba(0, 0, 0, 0.2);
 }
 
