@@ -2,36 +2,25 @@ import requests
 import re
 import os
 
-# ---------------------------------------------------------
-# NORMALIZATION (for dedupe only)
-# ---------------------------------------------------------
 
+# NORMALIZATION (for dedupe only)
 def normalize_term(t: str) -> str:
     t = t.lower().strip()
     t = re.sub(r"[.,;:!?\"']", "", t)
     t = re.sub(r"\s+", " ", t)
     return t
 
-# ------------------------------------------------------------------------------------------------
-# UTILITIES ATTEMPT TO PARSE LOOKUP OLS4 MAX 500 PER BATCH 
-# ------------------------------------------------------------------------------------------------
-
 def chunk_list(lst, size):
     """
-    Yields successive chunks of the given list with at most `size` elements.
+    Yields successive chunks of the given list with at most `size` elements. Utilities to parse lookup
+    OLS4 max 500 words per batch, though much more restrictive when phrases are introduced. 
     """
     for i in range(0, len(lst), size):
         yield lst[i:i+size]
 
-# ---------------------------------------------------------
 # OLS4 CONFIG
-# ---------------------------------------------------------
-
 OLS4_SEARCH_URL = "https://www.ebi.ac.uk/ols4/api/search"
 
-# ---------------------------------------------------------
-# OLS4 LOOKUP (supports batching)
-# ---------------------------------------------------------
 
 def lookup_terms_ols4(terms):
     """
@@ -73,19 +62,16 @@ def lookup_terms_ols4(terms):
     except Exception:
         return results
 
-# ---------------------------------------------------------
-# MAIN ENTRYPOINT — PHASE 1 PIPELINE (OLS4 VERSION)
-# ---------------------------------------------------------
-
 def extract_ontology_terms(extracted):
+    """
+    Phase 1 of pipeline, returns extracted_text output and sorts terms based on length.
+    """
     phrases = extracted.get("phrases", [])
 
     results = {}
     unmatched_terms = []
 
-    # ---------------------------------------------
-    # BUCKET BY LENGTH
-    # ---------------------------------------------
+    #binned by length
     one_word_spans = []
     two_word_spans = []
     multi_word_spans = []
@@ -105,9 +91,8 @@ def extract_ontology_terms(extracted):
         else:
             multi_word_spans.append(p)
 
-    # ---------------------------------------------
+   
     # TRUE BATCH FOR 2-WORD PHRASES (CHUNKED)
-    # ---------------------------------------------
     two_word_texts = [p["text"].strip() for p in two_word_spans]
 
     if two_word_texts:
@@ -138,9 +123,7 @@ def extract_ontology_terms(extracted):
         for w in split_words:
             one_word_spans.append({"text": w})
 
-    # --------------------------------------------------------------------------------------------------------------------------------
     # TRUE BATCH FOR 3+ WORD PHRASES (CHUNKED) INCOMPLETE, WILL BE ADDING PHRASE DELIMINTATING LOOKUP ONCE SITE IS STABLE
-    # --------------------------------------------------------------------------------------------------------------------------------
     multi_word_texts = [p["text"].strip() for p in multi_word_spans]
 
     if multi_word_texts:
@@ -166,9 +149,7 @@ def extract_ontology_terms(extracted):
 
         unmatched_terms.append(phrase_text)
 
-    # ---------------------------------------------
     # PROCESS 1-WORD TERMS (LAST, CHUNKED)
-    # ---------------------------------------------
     norm_to_originals = {}
 
     for p in one_word_spans:
