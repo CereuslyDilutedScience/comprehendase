@@ -14,17 +14,11 @@ This project is in a very early stage of development.
 
 # Testing
 *	Testing should be developed with pytest utilizing pytest plug-ins when needed.
-*	mock OLS4-API testing should be implemented
-*	Testing files must be updated with each appropriate codebase change.
-*	Some PDF testing files are included within the /test directory. 
+
 
 # Key components for this phase of development
 *	Only PDF file uploads are supported
 *	Positional metadata must be preserved throughout the pipeline.
 *	Scientific journal articles contain diverse formatting styles and complex layouts, this must be taken into consideration. 
-*	The filtering and sorting of text before ontology look-up must be comprehensive for efficiency.
-*	OLS4-API has been chosen based on the allowance of batch requests.
 *	OLS4-API has specific batch request limitations per request. maximum per request lookup is ~500 words, decreasing to ~250 for phrase lookup. 
 	further information on the API can be found here: https://www.ebi.ac.uk/ols4/
-*	The output must provide highlights positioned percisely to overlay the original rendered PDF.
-*	definitions must appear within a tool-tip upon hovering over a highlighted term. 
