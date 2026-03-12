@@ -10,13 +10,15 @@ def load_list(path):
     with open(path, encoding="utf-8") as f:
         return set(line.strip().lower() for line in f if line.strip())
 
-#Commonly used words, used to skip ontology and indicate phrase ending
+
 STOPWORDS = load_list("stopwords.txt")
+""" Commonly used words are compiled into this file, they are skipped in ontology lookup 
+    and used to break phrase strings during the intial sorting functions
+"""
 
-
-# --- GARBAGE FILTER ---
 def is_garbage_phrase(text):
-    
+    """ Used to filter out common header, footer, and reference text that should not be sent for ontology lookup
+    """
     t = text.lower().strip()
     if not t:
         return True, "empty phrase"
@@ -28,12 +30,10 @@ def is_garbage_phrase(text):
         return True, "email"
     return False, None
 
-
-# --- OCR STEP ---
 def ocr_pdf(input_path):
-    ''' OCR fall back when the uploaded PDF does not contain an enbedded text layout.
+    """ OCR fall back when the uploaded PDF does not contain an enbedded text layout.
     Runtime is greatly increased when OCR is needed.
-    '''
+    """
     try:
         import fitz
         doc = fitz.open(input_path)
@@ -59,10 +59,8 @@ def ocr_pdf(input_path):
         return None
 
 
-# --- ANOMALY HELPERS ---
 def detect_duplicate_coordinates(all_words):
-    """
-    Detect words that share identical page + bounding box coordinates.
+    """ Detect words that share identical page + bounding box coordinates.
     """
     seen = {}
     for w in all_words:
@@ -89,8 +87,7 @@ def detect_duplicate_coordinates(all_words):
 
 
 def detect_duplicate_text_spans(all_words):
-    """
-    Detect repeated text spans on the same page.
+    """ Detect repeated text spans on the same page.
     """
     seen = {}
     for w in all_words:
@@ -116,8 +113,7 @@ def detect_duplicate_text_spans(all_words):
 
 
 def boxes_overlap(a, b):
-    """
-    Simple rectangle overlap check for bounding boxes on the same page.
+    """ Simple rectangle overlap check for bounding boxes on the same page.
     """
     ax1 = a.get("x", 0)
     ay1 = a.get("y", 0)
@@ -138,8 +134,7 @@ def boxes_overlap(a, b):
 
 
 def detect_overlapping_boxes(all_words, max_checks=1000):
-    """
-    Detect overlapping bounding boxes on the same page.
+    """ Detect overlapping bounding boxes on the same page.
     To avoid heavy computation, cap the number of pairwise checks.
     """
     by_page = {}
@@ -180,9 +175,9 @@ def detect_overlapping_boxes(all_words, max_checks=1000):
 
 
 def extract_pdf_layout(pdf_path, render_metadata):
-    ''' Main extraction function; indicates if OCR needed, outputs all words before
+    """ Main extraction function; indicates if OCR needed, outputs all words before
     phrase generation and page layout for rendering after ontology lookup.
-    '''
+    """
     print("\n=== STARTING EXTRACTION ===")
     DEBUG.add_flow("extraction_started")
     DEBUG.add_flow("render_metadata_received")
@@ -316,7 +311,7 @@ def extract_pdf_layout(pdf_path, render_metadata):
                 "words": phrase_words.copy()
             })
 
-        # MOVRE INDEX TO NEXT WORD AFTER PHRASE
+        # MOVE INDEX TO NEXT WORD AFTER PHRASE
         i = j
 
     DEBUG.add_flow("phrase_extraction_completed")
