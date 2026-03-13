@@ -100,8 +100,8 @@ header {
 }
 
 .logo-img {
-  max-width: 550px;
-  height: 150px;
+  max-width: 750px;
+  height: 350px;
   display: block;
   overflow: hidden;
   margin: 0 auto;
@@ -136,7 +136,7 @@ button.upload:hover {
 input[type="file"].upload::file-selector-button {
   background-color: var(--accent-teal);
   font-weight: 600;
-  color: #002f62;
+  color: var(--text-dark);
   border: none;
   padding: 0.5rem 0.5rem;
   border-radius: 6px;
@@ -163,8 +163,8 @@ button.reconstruct {
 }
 
 .footerlogo-img {
-  max-width: 200px;
-  height: 50px;
+  max-width: 350px;
+  height: 100px;
   display: block;
   overflow: hidden;
   margin: 0 auto;
